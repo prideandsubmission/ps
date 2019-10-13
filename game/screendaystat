@@ -1,0 +1,27 @@
+init python:   
+    screen day:
+        text ("Day %d" %day): 
+            xpos 5
+            ypos 20
+            font "Benegraphic.ttf"
+           
+    screen stat:
+        text ("Energy: %d" % ene): 
+            xpos 10
+            ypos 100 
+
+        text ("Thirst: %d" % thirst): 
+            xpos 10
+            ypos 150
+         
+        text ("Hunger: %d" % hunger): 
+            xpos 10
+            ypos 200 
+           
+        text ("Terror: %d" % terror): 
+            xpos 10
+            ypos 250 
+           
+        text ("Mental: %d" % mental): 
+            xpos 10
+            ypos 300 
