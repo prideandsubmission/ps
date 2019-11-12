@@ -1,5 +1,4 @@
 
-
 image vine:
     "vine0001.png"
     0.1
@@ -3173,4 +3172,319 @@ image baby_foot_nolick:
     "baby_foot_lick0001.jpg"
     .2
     repeat
+    
+################################ Bath Event ############################
+
+image mos:
+    "mosfirst0000.jpg"
+    .1
+    "mosfirst0001.jpg"
+    .1
+    "mosfirst0002.jpg"
+    .1
+    "mosfirst0003.jpg"
+    .1
+    "mosfirst0004.jpg"
+    .1
+    "mosfirst0005.jpg"
+    .1
+    "mosfirst0006.jpg"
+    .1
+    "mosfirst0007.jpg"
+    .1
+    "mosfirst0008.jpg"
+    .1
+    "mosfirst0009.jpg"
+    .1
+    "mosfirst0010.jpg"
+    .1
+    "mosfirst0011.jpg"
+    .1
+    "mosfirst0012.jpg"
+    .1
+    "mosfirst0013.jpg"
+    .1
+    "mosfirst0014.jpg"
+    .1
+    "mosfirst0015.jpg"
+    .1
+    repeat
+    
+image mos_fast:    
+    "mosfirst0000.jpg"
+    .08
+    "mosfirst0001.jpg"
+    .08
+    "mosfirst0004.jpg"
+    .08
+    "mosfirst0005.jpg"
+    .08
+    "mosfirst0006.jpg"
+    .08
+    "mosfirst0007.jpg"
+    .08
+    "mosfirst0008.jpg"
+    .08
+    "mosfirst0009.jpg"
+    .08
+    "mosfirst0010.jpg"
+    .08
+    "mosfirst0011.jpg"
+    .08
+    "mosfirst0012.jpg"
+    .08
+    "mosfirst0013.jpg"
+    .08
+    "mosfirst0014.jpg"
+    .08
+    "mosfirst0015.jpg"
+    .08    
+    repeat
+image mos_faster:
+    "mosfirst0000.jpg"
+    .06
+    "mosfirst0001.jpg"
+    .06
+    "mosfirst0003.jpg"
+    .06
+    "mosfirst0004.jpg"
+    .06
+    "mosfirst0005.jpg"
+    .06
+    "mosfirst0006.jpg"
+    .06
+    "mosfirst0007.jpg"
+    .06
+    "mosfirst0008.jpg"
+    .06
+    "mosfirst0009.jpg"
+    .06
+    "mosfirst0010.jpg"
+    .06
+    "mosfirst0011.jpg"
+    .06
+    "mosfirst0012.jpg"
+    .06
+    "mosfirst0003.jpg"
+    .06
+    "mosfirst0004.jpg"
+    .06
+    "mosfirst0005.jpg"
+    .06
+    "mosfirst0006.jpg"
+    .06
+    "mosfirst0007.jpg"
+    .06
+    "mosfirst0013.jpg"
+    .06
+    "mosfirst0014.jpg"
+    .06
+    "mosfirst0015.jpg"
+    .06
+    repeat
+    
+############## mos_elec #########
+
+transform infinite_flash:
+    linear 0.1 alpha 0.4
+    linear 0.1 alpha 0
+    repeat
+
+transform infinite_flashfast:
+    linear 0.08 alpha 0.6
+    linear 0.08 alpha 0
+    repeat
+
+transform infinite_flashfastest:
+    linear 0.05 alpha 0.8
+    linear 0.05 alpha 0
+    repeat
+
+transform infinite_flashfastest_fast:
+    linear 0.03 alpha 0.8
+    linear 0.03 alpha 0
+    repeat
+
+image mos_elec:
+    "mosfirst_elec0000.jpg"
+    .1
+    "mosfirst_elec0001.jpg"
+    .1
+    "mosfirst_elec0002.jpg"
+    .1
+    "mosfirst_elec0003.jpg"
+    .1
+    "mosfirst_elec0004.jpg"
+    .1
+    "mosfirst_elec0005.jpg"
+    .1
+    "mosfirst_elec0006.jpg"
+    .1
+    "mosfirst_elec0007.jpg"
+    .1
+    "mosfirst_elec0008.jpg"
+    .1
+    "mosfirst_elec0009.jpg"
+    .1
+    "mosfirst_elec0010.jpg"
+    .1
+    "mosfirst_elec0011.jpg"
+    .1
+    "mosfirst_elec0012.jpg"
+    .1
+    "mosfirst_elec0013.jpg"
+    .1
+    "mosfirst_elec0014.jpg"
+    .1
+    "mosfirst_elec0015.jpg"
+    .1
+    repeat
+    
+image mos_elecfast:    
+    "mosfirst_elec0000.jpg"
+    .08
+    "mosfirst_elec0001.jpg"
+    .08
+    "mosfirst_elec0004.jpg"
+    .08
+    "mosfirst_elec0005.jpg"
+    .08
+    "mosfirst_elec0006.jpg"
+    .08
+    "mosfirst_elec0007.jpg"
+    .08
+    "mosfirst_elec0008.jpg"
+    .08
+    "mosfirst_elec0009.jpg"
+    .08
+    "mosfirst_elec0010.jpg"
+    .08
+    "mosfirst_elec0011.jpg"
+    .08
+    "mosfirst_elec0012.jpg"
+    .08
+    "mosfirst_elec0013.jpg"
+    .08
+    "mosfirst_elec0014.jpg"
+    .08
+    "mosfirst_elec0015.jpg"
+    .08    
+    repeat
+image mos_elecfaster:
+    "mosfirst_elec0000.jpg"
+    .06
+    "mosfirst_elec0001.jpg"
+    .06
+    "mosfirst_elec0003.jpg"
+    .06
+    "mosfirst_elec0004.jpg"
+    .06
+    "mosfirst_elec0005.jpg"
+    .06
+    "mosfirst_elec0006.jpg"
+    .06
+    "mosfirst_elec0007.jpg"
+    .06
+    "mosfirst_elec0008.jpg"
+    .06
+    "mosfirst_elec0009.jpg"
+    .06
+    "mosfirst_elec0010.jpg"
+    .06
+    "mosfirst_elec0011.jpg"
+    .06
+    "mosfirst_elec0012.jpg"
+    .06
+    "mosfirst_elec0003.jpg"
+    .06
+    "mosfirst_elec0004.jpg"
+    .06
+    "mosfirst_elec0005.jpg"
+    .06
+    "mosfirst_elec0006.jpg"
+    .06
+    "mosfirst_elec0007.jpg"
+    .06
+    "mosfirst_elec0013.jpg"
+    .06
+    "mosfirst_elec0014.jpg"
+    .06
+    "mosfirst_elec0015.jpg"
+    .06
+    repeat
+ 
+image mos_elecfastest:
+    "mosfirst_elec0000.jpg"
+    .04
+    "mosfirst_elec0001.jpg"
+    .04
+    "mosfirst_elec0003.jpg"
+    .04
+    "mosfirst_elec0004.jpg"
+    .04
+    "mosfirst_elec0005.jpg"
+    .04
+    "mosfirst_elec0006.jpg"
+    .04
+    "mosfirst_elec0007.jpg"
+    .04
+    "mosfirst_elec0008.jpg"
+    .04
+    "mosfirst_elec0009.jpg"
+    .04
+    "mosfirst_elec0010.jpg"
+    .04
+    "mosfirst_elec0011.jpg"
+    .04
+    "mosfirst_elec0012.jpg"
+    .04
+    "mosfirst_elec0003.jpg"
+    .04
+    "mosfirst_elec0004.jpg"
+    .04
+    "mosfirst_elec0005.jpg"
+    .04
+    "mosfirst_elec0006.jpg"
+    .04
+    "mosfirst_elec0007.jpg"
+    .04
+    "mosfirst_elec0013.jpg"
+    .04
+    "mosfirst_elec0014.jpg"
+    .04
+    "mosfirst_elec0015.jpg"
+    .04
+    repeat
+    
+############## Monster Suck ################
+
+image bath_monster_suckhead:
+    "bath_msuck_head0000.jpg"
+    .1
+    "bath_msuck_head0001.jpg"
+    .1
+    "bath_msuck_head0002.jpg"
+    .1
+    "bath_msuck_head0003.jpg"
+    .1
+    "bath_msuck_head0004.jpg"
+    .1
+    "bath_msuck_head0005.jpg"
+    .1
+    "bath_msuck_head0006.jpg"
+    .1
+    "bath_msuck_head0007.jpg"
+    .1
+    "bath_msuck_head0008.jpg"
+    .1
+    "bath_msuck_head0009.jpg"
+    .1
+
+    
+    
+    
+    
+    
+    
+    
     

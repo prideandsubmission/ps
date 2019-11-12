@@ -1,13 +1,16 @@
-label sim:
-    $ showday = True
-    show tie with fade
-    call screen tie
 
 screen tie:
     imagemap:
         ground Animation("tie0001.jpg",.2,"tie0002.jpg",.2,"tie0003.jpg",.2,"tie0004.jpg",.2,"tie0005.jpg",.2,"tie0006.jpg",.2,"tie0007.jpg",.2,"tie0008.jpg",.2,"tie0009.jpg",.2,"tie0010.jpg",.2)
         hover Animation("tie_look0001.jpg",.1,"tie_look0002.jpg",.1,"tie_look0003.jpg",.1,"tie_look0004.jpg",.1,"tie_look0005.jpg",.1,"tie_look0006.jpg",.1,"tie_look0007.jpg",.1,"tie_look0008.jpg",.1,"tie_look0009.jpg",.1,"tie_look0010.jpg",.1,"tie_looka0001.jpg",.1,"tie_looka0002.jpg",.1,"tie_looka0003.jpg",.1,"tie_looka0004.jpg",.1,"tie_looka0005.jpg",.1,"tie_looka0006.jpg",.1,"tie_look0007.jpg",.1,"tie_look0008.jpg",.1,"tie_look0009.jpg",.1,"tie_look0010.jpg",.1)
         hotspot (243, 365, 600, 1000) action Function(renpy.transition, dissolve), Call ("simbutton")
+        
+label sim:
+    $ showday = True
+    show tie with fade
+    call screen tie
+
+
  
         
 label simbutton:
@@ -18,6 +21,8 @@ label simbutton:
         jump endday
     elif water<=0 or food <=0:
         jump faint
+    elif clean<=0:
+        jump bath
     else:
         menu:
             "Water and Feed":

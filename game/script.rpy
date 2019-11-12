@@ -54,6 +54,7 @@ label start:
                     $pride = 90
                     $day = 4
                     $fuckoff =0
+                    $clean = 0
                     play music "Angevin.mp3"
                     jump sim
                 "End of the sim":
@@ -66,6 +67,7 @@ label start:
                     $mental = 0
                     $pride = 0
                     $day = 50
+                    $clean = 0
                     play music "Angevin.mp3"
                     jump sim
                 "No skiping":
@@ -1227,6 +1229,7 @@ label start:
     $day =4
     $fuckoff =0
     $nothing =1
+    $clean = 0
     jump sim
                       
                     

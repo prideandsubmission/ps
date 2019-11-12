@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/groupsex.rpy", line 1621: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        p "...Y-Yes, [d]. It...is.""
+File "game/bath.rpy", line 263: choice menuitem expects a non-empty block.
+    "Blow him":
+               ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sat Jul 13 18:21:51 2019
+Tue Nov 12 00:50:49 2019
