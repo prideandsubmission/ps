@@ -23,6 +23,9 @@ label faint:
        
        
 ################################################################################################################################################################################################ End day
+label justendday:
+    p "..."
+    jump newday
 label endday:
     if water >=60:
         show m_tired at s
@@ -286,6 +289,7 @@ label newday:
         jump sim
     else:
         jump jumpsim
+        
 label jumpsim:
     $ene =100
     hide screen day

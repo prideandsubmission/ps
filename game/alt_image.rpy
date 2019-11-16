@@ -3479,11 +3479,120 @@ image bath_monster_suckhead:
     .1
     "bath_msuck_head0009.jpg"
     .1
-
+    repeat
     
+image bath_monster_suckdeep:
+    "bath_m_suck_deep0000.jpg"
+    .1
+    "bath_m_suck_deep0001.jpg"
+    .1
+    "bath_m_suck_deep0002.jpg"
+    .1
+    "bath_m_suck_deep0003.jpg"
+    .1
+    "bath_m_suck_deep0004.jpg"
+    .1
+    "bath_m_suck_deep0005.jpg"
+    .1
+    "bath_m_suck_deep0006.jpg"
+    .1
+    "bath_m_suck_deep0007.jpg"
+    .1
+    "bath_m_suck_deep0008.jpg"
+    .1
+    "bath_m_suck_deep0009.jpg"
+    .1
+    "bath_m_suck_deep0010.jpg"
+    .1
+    repeat
     
+image bath_monster_suckdeep_fast:
+    "bath_m_suck_deep0000.jpg"
+    .08
+    "bath_m_suck_deep0001.jpg"
+    .08
+    "bath_m_suck_deep0002.jpg"
+    .08
+    "bath_m_suck_deep0003.jpg"
+    .08
+    "bath_m_suck_deep0004.jpg"
+    .08
+    "bath_m_suck_deep0005.jpg"
+    .08
+    "bath_m_suck_deep0006.jpg"
+    .08
+    "bath_m_suck_deep0007.jpg"
+    .08
+    "bath_m_suck_deep0008.jpg"
+    .08
+    "bath_m_suck_deep0009.jpg"
+    .08
+    "bath_m_suck_deep0010.jpg"
+    .08
+    repeat
     
-    
+image bath_monster_suckdeep_faster:
+    "bath_m_suck_deep0000.jpg"
+    .05
+    "bath_m_suck_deep0001.jpg"
+    .05
+    "bath_m_suck_deep0002.jpg"
+    .05
+    "bath_m_suck_deep0003.jpg"
+    .05
+    "bath_m_suck_deep0004.jpg"
+    .05
+    "bath_m_suck_deep0005.jpg"
+    .05
+    "bath_m_suck_deep0006.jpg"
+    .05
+    "bath_m_suck_deep0007.jpg"
+    .05
+    "bath_m_suck_deep0008.jpg"
+    .05
+    "bath_m_suck_deep0009.jpg"
+    .05
+    "bath_m_suck_deep0010.jpg"
+    .05
+    repeat
+image bath_monster_suckdeep_fastest:
+    "bath_m_suck_deep0000.jpg"
+    .03
+    "bath_m_suck_deep0001.jpg"
+    .03
+    "bath_m_suck_deep0002.jpg"
+    .03
+    "bath_m_suck_deep0003.jpg"
+    .03
+    "bath_m_suck_deep0004.jpg"
+    .03
+    "bath_m_suck_deep0005.jpg"
+    .03
+    "bath_m_suck_deep0006.jpg"
+    .03
+    "bath_m_suck_deep0007.jpg"
+    .03
+    "bath_m_suck_deep0008.jpg"
+    .03
+    "bath_m_suck_deep0009.jpg"
+    .03
+    "bath_m_suck_deep0010.jpg"
+    .03
+    repeat
+image bath_monster_suck_cum:
+    "bath_msuck_cum0000.jpg"
+    .1
+    "bath_msuck_cum0001.jpg"
+    .1
+    "bath_msuck_cum0002.jpg"
+    .1
+    "bath_msuck_cum0003.jpg"
+    .1
+    "bath_msuck_cum0004.jpg"
+    .1
+    "bath_msuck_cum0005.jpg"
+    .1
+    repeat
     
     
     

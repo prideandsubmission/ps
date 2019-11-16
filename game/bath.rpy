@@ -66,10 +66,10 @@ label bath:
     d "There is a rule almost every monsters in this forest follow: keep clean."
     d "Because there are strong creatures that feed on dirtiness here. Even monsters twice as strong as you doesn't want to fuck with them."
     p "..."
-    d "The only reason they haven't eat you yet is because of me. But it won't be long, their self-restraint is kinda..." with hpunch
+    d "The only reason they haven't eat you yet is because of me. But it won't be long, their self-restraint is kinda..."
     "From the trees, dozen of mosquito-like monsters dash out in a swift motion." with vpunch
     p "!"
-    d "Hmmp, it even worse than I espected. You should join their pack prince. Bird of the same feather flock together."
+    d "These brat! Even worse than I espected. You should join their pack prince. Bird of the same feather flock together."
     p "NO! STOP!"
     show thunder at infinite_flashfast
     "The monsquito-like monster shock [p] with there electric"with hpunch
@@ -81,7 +81,7 @@ label bath:
     "The monsters paralyzed [p]"
     p "S-shit! I ..m...c...can't... m...urgh" with vpunch
     scene mos with hpunch
-    "The monsters start to move their hairy tougue and legs around [p]'s body." with hpunch
+    "The monsters start to move their hairy tongues and legs around [p]'s body." with hpunch
     p "Uhmm...m..."
     p "(Shit...!)"
     "Two of them twist their toungue and ram them forcefully in [p]'s mouth and ass harder." with vpunch
@@ -98,11 +98,8 @@ label bath:
     p "(Stop!!)" 
     scene mos_faster with hpunch
     p "MMMM...NGGHHH...MMMM..."
-    "It hurts too much that [p]'s face cover in tears."
-    p "(No! STOP! T-Too much!)"
-    "[p] looks at [d]."
-    p "M...hhh...NNN....GH...."
-    d "Huh?"
+    "[p]'s face cover in tears."
+    p "(No! STOP!)"
     p "NNgg...HHGggg..."
     scene mos_elec
     show thunder at infinite_flash
@@ -210,6 +207,7 @@ label bath:
         p "(I'm too tired. I don't have enough stomach to go against him now. Let just let this slide...)"
         d "Sleep already?"
         "[d] looks at [p] for a second then goes away."
+        jump justendday
         
     label bath_watch:
         p "GRRRHHHHHH!!!!!"
@@ -227,7 +225,7 @@ label bath:
         show thunder at infinite_flashfastest
         p "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
         p "H...n...."
-        "[p]'s mind goes blank. he lost all of his muscle control. Now He can't even scream. The only thing that show he still concious is his crying face and twitching muscle."
+        "[p]'s mind goes blank. He lost all of his muscle control. Now He can't even scream. The only thing that show he still concious is his crying face and twitching muscle."
         p "...ug...n..."
         hide thunder with dissolve
         show mos_faster with dissolve
@@ -235,6 +233,7 @@ label bath:
         scene mos_elecfaster
         show thunder at infinite_flashfastest
         p "...m!n!...."
+        p "!"
         scene sky with hpunch
         show thunder at infinite_flashfastest
         "From above the ground, the vines release [p], shoot up to the sky, kill all of the mosquito-like monsters at the same time." with vpunch
@@ -242,6 +241,7 @@ label bath:
         show thunder at infinite_flash
         p "...m...h..."
         p "...n..."
+        scene colapse_leg # message, hit left to top right, jump-trample, surf back
         "[d] steps on [p]'s ass."
         p "...m..."
         d "What a strange way of falling. It like you ask me to do something to this ass."
@@ -253,18 +253,73 @@ label bath:
         d "Hmph"
         menu:
             "Forget it":
-                scene colapse_touch
+                scene colapse
                 p "!"
                 p "..."
                 d "I'll let it slide today. Just because I've entertain enough"
                 p "..."
                 "[d] walks away."
                 p "S..hit...hole..."
+                jump justendday
             "Blow him":
-                "bvb"
-            "Sex toy":
-                "cvcv"
-    
+                scene darkforest
+                "[d] kicks [p]. He falls to a tree." with vpunch
+                p "Urhg!"
+                d "You seem to be in pain. Poor thing."
+                p "..."
+                scene bath_monster_suckhead
+                p "!"
+                "[d] sucks [p]'s cock."
+                p "...ngh..."
+                p "S-stop...."
+                d "What a sensitive dick. Had you let anyone put it in their mouth before?"
+                p "...ugh...S-st...op...!...Ple....st...!"
+                d "Why? Your boy had been hurt a lot. I'm just comforting it. Shouldn't you thank me?"
+                scene bath_monster_suckdeep
+                p "...n...m...ngh..."
+                p "...Plea...ngh..."
+                p "N!...mgh!..."
+                scene bath_monster_suckdeep_fast
+                p "..ugh...ugh!"
+                p "..n...ple..."
+                scene bath_monster_suckdeep_faster
+                p "...ugh!Ugh!...Ngh!...Ugh!..."
+                scene bath_monster_suckdeep_fastest
+                p "!!!"
+                p "UGH!"
+                scene bath_monster_suck_cum
+                p "Agh...ugh...n..."
+                "Cannot stand the pleasure, the prince shoots out his cum."
+                scene pull_day with vpunch
+                d "Brat! Dare to cum inside my mouth. Have you lost your mind?"
+                p "Ugh! ...Ngh!!"
+                scene colapse with hpunch
+                p "Argh!"
+                "The monster tosses [p] on the ground violently."
+                jump afterBlow
+                
+label afterBlow:
+    p "...urg!..."
+    menu:
+        "Humiliate him": 
+            p "...m..."
+            d "..."
+            d "Let's call it a day. There's no fun fucking a dying frog."
+            p "Bas...tar-...!..J-ust...you...wait..."
+            scene colapse_leg
+            "[d] laughs out loud and steps on [p]'s ass."
+            d "Yeah, sure! I'll wait to the day submissive to me become your nature."
+            p "F..uc-...y-...ngh..."
+            jump justendday
+            
+        "Ride him": ## unlock by 2 times Humiliate him, 2 times stop mos
+            "Hidden event, haven't draw yet"
+            jump afterBlow
+            
+        "Sex toy":
+            "fg"
+                   
+                
     
     
     
