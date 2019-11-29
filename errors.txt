@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/bath.rpy", line 210: Menu does not contain any choices.
-    menu:
-         ^
+File "game/bath.rpy", line 435: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    p "Arghhhhhhhh.....Aaaaaaaaaaaaaaaaa....Arghhhhhhhh.....Aaaaaaaaaaaaaaaaa...."
+    ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sun Nov 24 18:43:36 2019
+Fri Nov 29 12:47:02 2019

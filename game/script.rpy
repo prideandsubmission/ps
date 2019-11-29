@@ -10,7 +10,7 @@ default showday = False
 default show = False
 default firstwater = True # if this is the first time water                  country name:   Rivakh
 default firsttime = True # if this is the first time Anal
-default firstMos = 1 # Mosquito monsters meeting, =0 at first
+default firstMos = 0 # Mosquito monsters meeting, =0 at first
 default toyfirst = True # if this is the first time with Sword
 default group_baby = False
 default group_nobaby = False
