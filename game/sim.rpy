@@ -58,6 +58,7 @@ label simbutton:
                         if ene <= 0:
                             jump endday
                         else:
+                            $clean -=5
                             if mental<=50 and pride<=50 and food>=0:
                                 jump hunger_obe
                             elif food >=40:
@@ -107,6 +108,7 @@ label simbutton:
                         if ene <=0:
                             jump endday
                         else:
+                            $clean -=2
                             if pride <40:
                                 if toyfirst:
                                     jump toy_thrust_first
@@ -140,6 +142,7 @@ label simbutton:
                             if ene <=0:
                                 jump endday
                             else:
+                                $clean -=1
                                 if mental>=95:
                                     jump cock_none
                                 elif 95>mental>=75:
@@ -153,6 +156,7 @@ label simbutton:
                             if ene <=0:
                                 jump endday
                             else:
+                                $clean -=2
                                 if mental>=90:
                                     jump ass_none
                                 elif 90>mental>=80:
@@ -165,6 +169,7 @@ label simbutton:
                                 else:
                                     jump ass_obe
                         "Group Sex":
+                            $clean +=5
                             jump group2
                         "Return":
                             jump simbutton
@@ -174,6 +179,7 @@ label simbutton:
                             if ene <=0:
                                 jump endday
                             else:
+                                $clean -=1
                                 if mental>=95:
                                     jump cock_none
                                 elif 95>mental>=75:
@@ -187,6 +193,7 @@ label simbutton:
                             if ene <=0:
                                 jump endday
                             else:
+                                $clean -=2
                                 if mental>=90:
                                     jump ass_none
                                 elif 90>mental>=80:
@@ -208,6 +215,7 @@ label simbutton:
                             if ene <=0:
                                 jump endday
                             else:
+                                $clean -=1
                                 if mental>=95:
                                     jump cock_none
                                 elif 90>mental>=75:
@@ -221,6 +229,7 @@ label simbutton:
                             if ene <=0:
                                 jump endday
                             else:
+                                $clean -=2
                                 if mental>=90:
                                     jump ass_none
                                 elif 90>mental>=80:
@@ -237,7 +246,7 @@ label simbutton:
                                 
             "Test mind control":
                 if mental <=0 and pride <=0:
-                    jump control4
+                    jump control4_ques
                 else:
                     if mental >=70:
                         jump control1

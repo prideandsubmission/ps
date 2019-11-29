@@ -24,8 +24,10 @@ label faint:
        
 ################################################################################################################################################################################################ End day
 label justendday:
-    p "..."
+    $firstMos =1
+    "The day quickly went by."
     jump newday
+    
 label endday:
     if water >=60:
         show m_tired at s
@@ -245,7 +247,10 @@ label endday:
         "[p] feel ashame of himself. His pride decreases."
         $ nothing = 1
         jump controlnote
-        
+    elif clean<=30 and clean>0:
+        jump bath30
+    elif clean <=0:
+        jump bath
     else:            
         d "Let's let him rest."
         jump controlnote

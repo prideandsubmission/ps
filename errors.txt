@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/event.rpy", line 28: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    jump newday
-    ^
+File "game/bath.rpy", line 210: Menu does not contain any choices.
+    menu:
+         ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Thu Nov 14 23:46:36 2019
+Sun Nov 24 18:43:36 2019

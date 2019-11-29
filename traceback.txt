@@ -1,34 +1,76 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
+While loading <'Image' 'bath_hard_touch0004.jpg'>:
   File "game/sim.rpy", line 11, in script call
     call screen tie
-  File "game/bath.rpy", line 220, in script
-    show thunder with infinite_flashfastest_fast
-Exception: Parameter 'new_widget' is not known by ATL Transform.
+  File "game/bath.rpy", line 205, in script
+    d "Oh right. Time's up, mosquitoes. Leave him be."
+  File "renpy/common/00library.rpy", line 295, in say
+    who(what, interact=interact, *args, **kwargs)
+IOError: Couldn't find file 'bath_hard_touch0004.jpg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/sim.rpy", line 11, in script call
     call screen tie
-  File "game/bath.rpy", line 220, in script
-    show thunder with infinite_flashfastest_fast
-  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\ast.py", line 1375, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\exports.py", line 1578, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\core.py", line 2240, in do_with
-    clear=clear)
+  File "game/bath.rpy", line 205, in script
+    d "Oh right. Time's up, mosquitoes. Leave him be."
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\ast.py", line 694, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\exports.py", line 1320, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "renpy/common/00library.rpy", line 295, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\character.py", line 1127, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\character.py", line 842, in do_display
+    **display_args)
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\ui.py", line 289, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\core.py", line 2690, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\core.py", line 3027, in interact_core
-    new_widget=layers_root)
-  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\atl.py", line 436, in __call__
-    raise Exception('Parameter %r is not known by ATL Transform.' % k)
-Exception: Parameter 'new_widget' is not known by ATL Transform.
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\core.py", line 3174, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\core.py", line 2086, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 516, in renpy.display.render.render_screen
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\image.py", line 500, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\im.py", line 580, in render
+    return cache.get(self, render=True)
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\im.py", line 266, in get
+    surf = image.load()
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\display\im.py", line 625, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'bath_hard_touch0004.jpg'.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 Pride and Submission 1.1
-Mon Nov 11 23:37:08 2019
+Sun Nov 24 18:37:34 2019

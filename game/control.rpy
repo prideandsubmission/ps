@@ -24,7 +24,15 @@ label control3:
     d "(Still stuborrn, huh?)"
     $control3first = False
     jump sim
-    
+
+label control4_ques:
+    "This ending is a place holder. There is only place holder images, animations here. The story is not completed also. Would you like to continue?"
+    menu:
+        "Yes":
+            jump control4
+        "No":
+            return
+
 label control4:
     hide screen day
     hide screen stat
@@ -196,8 +204,4 @@ label control4:
     p "(...Bastard! What the fuck is he trying to do?)"
     jump end
     
-    if show:
-        jump ending2
-    else:
-        jump ending1
-    return
+  

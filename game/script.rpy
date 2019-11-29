@@ -1,7 +1,4 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+﻿# The script of the game goes in this file. /D/PROGRAM/RENPY/renpy-6.99.14-sdk/PriceAndSub
 
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 
@@ -11,12 +8,13 @@ define m = Character("Monster")
 define k = Character("Previous King")
 default showday = False
 default show = False
-default first = True
-default firsttime = True
-default toyfirst = True
+default firstwater = True # if this is the first time water                  country name:   Rivakh
+default firsttime = True # if this is the first time Anal
+default firstMos = 1 # Mosquito monsters meeting, =0 at first
+default toyfirst = True # if this is the first time with Sword
 default group_baby = False
 default group_nobaby = False
-default touchfirstnone = True
+default touchfirstnone = True # if this is the first time Tease him
 default touchnone = True
 default control3first = True
 default control4first = True
@@ -54,7 +52,7 @@ label start:
                     $pride = 90
                     $day = 4
                     $fuckoff =0
-                    $clean = 0
+                    $clean = 100
                     play music "Angevin.mp3"
                     jump sim
                 "End of the sim":
@@ -78,7 +76,7 @@ label start:
 
     "Once upon a time, there was a young boy.\nThis youth is far more serious then all the others his age. \nWhatever he does, he always succeeds. \nWhatever he wants, he always gets." 
     "When he enrolled in the army, everyone opposed his decision due to his age, but he was having none of that—he does as he pleases." 
-    "After demonstrated his skill, he immediately silenced his opposition. Years later, at the tender age of twenty, he became a general and was known as one of the strongest man alive in the country."
+    "After demonstrated his skill, he immediately silenced his opposition. Years later, at the tender age of twenty, he became a general and was known as one of the strongest man alive in Rivakh."
     "He and the king rarely talk to each other. \nAnd if they do, it usually becomes a big fight, resulting in him being thrown out. \nIt is shocking to see, but not surprising that he is the king’s son, the first heir."
     "Unlike his younger half-brother, who is always smiling and loved by everyone, this prince is either feared or hated."
     "Arrogant, stubborn, unpleasant, suspicious, demanding, repulsive, quick-tempered. \nThat’s how everyone describes him... \n..No wonder, despite his capability, the king chose Ren, the younger brother to be the next king."
@@ -1229,7 +1227,8 @@ label start:
     $day =4
     $fuckoff =0
     $nothing =1
-    $clean = 0
+    $clean = 100
+    $bath = 0
     jump sim
                       
                     
