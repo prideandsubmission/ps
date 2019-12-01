@@ -270,16 +270,15 @@ label ass_nine:
     d "Don't even think about begging me again!"
     p "..F-fuck you...m...hghhh..."
     scene anal_cockpcum
-    "[d] hear some noisy sound nearby."
-    d "Interesting!"
     p "M...Ahhh...Hhhh..."
-    "[p] exhausted physicaly an mentally. His hungrer increases. His thirst increases dramatically. His pride and psyche decrease"
+    "[p] exhausted physicaly an mentally. His hungrer increases. His thirst increases dramatically. His pride and psyche decrease. He becomes dirtier."
     $mental +=5
     $pride -=5
     $water-=20
     $food -=10
     $ene -=50
     $firsttime = False
+    $clean+=3
     jump sim
     
 label ass_nine2:
@@ -472,12 +471,13 @@ label ass_nine2:
     "Nine leaves."
     p "...M...Stop..."
     d "Hmmph..."
-    "[p] exhausted physicaly an mentally. His pride, hunger and thirst increase. His psyche recover a bit."
+    "[p] exhausted physicaly an mentally. His pride, dirtiness, hunger and thirst increase. His psyche recover a bit."
     $mental +=5
     $pride -=5
     $water-=20
     $food -=10
     $ene -=50
+    $clean+=3
     jump sim
     
 label ass_obe:
@@ -780,7 +780,6 @@ label ass_obe:
             p "No...Ughh...Aaaaaa...Hurts...Nghhh..."
             p "...Mgh....N...p-please forgive me...ngh..."
             "[p] exaulted physicaly an mentally. His hunger and thirst increase. His pride and psyche decrease."
-            
         "Discipline [p]":
             d "Pitchy!"
             scene anal_hit with vpunch
@@ -841,10 +840,11 @@ label ass_obe:
             scene anal_hitc
             "[d] stops."
             p "...Ungh...Ngh!...m...haaa...aaaah"
-            "[p] exaulted physicaly an mentally. His hunger and thirst increase. His pride and psyche decrease."
+            "[p] exaulted physicaly an mentally. His hunger,thirst and dirtiness increase. His pride and psyche decrease."
     $mental -=7
     $pride -=7
     $water-=20
     $food -=15
+    $clean -=4
     $ene -=50
     jump sim

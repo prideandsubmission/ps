@@ -27,3 +27,6 @@ screen stat:
         xpos 10
         ypos 300 
     
+    text ("Cleaniness: %d" % clean): 
+        xpos 10
+        ypos 350 

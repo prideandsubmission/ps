@@ -34,10 +34,11 @@ label cock_none:
     "[d] touches [p]'s face."
     d "Don't get ahead of yourself just because I went easy on you this time."
     "[p]'s energy decreases as [d] beats him"
-    "[p]'s hunger and thirst insrease. His pride decrease for letting [d] does whatever he wants."
+    "[p]'s hunger,thirst and dirtiness insrease. His pride decrease for letting [d] does whatever he wants."
     $water-=20
     $food-=10
     $mental-=1
+    $clean-=1
     $ene -=50
     
     jump sim
@@ -67,11 +68,12 @@ label cock_1:
     d "So?"
     p "..."
     d "Play with him Pitchy."
-    "[p]'s overwhelm by the vines. His psyche, thirst and hunger increase. His energy decrease."
+    "[p]'s overwhelm by the vines. His psyche, dirtiness, thirst and hunger increase. His energy decrease."
 
     $water-=30
     $food-=20
     $mental-=1
+    $clean-=3
     $ene -=50
     jump sim
     
@@ -192,11 +194,12 @@ label cock_2:
     "[d] releases [p]."
     d "Learn to suck cock properly next time kid. Use your head if it still functions!"
     p "(Fuck this scumbag!)"
-    "[p] overwhelm by [d]'s cock. He is exausted mentaly and physically. His thirst and hunger increase, his pride and psyche decrease."
+    "[p] overwhelm by [d]'s cock. He is exausted mentaly and physically. His thirst,hunger and dirtiness increase, his pride and psyche decrease."
     $water-=30
     $food-=20
     $pride -=2
     $mental -=2
+    $clean -=3
     $ene-=50
     jump sim
     
@@ -282,10 +285,11 @@ label cock_obe:
     "[d] touches [p]'s face."
     d "Good work today, dog."
     p "..."
-    "[p] is exhausted physically and mentaly. His thirst and hunger increase, his pride and psyche decrease."
+    "[p] is exhausted physically and mentaly. His thirst,hunger and dirtiness increase, his pride and psyche decrease."
     $water-=30
     $food-=20
     $mental -=5
     $pride -=7
+    $clean -=3
     $ene-=50
     jump sim

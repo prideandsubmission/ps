@@ -2593,6 +2593,7 @@ image fin_touch:
     "fin_touch0001.jpg"
     0.2
     repeat
+    ##################################################### Deep impact
 image deepimpact_head:
     "deepimpact_head0000.jpg"
     0.2

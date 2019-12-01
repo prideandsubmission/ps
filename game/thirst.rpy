@@ -96,7 +96,7 @@ label water_80_first:  ##only for the first time
     $ene -=20
     $pride -=1
     $mental -=1
-    $first = False
+    $firstwater = False
     jump sim
     
 label water_80:

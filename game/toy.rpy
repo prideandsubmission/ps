@@ -59,12 +59,13 @@ label toy_thrust_first:
     p "aahhh..."
     d "It was fun playing with you prince. Sorry about the sword. Its function has been changed now."
     p "aa...n..."
-    "[p] is exhausted physically and mentally. His hunger and thirst increase. His psyche and pride decrease."
+    "[p] is exhausted physically and mentally. His hunger, thirst and dirtiness increase. His psyche and pride decrease."
     $toyfirst = False
     $mental -=3
     $pride -=3
     $ene -=50
     $food -=2
+    $clean-=3
     $water -=5
     jump sim
     
@@ -99,12 +100,13 @@ label toy_thurst:
     p "aa...n...haaa..."
     d "Nice face. It suits you."
     p "...m..."
-    "[p] is exhausted physically and mentally. His hunger and thirst increase. His pride mand psyche decrease"
+    "[p] is exhausted physically and mentally. His hunger, thirst and dirtiness increase. His pride mand psyche decrease"
     $mental -=3
     $pride -=3
     $food -=2
     $water -=5
     $ene -=50
+    $clean-=3
     jump sim
     
 label toy_hook:
@@ -150,12 +152,13 @@ label toy_hook:
     p "...F-fuck..."
     d "You still seems fine to me. Very lively!"
     p "...n...ahhh..."    
-    "[p] exhausted physicaly an mentally. His hunger and thirst increase. His psyche and pride decrease."
+    "[p] exhausted physicaly an mentally. His hunger, thirst and dirtiness increase. His psyche and pride decrease."
     $water -=15
     $food -=5
     $mental -=5
     $pride -=5
     $ene -=50
+    $clean-=4
     jump sim
        
 label toy_obe:
@@ -244,10 +247,11 @@ label toy_obe:
     show m_shame at s
     show m_m_sexopen at s
     show m_blush at s
-    "[p] exhausted physicaly an mentally. His hunger and thirst increase. His pride and psyche decrease."
+    "[p] exhausted physicaly an mentally. His hunger, thirst and dirtiness increase. His pride and psyche decrease."
     $mental -=5
     $pride -=7
     $food -=10
     $water -=20
+    $clean-=4
     $ene -=50
     jump sim

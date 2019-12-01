@@ -1316,15 +1316,17 @@ label lethimrest:
     hide m_close
     hide m_beaten7 
     hide m_m
+    hide m_cockup
     hide m_shame 
     hide m_blush 
     hide m_sick 
-    show m_tired at s
-    show m_beaten7 at s
-    show m_m at s
-    show m_shame at s
-    show m_blush at s
-    show m_sick at s
+    show m_tired 
+    show m_beaten7 
+    show m_m 
+    show m_shame 
+    show m_blush 
+    show m_sick 
+    show m_cockup
     p "..."
     "The vines tie him up."
     scene darkforest with dissolve
@@ -2651,13 +2653,23 @@ label extreme:
 ## 10< clean <=30    Comment out by ...
     
 ## 0< clean <=30
-label bath30:    
+label bath30:  
     p "[d]"
     d "What is it [p]? Why do you look so desperate?"
+    show m_tired at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sexopen at s
     p "I-I need to bath. Please [d]"
+    hide m_m_sexopen
+    show m_m_clench at s
     d "Hmmph..."
     p "..."
+    hide m_m_clench
+    show m_m at s
     "[d] ignores [p]'s request."
+    hide m_m
+    show m_m_sexopen at s
     p "[d]!"
     scene pull_day with vpunch
     d "Haven't you learn you lessons? Dare to nag me!"
@@ -2669,11 +2681,16 @@ label bath30:
     menu:
         "Dirty him":
             d "Pitchy!"
-            "From above, tons of white fluid spill from Pitchy" with hpunch
+            "From above, Pitchy prepare to dirty [p]" with hpunch
+            scene darkforest
+            show m_surprise at s
+            show m_shame at s
+            show m_sick at s
+            show m_m_sexopen at s
             p "N-NO! Please stop!"
             menu:
                 "Stop":
-                    "The fluid stopped"
+                    "[d] looks at Pitchy. It stops."
                     scene fin_mouthb with dissolve
                     d "If I said \"No\", it's a \"No\", got it?"
                     p "Y-Yes..."
@@ -2685,39 +2702,90 @@ label bath30:
                     d "Being submissive like this is good."
                     jump sim
                 "Don't stop":
+                    scene darkforest with vpunch
+                    show m_tired at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_m_sexopen at s
+                    show m_sperm at s
+                    p "Urgh!" with hpunch
+                    hide m_surprise 
+                    hide m_shame 
+                    hide m_sick 
+                    hide m_m_sexopen 
+                    hide m_sperm 
+                    show m_tired at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_m_sexopen at s
+                    show m_sperm at s
                     p "P-Please stop [d], if this continue..."
+                    hide m_m_sexopen
+                    show m_m_sexclench1 at s
+                    show m_pitchy_sperm at s
+                    "Pitchy dirties [p] more" with vpunch
+                    p "S-s..."
                     "[d] kicks [p]'s head" with hpunch
+                    show m_beaten2 at s
+                    hide m_m_sexclench1
+                    show m_m_sexclench3 at s
                     p "Ngh!"
-                    d "You are too noisy."
-                    p "I-I'm sorry."
-                    "[d] smirks"
+                    d "Noisy brat!"
+                    jump bath
         "Pitchy bathe him":
             menu:
                 "Bath":
                     jump bath_pitchy
                     
                 "Bath & fuck":
+                    scene darkforest with hpunch
+                    show m_surprise at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_m_sexopen at s
+                    p "!" with hpunch
+                    scene darkforest with vpunch
+                    show m_pitchy with hpunch
                     d "Pitchy! Bathe him. Play with him till you're bored."
+                    scene darkforest with vpunch
+                    show m_pitchy
+                    p "Uhmm...Uhm..."
                     "Suddenly, the vines wrap tightly around [p], he cannot see a thing." with vpunch
-                    p "!"
-                    "[p] found himself being moved at an incredible speed." with hpunch
+                    scene sky with hpunch
+                    "[p] found himself being moved at an incredible speed." with vpunch
                     scene under with vpunch
+                    scene under at zoomin
+                    show m_pitchy at zoom_opa
+                    show thunder at infinite_flash
+                    show sky at infinite_flash
                     "From out of nowhere, he was pushed down deep under water, then pulled up, down, up, down, up, again and again and again"
+                    hide m_pitchy
+                    show m_pitchy_blush at zoom_opa
                     p "Urgh! Hgh!"
-                    "[p] cannot says even a single word. If he open his mouth just once, water will fill his lung."
-                    p "Hgh! Mgh!"
                     "After a while, Pitchy finally stops."
-                    p "...Haaa...aaa..."
-                    p "!"
+                    scene sky
+                    show m_pitchy_blush
+                    p "...H...ngha..."
+                    p "!" with hpunch
                     scene vinecock
+                    "Pitchy releases [p] and starts to play with him"
                     p "(F-Fuck! This damn plant)"
                     scene vinecockfast
                     p "M!! Ngh!"
                     p "(S-stop!)"
-                    scene vinecockcum
-                    p "Urgh!"
+                    scene vinecockcum with vpunch
+                    p "Urgh!" 
+                    "Pitchy continues to bathe him until that night."
+                    p "Nhppppppphhhhhhhhh...."
+                    "[p] thirst, hunger, pride and psyche decrease."
+                    $food +=4
+                    $water +=4
+                    $mental +=5
+                    $pride +=4
+                    jump justendday
         "Ignore":
             "[d] completely ignores [p]"
+            jump sim
  ###########################################################################################  Pitchy bathe #############   
  
 label bath_pitchy:

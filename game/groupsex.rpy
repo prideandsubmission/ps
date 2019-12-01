@@ -501,6 +501,7 @@ label group1: #pride+mental <50
             $pride -=40
             $water-=20
             $food -=15
+            $clean -=10
             scene black with flash
             "[p] passes out while licking [d]'s foot. Both his pride and psyche were crushed badly. His tears still comeout, even though he unconsious."
             "[d] let him rest for a day."
@@ -688,13 +689,14 @@ label group1: #pride+mental <50
             p "Urgh! Mgh!"
             "The monsters fuck [p] till night."
             scene black with flash
-            "[d] lets [p] rest the next day."
+            "[d] lets [p] rest the next day. His dirtiness increase"
             $group_nobaby =True
             $mental -=4
             $pride -=4
             $water-=20
             $food -=15
             $day +=2
+            $clean -=7
             jump jumpsim
      #################################################################################################################################################################################       
 label group2: #<30
@@ -1403,7 +1405,7 @@ label group2: #<30
     show m_cockup
     d "That's my good boy! See you tomorrow"
     p "..."
-    "[p]'s pride and psyche decrease badly."
+    "[p]'s pride and psyche decrease badly. His dirtiness increases."
     scene black with dissolve
     "[p] rest for the rest of the day."
     $mental -=10
@@ -1411,6 +1413,7 @@ label group2: #<30
     $day -=1
     $water -=7
     $food -=5
+    $clean -=10
     jump jumpsim
   #####################################################################################################################################################################33  
 label group2_nobaby:
@@ -1858,7 +1861,7 @@ label group2_nobaby:
     show m_cockup
     d "That's my good boy! See you tomorrow"
     p "..."
-    "[p]'s pride and psyche decrease badly."
+    "[p]'s pride and psyche decrease badly. His dirtiness increases."
     scene black with dissolve
     "[p] rest for the rest of the day."
     $mental -=10
@@ -1866,5 +1869,6 @@ label group2_nobaby:
     $day -=1
     $water -=7
     $food -=5
+    $clean-=7
     jump jumpsim
     

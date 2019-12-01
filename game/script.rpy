@@ -42,7 +42,6 @@ label start:
             "Where do you want to skip to?"
             menu:
                 "The sim":
-                    
                     $p = renpy.input("Your name is...(press enter to use the default name)", "Ray", length=20)
                     $d = renpy.input("The monster's name is...(press enter to use the default name)", "Dietrick", length=20)
                     $water =30
@@ -53,20 +52,21 @@ label start:
                     $pride = 90
                     $day = 4
                     $fuckoff =0
-                    $clean = 25
+                    $clean = 90
                     play music "Angevin.mp3"
                     jump sim
                 "End of the sim":
                     $p = renpy.input("Your name is...(press enter to use the default name)", "Ray", length=20)
                     $d = renpy.input("The monster's name is...(press enter to use the default name)", "Dietrick", length=20)
                     $water =90
+                    $firstwater = False
                     $food =90
                     $ene =100
                     $nothing =1
                     $mental = 0
                     $pride = 0
                     $day = 50
-                    $clean = 25
+                    $clean = 40
                     play music "Angevin.mp3"
                     jump sim
                 "No skiping":
@@ -1228,7 +1228,7 @@ label start:
     $day =4
     $fuckoff =0
     $nothing =1
-    $clean = 100
+    $clean = 90
     $bath = 0
     jump sim
                       

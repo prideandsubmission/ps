@@ -31,10 +31,16 @@ label justendday:
     pause .5
     "[p] still haven't recover from yesterday. [d] lets him rest for a day."
     $day +=1
+    $clean = 100
     jump newday
     
 label endday:
-    if water >=60:
+    if firstMos == 1:
+        if clean<=30 and clean>0:
+            jump bath30
+    elif clean <=0:
+        jump bath
+    elif water >=60:
         show m_tired at s
         show m_shame at s
         show m_m_open2 at s
@@ -132,8 +138,9 @@ label endday:
                     d "Dogs urine mark when they become highly aroused, overstimulate or having anxiety. I wonder what it is in your case."
                     p "...F-fuck.."
                     $water -=10
+                    $clean -=5
                     jump controlnote
-                    "[p]'s psyche and pride decrease"
+                    "[p]'s psyche and pride decrease. He becomes dirtier"
                     jump newday
                 else:
                     d "Hurry dog. You know what happens if I wait too long."
@@ -186,11 +193,12 @@ label endday:
                             d "Seems like you understand your place now."
                             d "Remmember this well. Now you are even lower than a dog." 
                             "[p] exausted physically. His pride and psyche decrease dramatically."
-                            "His thirst increases for eating dirt and piss."
+                            "His thirst increases for eating dirt and piss. He becomes dirtier."
                             p "..."
                             $water -=20
                             $pride -=15
                             $mental -=15
+                            $clean -=7
                             jump controlnote
                             
                         "Spare him":
@@ -220,11 +228,12 @@ label endday:
                             d "Huh?"
                             p "..."
                             d "Hahaha! Seem like your master trained you well."
-                            "[p] exausted physically. His pride and psyche decrease."
+                            "[p] exausted physically. His pride and psyche decrease. He becomes dirtier"
                             p "..."
                             $water -=10
                             $pride -=10
                             $mental -=10
+                            $clean -=5
                             jump controlnote
     elif nothing >= 4:
         show m at s
@@ -249,13 +258,9 @@ label endday:
         show m_shame at s
         show m_blush at s
         p"..."
-        "[p] feel ashame of himself. His pride decreases."
+        "[p] feels ashamed of himself. His pride decreases."
         $ nothing = 1
         jump controlnote
-    elif clean<=30 and clean>0:
-        jump bath30
-    elif clean <=0:
-        jump bath
     else:            
         d "Let's let him rest."
         jump controlnote

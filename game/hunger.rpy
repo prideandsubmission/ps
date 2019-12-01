@@ -85,7 +85,7 @@ label hunger_1:
     show m_blush at s
     show m_m_sexopen at s
     p "Fuck!"
-    "[p] is exhausted physically. His hunger and thirst increase. His psyche decrease."
+    "[p] is exhausted physically. His hunger, thirst and dirtiness increase. His psyche decrease."
     hide screen day
     hide screen stat
     scene black with fade
@@ -93,6 +93,7 @@ label hunger_1:
     $food -=5
     $water -=10
     $ene -=40
+    $clean-=2
     jump sim
     
 label hunger_2:
@@ -143,7 +144,7 @@ label hunger_2:
     show m_m_clench2 at s
     p "(Fuck! I'll definitely kill you!)"
     "[p] feels ashamed of himself. His pride and psyche decrease. His hunger decreases."
-    "[p]'s thirst increase for eating dirt."
+    "[p]'s thirst and dirtiness increase."
     hide screen day
     hide screen stat
     scene black with fade
@@ -153,6 +154,7 @@ label hunger_2:
     $water -=5
     $pride -=1
     $ene -=40
+    $clean-=3
     scene black with dissolve
     jump sim
     
@@ -190,10 +192,9 @@ label hunger_obe:
     d "Good job! Now you can have your meal."
     hide food_tram_sperm
     p "..."
-   
-    
+
     "[p] is exhausted physically and mentally. His pride and psyche decrease. His hunger decrease."
-    "[p]'s thirst increases for eating dirt."
+    "[p]'s thirst and dirtiness increases"
     hide screen day
     hide screen stat
     scene black with fade
@@ -203,4 +204,5 @@ label hunger_obe:
     $mental -=2
     $pride -=3
     $ene -=20
+    $clean -=3
     jump sim

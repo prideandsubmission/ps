@@ -32,7 +32,7 @@ label simbutton:
                         if ene <= 0:
                             jump endday
                         else:
-                            if first:
+                            if firstwater:
                                 jump water_80_first
                             else:
                                 if mental<=50 and pride<=50 and water>0:
@@ -53,7 +53,7 @@ label simbutton:
                                 else:
                                     jump water_90
                                         
-                                       
+           
                     "Feed":
                         if ene <= 0:
                             jump endday
@@ -67,11 +67,7 @@ label simbutton:
                                 jump hunger_1
                             else:
                                 jump hunger_2
-                                
-                                
-                            
-
-                                        
+                 
                     "Return":
                 
                         jump simbutton
@@ -136,113 +132,49 @@ label simbutton:
                         jump simbutton
                             
             "Sex":
-                if group_baby ==True:
-                    menu:
-                        "Oral":
-                            if ene <=0:
-                                jump endday
+               
+                menu:
+                    "Oral":
+                        if ene <=0:
+                            jump endday
+                        else:
+                            $clean -=1
+                            if mental>=95:
+                                jump cock_none
+                            elif 95>mental>=75:
+                                jump cock_1
+                            elif 75>mental>=50:
+                                jump cock_2
                             else:
-                                $clean -=1
-                                if mental>=95:
-                                    jump cock_none
-                                elif 95>mental>=75:
-                                    jump cock_1
-                                elif 75>mental>=50:
-                                    jump cock_2
+                                jump cock_obe
+                        
+                    "Anal":
+                        if ene <=0:
+                            jump endday
+                        else:
+                            $clean -=2
+                            if mental>=90:
+                                jump ass_none
+                            elif 90>mental>=80:
+                                jump ass
+                            elif 80>mental>=50:
+                                if firsttime:
+                                    jump ass_nine
                                 else:
-                                    jump cock_obe
-                            
-                        "Anal":
-                            if ene <=0:
-                                jump endday
+                                    jump ass_nine2
                             else:
-                                $clean -=2
-                                if mental>=90:
-                                    jump ass_none
-                                elif 90>mental>=80:
-                                    jump ass
-                                elif 80>mental>=50:
-                                    if firsttime:
-                                        jump ass_nine
-                                    else:
-                                        jump ass_nine2
-                                else:
-                                    jump ass_obe
-                        "Group Sex":
-                            $clean +=5
-                            jump group2
-                        "Return":
-                            jump simbutton
-                elif group_nobaby ==True:
-                    menu:
-                        "Oral":
-                            if ene <=0:
-                                jump endday
-                            else:
-                                $clean -=1
-                                if mental>=95:
-                                    jump cock_none
-                                elif 95>mental>=75:
-                                    jump cock_1
-                                elif 75>mental>=50:
-                                    jump cock_2
-                                else:
-                                    jump cock_obe
-                            
-                        "Anal":
-                            if ene <=0:
-                                jump endday
-                            else:
-                                $clean -=2
-                                if mental>=90:
-                                    jump ass_none
-                                elif 90>mental>=80:
-                                    jump ass
-                                elif 80>mental>=50:
-                                    if firsttime:
-                                        jump ass_nine
-                                    else:
-                                        jump ass_nine2
-                                else:
-                                    jump ass_obe
-                        "Group Sex":
-                            jump group2_nobaby
-                        "Return":
-                            jump simbutton
-                else:
-                    menu:
-                        "Oral":
-                            if ene <=0:
-                                jump endday
-                            else:
-                                $clean -=1
-                                if mental>=95:
-                                    jump cock_none
-                                elif 90>mental>=75:
-                                    jump cock_1
-                                elif 75>mental>=50:
-                                    jump cock_2
-                                else:
-                                    jump cock_obe
-                            
-                        "Anal":
-                            if ene <=0:
-                                jump endday
-                            else:
-                                $clean -=2
-                                if mental>=90:
-                                    jump ass_none
-                                elif 90>mental>=80:
-                                    jump ass
-                                elif 80>mental>=50:
-                                    if firsttime:
-                                        jump ass_nine
-                                    else:
-                                        jump ass_nine2
-                                else:
-                                    jump ass_obe
-                        "Return":
-                            jump simbutton
+                                jump ass_obe
+                    "Group Sex" if group_baby ==True:
+                        $clean +=5
+                        jump group2
+                        
+                    "Group Sex" if group_nobaby ==True:
+                        jump group2_nobaby
+                        
+                    "Return":
+                        jump simbutton
+            
+               
                                 
             "Test mind control":
                 if mental <=0 and pride <=0:
