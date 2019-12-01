@@ -25,7 +25,12 @@ label faint:
 ################################################################################################################################################################################################ End day
 label justendday:
     $firstMos =1
-    "The day quickly went by."
+    hide screen day
+    hide screen stat
+    scene black with dissolve
+    pause .5
+    "[p] still haven't recover from yesterday. [d] lets him rest for a day."
+    $day +=1
     jump newday
     
 label endday:
@@ -287,7 +292,7 @@ label newday:
     $day +=1
     $water -=7
     $food -=5
-    scene black with fade
+    scene black with dissolve
     pause .5
     if ene>=100:
         $nothing +=1

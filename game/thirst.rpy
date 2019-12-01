@@ -148,7 +148,7 @@ label water_90:
     hide m_m1
     show m_m_open1 at left
     p "Like you would let me."
-    d "What a surprise. You are not as dump as I thought."
+    d "What a surprise. You are not as dumb as I thought."
     hide m_cockdown
     show m_close at left
     show m_cockdown at left

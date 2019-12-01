@@ -10,7 +10,8 @@ default showday = False
 default show = False
 default firstwater = True # if this is the first time water                  country name:   Rivakh
 default firsttime = True # if this is the first time Anal
-default firstMos = 0 # Mosquito monsters meeting, =0 at first
+default firstMos = 0 # BATH Mosquito monsters meeting, =0 at first
+default bath_just_enough = False # BATH wrech him enough 
 default toyfirst = True # if this is the first time with Sword
 default group_baby = False
 default group_nobaby = False
@@ -52,7 +53,7 @@ label start:
                     $pride = 90
                     $day = 4
                     $fuckoff =0
-                    $clean = 100
+                    $clean = 25
                     play music "Angevin.mp3"
                     jump sim
                 "End of the sim":
@@ -65,7 +66,7 @@ label start:
                     $mental = 0
                     $pride = 0
                     $day = 50
-                    $clean = 0
+                    $clean = 25
                     play music "Angevin.mp3"
                     jump sim
                 "No skiping":
@@ -74,9 +75,9 @@ label start:
     play music "Thaxted.mp3" fadeout 3.0
     scene cg1
 
-    "Once upon a time, there was a young boy.\nThis youth is far more serious then all the others his age. \nWhatever he does, he always succeeds. \nWhatever he wants, he always gets." 
+    "Once upon a time, there was a young boy.\nThis youth was far more serious than all the other his age. \nWhatever he does, he always succeeds. \nWhatever he wants, he always gets." 
     "When he enrolled in the army, everyone opposed his decision due to his age, but he was having none of that—he does as he pleases." 
-    "After demonstrated his skill, he immediately silenced his opposition. Years later, at the tender age of twenty, he became a general and was known as one of the strongest man alive in Rivakh."
+    "After demonstrated his skill, he immediately silenced his opposition. Years later, at the tender age of twenty, he became a general and was known as one of the strongest men alive in Rivakh."
     "He and the king rarely talk to each other. \nAnd if they do, it usually becomes a big fight, resulting in him being thrown out. \nIt is shocking to see, but not surprising that he is the king’s son, the first heir."
     "Unlike his younger half-brother, who is always smiling and loved by everyone, this prince is either feared or hated."
     "Arrogant, stubborn, unpleasant, suspicious, demanding, repulsive, quick-tempered. \nThat’s how everyone describes him... \n..No wonder, despite his capability, the king chose Ren, the younger brother to be the next king."
@@ -171,17 +172,17 @@ label start:
             m "Oh, it’s a human. Human. HUMAN!" with hpunch
             "The monsters attack him. \nThese monsters are stronger than the monsters he faced before. \nBut he is still stronger than them. " with vpunch
             "Monster girl \"Thank you very much!\""
-            "he girl suddenly attacks him. He evades and slashes her." with hpunch
+            "The girl suddenly attacks him. He evades and slashes her." with hpunch
             p "Like I couldn’t figure out it would turn out like this."
             m "Retard, you just disrupted my show!"
             p "What now?"
             p "\(Why are there so many monsters here?\)"
-            "he prince turns his head to see a normal sized monster. \nHis aura is even weaker than the small demon he just met. \nSo weak that he cannot even feel his presence."
+            "The prince turns his head to see a normal sized monster. \nHis aura is even weaker than the small demon he just met. \nSo weak that he cannot even feel his presence."
             p "Normally, I don’t beat weaklings, but your tone is annoying for a fly."
             m "Annoying? Me?"
             p "Either run or bow down and beg now if you don’t want to be tortured to death."
             m "Wow, sir, I’m so scared. Can you show mercy on me?"
-            "Like lighting, the prince slashes the monster. When the monster fall to the ground, he kicks its wound rapidly and steps on its face." with vpunch
+            "Like lighting, the prince slashes the monster. When the monster falls to the ground, he kicks its wound rapidly and steps on its face." with vpunch
             p "Let's have some fun." with hpunch
             m "Like what?"
             "The prince stabs the monster’s hand, blood spews out." with vpunch
@@ -190,12 +191,12 @@ label start:
             m "Ouch! That hurts!" 
             p "Hm?"
             "He steps on the monster’s cock." with vpunch
-            p "Hahaha, do monsters always like this? Hard while being tortured?\nSuch a disgusting race!"
+            p "Hahaha, are monsters always like this? Hard while being tortured?\nSuch a disgusting race!"
         "Ignore":
             "The prince continues to drink water. Fifteen minutes later, the screaming still continues."
             m "Argh.. Help!" 
             p "So noisy!" 
-            "The prince feels like he is being watch." 
+            "The prince feels like he is being watched." 
             p"Who’s there?"
             "A monster walks out."
             m "You’re not gonna help her? I thought humans are all about morals." 
@@ -203,7 +204,7 @@ label start:
             p "Get out of my sight." 
             "The monster draws close to him. \nThe prince didn’t move. \nThis monster’s aura is even weaker than the small demon."
             m "What makes a human come to this place alone?" 
-            p "Get out before I kill you."
+            p "Go away before I kill you."
             "The monster holds and looks at his sword"
             "This is a good one."         
             p "(since when?)\nThe prince takes his sword back and slashes the monster.\n The monster falls to the ground, covered in blood." with vpunch
@@ -212,7 +213,7 @@ label start:
             "The monster laughs"
             m"No one’s ever spoken to me like that before."
             p"Either run or bow down and beg now if you don’t want to be beat to death."
-            m"Sir, I’ve just being slashed. Can’t run or bow down now. I can beg you instead?"
+            m"Sir, I’ve just being slashed. I cant run or bow down now. Can I beg you instead?"
             "The prince kicks the monster’s wound repeatedly and steps on its face." with hpunch
             p"Beg me!"
             m"Please let me go!"
@@ -234,7 +235,7 @@ label start:
     p "How confident!"
     hide vine with dissolve
     show vinek at left with flash
-    "TThe prince use his dagger to swiftly cut the vines. He quickly picks up his sword and stabs the monster in a swift motion" with hpunch
+    "TThe prince uses his dagger to swiftly cut the vines. He quickly picks up his sword and stabs the monster in a swift motion" with hpunch
     p "Die, you bastard!" with vpunch
     "The monster disappeared. The very earth itself rises up to form a hand, slamming down his whole body." with hpunch
     hide vinek
@@ -272,7 +273,7 @@ label start:
     hide m_beaten4
     show trample 
     "Poor thing, you muuussst have been hurt a lot. Let me caress you"
-    "The monster presses his foot at the prince’s private area."
+    "The monster presses his foot on the prince’s private area."
     show m_break4:
         zoom 0.8
         ypos 600
@@ -474,7 +475,7 @@ label start:
     hide m_m_sexclentc2
     show m_head_hurt at left
     show m_beaten6 at left
-    "[p] tries to get up but he can’t. He was beaten up so badly. \nNever in his life had he been though a shameful situation as this. \nHe wants to cut that monster into thousand pieces and burn what’s left."
+    "[p] tries to get up but he can’t. He was beaten up so badly. \nNever in his life had he been though a shameful situation as this. \nHe wants to cut that monster into a thousand pieces and burn what’s left."
     hide m_head_hurt
     hide m_beaten6
     show m_head_surprise at left
@@ -511,7 +512,7 @@ label start:
     hide m_m
     show m_m_clench at left
     p "Fuck you! Don't joke with me!" 
-    "Ray feels thirsty. So thirsty as if he could die. \nThe demon boy throw Ray’s backpack at him." 
+    "Ray feels thirsty. So thirsty as if he could die. \nThe demon boy throws Ray’s backpack at him." 
     hide n
     show n_smile2 with dissolve:
         xpos 750
@@ -677,7 +678,7 @@ label start:
     hide vinehead_blush
     show vinehead_blush2:
         xpos-50
-    p "In your dream you lowly monster! Don't make me laugh!"
+    p "In your dreams you lowly monster! Don't make me laugh!"
     d "Hahahahahahaha! Hahahaha!"
     d "If I'm a lowly monster, who are you sir prince?"
     "[d] tears [p]'s clothing off."
@@ -824,7 +825,7 @@ label start:
     show m_blush at left
     p "...H!...You!"
     "[d] smiles."
-    d "Listen kid. Being stubborn with me never work. I'm actually pretty good at teaching manners to rebellious brats."
+    d "Listen kid. Being stubborn with me will never work. I'm actually pretty good at teaching manners to rebellious brats."
     d "Stretch his cock Pitchy."
     hide m_m_sexclench1
     hide m_cockup
@@ -1151,7 +1152,7 @@ label start:
             show vinecocktree
             p "m...n.."
             p "..."
-            "[p] seems like he is about to die from lack of breath."
+            "[p] is about to die from being unable to breathe."
             d "Release him! Gently! Our helpless princess seems to be one step from Hell’s door"
             "The vines slowly drag [p] to the ground" 
             scene darkforest

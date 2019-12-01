@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/bath.rpy", line 435: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    p "Arghhhhhhhh.....Aaaaaaaaaaaaaaaaa....Arghhhhhhhh.....Aaaaaaaaaaaaaaaaa...."
-    ^
+File "game/bath.rpy", line 2934: expected 'image_name_component' not found.
+    show show m_m_scream at s
+        ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Fri Nov 29 12:47:02 2019
+Sat Nov 30 23:39:43 2019

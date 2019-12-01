@@ -924,7 +924,7 @@ image tie_looka:
     "tie_looka0010.jpg"
     0.1
     repeat
-    
+ ###################################################### water ##########################   
 image water:
     "water0001.jpg"
     0.1
@@ -947,7 +947,28 @@ image water:
     "water0010.jpg"
     0.1
     repeat
-    
+image water_lick_cock:
+    "water_lick_cock0001.jpg"
+    0.1
+    "water_lick_cock0002.jpg"
+    0.1
+    "water_lick_cock0003.jpg"
+    0.1
+    "water_lick_cock0004.jpg"
+    0.1
+    "water_lick_cock0005.jpg"
+    0.1
+    "water_lick_cock0006.jpg"
+    0.1
+    "water_lick_cock0007.jpg"
+    0.1
+    "water_lick_cock0008.jpg"
+    0.1
+    "water_lick_cock0009.jpg"
+    0.1
+    "water_lick_cock0010.jpg"
+    0.1
+    repeat
 image water_wait:
     "water_wait0001.jpg"
     0.1
@@ -4332,6 +4353,16 @@ image bath_blow:
     .1
     "bath_blow_head0004.jpg"
     .1
+    "bath_blow_deep0000.jpg"
+    .1
+    "bath_blow_deep0001.jpg"
+    .1
+    "bath_blow_deep0002.jpg"
+    .1
+    "bath_blow_deep0003.jpg"
+    .1
+    "bath_blow_deep0004.jpg"
+    .1
     "bath_blow_head0005.jpg"
     .1
     "bath_blow_head0006.jpg"
@@ -4343,16 +4374,6 @@ image bath_blow:
     "bath_blow_head0009.jpg"
     .1
     "bath_blow_head0010.jpg"
-    .1
-    "bath_blow_deep0000.jpg"
-    .1
-    "bath_blow_deep0001.jpg"
-    .1
-    "bath_blow_deep0002.jpg"
-    .1
-    "bath_blow_deep0003.jpg"
-    .1
-    "bath_blow_deep0004.jpg"
     .1
     repeat
 image bath_blow_deep:
@@ -4464,10 +4485,6 @@ image bath_blow_all:
     .1
     "bath_blow_head0008.jpg"
     .1
-    "bath_blow_head0009.jpg"
-    .1
-    "bath_blow_head0010.jpg"
-    .1
     "bath_blow_deep0000.jpg"
     .1
     "bath_blow_deep0001.jpg"
@@ -4496,15 +4513,17 @@ image bath_blow_all:
     .1
     "bath_blow_deep0013.jpg"
     .1
-    "bath_blow_deep0006.jpg"
-    .1
-    "bath_blow_deep0005.jpg"
-    .1
-    "bath_blow_deep0004.jpg"
-    .1
-    "bath_blow_deep0003.jpg"
-    .1
     "bath_blow_deep0002.jpg"
+    .1
+    "bath_blow_deep0001.jpg"
+    .1
+    "bath_blow_head0005.jpg"
+    .1
+    "bath_blow_head0006.jpg"
+    .1
+    "bath_blow_head0007.jpg"
+    .1
+    "bath_blow_head0008.jpg"
     .1
     repeat
 ############################################################################## bath gentle #######################   

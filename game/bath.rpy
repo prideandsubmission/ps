@@ -31,58 +31,111 @@ label bath:
         show m_m_sexopen at s
         show m_beaten2 at s
         p "Urgh! Mrg! N!" with hpunch
+        hide m_m_sexopen
+        hide m_tired 
+        hide m_beaten2 
+        show m_surprise at s
+        show m_m_scream1 at s
+        show m_beaten2 at s
+        p "Fuck!! STOP HITTING!!!" with vpunch
+        hide m_m_scream1
+        hide m_tired 
+        hide m_beaten2 
+        show m_tired at s
+        show m_beaten2 at s
+        show m_m_clench2 at s
+        show m_blush at s
+        p "Ngh!" with hpunch
+        d "Oh, I didn't know you can order me." 
+        hide m_beaten2
+        hide m_m_clench2
+        hide m_blush 
+        show m_hurt at s
+        show m_m_sexclench1 at s
+        show m_beaten3 at s 
+        show m_blush at s
+        "[d] beats [p] rapidly." with vpunch
         scene darkforest
         show m_hurt at s
         show m_m at s
         show m_beaten3 at s 
+        show m_blush at s
         "The monster is too strong. Each time he beats [p], he thinks his brain might fall out." with vpunch
         p "N!" with vpunch
-        show m_tired at s
-        show m_m_sexopen at s
+        d "Bitch!"
+        hide m_blush
+        show m_surprise at s
+        show m_m_scream at s
         show m_beaten4 at s
-        "This is the first time in his life [p] felt so hopeless."
+        show m_blush at s
+        p "FUCK! STOP! WHO ARE YOU TO HURT ME? YOU DISGUSTING MONSTER!!!" with hpunch
         hide m_beaten4
+        hide m_blush
+        hide m_surprise
+        hide m_m_scream
+        show m_tired at s
+        show m_beaten5 at s
+        show m_m_sexclench3 at s
+        show m_blush at s
+        p "Urg!" with vpunch
+        d "What an arrogant toilet. Forget your position so easily." 
+        hide m_beaten5
         hide m_tired
+        hide m_blush
+        hide m_m_sexclench3
         show m_close at s
         show m_m_sexclench1 at s
-        show m_beaten4 at s 
-        "Being tied here like a rat in trap, being fed and fucked worse than an animal, getting beaten for no reason. Yet he can only endure the pain and wish for it to be over soon."
-        "Sometimes, he thinks about giving up and becoming obedient, let the monster rule over him while looking for an escape plan."
-        "But he couldn't do even that. His pride won't allow it"
-        hide m_beaten4
+        show m_beaten5 at s 
+        show m_blush at s
+        show m_sick at s
+        "[d] beats [p] till he becomes dizzy and doesn't have anymore strength to shout."with hpunch
+        hide m_sick
+        hide m_beaten5
         hide m_m_sexclench1
+        hide m_blush at s
         show m_tired at s
         show m_m_1 at s
-        show m_beaten4 at s
-        p "(Shit! He's too strong...)"
+        show m_beaten5 at s
+        show m_blush at s
+        show m_sick at s
+        p "..n..."
+        p "(F-fuck...)"
+        "[p] curses himself for leting a lowly monster cages and chain him like a dog. He angry with himself for let the monster fed,fucked and toy him worse than an animal, then beated him half-dead everyday."
         hide m_m_1
         hide m_m_sexopen
-        show m_m_sexopen at s
-        "[p]'s head feels heavy and dizzy"
+        show m_m_sexclench3 at s
+        p "..."
         hide m_tired
-        hide m_beaten4
-        hide m_m_sexopen
+        hide m_sick
+        hide m_beaten5
+        hide m_m_sexclench3
         show m_close at s
-        show m_beaten4 at s
+        show m_beaten5 at s
         show m_blush at s
         show m_m_sexclench1 at s
-        d "Why don't you say anything prince? Overwhelmed? What a weakling!"
+        show m_sick at s
+        d "Why don't you say anything prince? Dead already? What a weakling!"
         scene darkforest
+        hide m_blush
         show m at s
         show m_m_1 at s
-        show m_beaten7 at s
+        show m_beaten5 at s
+        show m_blush at s
         "[p] angrily glances at [d]."
-        hide m_beaten7 at s
+        hide m_blush
+        hide m_beaten5 at s
         show m_tired at s
         show m_m_sexclench1 at s
-        show m_beaten7 at s
+        show m_beaten5 at s
         show m_blush at s
-        "[d] stamps on his head." with hpunch
+        "[d] brutally beats him." with hpunch
         hide m_blush 
+        hide m_beaten7
         hide m_m_sexclench1
         show m_m_sexclench3 at s
         show m_blush at s
-        p "Urg!"
+        show m_beaten7 at s
+        p "Urg!" with vpunch
         hide m_blush
         hide m_close 
         hide m_m_sexclench3
@@ -100,14 +153,14 @@ label bath:
         hide m_m_sexopen
         show m_surprise at s
         show m_m_sexclench3 at s
-        show m_beaten5 at s
+        show m_beaten7 at s
         show m_shame at s
         p "S-stop!"
-        d "Seems like you feel it."
+        d "You like it?."
         "The monster continues."
         hide m_m_sexclench3
         hide m_surprise
-        hide m_beaten5
+        hide m_beaten7
         hide m_shame
         show m_close at s
         show m_m_sexclench3 at s
@@ -125,7 +178,7 @@ label bath:
         show m at s
         show m_m_sexopen at s
         show m_shame at s
-        show m_beaten5 at s
+        show m_beaten7 at s
         p "Shut u.."
         d "I don't understand why you can still live comfortably being dirty like this."
         hide m_beaten7
@@ -135,31 +188,43 @@ label bath:
         show m_beaten7 at s
         show m_shame at s
         p "F-Fuck you! Release me!"
+        hide m_surprise
+        hide m_m_scream1 
+        hide m_beaten7 
+        hide m_shame 
+        show m_hurt at s
+        show m_m at s
+        show m_beaten7 at s
+        show m_shame at s
+        p "..."
         scene darkforest
         show m_surprise at s
-        show m_m_sexclench2 at s
+        show m_m at s
         show m_blush at s
-        show m_beaten5 at s
+        show m_beaten7 at s
+        p "?!"
         "[d] touches [p]'s inner thigh."
         hide m_blush
         hide m_beaten7
+        hide m_m
         show m_close at s
         show m_m_sexopen at s
         show m_blush at s
-        show m_beaten5 at s
+        show m_beaten7 at s
         show m_shame at s
         p "M.."
+        hide m_m_sexopen at s
+        show m_m1 at s
+        d "Do you want to have a bath?"
+        hide m_m1
         hide m_blush 
         hide m_beaten7 
         hide m_shame 
         hide m_m_sexopen
         show m_tired at s
-        show m_m_sexopen at s
         show m_blush at s
-        show m_beaten5 at s
+        show m_beaten7 at s
         show m_shame at s
-        d "Do you want to have a bath?"
-        hide m_m_sexopen
         show m_m1 at s
         p "..."
         d "Huh?"
@@ -222,180 +287,184 @@ label bath:
 ########################################################################### nth time  #################################  haven't prrofread
     else:
         scene darkforest
-        "[p] feels dozen of eyes watching him. He knows they are coming again."
-        p "[d]! [d]!"
+        show m_surprise at s
+        show m_m_sexclench1 at s
+        show m_blush at s
+        "[p] feels dozens of eyes watching him. He knows they are coming again."
+        hide m_m_sexclench1
+        show m_m_scream1 at s
+        p "[D]! [D]!"
+        hide  m_m_scream1
+        show m_m_clench2 at s
         d "What is it prince?"
-        p "They are coming [d]. Please let me bath!"
-        d "Are you giving me an order prince?"
-        p "N-no...I...do not dare. Please [d], I beg you."
-        
+        p "They are coming [d]. Please let me bathe!"
+        hide m_m_clench2
+        show m_m2 at s
+        d "Are you giving me an order?"
+        hide m
+        hide m_blush
+        show m_tired at s
+        show m_blush at s
+        show m_m_sexopen at s
+        p "N-no...I.... Please [d], I beg you."
         menu:
             "Ignore him":
-                "[d] sits on a stone and ignore [p]."
+                scene darkforest
+                show m_tired at s
+                show m_m_sexclench1 at s
+                show m_blush at s
+                "[d] sits on a stone and ignores [p]."
+                hide m_tired
+                hide m_m_sexclench1 
+                hide m_blush 
+                show m_surprise at s
+                show m_m_clench2 at s
+                show m_blush at s
                 "[p] freaks out."
-                p "Please help me [d]. Please. I-I have listen to you. I have been good. Please spare me..."
-                d "Once in a while, even if the dog is good, its master have to be cruel so the dog never forget its place."
-                p "No...I-I'll not forget m-my place..."
+                hide m_m_clench2
+                show m_m_scream1 at s
+                p "Please help me [d]. Please. I-I have been obedient. Please spare me..."
+                hide m_m_scream1
+                show m_m_clench2 at s
+                d "So you have been my good fucking toilet huh?"
+                hide m_surprise 
+                hide m_m_clench2
+                hide m_blush 
+                hide m_shame
+                show m_tired at s
+                show m_m_sexopen at s
+                show m_blush at s
+                show m_shame at s
+                p "Y-yes. I have been your good...fucking toilet…"
+                hide m_tired
+                hide m_m_sexopen
+                hide m_blush 
+                hide m_shame
+                show m_close at s
+                show m_m_sexopen at s
+                show m_blush at s
+                show m_shame at s
+                d "Please [d], I beg you…"
+                hide m_m_sexopen
+                show m_m2 at s
+                "[d] smirks, completely ignores [p]."
+                hide m_close
+                hide m_m_sexopen
+                hide m_blush 
+                hide m_shame
+                hide m_surprise
+                show m_surprise at s
+                show m_m_scream1 at s
+                show m_blush at s
+                show m_shame at s
+                p "[D]! [D]!"
+                scene darkforest with hpunch
+                show m_hurt at s
+                show m_m_sexclench2 at s
+                show m_beaten2 at s
+                show m_blush at s
+                "[d] kicks [p] brutally!" with vpunch
+                hide m_m_sexclench2
+                show  m_m_sexclench3 at s
+                p "Urg!"
+                hide m_hurt
+                hide m_m_sexclench3 
+                hide m_beaten2
+                hide m_blush 
+                show m_tired at s
+                show m_m_sexclench3 at s
+                show m_beaten2 at s
+                show m_blush at s
+                d "If I don't answer..."
+                hide m_tired
+                hide m_m_sexclench3 
+                hide m_beaten2
+                hide m_blush 
+                show m_hurt at s
+                show m_m at s
+                show m_blush at s
+                show m_beaten3 at s
+                show m_shame at s
+                "[d] continues delivering several violent kicks" with hpunch
+                hide m_m
+                show m_m_sexclench3 at s
+                p "Ngh!Ug!" with vpunch
+                scene darkforest
+                hide m_blush 
+                hide m_beaten3
+                show m_tired at s
+                show m_m at s
+                show m_beaten3 at s
+                show m_blush at s
+                show m_shame at s
+                "As soon as [p] regain consciousness and looks at [d] again, [d] brutally kicks him again."
+                hide m_tired
+                hide m_m 
+                hide m_beaten3
+                hide m_blush 
+                hide m_shame 
+                show m_hurt at s
+                show m_m_sexclench2 at s
+                show m_beaten7 at s
+                show m_blush at s
+                show m_shame at s
+                d "..it means you stop nagging..." with hpunch
+                hide m_beaten7
+                hide m_blush 
+                hide m_shame
+                show m_tired at s
+                show m_m_sexopen at s
+                show m_beaten7 at s
+                show m_blush at s
+                show m_shame at s
+                p "Urgh! Mrg! N!" with hpunch
+                hide m_m_sexopen
+                hide m_blush 
+                hide m_shame
+                hide m_tired 
+                hide m_beaten7 
+                show m_hurt at s
+                show m_m_scream at s
+                show m_beaten7 at s
+                show m_blush at s
+                show m_shame at s
+                show m_sick at s
+                p "ARG!!!" with hpunch
+                hide m_m_scream
+                show m_m_sexclench3 at s
+                d "Got it?" with vpunch
+                hide m_m_sexclench3
+                show m_m_sexclench2 at s
+                p "Urg...NGH!...AAA...urgh...y-yes..." with hpunch
+                hide m_m_sexopen
+                show m_m_sexclench3 at s
+                d "What a noisy toilet" with vpunch
+                hide m_m_sexclench3
+                hide m_blush 
+                hide m_shame
+                hide m_hurt
+                hide m_beaten7 
+                show m_tired at s
+                show m_m_scream at s
+                show m_beaten7 at s
+                show m_blush at s
+                show m_shame at s
+                show m_sick at s
+                p "Ahhh...urg...ngh..."
             "Bath":
-                d "So tell me, why should I do that?"
-                p "I-I'll do anything."
-                "[d] smirks."
-                d "Is there anything you haven't done? Beg me, lick my foot, blow me, plesure me, you already do that everyday."
-                p "..."
-                "Feeling the mosquito monsters about to come for him, [p] freaks out."
-                p "B-Bath! Let's bath together! I-I wash you clean."
-                "[d] smiles"
-                d "That's news. Very creative."
-                d "Pitchy! Cover his eyes."
-                p "!"
-                "From behind, the vines cover [p]s eyes with a silk ribbon then release him."
-                p "..."
-                scene sky with dissolve
-                "From the ground, something is moving. [p] touchess the blindford."
-                d "If you dare to take it out, I'll feed you to the mosquitoes."
-                p "I-I won't."
-                p "..."
-                "Whatever the thing under his feet is, it is shooting up and moving at a very fast speed. [p] lost his balance and felt down." with vpunch
-                "[p] swings his hand, searching everywhere for a place to grasp to prevent himself from falling." with hpunch
-                p "H!"
-                "[d] smirks." 
-                p "!"
-                "[d] violently kicks [p]. He falls from still air in an insane speed." with hpunch
-                "[p] was too scare that he can't even scream. Without the ability to see, the adrenaline rush goes inside him, drives every cell of his body with terror. His feet were full of sweat"
-                "[p] feels like he is going to smash into the ground and die. Every thought he had, every pain and humiliation he suffer are all dissapear in that moment."
-                p "!"
-                scene under
-                "BOOONG!!!" with vpunch
-                "[p] falls under the water. It was too deep the pressure popped his ears." 
-                "He  flails around, tries to swim up or find something to grasp, but he sunks deeper and deeper"
-                p "...mgh...n..."
-                "[p] is in a constant state of panic. He panically fails, trying to swim up or grasp something. He desperates to get to the surface."
-                "Yet, he continues to sunk deeper and deeper."
-                " The water fills his lungs and the pressure crushes him apart."
-                "Desperate for air, he churned around until he began to feel really dizzy"
-                "Lacking oxygen for too long, [p] cannot hold it anymore. He starts to breath, a breathe full of water. It filled all of his lungs. Dizzy and exhausted, [p] give up struggling."
-                "At that moment, [p] wonder if this is how death feels like."
-                "As soon as [p] started to black out, a hand grasps him and pulls him up close. In the cold of water, [p] can feel that person's warm."
-                "Even though [p] knows who it is, he unconsciously clutches to his rescuer."
-                d "..."
-                "From below the ground, something lifts them up in a high speed."
-                scene spring with vpunch
-                p "Ahhh...haaa...ahhhh..."
-                scene bath_gentle_hug
-                "[p] still clutches to [d]. His whole body shaking because of cold"
-                d "I'm suprise. Do you really love me that much?"
-                p "...Ahhh...haa...Please...ngh...the ground... I-I can't swim."
-                "[d] laughs"
-                d "That's funny. The youngest and fiercest general of Rivakh doesn't know how to swim."
-                p "..."
-                "Despite the scare of falling into water again, [p] relax his musles and lets go of [d]."
-                scene bath_gentle_fuck with dissolve
-                "Suddenly, [d] grasps [p]'s face and rams his dick in [p]'s trembling asshole" with hpunch
-                p "Hiii...Ngh...Arghhh..."
-                d "Suprise and unable to see, [p] becomes more sensitive."
-                p "Aaaahh...aaaa..."
-                d "You are really tight here, prince."
-                p "Uhmmm...m..."
-                scene bath_gentle_fuckfast with hpunch
-                "Seeing how [p] censoring his voice, [d] purposely hit hard to [p]'s prostate with every thrust"
-                p "NGGHHHH!....Urghhh..."
-                p "Nnnn...Urgh!....Nnnnn...hhh..."
-                scene bath_gentle_fuckfaster with vpunch
-                p "ARGH.....Aaaaa....N...haaaaa...."
-                p "S-stop!"
-                d "What a pervert! You? A general? What a laugh. Look at you. I bet you can cum from anything, even from a dog's dick"
-                scene bath_gentle_fuckfastest with hpunch
-                p "Arghhh!!...NGH!!!...ARGH! NGH!"
-                p "N-NO! Stop! [d]"
-                d "Sure!"
-                scene spring with vpunch
-                "[d] lets go of [p]. The stone [p]'s lying on return to dust."
-                p "!"
-                "[p] falls into a shallow area." with hpunch
-                p "Ngh!"
-                p "!"
-                scene bath_hard_hand
-                p "Argh!!"
-                "From behind, [p] feels something coming for him. He tries to run but it graspes his hair, locks his arm. Its dick rams his agnus brutally."
-                p "Aaaaaa...ARGH!..."
-                p "H...mgh...Hurts. [d]! Please stop!"
-                "[d] smirks."
-                scene bath_hard_handfast
-                p "Ngh! Arghhh! Aaaaa..."
-                p "[d]! Please! If you move any deeper, my arm will break."
-                d "Is that so?"
-                p "P-please [d]"
-                scene bath_release with hpunch
-                "[d] rams [p]'s head to the stone."
-                d "What a sissy! Begging your enemy not to break your arm."
-                p "Urgh...ahhhh..."
-                d "In the other hand, seems like I have trained you well..."
-                d "...but..."
-                scene bath_hard
-                p "ARGH!! Aaaaa..."
-                "[d] pulls [p]'s hair up and start fucking him again."
-                scene bath_hardfast
-                d "What a selfish little brat! Cum from your ass while I haven't cum yet"
-                p "Argh!....Aaaaa..."
-                scene bath_hardfaster
-                p "Ngh...No!...Stop!...Too fast..."
-                d "How are you gona payback for that huh?"
-                scene bath_hardfastest
-                p "AAAAAAAAAAAAAAAAAAA!!!"
-                p "*sniff...Aaaaaaa...ngh...aaaaaa..."
-                scene bath_realhard with hpunch
-                p "Urg! *sniff *sniff"
-                "[d] pulls [p]'s head till it cannot be pulled and cum inside him"
-                scene bath_release with dissolve
-                d "What a refreshing feeling!" with vpunch
-                p "Urgh...aaaa...uhm..."
-                p "...haaa...ahhhh..."
-                scene spring with dissolve
-                d "Get up!"
-                p "Ugrh...aaa..."
-                d "Have you forget why I brought you here? What did you say about cleaning me?"
-                p "...h...ngh..."
-                d "Huh?"
-                p "Y-yes..."
-                "[d] stay silent and looks at [p] struggling to get up."
-                "[p] unsteadily walks to [d] and bump into him."
-                p "Urgh..."
-                "[p] grasps his arms in order not to fall."
-                d "Hurry up, prince. I don't like waiting."
-                p "I-I have nothing to clean up."
-                d "Be creative [p]. What does a toilet eat?"
-                p "..."
-                "[p] started to lick [d], from chest to stomach."
-                p "...ngh..."
-                "[d] opens his armpit"
-                p "..."
-                p "No [d], that place..."
-                d "Lick it and we return or would you rather lick and suck my dick?"
-                p "..."
-                "[p] licks [d]'s armpit."
-                d "Show me more passionate prince"
-                "[p] pushes his face entirely inside [d]'s armpit and licks it."
-                scene pull_day
-                p "Mgh!..."
-                d "That's enough. It's tickle"
-                p "Y-yes..."
-                scene spring
-                d "Let's return."
-                "Once again, the ground moving and carying them. This time, [d] kicks [p] when they already at the ground."
-                p "...m..."
-                "Pitchy ties him up."
-                "Even though it's painful and humiliate. This is much better than the mosquito monsters. [p] feels somewhat relief."
-                $ene -=50
-                jump sim
-                
-                ######################### continue
-                jump justendday
+                "Who will bathe him?"
+                menu:
+                    "Pitchy":
+                        jump bath_pitchy
+                    "[d]":
+                        jump bath_bath
+                     
                 
 ########################################################################### first + n times  #####################################     
     "From the trees, dozens of mosquito-like monsters dash out in a swift motion." with vpunch
     scene darkforest
     show m_surprise at s
-    show m_beaten5 at s
+    show m_beaten7 at s
     show m_m_sexclench1 at s
     show m_shame at s
     show m_blush at s
@@ -419,7 +488,7 @@ label bath:
     hide thunder with dissolve
     scene darkforest with dissolve
     show m_surprise at s
-    show m_beaten5 at s
+    show m_beaten7 at s
     show m_m_scream at s
     show m_shame at s
     show m_blush at s
@@ -427,14 +496,14 @@ label bath:
     "The monsters paralyzed [p]"
     scene darkforest
     show m_tired at s
-    show m_beaten5 at s
+    show m_beaten7 at s
     show m_m_scream at s
     show m_shame at s
     show m_blush at s
     show m_sick at s
     p "S-sh...! C...can't... m...urgh" with vpunch
     scene mos with hpunch
-    "The monsters start to move their hairy tongues and legs around [p]'s body." with hpunch
+    "Don't waste any time, the monsters immediately move their hairy tongues and legs around [p]'s body." with hpunch
     p "Uhmm...m..."
     p "(Shit...!)"
     p "URG!!!"
@@ -445,19 +514,19 @@ label bath:
     "[d] laughs"
     d "Seems like they are making double effort to clean your dirtiest places."
     show m_tired at s
-    show m_beaten5 at s
+    show m_beaten7 at s
     show m_m_scream at s
     show m_shame at s
     show m_blush at s
     show m_sick at s
     p "(F-Fuck!)"
-    hide m_beaten5
+    hide m_beaten7
     hide m_shame 
     hide m_blush
     hide m_sick 
     hide m_m_scream
     show m_surprise at s
-    show m_beaten5 at s
+    show m_beaten7 at s
     show m_m_scream at s
     show m_shame at s
     show m_blush at s
@@ -481,8 +550,8 @@ label bath:
     show thunder at infinite_flashfastest
     p "MMMM....NNNN..."
     p "URRGGHHHH...URGHHHH..."
-    "Gaining some resistance for electric shock, [p] is still be able to move his eyeballs. He looks at [d] while covered in tears."
-    d "Hmmmphh... What should I do with you?"
+    "Gaining some resistance for electric shock, [p] is still be able to move his eyeballs. He glances at [d] while covered in tears."
+    d "Hmmmphh...Interesting"
     p "MMMGGHHG...NGGHHHHH..."
     p "GRHHHHHH"
     "Seems like [p] can still endure a little bit more. Will you help him or watch him suffer?"
@@ -505,28 +574,37 @@ label bath:
         scene darkforest with vpunch
         show m_surprise 
         show m_beaten7
-        show m_m_scream 
+        show m_m_sexclench1 
         show m_shame 
         show m_blush 
         show m_sick 
         show m_cockup
         "The vines release [p]." with hpunch
         p "!" with vpunch
+        hide m_m_sexclench1
+        show m_m_clench2
         "Even though [p] is in pain, he quickly takes his chance and gives the monsters serveral deadly punches and kills them." with hpunch
         if firstMos == 0:
+            hide m_m_clench2
+            show m_m_scream
             p "BASTARD!!!! You Will Regret This!" with vpunch
+            hide m_m_scream
+            show m_m_clench2
             "At first, it looks like [p] won, but the monters rapidly envole each time their kin die." with hpunch
         else:
             p "FUCK YOU! DIE!"
             "[p] tries to kill all the monsters at the same time, but there are too many of them."
             "Because he kills more than last time, they evolve more and become stronger."
+        scene darkforest with dissolve
+        scene darkforest at zoomin
+        show thunder at infinite_flashfast
         p "ARGGHHHHHHHH!!!"
-        "They release their electric shocks at the same time."
+        "They lift [p] up and release their electric shocks at the same time."
         show thunder at infinite_flashfastest
         p "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!!!"
         scene colapse
         show thunder at infinite_flash
-        "[p] falls on the ground, twitching."
+        "[p] tossed to the ground. His whole body terribly in pain and it twitches non-stop. The monsters' cum keep on dripping out of his ass." with vpunch
         p "Urggg...Mmmmm..."
         if firstMos == 0:
             d "What an idiot. You should have just run to me."
@@ -549,13 +627,54 @@ label bath:
         else:
             "Again, [p] was helped by his sworn enemy, his abuser. He feels useless and hopeless. Days by days, he receives ill treament and becomes weaker and weaker, both physically and emotionally."
         p "N...m..."
-        p "(Shit... What have I become?...)"
-        p "(...How can I ever get out?... There are still many things... many things I have to do... Being treat worse than an animal like this...)"
-        "[p] unconsciously cries. He doesn't know if it's an after effect of the electric shock, or because he has become so weak, to cry in front of his worst enemy."
-        "[d] touches [p]'s head slowly, rubbing his scalp. Somehow, [p]'s tension fades. He feels less pain."
-        d "Calm down [p], they're dead."
+        show m_tired at s
+        show m_beaten7 at s
+        show m_m_1 at s
+        show m_shame at s
+        show m_blush at s
+        show m_sick at s
+        p "(...Shit! Can I really get out?... There are still many things... many things I have to do... Being treat worse than an object here...)"
+        hide m_tired 
+        hide m_beaten7 
+        hide m_m_1 
+        hide m_shame
+        hide m_blush 
+        hide m_sick 
+        show m_close at s
+        show m_beaten7 at s
+        show m_m_sexclench1 at s
+        show m_shame at s
+        show m_blush at s
+        show m_sick at s
+        "[p] unconsciously cries. He doesn't know if it's an after effect of the electric shock, or because he has become so weak, to cry in front of [d]."
+        hide m_close
+        hide m_m_sexclench1
+        hide m_shame
+        hide m_blush
+        hide m_sick
+        hide m_beaten7
+        show m_tired at s
+        show m_beaten7 at s
+        show m_m_1 at s
+        show m_shame at s
+        show m_blush at s
+        show m_sick at s
+        "[d] touches [p]'s head slowly, rubbing his scalp. Somehow, [p]'s tension fades. He knows that the monster will not try to hurt him anymore."
+        d "They're dead."
+        hide m_tired 
+        hide m_beaten7 
+        hide m_m_1 
+        hide m_shame
+        hide m_blush 
+        hide m_sick 
+        show m_close at s
+        show m_beaten7 at s
+        show m_m_sexclench1 at s
+        show m_shame at s
+        show m_blush at s
+        show m_sick at s
         p "..."
-        "[d]'s words and actions stab [p] like a sharp knife, making [p] cry more."
+        "[d]'s words and actions stab [p] like a sharp knife."
         d "Seems like the electric shock is a little too much for you."
         p "..."
         menu:
@@ -591,7 +710,7 @@ label bath:
         p "!"
         scene sky with hpunch
         show thunder at infinite_flashfastest
-        "rom below the ground, the vines release [p], shoot up to the sky, and kill all of the mosquito-like monsters at the same time." with vpunch
+        "From below the ground, the vines release [p], shoot up to the sky, and kill all of the mosquito-like monsters at the same time." with vpunch
         scene colapse with vpunch
         show thunder at infinite_flash
         p "...m...h..."
@@ -620,26 +739,49 @@ label bath:
             "Pleasure him":
                 scene darkforest
                 "[d] kicks [p]. He falls against a tree." with vpunch
+                show m_hurt at s
+                show m_blush at s
+                show m_beaten7 at s
+                show m_shame at s
+                show m_m_sexclench3 at s
                 p "Urhg!"
                 d "You seem to be in pain. Poor thing."
-                p "..."
-                scene bath_monster_suckhead
+                hide m_m_sexclench3
+                show m_m_sexopen at s
+                p "...Urgh..."
                 p "!"
-                "[d] sucks [p]'s cock."
+                scene bath_monster_suckhead
+                "[d] sucks [p]'s cock." with vpunch
+                p "Urg-st.."
                 scene bath_monster_suckdeep
                 p "...ngh..."
                 p "...n..."
                 scene darkforest
+                show m_hurt at s
+                show m_blush at s
+                show m_beaten7 at s
+                show m_shame at s
+                show m_m_sexopen at s
                 d "What a sensitive dick. Have anyone ever put it in their mouth before?"
+                hide m_m_sexopen
+                show m_m_sexclench2 at s
                 p "...ugh...ngh...!"
                 "[d] smirks."
+                hide m_blush
+                hide m_beaten7 
+                hide m_shame
+                show m_surprise at s
+                show m_blush at s
+                show m_beaten7 at s
+                show m_shame at s
+                show m_m_sexopen at s
+                p "!"
                 scene bath_monster_suckdeep
                 p "...n...m...ngh..."
                 p "...ngh..."
-                p "N!...mgh!..."
                 scene bath_monster_suckdeep_fast
                 p "..ugh...ugh!"
-                p "..n...ple..."
+                p "..n...s-st..."
                 scene bath_monster_suckdeep_faster
                 p "...ugh!Ugh!...Ngh!...Ugh!..."
                 scene bath_monster_suckdeep_fastest
@@ -669,15 +811,35 @@ label bath:
                 p "F-fuck...ngh..."
                 p "..I..I will...k-..."
                 scene darkforest
+                show m_surprise at s
+                show m_blush at s
+                show m_beaten7 at s
+                show m_shame at s
+                show m_m_sexopen at s
                 "[d] violently kicks [p]." with vpunch
+                hide m_surprise
+                hide m_blush
+                hide m_beaten7
+                hide m_shame
+                hide m_m_sexopen
+                show m_hurt at s
+                show m_blush at s
+                show m_beaten7 at s
+                show m_shame at s
+                show m_m_sexclench1 at s
                 p "Urgh!"
                 scene colapse_leg_toy_fast
-                "He tramples [p]'s ass again."
+                "He tramples [p]'s ass."
                 p "Stop!! Bastard!!"
                 d "You can finally move your tongue huh?"
                 p "Sh-"
                 scene darkforest
-                "[d] kicks [p] again" with hpunch
+                show m_hurt at s
+                show m_blush at s
+                show m_beaten7 at s
+                show m_shame at s
+                show m_m_sexclench1 at s
+                "[d] kicks [p]." with hpunch
                 scene colapse_touch
                 p "...Arg!..."
                 "[d] grabs [p]'s hair and rubs it."
@@ -685,22 +847,47 @@ label bath:
                 d "Think for yourself birdbrain, aren't you lucky? If it's not for me, you’d probably be passed around like a piece of meat for monsters all over this forest to fuck."
                 p "FUC-...!"
                 scene darkforest
+                show m_surprise at s
+                show m_blush at s
+                show m_beaten7 at s
+                show m_shame at s
+                show m_m_sexopen at s
                 "[d] brutally kicks [p] again" with vpunch
+                hide m_surprise
+                hide m_blush
+                hide m_beaten7
+                hide m_shame
+                hide m_m_sexopen
+                show m_hurt at s
+                show m_blush at s
+                show m_beaten7 at s
+                show m_shame at s
+                show m_m_sexclench1 at s
                 p "Urgh!"
+                hide m_m_sexclench1
+                show m_m_sexopen at s
                 p "Bastard. What a laugh. I will never ever obey you. Not in any lifetime. Just wait! I'm gonna chop all your limbs and make you roll."
+                hide m_hurt
+                hide m_blush
+                hide m_beaten7
+                hide m_shame
+                hide m_m_sexopen
+                show m_tired at s
+                show m_blush at s
+                show m_beaten7 at s
+                show m_shame at s
+                show m_m_sexclench1 at s
                 "[d] laughs like crazy."
                 menu:
                     "Wrech him":
                         "How do you like to wrech him?"
                         menu:
                             "Just enough":
+                                $bath_just_enough = True
                                 jump wrechhim
-                                jump justenough
-                                jump justendday
                             "Extreme":
-                                jump teachhimmanners
-                                jump extreme   
-                                jump justendday
+                                $bath_just_enough = False
+                                jump wrechhim
                     "Spare him":
                         "[d] smirks."
                         d "You look more and more like an animal with each passing day, prince."
@@ -723,25 +910,80 @@ label bath:
  
 label comfort:
     "[d] lightly turns [p] around with his foot."
+    hide m_close
+    hide m_m_sexclench1
+    hide m_shame
+    hide m_blush
+    hide m_sick
+    hide m_beaten7
+    show m_surprise at s
+    show m_beaten7 at s
+    show m_m_1 at s
+    show m_shame at s
+    show m_blush at s
+    show m_sick at s
     p "!"
     "He gently grasps [p]'s legs."
     scene deepimpact_head with dissolve
-    p "...N-no! What are you doing?"
-    d "Don't you see? I'm comforting you."
+    show m_surprise at s
+    show m_beaten7 at s
+    show m_m_open2 at s
+    show m_shame at s
+    show m_blush at s
+    show m_sick at s
+    p "...W-What are you-?"
+    d "I'm comforting you. Poor thing, this place must be hurt a lot."
+    hide m_surprise 
+    hide m_beaten7 
+    hide m_m_open2 
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    show m at s
+    show m_beaten7 at s
+    show m_m_sexopen at s
+    show m_shame at s
+    show m_blush at s
+    show m_sick at s
     p "S-stop...! Stop please!..."
     p "My inside...! It hurts!"
-    d "Too late. You shouldn't show your vunerable side to me like that. It's too cute that my boy gets hard."
+    d "Hurt? Look at yourself! Aren't you enjoying it right now?"
+    hide m_beaten7
+    hide m_m_sexopen 
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    show m_tired at s
+    show m_beaten7 at s
+    show m_m_sexclench1 at s
+    show m_shame at s
+    show m_blush at s
+    show m_sick at s
     p "N-no...Stop!"
-    d "Your mouth says \"No! No!\", But look at how you suck my cock."
+    d "Your mouth says \"No! No!\", But look at how you suck my cock. So warm and tight."
+    hide m_tired 
+    hide m_beaten7 
+    hide m_m_sexclench1 
+    hide m_shame 
+    hide m_blush 
+    hide m_sick
+    show m_close at s
+    show m_beaten7 at s
+    show m_m_sexopen at s
+    show m_shame at s
+    show m_blush at s
+    show m_sick at s
     p "Aaaa..."
+    p "N-no...please stop..."
+    d "Stop? I will bring you to heaven."
     scene deepimpact_deep with dissolve
     p "Aahhhh...ngh!...Aaaa..."
-    d "You are crying again. Does it feel good?"
+    d "You are crying again. What a hard to please brat!"
+    d "When I'm brutal with you, you cry. When Ilm gentle with you, your cry too. What do you want prince?"
     p "S-shit! No...Please [d], stop. I'm begging you..."
-    d "Do you feel so good that you have to beg me to stop?  It seems you have a lot of comfort needs. It’s ok, I’ll fulfill them all!"
+    d "Do you really want me to stop while your cock this hard?"
     p "N-No! Please let it out. Don't thrust it in anymore."
     "[d] didn't thrust his cock all the way in. He just ram deep enough to make [p] feels good."
-    "Instead of what [p] expected, he feels no pain at all. Not only that, he is kind of enjoying it..."
     p "...Aaaa...n...aaa..."
     p "N-no...please stop...please...[d]..."
     p "Aaaahhhh..."
@@ -752,31 +994,159 @@ label comfort:
     p "..."
     "Feeling too humiliated, [p] stays silent."
     scene darkforest with dissolve
+    show m_close 
+    show m_beaten7
+    show m_m_sexopen
+    show m_shame 
+    show m_blush 
+    show m_sick 
+    show m_cockup
+    p "..m...aaa..."
     p "..."
     "[d] gets up."
     d "I think that's enough for today. Don't you think so [p]?"
+    hide m_m_sexopen
+    show m_m
     p "..."
-    d "Are you not satisfied with the pleasure you recieved? We can go 3 more rounds."
+    d "Are you not satisfied with the pleasure you recieved? We can do it again and again till you satisfied."
+    hide m_close 
+    hide m_beaten7
+    hide m_m_sexopen
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    hide m_cockup
+    show m_surprise 
+    show m_beaten7
+    show m_m_clench
+    show m_shame 
+    show m_blush 
+    show m_sick 
+    show m_cockup
     p "!"
-    p "N-no. That's...that's enough..."
+    hide m_surprise 
+    hide m_beaten7
+    hide m_m_clench
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    hide m_cockup
+    show m_tired 
+    show m_beaten7
+    show m_m_sexopen
+    show m_shame 
+    show m_blush 
+    show m_sick 
+    show m_cockup
+    p "N-no. I-...I'm sa...tisfy..."
+    hide m_m_sexopen
+    show m_m_sexclench2
     "[d] smirks"
     d "Enjoy this peace from the rest of the day. We will continue our training tomorrow...for your own good."
+    hide m_m_sexclench2
+    show m_m1
     p "..."
     d "What's with that face? Do you have a problem?"
+    hide m_tired 
+    hide m_beaten7
+    hide m_m_sexopen
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    hide m_cockup
+    show m_surprise
+    show m_beaten7
+    show m_m_clench
+    show m_shame 
+    show m_blush 
+    show m_sick 
+    show m_cockup
     p "...N-no...No, I don't..."
     "[d] laughs."
     d "Good boy!"
+    hide m_m_clench
+    show m_m_sexclench1
     "[d] walks away."
+    hide m_tired 
+    hide m_beaten7
+    hide m_m_sexopen
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    hide m_cockup
+    hide m_m_sexclench1
+    show m_tired
+    show m_beaten7
+    show m_m_sexclench2
+    show m_shame 
+    show m_blush 
+    show m_sick 
+    show m_cockup
     p "S-shit!"
+    hide m_tired
+    hide m_beaten7
+    hide m_m_sexclench2
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    hide m_cockup
+    show m_close
+    show m_beaten7
+    show m_m_sexclench1
+    show m_shame 
+    show m_blush 
+    show m_sick 
+    show m_cockup
     "[p] masturbates himself."
+    hide m_m_sexclench1
+    show m_m_sexopen
+    p "...M..."
+    hide m_close
+    hide m_beaten7
+    hide m_m_sexopen
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    hide m_cockup
+    show m_surprise
+    show m_beaten7
+    show m_m_clench
+    show m_shame 
+    show m_blush 
+    show m_sick 
+    show m_cockup
     p "!"
-    "The vines wrap [p], drag him to a tree and tie him up."
-    p "Shit! Fuck!"
+    scene tie_looka with dissolve
+    show m_tired at s
+    show m_beaten7 at s
+    show m_m_clench2 at s
+    show m_shame at s
+    show m_blush at s
+    show m_sick at s
+    "The vines tie [p] up."
+    hide m_m_clench2
+    hide m_m
+    show m_m at s
     p "..."
-    p "(...What the hell am I doing?)"
-    "[p] feels helpless and ashamed of himself. His thirst and hunger decrease. His pride and psyche decrease."
+    hide m_tired
+    hide m_beaten7
+    hide m_m
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    show m_tired at s
+    show m_beaten7 at s
+    show m_m_sexclench2 at s
+    show m_shame at s
+    show m_blush at s
+    show m_sick at s
+    p "(Shit!...I'm so pathetic...Those monsters...Will they come for me tonight?)"
+    hide m_m_sexclench2
+    show m_m_sexclench1 at s
+    p "..."
+    "[p] feels helpless and ashamed of himself. His thirst, hunger and psyche decrease. His pride decrease dramatically."
     $pride -= 7
-    $mental -= 7
+    $mental -= 3
     $water -=3
     $food -=3
     jump justendday
@@ -785,49 +1155,256 @@ label comfort:
  
 label lethimrest:
     d "I'll let you rest for the rest of the day."
+    hide m_close
+    hide m_m_sexclench1
+    hide m_shame
+    hide m_blush
+    hide m_sick
+    hide m_beaten7
+    show m_surprise at s
+    show m_beaten7 at s
+    show m_m_open2 at s
+    show m_shame at s
+    show m_blush at s
+    show m_sick at s
     p "!"
     "As soon as [d] goes, [p] grasps his hand."
+    hide m_surprise 
+    hide m_beaten7 
+    hide m_m_open2
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    show m_tired at s
+    show m_beaten7 at s
+    show m_m2 at s
+    show m_shame at s
+    show m_blush at s
+    show m_sick at s
     d "What a suprise. What do you want?"
-    p "Ngh...b-bath..."
-    "[p] looks down to the ground."
+    scene darkforest with dissolve
+    show m_tired 
+    show m_beaten7 
+    show m_m_open2 
+    show m_shame 
+    show m_blush 
+    show m_cockup
+    show m_sick 
+    p "Ngh..."
+    scene darkforest
+    show m_close 
+    show m_beaten7 
+    show m_m_open1 
+    show m_shame
+    show m_blush 
+    show m_cockup
+    show m_sick 
     p "..."
-    p "Please let me bathe. What if those type of monsters come again tonight?"
+    hide m_cockup
+    hide m_close 
+    hide m_beaten7 
+    hide m_m_open1
+    hide m_shame 
+    hide m_blush 
+    hide m_sick  
+    show m_tired 
+    show m_beaten7 
+    show m_m_clench 
+    show m_shame
+    show m_blush 
+    show m_cockup
+    show m_sick 
+    p "Please let me bathe. Those monsters..."
     "[d] laughs."
+    hide m_cockup
+    hide m_tired 
+    hide m_beaten7 
+    hide m_m_clench
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    show m_close
+    show m_beaten7 
+    show m_m2 
+    show m_shame
+    show m_blush 
+    show m_cockup
+    show m_sick 
     d "So you know to fear now."
+    hide m_m2 
+    show m_m_clench
     p "..."
     d "You don't need to. They already eat all your dirtiness." 
+    scene darkforest
+    show m_surprise
+    show m_beaten7 
+    show m_m2 
+    show m_shame
+    show m_blush 
+    show m_cockup
+    show m_sick 
     p "!"
     d "The only reason they are still continue fucking you is because they weren't sexually satisfied. Those monsters are real beasts when it comes to sex."
+    hide m_surprise
+    hide m_beaten7 
+    hide m_m2 
+    hide m_shame
+    hide m_blush 
+    hide m_cockup
+    hide m_sick 
+    show m
+    show m_beaten7 
+    show m_m_sexclench2
+    show m_shame
+    show m_blush 
+    show m_cockup
+    show m_sick 
     p "..."
     d "Do you still want to bath?"
+    scene darkforest
+    show m_tired
+    show m_beaten7 
+    show m_m
+    show m_shame
+    show m_blush 
+    show m_cockup
+    show m_sick 
     p "..."
+    hide m_m
+    show m_m_open1
     p "...no..."
-    d "Is the prince starting to trust my word? You seems full of doubt all the time."
-    p "!"
+    d "Is the prince starting to trust my word?"
+    hide m_tired
+    hide m_beaten7 
+    hide m_m
+    hide m_shame
+    hide m_blush 
+    hide m_cockup
+    hide m_sick
+    show m
+    show m_beaten7 
+    show m_m 
+    show m_shame
+    show m_blush 
+    show m_cockup
+    show m_sick 
     p "..."
-    p "There's...no reason for you to lie. You... would rather use bath to force me hummilate myself than..."
-    p "..."
+    scene darkforest
+    show m_tired
+    show m_beaten7 
+    show m_m_clench 
+    show m_shame
+    show m_blush 
+    show m_cockup
+    show m_sick 
     p "...There's no fun for you if I was attacked at night, when you're not here..."  
+    hide m_shame 
+    hide m_tired
+    hide m_blush 
+    hide m_sick 
+    hide m_beaten7 
+    hide m_cockup
+    show m_close
+    show m_beaten7 
+    show m_m 
+    show m_shame
+    show m_blush 
+    show m_cockup
+    show m_sick 
     "[d] smiles."
     d "Hmph... Brat!"
+    hide m_close
+    hide m_beaten7 
+    hide m_m
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    show m_tired at s
+    show m_beaten7 at s
+    show m_m at s
+    show m_shame at s
+    show m_blush at s
+    show m_sick at s
     p "..."
-    "The vines slowly wrap around [p]'s body, drag him under a tree and tie him up."
+    "The vines tie him up."
+    scene darkforest with dissolve
+    show m_hurt at s
+    show m_beaten7 at s
+    show m_m_sexopen at s
+    show m_shame at s
+    show m_blush at s
+    show m_cockup at s
+    show m_sick at s
     p "Ngh!"
-    "This time, he was tied in a lying position."
+    "This time, he was tied in a comfortable position."
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    hide m_beaten7
+    show m_tired at s
+    show m_beaten7 at s
+    show m_m_sexclench2 at s
+    show m_shame at s
+    show m_blush at s
+    show m_cockup at s
+    show m_sick at s
     p "..."
+    hide m_m_sexclench2
+    show m_m at s
     d "This is my little gift to you for being cute and entertaining."
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    hide m_beaten7
+    hide m_m
+    show m at s
+    show m_beaten7 at s
+    show m_m at s
+    show m_shame at s
+    show m_blush at s
+    show m_cockup at s
+    show m_sick at s
     p "(S-shit...)"
+    hide m
+    hide m_beaten7 
+    hide m_m 
+    hide m_shame 
+    hide m_blush
+    hide m_sick
+    show m_tired at s
+    show m_beaten7 at s
+    show m_m at s
+    show m_shame at s
+    show m_blush at s
+    show m_sick at s
     p "..."
-    "It had been a long time since [p] had been able to sleep on the ground."
+    "It had been a long time since [p] had been able to sleep comfortably."
+    hide m_m
+    show m_m_sexclench1 at s
     p "(...F-fuck... This monster. What a terrible game he’s playing...)"
-    p "(...Acting like the benefactor, while it’s actually him who caused this... Fuck! Fuck th-...)"
+    p "(...Acting like the benefactor, while it’s actually him who caused this... Fuck! Fuck that...)"
     p "..."
+    hide m_m_sexclench1
+    show m_m at s
+    p "Whatever, I'm too tired..."
+    hide m_m
+    hide m_tired 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_blush 
+    hide m_sick 
+    show m_close at s
+    show m_beaten7 at s
+    show m_m at s
+    show m_shame at s
+    show m_blush at s
+    show m_cockup at s
+    show m_sick at s
     d "Sleep already?"
-    "[d] can see a tear falling out of [p]'s eye."
-    d "(Does it still hurt?)"
+    p "..."
     "[p] feels helpless and ashamed of himself. His thirst and hunger decrease. His pride and psyche decrease."
-    $pride -= 7
-    $mental -= 7
+    $pride -= 5
+    $mental -= 5
     $water -=3
     $food -=3
     jump justendday
@@ -837,22 +1414,80 @@ label lethimrest:
  
 label wrechhim:
     d "You askd for it prince."
+    scene darkforest
+    show m_surprise at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexclench1 at s
     p "!"
+    hide m_m_sexclench1
+    show m_m_clench2 at s
     p "(What the-)"
-
+    scene darkforest at zoomin
     "From the ground, a giant hand stretches out. It immediately squeezes [p] tightly and brings him up high."
+    show m_surprise at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexclench1 at s
+    show m_sick at s
     p "Ugh!...T-Tight!"
+    hide m_surprise
+    hide m_blush
+    hide m_beaten7
+    hide m_shame
+    hide m_m_sexclench1
+    hide m_sick
+    show m_hurt at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexclench3 at s
+    show m_sick at s
     p "Ngh! S-st..."
     "[p] tries to breathe. It's hard enough to get air, even if he wasn't beaten up and paralyzed."
+    hide m_m_sexclench3
+    show m_m_sexopen at s
     p "...Ahhh...haaa...ha..."
+    hide m_m_sexopen
+    show m_m_1 at s
     d "Wow, you look even more like a frog now."
+    hide m_m_1
+    show m_m_sexopen at s
     p "B....Bas..."
+    hide m_hurt
+    hide m_blush
+    hide m_beaten7
+    hide m_shame
+    hide m_m_sexopen
+    hide m_sick
+    show m_surprise at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexclench3 at s
+    show m_sick at s
     p "!" with hpunch
-
+    hide m_surprise
+    hide m_blush
+    hide m_beaten7
+    hide m_shame 
+    hide m_m_sexclench3
+    hide m_sick
+    show m_hurt at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexclench1 at s
+    show m_sick at s
+    p "Urg!"
     "Suddenly, [p] feels something big and hard moving under his feet. It's spinning. It spreads [p]'s legs and rams in, stretch his asshole to its limit." with vpunch
-
-    p "N-NO....urg!....AAAAAAAAAA..." with hpunch
+    hide m_m_sexclench1
+    show m_m_scream at s
+    p "N-NO...ST_.AAAAAAAAAAGGGHHHH!!!!!!..." with hpunch
     scene bath_drill_nocum with dissolve
+    p "AAAAAAAAA!!!"
     d "Hahaha, take a look at your face prince. So erotic. You must feel really good."
     p "S-stop it! It's impossible. I'll die. S-stop!"
     d "Yeah, sure prince"
@@ -898,7 +1533,6 @@ label wrechhim:
     scene colapse_leg_back
     d "Who'll chop whose limbs off now [p]?"
     p "..."
-    scene colapse_leg_toy
     d "Huh?"
     p "Y-...You! Y-...You'll chop my limbs..."
     d "That's a good idea."
@@ -915,33 +1549,130 @@ label wrechhim:
     "[p] licks [d]'s leg faster."
     d "..."
     d "What a brat!"
-    p "..."
-    scene colapse with dissolve
+    show m_surprise at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_scream1 at s
+    show m_sick at s
     p "!" with hpunch
+    scene colapse with dissolve
+    p "Urgh!"
+    if bath_just_enough:
+        jump justenough
+    else:
+        jump extreme
     
  ##################################   wrech him  just enough  ################################################################################ 
   
 label justenough:
-    "[d] kicks [p] to the ground." with vpunch
+    $enough =1
+    "[d] kicks [p] again." with vpunch
+    show m_hurt at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexclench2 at s
+    show m_sick at s
     p "N!"
+    hide m_hurt
+    hide m_blush
+    hide m_beaten7 
+    hide m_shame 
+    hide m_m_sexclench2
+    hide m_sick 
+    show m_tired at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexopen at s
+    show m_sick at s
     d "Tie him up Pitchy!"
+    scene tie_looka with dissolve
+    show m_hurt at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexclench1 at s
+    show m_sick at s
     p "...ugh!..."
-    d "Remember this prince: A fucking dog like you doesn't have the right to glance."
+    hide m_hurt
+    hide m_blush
+    hide m_beaten7 
+    hide m_shame 
+    hide m_m_sexclench2
+    hide m_sick 
+    show m_tired at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexclench3 at s
+    show m_sick at s
+    d "Let stop here. You should be graceful that I feel pity for you today."
     "[d] goes away."
+    hide m_tired 
+    hide m_blush
+    hide m_beaten7
+    hide m_shame
+    hide m_m_sexclench3 
+    hide m_sick
+    hide m_m_sexclench1
+    show m_close at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexclench1 at s
+    show m_sick at s
+    p "S-shit!..."
+    scene tie with dissolve
+    p "..."
+    "[p] was beaten and humiliated badly today. His hunger and thirst inceases. His pride and psyche decrease dramatically"
+    $pride -= 7
+    $mental -= 7
+    $water -=5
+    $food -=5
     
  ##################################   wrech him  extreme   ################################################################################    
 label extreme:
     "[d] violently kicks [p]."
     p "Ugh!"
     scene darkforest
-    "The giant hand quickly catches his hands."
+    "The giant hand quickly grasps his body."
+    scene darkforest at zoomin
+    show m_surprise at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexclench1 at s
+    show m_sick at s
     p "[d]!"
+    hide m_m_sexclench1
+    show m_m_clench2 at s
     d "Did you think that is enough?"
     d "Disobey me, curse me, humillate me, then beg for forgiveness, just to disobey me again. What make you think I'll stop as soon as you beg?"
+    p "N-no. Please! I can't..."
+    "[p] can feel the scary torture instrument spinning again"
+    hide m_surprise 
+    hide m_blush
+    hide m_beaten7 
+    hide m_shame 
+    hide m_m_sexclench1
+    hide m_sick
+    show m_hurt at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexclench1 at s
+    show m_sick at s
+    p "No...No! Please d-..."
+    hide m_m_sexclench1 
+    show m_m_scream at s
+    p "AAAAAAAAAAAAAAAA!!!"
+    p "ST-AAAAAAGGGGGHHHHHHHHH!!!!!"
     scene bath_drill_all_nocum
-    p "S-STOP!!!!"
+    p "UUUUUUUUUUGGGGGGGGGGGHHHHHHHHHH!!!!"
     scene bath_drill_deep_nocum_fast
-    p "AAAAA....Aaaaaaa...Aghhhhhhh...."
+    p "AAAAAAAAAAAA....Aaaaaaa...Aghhhhhhh....AAAAAAAAAAAAAA"
     scene bath_drill_deep_nocum_fastest
     p "NOOOOOOOOOOOOOOOOOOOO PLEASE STOP!!!"
     scene bath_drill_deep_fast with hpunch
@@ -990,7 +1721,7 @@ label extreme:
     p "AAAAAAAAAAAAAAAAAAAAAAAAAA....NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
     "The hand throws [p] to the ground"  with vpunch
     scene colapse with dissolve
-    p "*sniff *sniff"
+    p "*sniff *sniff" with hpunch
     p "Aaaaa...aa...aaa..."
     scene colapse_leg_back
     d "Poor thing..."
@@ -1015,36 +1746,258 @@ label extreme:
     p "..."
     scene colapse
     d "Now, how should you thank your master, dog?"
-    "[d] looks at [p] with wrecked eyes. He was shocked mentally and physically by being beaten and fucked to the extreme."
+    show m_tired at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexopen at s
+    "[p] looks at [d] with wrecked eyes. He was shocked mentally and physically by being beaten and fucked to the extreme."
+    hide m_tired
+    hide m_blush 
+    hide m_beaten7 
+    show m_shame
+    hide m_m_sexopen
+    show m_close at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexopen at s
     p "..."
     scene darkforest
     "[d] sits down comfortably on a stone. He's still looking down at [p], who shows no emotion at all."
     d "Do something that shows you're a loyal dog. Or would you rather play with toys?"
+    show m_surprise at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexopen at s
+    show m_sick at s
     p "...N-no..."
+    hide m_surprise
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_m_sexopen
+    hide m_sick
+    show m_hurt at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_sexclench3 at s
+    show m_sick at s
     p "...ngh..."
     "[p] struggles to move his body, but none of his muscles listen to him."
+    hide m_hurt 
+    hide m_blush 
+    hide m_beaten7
+    hide m_shame 
+    hide m_sick 
+    hide m_m_sexclench3
+    show m_tired at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_sexclench1 at s
     "He gets up, then falls, then gets up again."
+    p "M!"
     d "Hurry up doggie!"
+    hide m_m_sexclench1
+    show m_m_sexopen at s
+    p "Ngh..."
+    hide m_surprise
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_m_sexopen
+    hide m_sick
+    show m_hurt at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_m_clench2 at s
+    show m_sick at s
     "Unable to lift himself up, [p] drags himself to [d]'s place."
     d "Closer!"
+    hide m_hurt 
+    hide m_blush 
+    hide m_beaten7
+    hide m_shame 
+    hide m_sick 
+    hide m_m_clench2
+    show m_tired at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_sexclench1 at s
     "[p] pulls himself between [d]'s feet then grasps the stone where [d]'s sit and lifts himself up."
+    hide m_m_sexclench1
+    hide m_m_sexopen
+    show m_m_sexopen at s
     p "(...wet...)"
+    hide m_tired
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_m_sexopen
+    hide m_sick
+    show m_surprise at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_sexopen at s
     p "!"
+    hide m_surprise
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_m_sexopen
+    hide m_sick
+    show m_hurt at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_clench2 at s
     "[p] slips. He grasps [d]'s leg." with vpunch
+    hide m_hurt
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_m_clench2
+    hide m_sick
+    show m_tired at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_clench2 at s
     "Afraid of [d], [p] looks up. [d] shows no emotion like he doesn't care."
+    hide m_m_clench2
+    show m_m at s
     p "..."
     d "What are you pausing for?"
+    hide m_tired
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_m_clench2
+    hide m_sick
+    show m_surprise at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_sexclench2 at s
     p "N-no..."
+    hide m_surprise 
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_sick
+    hide m_m_sexclench2 
+    show m_close at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_sexopen at s
     "[p] bites [d]'s trousers to pull them down. He quickly uses his tongue and mouth to get [d]'s cock out."
+    hide m_close 
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_sick 
+    hide m_m_sexopen
+    show m_tired at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_sexclench1 at s
     "As soon as he opens his eyes and sees [d]'s cock and its scent up close, his face becomes red."
     p "..."
+    hide m_tired 
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_sick 
+    hide m_m_sexclench1
+    show m_hurt at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_sexclench1 at s
     d "What a laugh. Why are you embarrassed? There is no area of your body I haven't touched. Even your ass and throat have already shaped themselves to fit this cock..."
+    hide m_tired 
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_sick 
+    hide m_m_sexclench1
+    show m at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m2 at s
     p "..."
+    hide m
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_sick 
+    hide m_m_sexclench1
+    show m_tired at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_sexopen at s
     "[p] slowly and softly pulls [d]'s cock out of his trousers with his lips."
     p "..."
+    hide m_tired
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_sick 
+    hide m_m_sexopen
+    show m_close at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_sexclench1 at s
     d "Hey!"
+    hide m_close
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_sick 
+    hide m_m_sexclench1
+    show m_surprise at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_sexopen at s
     p "!"
-    d "Look at your master while serving, slut. Look down or in any other direction, you'll feel sorry."
+    d "Hurry Up and look at your master while serving, whore. Look down or in any other direction, you'll feel sorry."
+    hide m_surprise
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_sick 
+    hide m_m
+    show m at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m at s
     p "..." 
     scene bath_blow_head
     "[p] looks at [d] and slowly sucks the tip of [d]'s cock."
@@ -1081,8 +2034,9 @@ label extreme:
     d "Huh?"
     "[p] looks into [d]'s eyes while struggling with sucking his cock." 
     "This is the worst place to look at for [p]..."
-    "He had never do this to anyone, aside from his dad and brother because he feels some sort of connection from doing it." 
-    "[p] feels deeply humiliated by having his oxytoxin release while look in [d]'s eyes."
+    "He had always avoid eye contact, even to his dad and brother because it weaken his determination for chasing power." 
+    p "..."
+    "[p] feels deeply humiliated by having his oxytocin and serotonin release while look in [d]'s eyes."
     p "..."
     p "...ngh..."
     d "That's good. You seem to learn better after having been badly screwed up."
@@ -1090,16 +2044,66 @@ label extreme:
     d "Suck it deeper, whore. I want the warm feeling of all my cock in your mouth."
     scene bath_blow_superdeep with dissolve
     p "...ngh..."
+    d "Aaaa...Good..."
     "[d]'s hot load was about to shoot out. Where does he want to cum?"
     menu:
         "[p]'s face":
             d "Get out! Now"
             p "?"
             scene bath_blow_spermout with dissolve
+            show m_surprise at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_m_sexopen at s
+            show m_spermface at s
             p "!"
+            hide m_surprise
+            hide m_blush 
+            hide m_beaten7 
+            hide m_shame 
+            hide m_sick
+            hide m_m_sexopen 
+            hide m_spermface
+            show m_hurt at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_m_sexclench1 at s
+            show m_spermface at s
             p "Ngh!"
             "[d] laughs."
+            hide m_hurt
+            hide m_blush 
+            hide m_beaten7 
+            hide m_shame 
+            hide m_sick
+            hide m_m_sexopen 
+            hide m_spermface
+            show m at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_m_sexopen at s
+            show m_spermface at s
             d "It looks good on you prince"
+            hide m
+            hide m_blush 
+            hide m_beaten7 
+            hide m_shame 
+            hide m_sick
+            hide m_m_sexopen 
+            hide m_spermface
+            show m_tired at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_m at s
+            show m_spermface at s
             p "..."
         "[p]'s throat":
             scene bath_blow_spermin
@@ -1107,41 +2111,197 @@ label extreme:
             "[d] smirks"
             d "How is my cum tatse [p]?"
             scene darkforest
+            show m_tired at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_m_sexopen at s
+            show m_spermface at s
             p "It-It's..."
+            hide m_m_sexopen
+            hide m_spermface
+            show m_m at s
+            show m_spermface at s
             p "..."
     scene darkforest
     "[d] looks at [p]."
+    show m_close at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m at s
+    show m_spermface at s
     p "..."
     d "Do you want to rest now?"
+    hide m_close
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_sick
+    hide m_m_sexopen 
+    hide m_spermface
+    show m_surprise at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_m at s
+    show m_spermface at s
     p "!"
+    hide m_m
+    show m_m_sexopen at s
     p "Y-yes..."
+    hide m_surprise
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_sick
+    hide m_m_sexopen 
+    hide m_spermface
+    show m_tired at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_spermface at s
+    show m_m_sexopen at s
     p "..."
+    hide m_m_sexopen
+    show m_m at s
     p "But...those monsters..."
+    hide m_m
+    show m_m_sexopen at s
     d "Those perverts have already cleaned you up. The mess you have now is not enough to attract them..."
+    hide m_m_sexopen
+    show m_m_clench at s
     p "..."
+    hide m_tire
+    hide m_blush 
+    hide m_beaten7 
+    hide m_shame 
+    hide m_sick 
+    hide m_spermface
+    show m_close at s
+    show m_blush at s
+    show m_beaten7 at s
+    show m_shame at s
+    show m_sick at s
+    show m_spermface at s
+    show m_m at s
     "[d] smirks."
     menu:
         "Dirty him":
             d "..But..."
+            scene darkforest
+            show m_surprise at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_spermface at s
+            show m_m_sexopen at s
             p "!"
+            hide m_surprise
+            hide m_blush 
+            hide m_beaten7 
+            hide m_shame 
+            hide m_sick 
+            hide m_spermface
+            show m_hurt at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_spermface at s
+            show m_m at s
+            show m_sperm_pitchy at s
             "From above, tons of white fluid spill from Pitchy" with hpunch
-            p "Argh!"
+            hide m_m
+            hide m_m_sexopen
+            hide m_sperm_pitchy
+            show m_m_sexopen at s
+            show m_sperm_pitchy at s
+            p "M!"
             d "Now you are dirty enough for them to go after"
+            hide m_hurt
+            hide m_blush 
+            hide m_beaten7 
+            hide m_shame 
+            hide m_sick 
+            hide m_sperm_pitchy
+            hide m_spermface
+            show m_surprise at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_spermface at s
+            show m_m at s
+            show m_sperm_pitchy at s
             p "!"
+            hide m_m
+            hide m_m_sexopen
+            hide m_sperm_pitchy
+            show m_m_clench at s
+            show m_sperm_pitchy at s
             p "[d]!"
             d "If I go too easy on you, you will just keep on disobeying me. Be happy prince, your behavioral problems gonna solved if we do this frequently..."
+            hide m_surprise
+            hide m_blush 
+            hide m_beaten7 
+            hide m_shame 
+            hide m_sick 
+            hide m_sperm_pitchy
+            hide m_spermface
+            hide m_m_clench
+            show m_tired at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_spermface at s
+            show m_m_sexopen at s
+            show m_sperm_pitchy at s
             p "No..."
+            hide m_m_sexopen
+            hide m_sperm_pitchy
+            show m_m_sexclench1 at s
+            show m_sperm_pitchy at s
             "From around, [p] feels like dozens of eyes watching him again. [p] feels shivers through his whole body."
+            hide m_tired
+            hide m_blush 
+            hide m_beaten7 
+            hide m_shame 
+            hide m_sick 
+            hide m_sperm_pitchy
+            hide m_spermface
+            hide m_m_sexclench1
+            show m_surprise at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_spermface at s
+            show m_m_clench2 at s
+            show m_sperm_pitchy at s
             d "[d] steps back, signaling the monsters to come forward. The mosquito-like monsters come to [p] at full speed." with hpunch
+            hide m_m_clench2
+            hide m_sperm_pitchy
+            show m_m_scream at s
+            show m_sperm_pitchy at s
             p "NOOOOOO!! Don't come here! Don't!" with vpunch
+            scene darkforest with dissolve
             show thunder at infinite_flash
             p "AAAAAAAAAAAAAAAAAA"
             show thunder at infinite_flashfastest
             p "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
             "[p] was about to run but Pitchy grabs his leg and ties him to a tree."
             scene mos at vpunch with dissolve
-            p "Ugh! Mgh! NO! Go Away!"
-            d "Oh no, they've injected you again. How unfortunate it is to not be able to faint after all those extreme thinga we just did huh?"
+            p "Ugh! Mgh!"
+            "The monsters eat all Pitchy's liquid and [d]'s sperm instantly"
+            d "Oh no, they've injected you again. How unfortunate it is to not be able to faint after all those extreme things we just did huh?"
             p "...Ngh...m..."
             scene mos_elec
             show thunder at infinite_flash
@@ -1153,17 +2313,39 @@ label extreme:
             scene mos_elecfaster
             show thunder at infinite_flashfastest
             p "MMMM....NNNN..."
-            "Pitchy releases [p]. He runs away but falls the the ground."
-            scene colapse
+            p "GGGGGRRRRRRRRRHHHHHHHHHHHHHHHHHHH!!!!"
+            scene darkforest with vpunch
+            "Pitchy releases [p]. He runs away but falls the the ground." with hpunch
+            scene colapse with dissolve
             show thunder at infinite_flashfast
             p "...Urgh...ugh..."
             scene colapse
             show thunder at infinite_flash
             d "We are not done yet!"
-            scene darkforest with dissolve
             menu:
-                "Mosquitoes monster":
+                "Continue":
+                    show m_surprise at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_m_sexclench1 at s
                     p "!"
+                    hide m_tired
+                    hide m_blush 
+                    hide m_beaten7 
+                    hide m_shame 
+                    hide m_sick 
+                    hide m_sperm_pitchy
+                    hide m_spermface
+                    hide m_m_sexclench1
+                    show m_tired at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_m_sexclench2 at s
+                    scene darkforest with dissolve
                     "[p] was tied up again."
                     scene mos_elec
                     show thunder at infinite_flash
@@ -1182,28 +2364,135 @@ label extreme:
                     scene mos_elecfaster
                     show thunder at infinite_flashfastest
                     p "AAAAAAAAAAAAAAAAAA!!!!!"
+                    scene colapse with dissolve
+                    show thunder at infinite_flashfast
                     "The monters left after 4 hours of fucking and torturing him."
+                    p "..."
+                    show thunder at infinite_flash
                     "Now [p] looks like an empty shell with twisted muscles. He peeps unconsciously on the ground due to electric shocks"
                     "[p] developed extreme fear for [d]."
-                    "His hunger and thirst inceases. His pride and psyche decrease dramatically"
-                    $pride -= 25
-                    $mental -= 25
+                    "His hunger and thirst inceases. His pride and psyche decrease insanly"
+                    $pride -= 20
+                    $mental -= 20
                     $water -=7
                     $food -=5
+                    jump justendday
                     
                 "Make him kneel":
+                    scene darkforest
+                    show m_close at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_spermface at s
+                    show m_m_sexclench1 at s
                     d "Get up! Kneel!"
+                    hide m_close
+                    hide m_blush 
+                    hide m_beaten7 
+                    hide m_shame 
+                    hide m_sick 
+                    hide m_sperm_pitchy
+                    hide m_spermface
+                    hide m_m_sexclench1
+                    show m_tired at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_spermface at s
+                    show m_m_sexclench3 at s
                     p "..."
+                    hide m_m_sexclench3
+                    show m_m_sexclench1 at s
                     "[p] struggles to lift himself up. He kneels before [d]."
-                    scene fin_touch
-                    d "Good doggie!"
+                    p "...N..."
+                    "[d] comes too close to [p] that his cock almost touches [p]'s nose."
+                    hide m_tired
+                    hide m_blush 
+                    hide m_beaten7 
+                    hide m_shame 
+                    hide m_sick 
+                    hide m_spermface
+                    hide m_m_sexclench3
+                    show m_close at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_spermface at s
+                    show m_m_clench2 at s
+                    p "..."
+                    hide m_close
+                    hide m_blush 
+                    hide m_beaten7 
+                    hide m_shame 
+                    hide m_sick 
+                    hide m_spermface
+                    hide m_m_sexclench1
+                    show m_tired at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_spermface at s
+                    show m_m at s
+                    "[p] licks [d]'s cock"
+                    scene water_lick_cock with dissolve
+                    p "...mgh..."
+                    p "Urgh..."
+                    scene fin_touch with dissolve
+                    d "What a suprise. Showing your master your loyalty huh?"
+                    show m_close at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_spermface at s
+                    show m_m_sexopen at s
                     p "...ngh!..."
-                    scene darkforrest with dissolve
+                    scene darkforest with dissolve
                     "[d] touches [p]'s mouth."
-                    d "I like you obedient like that."
+                    d "Hmph..."
+                    show m_tired at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_spermface at s
+                    show m_m_sexopen at s
                     p "...ngh..."
                     d "..."
+                    hide m_tired
+                    hide m_blush 
+                    hide m_beaten7 
+                    hide m_shame 
+                    hide m_sick 
+                    hide m_spermface
+                    hide m_m_sexopen
+                    show m_hurt at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_spermface at s
+                    show m_m_sexopen at s
                     "[d] gently presses his thumb in [p]'s mouth."
+                    hide m_hurt
+                    hide m_blush 
+                    hide m_beaten7 
+                    hide m_shame 
+                    hide m_sick 
+                    hide m_spermface
+                    hide m_m_sexopen
+                    show m_tired at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_spermface at s
+                    show m_m_sexopen at s
                     p"..."
                     scene fin_mouthb with dissolve
                     "[p] wraps his tongue around it and such as if he is sucking [d]'s cock."
@@ -1212,27 +2501,110 @@ label extreme:
                     "[d] smirks. [p] is showing a sign of submission."
                     d "It's starting to get dark. Let's end the day here. I think you have learn your lessons well."
                     scene darkforest with dissolve
+                    show m_surprise at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_spermface at s
+                    show m_m_sexopen at s
                     p "!"
                     "[d] walks away."
+                    hide m_surprise
+                    hide m_blush 
+                    hide m_beaten7 
+                    hide m_shame 
+                    hide m_sick 
+                    hide m_spermface
+                    hide m_m_sexopen
+                    show m_tired at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_spermface at s
+                    show m_m2 at s
                     p "..."
+                    hide m_tired
+                    hide m_blush 
+                    hide m_beaten7 
+                    hide m_shame 
+                    hide m_sick 
+                    hide m_spermface
+                    hide m_m2
+                    show m_close at s
+                    show m_blush at s
+                    show m_beaten7 at s
+                    show m_shame at s
+                    show m_sick at s
+                    show m_spermface at s
+                    show m_m2 at s
                     "Suffer from extreme fear, acute stress and being force to appeasing [d] too much today make [p] started to dependent on [d]'s presence."
-                    "His hunger and thirst inceases. His pride and psyche decrease dramatically"
+                    "His hunger and thirst inceases. His psyche decrease dramatically. His pride decrease insanly"
                     $pride -= 15
                     $mental -= 15
                     $water -=7
                     $food -=5
+                    jump justendday
                     
 ##########################################3    
 
         "End the day":
             d "That's enough for today. Let's end here."
+            scene darkforest
+            show m at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_spermface at s
+            show m_m2 at s
             p "..."
+            hide m
+            hide m_blush 
+            hide m_beaten7 
+            hide m_shame 
+            hide m_sick 
+            hide m_spermface
+            hide m_m2
+            show m_tired at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_spermface at s
+            show m_m2 at s
             d "Are you secretly cursing me?"
+            hide m_tired
+            hide m_blush 
+            hide m_beaten7 
+            hide m_shame 
+            hide m_sick 
+            hide m_spermface
+            hide m_m2
+            show m_surprise at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_spermface at s
+            show m_m_sexopen at s
             p "N-no. No... I do not."
-            scene fin_mouthb with dissolve
+            scene fin_touch with dissolve
+            show m_close at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_spermface at s
+            show m_m2 at s
             d "Tell me, prince. How can I be sure?"
+            hide m_m2
+            show m_m_clench at s
             p "T-that's..."
-            "[p] closes his eyes then looks at [d] then his hand..."
+            hide m_m_clench
+            show m_m_sexopen at s
+            p "..."
             scene fin_mouthb with dissolve
             p "..."
             p "...ngh..."
@@ -1240,18 +2612,42 @@ label extreme:
             d "..."
             d "That's cute of you."
             p "...m..."
-            p "!"
             scene darkforest with dissolve
+            show m_surprise at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_spermface at s
+            show m_m at s
+            p "!"
             "[d] gets his hand off of [p]'s face."
+            hide m_m
+            show m_m2 at s
             d "You have started to know how to please your master, slave prince."
+            hide m_tired
+            hide m_blush 
+            hide m_beaten7 
+            hide m_shame 
+            hide m_sick 
+            hide m_spermface
+            hide m_m2
+            show m_tired at s
+            show m_blush at s
+            show m_beaten7 at s
+            show m_shame at s
+            show m_sick at s
+            show m_spermface at s
+            show m_m_sexopen at s
             p "..."
             "[p] feels helpless and ashamed of himself for pleasing [d]. His thirst and hunger decrease. His pride and psyche decrease."
             $pride -= 15
             $mental -= 15
             $water -=7
             $food -=5
+            jump justendday
 
-###############################################################################################################
+################################################################# 0< clean <=30   #############################################  
 ## 10< clean <=30    Comment out by ...
     
 ## 0< clean <=30
@@ -1261,62 +2657,453 @@ label bath30:
     p "I-I need to bath. Please [d]"
     d "Hmmph..."
     p "..."
+    "[d] ignores [p]'s request."
+    p "[d]!"
+    scene pull_day with vpunch
+    d "Haven't you learn you lessons? Dare to nag me!"
+    p "Ngh! M!"
+    scene pull_dayfast with hpunch
+    p "Argh! Aaaa!"
+    p "I- I'm sorry! Urgh! I'm sorry."
+    d "Hmph"
     menu:
-        "Please me"
-        "Ignore":
-            "[d] ignores [p]'s request."
-            p "[d]!"
-            scene pull_day with vpunch
-            d "Haven't you learn you lessons? Dare to nag me!"
-            p "Ngh! M!"
-            scene pull_dayfast with hpunch
-            p "Argh! Aaaa!"
-            p "I- I'm sorry! Urgh! I'm sorry."
+        "Dirty him":
+            d "Pitchy!"
+            "From above, tons of white fluid spill from Pitchy" with hpunch
+            p "N-NO! Please stop!"
             menu:
-                "Dirty him"
-                "Bath him"
-                "Ignore":
-                    "ddfdf"
-    
-###############################################################################################################
-#########           nth time bath him
-
-label bathhim:
+                "Stop":
+                    "The fluid stopped"
+                    scene fin_mouthb with dissolve
+                    d "If I said \"No\", it's a \"No\", got it?"
+                    p "Y-Yes..."
+                    "Afraid of being fucked by the mosquito monsters, [p] please [d] by sucking his thumb."
+                    scene fin_mouthb with dissolve
+                    p "..."
+                    p "...ngh..."
+                    "[p] wraps his tongue around [d]'s thumb and such as if he is sucking [d]'s cock."
+                    d "Being submissive like this is good."
+                    jump sim
+                "Don't stop":
+                    p "P-Please stop [d], if this continue..."
+                    "[d] kicks [p]'s head" with hpunch
+                    p "Ngh!"
+                    d "You are too noisy."
+                    p "I-I'm sorry."
+                    "[d] smirks"
+        "Pitchy bathe him":
+            menu:
+                "Bath":
+                    jump bath_pitchy
+                    
+                "Bath & fuck":
+                    d "Pitchy! Bathe him. Play with him till you're bored."
+                    "Suddenly, the vines wrap tightly around [p], he cannot see a thing." with vpunch
+                    p "!"
+                    "[p] found himself being moved at an incredible speed." with hpunch
+                    scene under with vpunch
+                    "From out of nowhere, he was pushed down deep under water, then pulled up, down, up, down, up, again and again and again"
+                    p "Urgh! Hgh!"
+                    "[p] cannot says even a single word. If he open his mouth just once, water will fill his lung."
+                    p "Hgh! Mgh!"
+                    "After a while, Pitchy finally stops."
+                    p "...Haaa...aaa..."
+                    p "!"
+                    scene vinecock
+                    p "(F-Fuck! This damn plant)"
+                    scene vinecockfast
+                    p "M!! Ngh!"
+                    p "(S-stop!)"
+                    scene vinecockcum
+                    p "Urgh!"
+        "Ignore":
+            "[d] completely ignores [p]"
+ ###########################################################################################  Pitchy bathe #############   
+ 
+label bath_pitchy:
+    d "Pitchy! Bathe him" 
+    scene darkforest with hpunch
+    show m_surprise at s
+    show m_shame at s
+    show m_sick at s
+    show m_m_sexopen at s
+    p "!" with hpunch
+    scene darkforest with vpunch
+    show m_pitchy with hpunch
+    "Suddenly, the vines wrap tightly around [p], he cannot see a thing." with vpunch
+    p "NGH!"
+    scene sky with vpunch
+    show m_pitchy_blush
+    p "M!!N"
+    "[p] found himself being moved at an incredible speed." with hpunch
+    scene under with vpunch
+    scene under at zoomin
+    show m_pitchy_blush  at zoom_opa
+    show thunder at infinite_flash
+    show sky at infinite_flash
+    "From out of nowhere, he was pushed down deep under water, then pulled up, down, up, down, up, again and again and again"
+    scene sky with vpunch
+    show m_pitchy_blush
+    show m_pitchy_sperm
+    p "Urgh! Hgh!"
+    scene under with vpunch
+    scene under 
+    show m_pitchy_blush at opa
+    show thunder at infinite_flash
+    show sky at infinite_flash
+    p "Hgh! *Ooc...*Occc...NNNggggghhhhhh..."
+    scene sky with vpunch
+    show m_pitchy_blush
+    show m_pitchy_sperm
+    p "Hgh! Mgh!" with vpunch
+    scene under
+    show m_pitchy_blush at zoom_opa
+    show thunder at infinite_flashfast
+    show sky at infinite_flashfast
+    p "Mghpppp....Nhppppppphhhhh...."
+    "Pitchy continues to bathe him until that night."
+    p "Nhppppppphhhhhhhhh...."
+    "[p] thirst, hunger, pride and psyche decrease."
+    $food +=2
+    $water +=2
+    $mental +=5
+    $pride +=3
+    jump justendday
+ 
+###########################################################################################  Dietrich bathe Ray #################
+label bath_bath:
     d "So tell me, why should I do that?"
+    hide m_surprise
+    show m_surprise at s
+    show m_shame at s
+    show m_m_clench at s
     p "I-I'll do anything."
     "[d] smirks."
-    d "Is there anything you haven't done? Beg me, lick my foot, blow me, plesure me, you already do that everyday."
+    hide m_surprise 
+    hide m_shame 
+    hide m_m_clench 
+    show m_tired at s
+    show m_shame at s
+    show m_m_clench at s
+    d "Hmph. Is there anything you haven't done? Begged me, licked my feet, sucked me, pleasured me…You aren’t volunteering anything new."
     p "..."
+    hide m_tired
+    hide m_shame 
+    hide m_m_clench 
+    show m_surprise at s
+    show m_shame at s
+    show m_m_clench at s
     "Feeling the mosquito monsters about to come for him, [p] freaks out."
-    p "B-Bath! Let's bath together! I-I wash you clean."
+    hide m_m_clench
+    hide m_m_sexopen
+    show m_m_sexopen at s
+    p "I-I wash you clean."
     "[d] smiles"
-    d "That's news. Very creative."
-    d "Pitchy! Cover his eyes."
-    p "!"
-    "From behind, the vines cover [p]s eyes with a silk ribbon then release him."
+    hide m_m_sexopen
+    show m_m at s
+    d "That's news."
+    d "Pitchy!" with vpunch
+    scene darkforest with hpunch
+    show m_pitchy with dissolve
+    p "Urg!M!" with vpunch
+    "The vines cover [p]'s eyes with a silk ribbon then release him." with hpunch
+    hide m_pitchy with dissolve
+    show m
+    show m_blush
+    show m_blind 
+    show m_cockup
+    show m_m_sexclench2 
+    show m_beaten2
     p "..."
-    "From the ground, something is moving. [p] touchess the blindford."
-    d "If you dare take it out, I'll feed you to the mosquitoes."
-    p "..."
+    scene sky with vpunch
+    show m
+    show m_shame 
+    show m_m_clench
+    show m_blind
+    show m_beaten2
+    show m_cockup
+    "From the ground, something is moving. [p] touches the blindfold."
+    hide m_m_clench
+    show m_m_sexclench1
+    d "If you dare to take it out, I'll feed you to the mosquitoes."
+    hide m_m_sexclench1
+    show m_m_sexopen
     p "I-I won't."
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    hide m_m_sexopen
+    show m_m
+    p "..."
+    scene sky at zoomin
+    show spring at zoom_opa
+    show m
+    show m_shame 
+    show m_blush
+    show m_m_clench
+    show m_blind
+    show m_beaten2
+    show m_cockup
+    "Whatever the thing under his feet is, it is shooting up and moving incredibly fast. [p] loses his balance and falls down." with vpunch
+    hide m_m_clench
+    hide m_blind
+    show m_m_sexopen
+    show m_blind
+    "[p] reaches out, desperate to find something to break his fall." with hpunch
+    hide m_blind
+    show m_sick
+    show m_m_scream
+    show m_blind
+    p "H!"
+    "[d] smirks." 
+    hide m_m_scream
+    show m_m
+    p "!" with hpunch
+    scene sky at zoomin
+    show thunder at infinite_flash
+    show m
+    show m_shame 
+    show m_blush
+    show m_m_clench
+    show m_blind
+    show m_beaten2
+    show m_cockup
+    "[d] violently kicks [p], launching him at an even higher velocity" with hpunch
+    hide m_m_clench
+    show m_m_sexclench2
+    "[p] is so terrified that he can't even scream. Unable to see, his adrenaline skyrockets, driving every cell of his body insane with terror, his body covered in sweat"
+    hide m_m_sexclench2
+    show m_m_clench2
+    "[p] feels like he is going to smash into the ground and die. Every thought he had, every pain and humiliation he suffered will all disappear in that moment."
+    hide m_m_clench2
+    show m_m_scream1
+    p "!" with hpunch
+    scene under
+    "BOOONG!!!" with vpunch
+    show thunder at infinite_flash
+    "[p] falls into the water, the sudden influx of pressure popping his ears." 
+    "He flails around, tries to swim up or find something to grasp, but instead sinks deeper and deeper."
+    p "...mgh...n..."
+    show thunder at infinite_flashfast
+    "[p] is in a constant state of panic. He flails wildly, trying to swim up or grasp something, desperate to get to the surface."
+    "Yet, he continues to sink deeper and deeper."
+    show thunder at infinite_flashfastest
+    "The water fills his lungs and the pressure crushes him apart."
+    show thunder at infinite_flashfast
+    "Desperate for air, he churned around until he began to feel really dizzy"
+    show thunder at infinite_flash
+    "Lacking oxygen for too long, [p] cannot hold his breath anymore. He starts to breathe, a breath full of water. It filled all of his lungs. Dizzy and exhausted, [p] gives up struggling."
+    "At that moment, [p] wonders if this is what death feels like."
+    hide thunder with dissolve
+    "As soon as [p] started to black out, a hand grasps him and pulls him up close. In the cold of the water, [p] can feel that person's warmth."
+    "Even though [p] knows who it is, he unconsciously clutches to his rescuer."
+    d "..."
+    "From below the ground, something lifts them up in a high speed."
+    scene spring with vpunch
+    show m at s
+    show m_shame at s
+    show m_m_scream at s
+    show m_sick at s
+    show m_blind at s
+    show m_beaten2 at s
+    show m_pitchy_sperm at s
+    p "Ahhh...haaa...ahhhh..."
+    scene bath_gentle_hug
+    "[p] still clutches to [d]. His whole body shaking because of cold"
+    d "I'm suprised. Do you really love me that much?"
+    show m at s
+    show m_shame at s
+    show m_m_scream at s
+    show m_sick at s
+    show m_blind at s
+    show m_beaten2 at s
+    show m_pitchy_sperm at s
+    p "...Ahhh...haa...Please...ngh...the ground... I-I can't swim."
+    hide m_m_scream
+    show m_m_sexopen at s
+    p "Urgh..."
+    hide m_m_sexopen
+    show m_m_scream at s
+    p "ahhh...haaa...."
+    "[d] laughs"
+    d "That's funny. The youngest and fiercest general of Rivakh doesn't know how to swim."
+    hide m_m_scream
+    show m_m_clench2 at s
+    p "..."
+    hide m_m_clench2
+    show m_m_sexopen at s
+    "Despite the scare of falling into water again, [p] relaxes his muscles and lets go of [d].."
+    hide m_m_sexopen
+    show m_m_scream at s
+    p "!" with vpunch
+    scene bath_gentle_fuck with dissolve
+    p "Urgh!"
+    "Suddenly, [d] grasps [p]'s face and rams his dick in [p]'s trembling asshole" with hpunch
+    p "Hiii...Ngh...Arghhh..."
+    d "Suprised and unable to see, [p] becomes more sensitive."
+    p "Aaaahh...aaaa..."
+    d "You are really tight here, prince."
+    p "Uhmmm...m..."
+    scene bath_gentle_fuckfast with hpunch
+    "Seeing how [p] is holding in his voice, [d] purposely hammered [p]'s prostate with every thrust"
+    show m at s
+    show m_shame at s
+    show m_m_sexclench1 at s
+    show m_sick at s
+    show m_blind at s
+    show m_beaten2 at s
+    show m_pitchy_sperm at s
+    p "NGGHHHH!....Urghhh..."
+    hide m_m_sexclench1
+    show m_m_clench2 at s
+    p "Nnnn...Urgh!....Nnnnn...hhh..."
+    scene bath_gentle_fuckfaster with vpunch
+    show m at s
+    show m_shame at s
+    show m_m_scream at s
+    show m_sick at s
+    show m_blind at s
+    show m_beaten2 at s
+    show m_pitchy_sperm at s
+    p "ARGH.....Aaaaa....N...haaaaa...."
+    p "S-St-! URG!"
+    hide m_m_sexopen
+    show m_m_sexclench1 at s
+    d "What a pervert! You? A general? What a laugh. Look at you. I bet you can cum from anything, even from a dog's dick"
+    scene bath_gentle_fuckfastest with hpunch
+    show m at s
+    show m_shame at s
+    show m_m_scream at s
+    show m_sick at s
+    show m_blind at s
+    show m_beaten2 at s
+    show m_pitchy_sperm at s
+    p "Arghhh!!...NGH!!!...ARGH! NGH!"
+    p "N-NO! Stop! [d]"
+    d "Sure!"
+    scene spring with vpunch
+    "[d] lets go of [p]. The stone [p]'s lying on return to dust." with hpunch
+    show m at s
+    show m_shame at s
+    show m_pitchy_sperm at s
+    show m_m_scream at s
+    show m_sick at s
+    show m_blind at s
+    show m_beaten2 at s
+    p "!" with vpunch
+    hide m_m_scream
+    show m_m_sexclench1 at s
+    "[p] falls into a shallow area." with hpunch
+    hide m_m_sexclench1
+    show m_m_clench2 at s
+    p "Ngh!"
+    hide m_m_clench2
+    show m_m_sexopen at s
+    p "!" with vpunch
+    scene bath_hard_hand with hpunch
+    p "Argh!!"
+    "From behind, [p] feels something coming for him. He tries to run but it grasps his hair, locks his arm. Its dick rams his anus brutally."
+    p "Aaaaaa...ARGH!..."
+    p "H...mgh...Hurts. [d]! Please stop!"
+    "[d] smirks."
+    scene bath_hard_handfast
+    p "Ngh! Arghhh! Aaaaa..."
+    p "[d]! Please! If you move any deeper, my arm will break."
+    d "Is that so?"
+    p "P-please [d]"
+    scene bath_release with hpunch
+    "[d] slams [p]'s head on the stone."
+    d "What a sissy! Begging your enemy not to break your arm."
+    p "Urgh...ahhhh..."
+    d "On the other hand, it seems like I have trained you well..."
+    d "...but..."
+    scene bath_hard
+    p "ARGH!! Aaaaa..."
+    "[d] pulls [p]'s hair up and start fucking him again."
+    scene bath_hardfast
+    d "What a selfish little brat! Cumming from your ass while I haven't cum yet"
+    p "Argh!....Aaaaa..."
+    scene bath_hardfaster
+    p "Ngh...No!...Stop!...Too fast..."
+    d "How are you gonna pay me back for that, huh?!"
+    scene bath_hardfastest
+    p "AAAAAAAAAAAAAAAAAAA!!!"
+    p "*sniff...Aaaaaaa...ngh...aaaaaa..."
+    scene bath_realhard with hpunch
+    p "Urg! *sniff *sniff"
+    "[d] pulls [p]'s head back until his muscles scream and bones creak and cums deep inside him."
+    scene bath_release with dissolve
+    d "What a refreshing feeling!" with vpunch
+    p "Urgh...aaaa...uhm..."
+    p "...haaa...ahhhh..."
+    scene spring with dissolve
+    show m at s
+    show m_shame at s
+    show m_pitchy_sperm at s
+    show m_m_sexopen at s
+    show m_sick at s
+    show m_blind at s
+    show m_beaten2 at s
+    p "Aaaa..."
+    hide m_m_sexopen
+    show m_m2 at s
+    d "Get up!"
+    scene spring with dissolve 
+    show m
+    show m_shame 
+    show m_pitchy_sperm 
+    show m_sick 
+    show m_blind 
+    show m_beaten2
+    show m_cockup
+    show m_m_sexopen
+    p "Ugrh...aaa..."
+    hide m_m_scream
+    show m_m_clench 
+    d "Have you forgetten why I brought you here? What did you say about cleaning me?"
+    hide  m_m_clench
+    show m_m_sexopen
+    p "...h...ngh..."
+    d "Huh?"
+    hide m_m_sexopen
+    show m_m_open2
+    p "Y-yes..."
+    hide m_m_open2
+    show m_m_sexclench1 
+    "[d] stays silent and looks at [p] struggling to get up."
+    "[p] unsteadily walks to [d] and bump into him." with vpunch
+    hide m_m_sexclench1 
+    show m_m2
+    p "Urgh..."
+    hide m_m2
+    show m_m_clench2
+    "[p] grasps his arms in time to prevent him falling over."
+    hide m_m_clench2
+    show m_m_open2
+    d "Hurry up, prince. I don't like waiting."
+    hide m_m_open2
+    show m_m_open1
+    p "...."
+    hide m_m_open1
+    show m_m
+    d "Wasn't it your idea? Breaking your word?."
+    p "..."
+    scene spring with hpunch
+    "[d] graphs [p]'s head and pushes [p] mouth to his chest." with vpunch
+    show m at s
+    show m_shame at s
+    show m_pitchy_sperm at s
+    show m_m_sexopen at s
+    show m_sick at s
+    show m_blind at s
+    show m_beaten2 at s
+    p "Ngh!"
+    hide m_m_sexopen
+    show m_m at s
+    d "If you can't think of anything, clean me with your tongue. What a waste of time!"
+    hide m_m
+    show m_m_sexopen at s
+    "[p] licks every corner of [d]'s body. Even until his tongue becomes painfully sore, [d] still lets him continue for two more hours."
+    hide m_m_sexopen
+    show m_m_sexclench3 at s
+    "Although it's painful and humiliate, this is much better than being shocked and fucked by the mosquito monsters."
+    "Since it's late, [d] lets him rest for the rest of the day. [p]'s pride and psyche decrease."
+    $ene -=50
+    jump justendday

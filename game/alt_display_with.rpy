@@ -27,3 +27,12 @@ transform zoomin:
     linear 0.1 zoom 2 xpos -1600 
     linear 0.1 zoom 1.98 xpos -1584 
     repeat
+    
+################################### opacity + zoom in
+transform zoom_opa:
+    linear 0.13 alpha 0.5 zoom 1.0 
+    linear 0.13 alpha 0.5 zoom 1.1
+    repeat
+    
+transform opa:
+    alpha 0.5 

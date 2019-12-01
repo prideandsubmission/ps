@@ -96,7 +96,7 @@ label hunger_1:
     jump sim
     
 label hunger_2:
-    "[p] throws dozens of fruit in front of [p] as the vines retreat from his body."
+    "[d] throws dozens of fruit in front of [p] as the vines retreat from his body."
     show m_tired at s
     show m_m at s
     p "..."
