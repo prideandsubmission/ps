@@ -297,6 +297,7 @@ label newday:
     $day +=1
     $water -=7
     $food -=5
+    $clean -=7
     scene black with dissolve
     pause .5
     if ene>=100:

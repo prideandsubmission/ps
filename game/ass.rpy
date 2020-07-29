@@ -278,7 +278,7 @@ label ass_nine:
     $food -=10
     $ene -=50
     $firsttime = False
-    $clean+=3
+    $clean-=3
     jump sim
     
 label ass_nine2:
@@ -477,7 +477,7 @@ label ass_nine2:
     $water-=20
     $food -=10
     $ene -=50
-    $clean+=3
+    $clean-=3
     jump sim
     
 label ass_obe:

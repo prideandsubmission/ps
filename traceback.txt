@@ -1,48 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/sim.rpy", line 11, in script call
+  File "game/sim.rpy", line 10, in script call
     call screen tie
-  File "game/sim.rpy", line 11, in script call
+  File "game/sim.rpy", line 10, in script call
     call screen tie
-  File "game/sim.rpy", line 11, in script call
-    call screen tie
-  File "game/sim.rpy", line 11, in script call
-    call screen tie
-  File "game/sim.rpy", line 11, in script call
-    call screen tie
-  File "game/event.rpy", line 39, in script
-    show m_tired at s
-  File "game/event.rpy", line 260, in <module>
-    if clean<=30 and clean>0:
-NameError: name 'mosFirst' is not defined
+  File "game/dogtraining.rpy", line 68, in script
+    show m_surprise at s
+TypeError: 'unicode' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/sim.rpy", line 11, in script call
+  File "game/sim.rpy", line 10, in script call
     call screen tie
-  File "game/sim.rpy", line 11, in script call
+  File "game/sim.rpy", line 10, in script call
     call screen tie
-  File "game/sim.rpy", line 11, in script call
-    call screen tie
-  File "game/sim.rpy", line 11, in script call
-    call screen tie
-  File "game/sim.rpy", line 11, in script call
-    call screen tie
-  File "game/event.rpy", line 39, in script
-    show m_tired at s
-  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\ast.py", line 1807, in execute
-    if renpy.python.py_eval(condition):
-  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\python.py", line 1961, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\PROGRAM\RENPY\renpy-6.99.14-sdk\renpy\python.py", line 1954, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/event.rpy", line 260, in <module>
-    if clean<=30 and clean>0:
-NameError: name 'mosFirst' is not defined
+  File "game/dogtraining.rpy", line 68, in script
+    show m_surprise at s
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\ast.py", line 1183, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\ast.py", line 1153, in show_imspec
+    atl=atl)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\exports.py", line 703, in show
+    img = i(img)
+TypeError: 'unicode' object is not callable
 
 Windows-8-6.2.9200
-Ren'Py 7.2.2.491
-Pride and Submission 1.1
-Sun Dec 01 02:35:27 2019
+Ren'Py 7.3.5.606
+Pride and Submission 1.3
+Thu Apr 30 13:04:31 2020

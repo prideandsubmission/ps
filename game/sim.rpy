@@ -4,15 +4,11 @@ screen tie:
         ground Animation("tie0001.jpg",.2,"tie0002.jpg",.2,"tie0003.jpg",.2,"tie0004.jpg",.2,"tie0005.jpg",.2,"tie0006.jpg",.2,"tie0007.jpg",.2,"tie0008.jpg",.2,"tie0009.jpg",.2,"tie0010.jpg",.2)
         hover Animation("tie_look0001.jpg",.1,"tie_look0002.jpg",.1,"tie_look0003.jpg",.1,"tie_look0004.jpg",.1,"tie_look0005.jpg",.1,"tie_look0006.jpg",.1,"tie_look0007.jpg",.1,"tie_look0008.jpg",.1,"tie_look0009.jpg",.1,"tie_look0010.jpg",.1,"tie_looka0001.jpg",.1,"tie_looka0002.jpg",.1,"tie_looka0003.jpg",.1,"tie_looka0004.jpg",.1,"tie_looka0005.jpg",.1,"tie_looka0006.jpg",.1,"tie_look0007.jpg",.1,"tie_look0008.jpg",.1,"tie_look0009.jpg",.1,"tie_look0010.jpg",.1)
         hotspot (243, 365, 600, 1000) action Function(renpy.transition, dissolve), Call ("simbutton")
-        
 label sim:
     $ showday = True
     show tie with fade
-    call screen tie
-
-
- 
-        
+    call screen tie  
+    
 label simbutton:
     scene tie_looka
     show screen day
@@ -24,10 +20,13 @@ label simbutton:
     elif clean<=0:
         jump bath
     else:
+        if pride <= -3 and slaveannounce == False or slavemarket == 1:
+            "A new event had been unlocked. Please check out Humiliation option."
+            $slaveannounce = True
+            $dogtraining = True
         menu:
             "Water and Feed":
                 menu:
-                                                                                                           
                     "Water":
                         if ene <= 0:
                             jump endday
@@ -37,45 +36,45 @@ label simbutton:
                             else:
                                 if mental<=50 and pride<=50 and water>0:
                                     jump water_obe
-                                
-                              
                                 elif water >=50:
-                                    jump water_20
-                                    
-                                    
-                                        
+                                    jump water_20      
                                 elif 50>water>=40:
-                                    jump water_50
-                                        
+                                    jump water_50       
                                 elif 40>water>=30:
-                                        jump water_80
-                                        
+                                        jump water_80       
                                 else:
                                     jump water_90
-                                        
-           
                     "Feed":
                         if ene <= 0:
                             jump endday
                         else:
                             $clean -=5
-                            if mental<=50 and pride<=50 and food>=0:
+                            if mental<=50 and pride<=50 and food>=50:
                                 jump hunger_obe
+                            elif mental<=30:
+                                menu:
+                                    "How do you like to feed him?"
+                                    "Like a dog":
+                                        jump hunger_obe
+                                    "Like a human":
+                                        "The vine release [p]"
+                                        p "?"
+                                        "[d] throws [p] the fruits."
+                                        p "..."
+                                        p "What do you want?"
+                                        d "So you prefer to eat them on the ground then?"
+                                        p "..."
+                                        "[p] eats the fruits."
+                                        
                             elif food >=40:
                                 jump hunger_none
                             elif 40>food>=30:
                                 jump hunger_1
                             else:
                                 jump hunger_2
-                 
                     "Return":
-                
                         jump simbutton
-                      
-                        
-                            
             "Humiliation":
-                
                 menu:
                     "Tease":
                         if ene <=0:
@@ -89,7 +88,6 @@ label simbutton:
                                     jump touch_first
                                 else:
                                     jump touch
-                                    
                             else:
                                 if touchfirstnone:
                                     jump touch_first
@@ -97,9 +95,7 @@ label simbutton:
                                     jump touch
                                 else:
                                     jump touch_obe
-                                
-                          
-                            
+        
                     "Toy":
                         if ene <=0:
                             jump endday
@@ -110,8 +106,6 @@ label simbutton:
                                     jump toy_thrust_first
                                 else:
                                     jump toy_obe
-                                
-                              
                             elif pride >=90:
                                 jump toy_no
                                         
@@ -126,13 +120,15 @@ label simbutton:
                                     jump toy_thrust_first
                                 else:
                                     jump toy_thurst
-                            
-                    "Return":
-                
+                    "Dog Sex" if dogtraining:
+                        jump dogtraining
                         jump simbutton
-                            
+                    "Slave market" if slavemarket:
+                        jump slavemarket
+                        jump sim
+                    "Return":
+                        jump simbutton   
             "Sex":
-               
                 menu:
                     "Oral":
                         if ene <=0:
@@ -147,7 +143,6 @@ label simbutton:
                                 jump cock_2
                             else:
                                 jump cock_obe
-                        
                     "Anal":
                         if ene <=0:
                             jump endday
@@ -165,7 +160,6 @@ label simbutton:
                             else:
                                 jump ass_obe
                     "Group Sex" if group_baby ==True:
-                        $clean +=5
                         jump group2
                         
                     "Group Sex" if group_nobaby ==True:
@@ -173,9 +167,6 @@ label simbutton:
                         
                     "Return":
                         jump simbutton
-            
-               
-                                
             "Test mind control":
                 if mental <=0 and pride <=0:
                     jump control4_ques
@@ -186,7 +177,6 @@ label simbutton:
                         jump control2
                     else:
                         jump control3
-                        
             "Let [p] rest":
                 jump endday
    

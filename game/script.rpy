@@ -6,6 +6,8 @@ define p = Character("Prince")
 define n = Character("Nine")
 define m = Character("Monster")
 define k = Character("Previous King")
+define h = Character("Human")
+define ri = Character("Rivakh")
 default showday = False
 default show = False
 default firstwater = True # if this is the first time water                  country name:   Rivakh
@@ -19,6 +21,9 @@ default touchfirstnone = True # if this is the first time Tease him
 default touchnone = True
 default control3first = True
 default control4first = True
+default slaveannounce = False
+default dogtraining = False
+default slavemarket = 0
 init python:
     showday= False
     day = 1
@@ -67,6 +72,7 @@ label start:
                     $pride = 0
                     $day = 50
                     $clean = 40
+                    $group_baby = True
                     play music "Angevin.mp3"
                     jump sim
                 "No skiping":

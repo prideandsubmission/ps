@@ -4,6 +4,7 @@
 label bath:
 ########################################################################### first time
     if firstMos ==0:
+        $ D = d.upper()
         scene tie_looka
         show m at s
         show m_m_1 at s
@@ -286,6 +287,7 @@ label bath:
         
 ########################################################################### nth time  #################################  haven't prrofread
     else:
+        $ D = d.upper()
         scene darkforest
         show m_surprise at s
         show m_m_sexclench1 at s
@@ -1633,6 +1635,7 @@ label justenough:
     $mental -= 7
     $water -=5
     $food -=5
+    jump justendday
     
  ##################################   wrech him  extreme   ################################################################################    
 label extreme:
@@ -2218,13 +2221,13 @@ label extreme:
             show m_sick at s
             show m_spermface at s
             show m_m at s
-            show m_sperm_pitchy at s
+            show m_pitchy_sperm at s
             "From above, tons of white fluid spill from Pitchy" with hpunch
             hide m_m
             hide m_m_sexopen
-            hide m_sperm_pitchy
+            hide m_pitchy_sperm
             show m_m_sexopen at s
-            show m_sperm_pitchy at s
+            show m_pitchy_sperm at s
             p "M!"
             d "Now you are dirty enough for them to go after"
             hide m_hurt
@@ -2232,7 +2235,7 @@ label extreme:
             hide m_beaten7 
             hide m_shame 
             hide m_sick 
-            hide m_sperm_pitchy
+            hide m_pitchy_sperm
             hide m_spermface
             show m_surprise at s
             show m_blush at s
@@ -2241,13 +2244,13 @@ label extreme:
             show m_sick at s
             show m_spermface at s
             show m_m at s
-            show m_sperm_pitchy at s
+            show m_pitchy_sperm at s
             p "!"
             hide m_m
             hide m_m_sexopen
-            hide m_sperm_pitchy
+            hide m_pitchy_sperm
             show m_m_clench at s
-            show m_sperm_pitchy at s
+            show m_pitchy_sperm at s
             p "[d]!"
             d "If I go too easy on you, you will just keep on disobeying me. Be happy prince, your behavioral problems gonna solved if we do this frequently..."
             hide m_surprise
@@ -2255,7 +2258,7 @@ label extreme:
             hide m_beaten7 
             hide m_shame 
             hide m_sick 
-            hide m_sperm_pitchy
+            hide m_pitchy_sperm
             hide m_spermface
             hide m_m_clench
             show m_tired at s
@@ -2265,19 +2268,19 @@ label extreme:
             show m_sick at s
             show m_spermface at s
             show m_m_sexopen at s
-            show m_sperm_pitchy at s
+            show m_pitchy_sperm at s
             p "No..."
             hide m_m_sexopen
-            hide m_sperm_pitchy
+            hide m_pitchy_sperm
             show m_m_sexclench1 at s
-            show m_sperm_pitchy at s
+            show m_pitchy_sperm at s
             "From around, [p] feels like dozens of eyes watching him again. [p] feels shivers through his whole body."
             hide m_tired
             hide m_blush 
             hide m_beaten7 
             hide m_shame 
             hide m_sick 
-            hide m_sperm_pitchy
+            hide m_pitchy_sperm
             hide m_spermface
             hide m_m_sexclench1
             show m_surprise at s
@@ -2287,12 +2290,12 @@ label extreme:
             show m_sick at s
             show m_spermface at s
             show m_m_clench2 at s
-            show m_sperm_pitchy at s
+            show m_pitchy_sperm at s
             d "[d] steps back, signaling the monsters to come forward. The mosquito-like monsters come to [p] at full speed." with hpunch
             hide m_m_clench2
-            hide m_sperm_pitchy
+            hide m_pitchy_sperm
             show m_m_scream at s
-            show m_sperm_pitchy at s
+            show m_pitchy_sperm at s
             p "NOOOOOO!! Don't come here! Don't!" with vpunch
             scene darkforest with dissolve
             show thunder at infinite_flash
@@ -2338,7 +2341,7 @@ label extreme:
                     hide m_beaten7 
                     hide m_shame 
                     hide m_sick 
-                    hide m_sperm_pitchy
+                    hide m_pitchy_sperm
                     hide m_spermface
                     hide m_m_sexclench1
                     show m_tired at s
@@ -2395,7 +2398,7 @@ label extreme:
                     hide m_beaten7 
                     hide m_shame 
                     hide m_sick 
-                    hide m_sperm_pitchy
+                    hide m_pitchy_sperm
                     hide m_spermface
                     hide m_m_sexclench1
                     show m_tired at s
