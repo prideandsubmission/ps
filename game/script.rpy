@@ -5,9 +5,10 @@ define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 define p = Character("Prince")
 define n = Character("Nine")
 define m = Character("Monster")
-define k = Character("Previous King")
-define h = Character("Human")
+define k = Character("King Raphael")
+define h = Character("A Random Human")
 define ri = Character("Rivakh")
+define ren = Character("Ren")
 default showday = False
 default show = False
 default firstwater = True # if this is the first time water                  country name:   Rivakh
@@ -99,7 +100,7 @@ label start:
     stop music
     play music "Angevin.mp3" fadeout 3.0
     scene darkforest_night 
-    "A few days later, he arrived at the entrance of the Dark Forest, the most fearsome place known to man. \nLegend says this is the place God hid the First Stone with the quote \"This stone will give its owner the power to destroy the laws of current Universe.\""
+    "A few days later, he arrived at the entrance of the Dark Forest, the most fearsome place known to man. \nLegend says this is the place God hid the First Stone with the quote \"This stone will give its owner the power to bend The Flow and destroy the laws of current Universe.\""
     show m_armor at left
     p "Despite being a legend, many rulers have sent troops here to look for it. Even now, there are many that lose their lives here."
     "The prince laughs"
@@ -136,11 +137,11 @@ label start:
             p"Everyone knows that."
             hide n2
             show n_surprise2
-            n"You mean all the authority?"
+            n"You mean all the human authority?"
             p ".."
             hide n_surprise2
             show n_smile2
-            n"Ok. There is but one river in this forest. Does that satisfy you?"
+            n "There is but one big river in this forest. However, you cannot ..."
             p "..."
             "The prince moved past the demon."
             hide n_smile2 with dissolve
@@ -525,6 +526,8 @@ label start:
     n "It’s yours right? You should stay near to your belongings." 
     hide m_m_clench 
     show m_m at left
+    p "..."
+    n "Sir, please get out of this forest. Don't look for The Stone anymore. It's for your own good"
     p "..."
     hide n_smile2 with dissolve
     "The demon goes away." 
@@ -1206,6 +1209,13 @@ label start:
             show m_m_sexclench1 at left
             show m_cockdown at left
             p "Damn you!"
+            "[d] toucks [p]'s face"
+            d "But you are indeed a very interesting creature. I have never seen anything that entertaining"
+            p "SHUT U-mph"
+            "[d] covers [p]'s mouth"
+            d "Sht. Consider yourself lucky or unlucky. At least you can have one hell of good life experience here kid."
+            "[d] touches [p]'s cock"
+            p "Mn"
             d "Tie him there Pitchy!"
             hide m_m_sexopen
             hide m_surprise 
