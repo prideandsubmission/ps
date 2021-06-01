@@ -1,0 +1,67 @@
+#sim.rpy  make "Like a human" does effect
+
+"Feed":
+                        if ene <= 0:
+                            jump endday
+                        else:
+                            $clean -=5
+                            if mental<=50 and pride<=50 and food>=50:
+                                jump hunger_obe
+                            elif mental<=30:
+                                menu:
+                                    "How do you like to feed him?"
+                                    "Like a dog":
+                                        jump hunger_obe
+                                    "Like a human":
+                                        "The vine release [p]"
+                                        p "?"
+                                        "[d] throws [p] the fruits."
+                                        p "..."
+                                        p "What do you want?"
+                                        d "So you prefer to eat them on the ground then?"
+                                        p "..."
+                                        "[p] eats the fruits."
+					 "[p]'s thrist increases."
+                                        $food +=50
+                                        $water -=5
+					$ene -=20
+                                        jump sim
+
+#event.rpy  fix after  $firstMos =1 pee events wont trigger 
+ 
+if firstMos == 1 and clean<=30 and clean>0:
+        jump bath30
+
+
+#groupsex whatever chosen at the first time the sim menu will show two group sex button
+	"Go ahead":
+         	$group_baby =True
+	    	$group_nobaby =True
+        
+
+
+	"Ask [p]":
+        	...
+
+               
+                ...
+		 "[d] lets [p] rest the next day. His dirtiness increase"
+		$group_nobaby =True
+		$group_baby =True
+#script.rpy "End of the sim"has the both group sex button
+	$group_baby = True
+	$group_nobaby = True
+
+
+#bath.rpy
+
+	#ln 3011 should not be d's dialogue
+	"Suprised and unable to see, [p] becomes more sensitive."
+
+	#should jump into new day
+	     
+	"Ignore":
+            "[d] completely ignores [p]"
+            jump jump newday
+
+

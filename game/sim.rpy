@@ -123,9 +123,6 @@ label simbutton:
                     "Dog Sex" if dogtraining:
                         jump dogtraining
                         jump simbutton
-                    "Slave market" if slavemarket:
-                        jump slavemarket
-                        jump sim
                     "Return":
                         jump simbutton   
             "Sex":

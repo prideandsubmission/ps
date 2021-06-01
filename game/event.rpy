@@ -35,9 +35,8 @@ label justendday:
     jump newday
     
 label endday:
-    if firstMos == 1:
-        if clean<=30 and clean>0:
-            jump bath30
+    if firstMos == 1 and clean<=30 and clean>0:
+        jump bath30
     elif clean <=0:
         jump bath
     elif water >=60:
