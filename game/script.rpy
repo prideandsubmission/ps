@@ -41,6 +41,9 @@ transform s:
 label start:
     scene black
     "Are you a new or old player?"
+    $d = "Dietrich"
+    $p = "Ray"
+    jump badend
     menu:
         "New":
             "Welcome and enjoy the game!"

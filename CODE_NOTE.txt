@@ -1,0 +1,17 @@
+
+image test_anal:
+    block:
+        "anal_spoon_first"
+        1
+        repeat renpy.random.randint(4, 12)
+    block:
+        "anal_spoon_firstfast"
+        0.6
+        repeat renpy.random.randint(3, 5)
+    repeat
+
+transform infinite_flash:
+    linear 0.1 alpha 0.4
+    linear 0.1 alpha 0
+    repeat
+show thunder with infinite_flash

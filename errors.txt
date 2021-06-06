@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/slavemarket.rpy", line 51: Tab characters are not allowed in Ren'Py scripts.
+File "game/control.rpy", line 432: expected statement.
+    castle_pet
+              ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed May 19 12:47:34 2021
+Sat Jun 05 14:08:40 2021
