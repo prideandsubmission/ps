@@ -43,7 +43,7 @@ label start:
     "Are you a new or old player?"
     $d = "Dietrich"
     $p = "Ray"
-    jump badend
+    jump control4_ques
     menu:
         "New":
             "Welcome and enjoy the game!"
@@ -193,15 +193,22 @@ label start:
             p "Either run or bow down and beg now if you don’t want to be tortured to death."
             m "Wow, sir, I’m so scared. Can you show mercy on me?"
             "Like lighting, the prince slashes the monster. When the monster falls to the ground, he kicks its wound rapidly and steps on its face." with vpunch
-            p "Let's have some fun." with hpunch
-            m "Like what?"
-            "The prince stabs the monster’s hand, blood spews out." with vpunch
-            p "Good job for not screaming."
-            "He tramples on the sword." with hpunch
-            m "Ouch! That hurts!" 
-            p "Hm?"
-            "He steps on the monster’s cock." with vpunch
-            p "Hahaha, are monsters always like this? Hard while being tortured?\nSuch a disgusting race!"
+            p "You come at a good time. I'm so irritating right now. Just considered yourself unlucky." with hpunch
+            m "Why is that?"
+            "The prince stabs the monster’s hand, blood spews out. He laughs." with vpunch
+            p "Only a miracle can save you now. But you won't die so soon. Not after I satisfy."
+            d "Ouch!"
+            p "Beg me more!"
+            "The monste smirks."
+            d "I didn't know a Royal palace hire a thug for general positions. Had human become that rotten?"
+            "[p] was pause for a second, then he laughs."
+            p "Ha...Hahaha..."
+            "[p] brutally stabs [d]. He would twisted his sword before pulls it out and stabs at other places." with hpunch
+            d "M...N..."
+            "The monster doesn't move or say anything."
+            p "Dammit. Why it still haven't die. It is as if it challenge me."
+            "The prince furious."
+
         "Ignore":
             "The prince continues to drink water. Fifteen minutes later, the screaming still continues."
             m "Argh.. Help!" 
@@ -225,28 +232,39 @@ label start:
             p"Either run or bow down and beg now if you don’t want to be beat to death."
             m"Sir, I’ve just being slashed. I cant run or bow down now. Can I beg you instead?"
             "The prince kicks the monster’s wound repeatedly and steps on its face." with hpunch
-            p"Beg me!"
+            p"Even a loser like you making fun of me. Do I look like a joke? Beg me! BEG!" with vpunch
             m"Please let me go!"
             "The prince stabs the monster’s hand, blood spews out. He laughs" with vpunch
             p "More!"
             "He wrenches on the sword." with hpunch
             m "Ouch. Dear human, please let this lowly monster go! It hurts so much!"
-            p "Hahaha, you know how to behave well."
-            p "Hm?"
-            "He steps on the monster’s cock and laughs."
-            p"Seriously? Do monster always like this? Hard while being tortured? \nSuch a disgusting race!"
+            p "Shut up! Stop that sarcastic tone!"
+            "The prince beats the monster more brutally!" with vpunch
             
-    m "It’s you who made it hard like this.."
-    p "What?" with hpunch
+    p "Fuck! You damn monster! YOu think I'm a joke too aren't you?"
+    "[p] looks at the monster wounds from head to toe."
+    p"Seriously? Do monster always like this? Geting hard while being beaten to death? \nSuch a disgusting race!"       
+    m "Haha...You really don't know why it hard like that? It's because..."
+    p "What?" 
+    "The monster talks so small that [p] cannot hear. He smiles at [p] as if he want [p] to bend over and listen."
+    p "..."
+    "[p] grasps his sword hard, bends over to hear what the monster had to say."
+    "The monster whisper."
+    ## Dunno if I should put it here. Spoil too much
+    d "I'm hard because...of you. I want to fuck you senselessly till your brain fall out."
+    p "!"
+    "Too suprise, [p] pauses for a second then stands up and steps backward. The monster stands up. His wounds were healed."
+    p "He ... heals himself?"
+    p "!" with hpunch
     "The vines in the forest suddenly start moving. They grab ahold of the prince." with vpunch
     hide m_armor
     show vine at left with dissolve 
     "The thought of making you lie on the ground, suffering while being tortured makes me hard."
-    p "How confident!"
+    p "You sick bastard!"
     hide vine with dissolve
     show vinek at left with flash
     "TThe prince uses his dagger to swiftly cut the vines. He quickly picks up his sword and stabs the monster in a swift motion" with hpunch
-    p "Die, you bastard!" with vpunch
+    p "Ha!" with vpunch
     "The monster disappeared. The very earth itself rises up to form a hand, slamming down his whole body." with hpunch
     hide vinek
     show m_break2 at left
