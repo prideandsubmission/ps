@@ -244,22 +244,21 @@ label start:
     p "Fuck! You damn monster! YOu think I'm a joke too aren't you?"
     "[p] looks at the monster wounds from head to toe."
     p"Seriously? Do monster always like this? Geting hard while being beaten to death? \nSuch a disgusting race!"       
-    m "Haha...You really don't know why it hard like that? It's because..."
+    m "\$\%"
     p "What?" 
-    "The monster talks so small that [p] cannot hear. He smiles at [p] as if he want [p] to bend over and listen."
+    "The monster talks so small that [p] cannot hear. He looks at [p] as if he want [p] to hear it."
     p "..."
     "[p] grasps his sword hard, bends over to hear what the monster had to say."
-    "The monster whisper."
-    ## Dunno if I should put it here. Spoil too much
-    d "I'm hard because...of you. I want to fuck you senselessly till your brain fall out."
+    "The monster whispers."
+    d "I'm hard because I want to pin you down and fuck you senselessly until your brain fall out."
     p "!"
-    "Too suprise, [p] pauses for a second then stands up and steps backward. The monster stands up. His wounds were healed."
+    "[p] was shocked. He stands up and steps backward. The monster stands up. His wounds were healed."
     p "He ... heals himself?"
     p "!" with hpunch
     "The vines in the forest suddenly start moving. They grab ahold of the prince." with vpunch
     hide m_armor
     show vine at left with dissolve 
-    "The thought of making you lie on the ground, suffering while being tortured makes me hard."
+    "The thought of turning you into an obedience whore, make you moan under me like a wild animal really turns me on."
     p "You sick bastard!"
     hide vine with dissolve
     show vinek at left with flash
