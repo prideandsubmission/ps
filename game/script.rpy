@@ -90,7 +90,7 @@ label start:
     "After demonstrated his skill, he immediately silenced his opposition. Years later, at the tender age of twenty, he became a general and was known as one of the strongest men alive in Rivakh."
     "He and the king rarely talk to each other. \nAnd if they do, it usually becomes a big fight, resulting in him being thrown out. \nIt is shocking to see, but not surprising that he is the king’s son, the first heir."
     "Unlike his younger half-brother, who is always smiling and loved by everyone, this prince is either feared or hated."
-    "Arrogant, stubborn, unpleasant, suspicious, demanding, repulsive, quick-tempered. \nThat’s how everyone describes him... \n..No wonder, despite his capability, the king chose Ren, the younger brother to be the next king."
+    "Arrogant, stubborn, unpleasant, suspicious, demanding, repulsive, quick-tempered. \nThat’s how everyone describes him... \n..No wonder, despite his capability, the king chose Ren, the younger brother to be the crown prince."
     
     scene cg2
     "\"You want this dumbass to succeed you because you want a puppet!” the rejected prince shouted angrily, his voice echoing in the throne room"

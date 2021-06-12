@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/control.rpy", line 432: expected statement.
-    castle_pet
-              ^
+File "game/control.rpy", line 592: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        d "...
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Jun 05 14:08:40 2021
+Thu Jun 10 15:20:55 2021
