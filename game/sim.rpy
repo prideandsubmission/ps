@@ -1,9 +1,11 @@
 
+
 screen tie:
     imagemap:
         ground Animation("tie0001.jpg",.2,"tie0002.jpg",.2,"tie0003.jpg",.2,"tie0004.jpg",.2,"tie0005.jpg",.2,"tie0006.jpg",.2,"tie0007.jpg",.2,"tie0008.jpg",.2,"tie0009.jpg",.2,"tie0010.jpg",.2)
         hover Animation("tie_look0001.jpg",.1,"tie_look0002.jpg",.1,"tie_look0003.jpg",.1,"tie_look0004.jpg",.1,"tie_look0005.jpg",.1,"tie_look0006.jpg",.1,"tie_look0007.jpg",.1,"tie_look0008.jpg",.1,"tie_look0009.jpg",.1,"tie_look0010.jpg",.1,"tie_looka0001.jpg",.1,"tie_looka0002.jpg",.1,"tie_looka0003.jpg",.1,"tie_looka0004.jpg",.1,"tie_looka0005.jpg",.1,"tie_looka0006.jpg",.1,"tie_look0007.jpg",.1,"tie_look0008.jpg",.1,"tie_look0009.jpg",.1,"tie_look0010.jpg",.1)
         hotspot (243, 365, 600, 1000) action Function(renpy.transition, dissolve), Call ("simbutton")
+
 label sim:
     $ showday = True
     show tie with fade
@@ -20,9 +22,8 @@ label simbutton:
     elif clean<=0:
         jump bath
     else:
-        if pride <= -3 and slaveannounce == False or slavemarket == 1:
+        if controlStage==2 and dogtraining==False:
             "A new event had been unlocked. Please check out Humiliation option."
-            $slaveannounce = True
             $dogtraining = True
         menu:
             "Water and Feed":
@@ -139,7 +140,12 @@ label simbutton:
                             elif 75>mental>=50:
                                 jump cock_2
                             else:
-                                jump cock_obe
+                                if controlStage >=3:
+                                    jump cock_end
+                                    "[controlStage]"
+                                else:
+                                    jump cock_obe
+                                    "[controlStage]"
                     "Anal":
                         if ene <=0:
                             jump endday
@@ -164,8 +170,9 @@ label simbutton:
                         
                     "Return":
                         jump simbutton
+
             "Test mind control":
-                if mental <=0 and pride <=0:
+                if mental <=0 and pride <=0 and controlStage == 3:
                     jump control4_ques
                 else:
                     if mental >=70:

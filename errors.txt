@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/control.rpy", line 592: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        d "...
+File "game/control.rpy", line 131: Only one say menuitem may exist per menu.
+    p "C-can I leave now?"
+                          ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Jun 10 15:20:55 2021
+Sat Jun 19 11:45:42 2021

@@ -20,11 +20,9 @@ default group_baby = False
 default group_nobaby = False
 default touchfirstnone = True # if this is the first time Tease him
 default touchnone = True
-default control3first = True
-default control4first = True
-default slaveannounce = False
+default controlState = 0
 default dogtraining = False
-default slavemarket = 0
+
 init python:
     showday= False
     day = 1
@@ -43,7 +41,7 @@ label start:
     "Are you a new or old player?"
     $d = "Dietrich"
     $p = "Ray"
-    jump control4_ques
+    ##jump control4_ques
     menu:
         "New":
             "Welcome and enjoy the game!"
@@ -77,6 +75,7 @@ label start:
                     $day = 50
                     $clean = 40
                     $group_baby = True
+                    $controlStage = 2
                     play music "Angevin.mp3"
                     jump sim
                 "No skiping":

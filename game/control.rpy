@@ -4,6 +4,7 @@ label control1:
     "[d] looks at [p]. His eye turns red"
     d "..."
     d "(Not working!)"
+    $controlStage = 1
     jump sim
     
 label control2:
@@ -12,6 +13,7 @@ label control2:
     p "..m.."
     p "(What just happens?)"
     d "(I have reached into his mind but the barrier is too strong. Have to break him more)"
+    $controlStage = 2
     jump sim
     
 label control3:
@@ -51,7 +53,7 @@ label control3:
     scene darkforest
     "[d] takes his hand out of [p]'s mouth and moves to his chin."
     p "?"
-    "[d] kisses [p]"
+    "[d] kisses [p]'s forehead."
     p "!"
     p "...."
     "He pushed [p] to the ground"
@@ -100,17 +102,15 @@ label control3:
     p "...ngh! Ahh..."
     d "Why the silent? Don't forget you position so soon just because I let you have fun."
     p "...[d]...P-please stop..."
-    d "Are you giving me an order, egolistic prince?"
-    p "N-no. Have you had enough entertainment? You have rippe off all of my pride and self-esteem. I'm not a prince. Before you, I'm just a shameless pet, a bitch."
+    d "Are you giving me an order, prince?"
+    p "N-no. Have you had enough entertainment?"
     p "Is that enough? I'm begging you. Please let me go"
-    d "Hmmph...You said you have no pride left. Will you drink my pee then?"
+    d "Hmmph...If you drink my pee right now, I can re-consider?"
+    p "Th-"
+    p "O-Once I drank it. Please keep your word."
+    d "Of course"
     p "..."
-    p "You already win. Don't you have any mercy?"
-    d "You still have some left, I see"
-    p "Do you want to destroy it too?"
-    d "Open your mouth"
-    p "..."
-    "[p] opens his mouth"
+    "[p] looks at [d] holding his dick."
     menu:
         "Peep":
             "[d] peeps in [p]'s mouth"
@@ -118,22 +118,38 @@ label control3:
             d "Remmbered its taste. It is one of your job too prince."
             p "...nhh..."
             "[d] cleans the pee drops on [p]'s mouth"
-            d "Is it hot for a human like you?"
+            d "Is it hot?"
             p "..."
-            "[d] kisses [p] again"
+            "[d] kisses [p]'s head again"
             p "Ngh"
-            d "Rest well"
+            d "Rest well."
         "Smirks and go away":
-            "[d] smirks and goes away"
-    p "AAAA...UH...UhUhUh...Hic...Hic... *Sniff..."
-    "[p] cries out loud, then bites his lip. [p] feels like he can no longer control himself. He asked God that if his limit had been reached"
-    d "(I was able to penetrate in 80 percent of his mind. What a long process. No mater how strong or priceful a creature is, normally it just took a week for them to completely crushed)"
-    d "(This kid is not even that strong compare to some of the monsters here. But his stuborness and ability to control himself is respectable)"
-    d "(It was a suprise the first time meeting him too. Unbalance and Chaos. This world doesn't like him. The Flow is trying to push him away)"
-    $control3first = False
+            "[d] smirks and pulls his trouser on."
+            "[p] nervously looks at [d]."
+        
+    d "I'm keeping my words. Pitchy had more important job to do anyway."
+    p "C-can I leave now?"
+    d "Of course."
+    "[p] smiles."
+    d "12 feets."
+    p "?"
+    d "From that tree, you can freely move around 12 feet."
+    d "If you move more than that without my permission, don't blame me for your punishment."
+    d "You know that even without being tied up, you cannot escape."
+    "[p] was shocked. Then he becomes despress."
+    "It was very stupid of him. There is no way [d] lets him go with just a simple request that he can force [p] to take anytime. He will rotten here till the day he dies."
+    "[p] gets up and sits under a tree, hugs his knees. His head tucks between them"
+    d "Not being impulsive anymore huh? Your emotion seems to be more stable these days [p]."
+    p "..."
+    "[p] trembles. He hugs his knees tighter, which makes him look even smaller."
+    p "Please stop the mockery..."
+    d "..."
+    "[d] goes away."
+    $controlStage = 3
     jump sim
 
 label control4_ques:
+    $controlStage = 4
     scene darkforest
     "[d] touches [p]'s cheek while he were sleeping"
     p "Uhm..."
@@ -392,7 +408,7 @@ label control4_ques:
     "[n] runs away"
     "[d] comes closer as [p] crawing on the ground and clenches his fists."
     p "..."
-    p "I lost. What do you want to do with me now?"
+    p "I lost. What do you want to do with me?"
     d "What do you think?"
     p "Stop that already. Didn't you said I'm a birdbrain? How can I know what a genius like you think?"
     jump badend
@@ -409,7 +425,7 @@ label badend:
     p "Ugh!"
     d "Listen and remember this well. Whatever wounds you have, you won't die. Even if my power were to taken away, you still won't die. You just can't move, and all your fatal wounds remain."
     "[d] cough."
-    p "What a useless thing to do. You've gained nothing from me but curses. I, in the other hand, can sense that your power is decreasing. And it seems like it won't come back."
+    p "Hahaha. What a useless thing to do. You've gained nothing from me but curses. I, in the other hand, can sense that your power is decreasing. And it seems like it won't come back."
     d "..."
     p "You are so smart huh? Sharing your power to your most hateful enermy." 
     p "I can see it now, why you called yourself by the other name, and your weird timing. Should I spread it out to every creatures, your weakness?"
