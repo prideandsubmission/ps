@@ -323,7 +323,7 @@ label cock_end:
     "[d] cums. [p] swallows all of [d]'s fluid."
     p "Hmp..."
     p "Haa...haaa..."
-    p "(My jaw. I have to use such strong force. My throat is in pain too. It is not as hurtful as the early days though. Maybe I have adpted to it.)"
+    p "(My jaw. I have to use such strong force. My throat is in pain too. But it is not as hurtful as the early days. Maybe I have adapted to it.)"
     p "(Is it a good or bad thing?)"
     "[d] hadn't say anything seen [p] suck his cock. Worried, [p] looks at his facial expression."
     d "..."
@@ -336,6 +336,14 @@ label cock_end:
     "[p] lets [d] freely kisses him without reacting"
     p "Mn..."
     p "(Is he still in the mood? The way he looks at me...)"
-    "[d] releases [p]. He sits on the rock while [p] getting back to his place"
+    "[d] releases [p]. [p] goes back."
     p "..."
     p "(This is not good. I had been isolated with him for too long.)"
+    $water-=30
+    $food-=20
+    $mental -=5
+    $pride -=7
+    $clean -=3
+    $ene-=50
+    $goodend += 1
+    jump sim

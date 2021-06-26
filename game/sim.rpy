@@ -141,11 +141,9 @@ label simbutton:
                                 jump cock_2
                             else:
                                 if controlStage >=3:
-                                    jump cock_end
-                                    "[controlStage]"
+                                    jump cock_end                           
                                 else:
                                     jump cock_obe
-                                    "[controlStage]"
                     "Anal":
                         if ene <=0:
                             jump endday

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/control.rpy", line 131: Only one say menuitem may exist per menu.
-    p "C-can I leave now?"
-                          ^
+File "game/control.rpy", line 136: expected statement.
+    peep_inmouth with vpunch
+                 ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Jun 19 11:45:42 2021
+Fri Jun 25 21:10:02 2021

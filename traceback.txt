@@ -1,32 +1,86 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
+Executing ATL code at game/alt_image2.rpy:165
   File "game/sim.rpy", line 12, in script call
     call screen tie
-  File "game/sim.rpy", line 25, in script
-    if controlStage==2 and !dogtraining:
-  File "game/sim.rpy", line 25, in <module>
-    if controlStage==2 and !dogtraining:
-NameError: name 'false' is not defined
+  File "game/control.rpy", line 128, in script
+    d "Remmbered its taste. It is one of your job too prince."
+  File "renpy/common/00library.rpy", line 268, in say
+    who(what, interact=interact, *args, **kwargs)
+Exception: ATL appears to be in an infinite loop.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/sim.rpy", line 12, in script call
     call screen tie
-  File "game/sim.rpy", line 25, in script
-    if controlStage==2 and !dogtraining:
-  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\ast.py", line 1832, in execute
-    if renpy.python.py_eval(condition):
-  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/sim.rpy", line 25, in <module>
-    if controlStage==2 and !dogtraining:
-NameError: name 'false' is not defined
+  File "game/control.rpy", line 128, in script
+    d "Remmbered its taste. It is one of your job too prince."
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\exports.py", line 1343, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "renpy/common/00library.rpy", line 268, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\character.py", line 842, in do_display
+    **display_args)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\core.py", line 3194, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\core.py", line 2094, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 490, in renpy.display.render.render_screen (gen\renpy.display.render.c:6805)
+    rv = render(root, width, height, st, st)
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\image.py", line 500, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "accelerator.pyx", line 97, in renpy.display.accelerator.transform_render
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\transform.py", line 1036, in update_state
+    fr = self.execute(self, self.st, self.at)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\atl.py", line 564, in execute
+    action, arg, pause = block.execute(trans, timebase, self.atl_state, events)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\atl.py", line 771, in execute
+    action, arg, pause = stmt.execute(trans, target - start, child_state, events)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\atl.py", line 799, in execute
+    raise Exception("ATL appears to be in an infinite loop.")
+Exception: ATL appears to be in an infinite loop.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 Pride and Submission 1.3.2
-Sat Jun 19 11:48:25 2021
+Fri Jun 25 20:36:26 2021

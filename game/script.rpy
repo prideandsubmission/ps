@@ -22,6 +22,7 @@ default touchfirstnone = True # if this is the first time Tease him
 default touchnone = True
 default controlState = 0
 default dogtraining = False
+default goodend = 0
 
 init python:
     showday= False
