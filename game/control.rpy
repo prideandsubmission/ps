@@ -56,18 +56,23 @@ label control3:
     p "...Agh!"
     d "What a sweet sound!"
     p "Ahhh...Ahhh..."
-    "[p] doesn't react or curse [d]. He lets [d] does whatever he want to his body."
+    "[p] doesn't react or curse [d]. He lets [d] does whatever he want to his body." 
+    "[p] know he had no ability to resist what is being done to him. What remains of his will is just a pliable slave."
     p "..M...ngh..."
     "[d] enters [p]'s agnus slowly."
     p "...Ngh..."
     p "...[d]...m..."
     "Despite [p] prepared for the pain, [d] tenderly press his dick in."
-    "Each time [d] enters him, he feels like he was in heaven. The warmth of [d] cock, his movement, his touch, his smell. Everything turns [p] on."
+    "[p] doesn't know what is hapening to him. Each time [d] enters, he feels like he was in heaven." 
+    "The warmth of [d]'s cock, his movement, his touch, his smell, his voice. Everything arouse [p]."
     p "..M...n..."
     p "...Arghhh..."
-    d "You act rather cute today."
+    d "You act rather cute today. And so sensitive."
     p "...Ngh....m...aah..."
+    d "Your endorphins keeps on producing. Do you know why?"
+    p "Ahhh...haa....ngh..."
     d "You twitch a lot [p]. You like it don't you?"
+    p "Ahh...ah..."
     "Ater [p] gets use to it, [d] slams [p] faster and stronger."
     scene deepimpact_deep
     p "...H...Ngh...aaa...ahhh...."
@@ -79,6 +84,10 @@ label control3:
     d "Hey, say something!"
     p "...Mgh..."
     p "P-please [d]. I cannot take it anymore. St-.. mgh!"
+    d "Ngh... [p], can I cum inside you?"
+    p "Ngh...Ahhh...aaa...m..."
+    d "[p]."
+    p "Y-yes...Mgh...ahh..."
     scene deepimpact_deepcum
     p "AGH!..."
     p "Ngh! P-please st-"
@@ -143,13 +152,13 @@ label control3:
         
     d "I'm keeping my words. Pitchy had more important jobs to do anyway."
     p "C-can I really go now?"
-    d "Go away? No."
+    d "Go away? You must be dreaming."
     p "..."
     d "But I'll give you a little more freedom."
-    "[p] smiles. Even if he cannot get out. Able to freely move around is clearly much better. He can even find a way to get out."
+    "[p] smiles. Even if he cannot get out, being able to freely move around is clearly much better. He can even find a way to get out."
     d "12 feets."
     p "?"
-    d "From that tree, you can freely move around 12 feet."
+    d "That tree is the pivot point. From there, you can freely move around 12 feet."
     d "If you move more than that without my permission, don't blame me for your punishment."
     d "You know that even without being tied up, you cannot escape. This whole forest is my eyes and ears. I know each inch you move without looking."
     "[p] shocked. He keeps his head down."
@@ -157,10 +166,10 @@ label control3:
     "[p] gets up and sits under a tree, hugs his knees. His head tucks between them."
     d "Not being impulsive anymore huh? Your emotion seems to be more stable these days [p]."
     p "..."
-    "[p] trembles. He hugs his knees tighter, which makes him look even smaller."
+    "[p] trembles. He hugs his knees tighter, which makes him looks even smaller."
     p "..."
     d "..."
-    d "Suit yourself."
+    d "Suit yourself!"
     "[d] goes away."
     $controlStage = 3
     jump sim
@@ -168,14 +177,15 @@ label control3:
 label control4_ques:
     $controlStage = 4
     scene darkforest
-    "[d] touches [p]'s cheek while he were sleeping"
+    "Early morning, when the sun still have yet move above the tree, [d] comes."
+    "He touches [p]'s cheek while he were sleeping"
     p "Uhm..."
-    d "Walkup"
+    d "Wake up!"
     p "..."
     d "Hmph"
     "[d] brutaly slaps [p]. [p] knocked down to the ground" with vpunch
     scene control4_slap
-    "Not understand what's happen, he consfuses and tries to get up"
+    "Not understand what's happen, he consfuses and tries to get up. Too into sleep, [p] is in a very weak state."
     p "Wh-!" 
     scene control4_stomp with vpunch
     "[d] stomps on his head" with hpunch
@@ -226,18 +236,25 @@ label control4_ques:
     p "F-Fuck you! I'm not!"
     "[p] rushed to [d], punches him in the face repeatedly. He didn't avoid." with hpunch
     d "..."
-    p "FUck you! Listen or don't, you treat me the same. Yet, yet I believe and humiliate myself to amuse you"
+    p "You Shithead! Why Are You Treating Me Like This?!? I submitted to you, but you never stop your abuse!"
     "[d] kicks [p]. [p] uses both hands to block it. He had to jump backward to neutrolize the kick to not fall." with vpunch
-    d "At least at that time, aren't you able to escape the pain?"
-    p "HAAAAAHHHHH!!"
+    d "Aaaa!"
     "[p] rushes to [d] immediately. His punches become stronger and faster. [d] steps backward and avoid the hit as [p] rushes in." with hpunch
     d "When we first met, I didn't pay attention, but is this really how you always fight?" 
     "[d] reaches his hand and touches [p]'s forhead with his index finger. [p] steps back then rushes in again and throws heavy punches as [d] avoid them easily" with vpunch
     d "Your moves are predictable. Your reflexness is subpar. You cannot react quickly enough."
     p "FUCK! SHUT UP!" with hpunch
-    "He uses more strength and moves faster. Because of that, each time [d] avoid, it cost [p] a longer time to re-position and throws another punch." with vpunch
-    d "No wonder people said you are blood-thrist. You cannot afford to spare enermies, nor even looking out for other people." 
-    d "Fight long enough and anyone can guess your next action. One suprise attack from the back and you are gone."
+    "He uses more strength and moves faster. Because of that, it also creates a lot of gaps." with vpunch
+    "[d] sighs as he avoid [p]'s attacks and looks at him re-position to throws another punch."
+    d "Don't lost your cool right at the middle of battle like this. Use your brain."
+    p "SHUT UP!!"
+    "[d] easily avoid [p]'s attack just by a small and swift movement. He reaches his arm. His index finger touches [p]'s forehead."
+    p "!"
+    "[p] steps back then jump backward."
+    p "(It right in front of my eyes. Yet I cannot avoid in time. If he were serious, I would have been dead. Am I like that because of my physical condition?)"
+    d "No wonder people said you are blood-thrist. Your reflection is subpar, your moves are predictable." 
+    d "Slaughter all enemies as fast as possible is the only way you can win and survive. You are not strong enough to play hero." 
+    p "!"
     p "SHUT YOUR MOUTH UP!!" with hpunch
     "[d] catches the punch and breaks his arm" with vpunch
     p "AGGHHHHHHH!"with hpunch
@@ -247,8 +264,8 @@ label control4_ques:
     d "I have always amazed [p]. Are you really one of your country champion? It's must be a very small country, with full of weaklings." 
     d "How can you supass The Flow thresold is beyong my understading. It's a miracle that your strength and agility reached this level. But this is your limit."
     p "S-Shit! I said stop!!!"
-    "[p] escapes [d] and throws him a kick" with hpunch
-    "[d] breaks [p]'s leg" with vpunch
+    "[p] escapes [d] and throws him a kick." with hpunch
+    "[d] breaks [p]'s leg." with vpunch
     p "AAAAGGGGHHHH!"
     "[d] throws [p] to the ground" with hpunch
     d "It must be normal when you are born. But the more you grow up, the more you train and improve, the more the world turns its back on you. You already notice this right?"
@@ -256,28 +273,40 @@ label control4_ques:
     p "Haaa...haaa...Shu- u-... haaa..."
     "[p] tries to stands up"
     p "Uhm..N!"
-    d "Even though you are just like a fly to The Flow... what a tragedy. " 
-    d "Don't blame me. Even if it's not me, you will eventually die painfully."
+    d "Even though you are too weak to harm The Flow, it keeps on pushing you out. What a tragedy. " 
     p "Ha..haa..."
     "[p] glance at [d] hatefully."
     d "..."
-    p "Haa...ugh! S-shit! If I not run into you...If I have The Stone...The Stone will... haa..haaa..."
+    p "Haa...ugh! S-shit! I will have The Stone...I will... hmp..."
     "[d] laughs"
     d "The existents that is able the bend the rules God created have to be in ultimate harmony with it. Only the creations chosen by The Flow can use The Stone"
     d "Do you know what existent The Stone hate the most? You. Your kind." 
-    d "The moment you touch The Stone, either it or you will be destroyed. You are clutching at a straw [p]."
+    d "The moment you touch The Stone, either it or you will be destroyed. You are clutching at a straw [p]. For you, The Stone means nothing."
     p "No. You are lying."
     "[d] smiles"
     d "I said that to you as the Creature of the Day, one of the three oldest creation of God that is born to project The Flow and The First Stone. So that this world will keep on living."
+    "[p] clenches his teeth."
     p "Even if this world is pushing me away, am I not a living being? Am I not worthy to be treated like one?" 
     d "..."
     p "Why? Who give you the right to hurt me and trample on my sanity like this? Does God not need moral? Does God not need to follow rules?"
     d "No." 
+    p "..."
     d "But then aren't you just doing the same? How many monsters and criminals had you torture to death? Aren't they living being too? Aren't they worthy to be treated like one?"
     "[p] was shocked. He had never think about that. After been through too much wars and saw what they do to the captured soldiers, [p] makes a habit of torture them as a stress relief." 
     "If what he did was normal, then what [d] did to him was normal too. Now, he is just in the same position as them, and [d] is replacing his role as the toturer."
-    "He totures them by inflicting extreme pain then kill them off. [d] totures him by inflicting pain, humilation and fucking him. He asked for justice, but aren't he and [d] just two sides of the same coin?"
-    p "Monsters and criminals...are living beings..."
+    "He asked for justice and morals, but aren't he and [d] just two sides of the same coin?"
+    menu:
+        "Agree: They are living beings":
+            p "Monsters and criminals...are living beings too..."
+        "Stay silent":
+            p "..."
+        "Disagree: Many of them killed innocent lifes":
+            p "No. Many of them killed innocent lifes. Most of their victims are the villagers who cannot fight back. They are not worthy to be treated like one."
+            d "..."
+            "[p] looks down."
+            p "I'm just the same as them...I have kill innocent human and monsters too... "
+            p "..."
+            p "Are you my karma?"
 
     "[p] turns his head away. [d] grasps his face and turns it back."
     d "Look at me [p]!"
@@ -285,7 +314,7 @@ label control4_ques:
     "[d]'s eyes turn red. Again, [p] feels like his head was penetrated. [d] thrusts his hand into [p]'s head, then his brain"
     p "Ughh...aaa..."
     "The pain were too much that [p] cannot even scream. [d]'s fingers go on deeper and deeper. With each thrust, [p] feels like thousands of needle attach his brain"
-    d "Hmp, I think this is the sexual part of the brain"
+    d "You will enjoy this soon. Your mind will re-arange, and your pain will turns to pleasure." 
     p "Mmm...mngh...m..."
     "[p] cock hard on its own and cum. How much [d] want him to suffer before killing him off?"
     "[d] keeps on penetrade deep in the sexual part of the brain. [p] pain was lessen and replace by plessure"
@@ -295,7 +324,7 @@ label control4_ques:
     "All 5 fingers of [d] had penetrate to the deepest part of [p]'s brain. [d] feels a flow of energy comming in. It comes faster and heavier each second."
     p "Ngh!"
     d "Ngh!"
-    "[p] becomes unconscious"
+    "[p] becomes unconscious."
     d "[p], [p]"
     p "Ngh!"
     "[d] shakes his head. He tries to be awake but also fallen as sleep. While still consious, he wraps his hand around [p]."
@@ -434,14 +463,11 @@ label control4_ques:
 
 
 label badend:
-    d "This is the first time you have flatten me like that. But it won't lessen your punishment."
-    "[p] smirks turns away. He looks like an empty shell."
-    "[p] puts his hand around his neck and started to strangle it."
-    p "H...M..."
-    "[d] grasps [p]'s hand and tears his chest, where his heart is. His graps are so strong that [p]'s chest bleed."
-    p "Ugh!"
-    d "Listen and remember this well. Whatever wounds you have, you won't die. Even if my power were to taken away, you still won't die. You just can't move, and all your fatal wounds remain."
+    d "Flatering won't help you [p]. A dog shoud know its position."
     "[d] cough."
+    ## fix this
+    # I have been too easy on you. The moment you start to have a nervous breakdown, I stop. THat's why the dog keeps on biting its owner. 
+    ## This time, I'll continue until you break to make sure you wreck to the point of no recovery
     p "Hahaha. What a useless thing to do. You've gained nothing from me but curses. I, in the other hand, can sense that your power is decreasing. And it seems like it won't come back."
     d "..."
     p "You are so smart huh? Sharing your power to your most hateful enermy." 
@@ -459,6 +485,7 @@ label badend:
     "[d] smirks. He grasps [p]'s hair and pins him there while he tries to standup."
     p "N-no....AAAAGGGGGHHHHHHHHH....."
     " "
+    ##---
     scene darkforest
     "[ri] castle, in a meeting with dozens of dukes, duches, followers and generals"
     h "[k], there's a monster said he knows prince [p] where about. He also want to give you a present. We have our men circle around him."
@@ -678,7 +705,10 @@ label badend:
     p "Umh! Uhm!"
     "The kiss becomes more passionate."
     p "Uhm...Ughm!"
+    "[p] kisses [d] back. Even if [d] was the one who did all these terible things, [p] glads that [d] comes and takes care of him in his helplessness."
+    "After been through these endless pain, just a small gentle action from [d] gives him enornous relief and gratitude."
     "[d] stops."
+    p "!"
     d "Let put you back to the cage."
     p "Ua..u..! Aa.."
     "[d] puts [p] back to the cage and locks it. He puts in some water and food in the dog feeder."
@@ -689,7 +719,7 @@ label badend:
     d "I'll comeback tommorow and feed you."
     p "Aa...! Au....u..."
     "[d] continues to lock [p] up in that cage for 3 months. Aside from him, no one was allowed to get in."
-    "Unable to move, no sound to hear aside from [d] voices and footsteps drives [p] insane to the point being feeded, touched, fucked by [d] senselessly are what he waits for everyday."
+    "Isolated, unable to see, move, speak in a silent darkness drives [p] insane to the point [d]'s voice and his carelessness are what he longs for everyday."
     "[p] hears a noise. He knows that [d] is walking in. The door opened for a few minutes then closed."
     "He was waiting for [d] to step closer and get him out of the cage, but everything was silent."
     p "U...u.."

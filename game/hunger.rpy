@@ -72,7 +72,7 @@ label hunger_1:
     "He kicks [p] in the stomach." 
     hide m_m_scream
     show m_m_sexclench3 at s
-    d "If you don't know how to please others, you will have a reaaally haaard life."
+    d "If you don't know how to please others, you will have a reeeaaally haaard life."
     hide m_m_scream
     hide m_beaten3 
     hide m_foodsmall 
@@ -101,8 +101,8 @@ label hunger_2:
     show m_tired at s
     show m_m at s
     p "..."
-    "[p] looks at [d]."
-    d "You gonna eat or starve?"
+    "[p] looks at [d]. [d] smirks."
+    d "If your are hungry, eat. There's no one here to show off your stuborness. Hunger will just make your brain starved into submission faster."
     hide m_m
     show m_m_sexclench2 at s
     p "(Fuck!)"
