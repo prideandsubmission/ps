@@ -88,63 +88,84 @@ label start:
     "Once upon a time, there was a young boy.\nThis youth was far more serious than all the other his age. \nWhatever he does, he always succeeds. \nWhatever he wants, he always gets." 
     "When he enrolled in the army, everyone opposed his decision due to his age, but he was having none of that—he does as he pleases." 
     "After demonstrated his skill, he immediately silenced his opposition. Years later, at the tender age of twenty, he became a general and was known as one of the strongest men alive in Rivakh."
-    "He and the king rarely talk to each other. \nAnd if they do, it usually becomes a big fight, resulting in him being thrown out. \nIt is shocking to see, but not surprising that he is the king’s son, the first heir."
+    "He and the king rarely talk to each other. And if they do, it usually becomes a big fight, resulting in him being thrown out. \nIt is shocking to see, but not surprising that he is the king’s son, the first heir."
     "Unlike his younger half-brother, who is always smiling and loved by everyone, this prince is either feared or hated."
-    "Arrogant, stubborn, unpleasant, suspicious, demanding, repulsive, quick-tempered. \nThat’s how everyone describes him... \n..No wonder, despite his capability, the king chose Ren, the younger brother to be the crown prince."
+    "Arrogant, stubborn, unpleasant, suspicious, demanding, repulsive, quick-tempered. \nThat’s how everyone describes him..No wonder, despite his capability, the king chose Ren, the younger brother to be the crown prince."
     
     scene cg2
     "\"You want this dumbass to succeed you because you want a puppet!” the rejected prince shouted angrily, his voice echoing in the throne room"
     "“Don’t you dare speak like that to your future king! Ren can have you executed should he choose so!” the king retorted" 
     "\"Dad, brother, please stop it you two.\" Ren jumps in between them."
-    "The room becomes noisy. Some start to laugh.\"SILENCE!\" the prince shouts.\nThe king slaps his face. \"Who gave you that authority? Disrespectful brat!\"" with hpunch
+    "The room becomes noisy. Some start to laugh.\n\"SILENCE!\" the prince shouts.\nThe king slaps his face. \"Who gave you that authority? Disrespectful brat!\"" with hpunch
     "The prince glances at the king and slaps him. \nThe king falls to the floor. Soldiers surround the prince." with vpunch
     "\"Good one! From now on, you are not my son anymore. Don’t ever come back to this palace.\" he king points at him."
-    "The prince turns and goes out \"One day you will regret this.\"\n ... \nHe takes one last look at the throne room and sees a lot of happy smiles. The prince clenches his fist."
+    "The prince turns and goes out \"One day you will regret this.\"\n He takes one last look at the throne room and sees a lot of happy smiles. The prince clenches his fist."
+    p "Covered my hands in blood. Used me to clean the nobles and Temple. Turned me into the target of assasinations then chose him to be the crowd prince after everything over. What a cruel joke!"
+    p "You are not my father anymore. So does he."
+    "The prince slams the door hard."
     stop music
     play music "Angevin.mp3" fadeout 3.0
     scene darkforest_night 
-    "A few days later, he arrived at the entrance of the Dark Forest, the most fearsome place known to man. \nLegend says this is the place God hid the First Stone with the quote \"This stone will give its owner the power to bend The Flow and destroy the laws of current Universe.\""
+    "A few days later, he arrived at the entrance of the Dark Forest, the most fearsome place known to man."
+    "Legend says this is the place God hid the First Stone with the quote \"This stone will give its owner the power to bend The Flow and destroy the laws of current Universe.\""
+    "Another way to say it is that stone can grant wishes."
     show m_armor at left
-    p "Despite being a legend, many rulers have sent troops here to look for it. Even now, there are many that lose their lives here."
-    "The prince laughs"
-    p "Those useless fools cannot even go deep inside."
-    "He entered the forest and immediately encountered many monsters, but he slayed them with little difficulty." 
-    p "These monsters are strong, but not as strong as I though. Is this really the most dangerous place in the world?"
+    p "It is not just simply a legend. Many rulers from all over the world had sent troops here to look for it. Even now, there are many that lose their lives here."
+    "The prince laughs."
+    p "Those useless fools doesn't even know the proper way to go deep inside. They haven't battle with monsters long enough."
+    "He entered the forest and immediately encountered many groups of monster, but he slayed them with little difficulty." 
+    "A young monster falls on its own. It tries to standup."
+    p "Running away?"
+    m "P-please spare me. I'm not invol-...AAA!"
+    "He cuts off the monster's head."
     "Suddenly, a small demon appeared in front of him."
     show n at right with dissolve
-    p "A demon? In the far depths of the Dark Forest? How could someone as weak as you survive here?"
+    p "A demon? In the far depths of the Dark Forest? How could a demon as weak as you survive here? Are you by yourself?"
     $n ="Demon"
     hide n
     show n_smile at right
-    n "Human, this is a friendly warning. If you go further, there’s no return."
-    p "What I hate most is being told what to do."
+    n "Are you a human knight?" 
+    p "..."
+    n "Sir Knight, if you go further, there’s no return. The monsters are really strong there."
+    p "..."
+    "[p] clenches his sword."
+    p "(I don't need to kill him. Even if there's a group of demon here, it's hard enough for them to survive. They cannot cause me troubles.)"
+    p "(Moreover, demons are smarter and easier to talk. This one may have information about the First Stone.)"
     hide n_smile
     show n at right
-    n ".... \n Ok"
-    "The prince suspected the demon may have information about the First Stone."
+    n "?"
     menu:
         "Ask him":
-            p "Wait demon!"
+            p "Demon."
             hide n
             show n_smile at right
-            n "What?"
+            n "What is it sir Knight?"
             p "Do you know anything about the First Stone?"
             hide n_smile
             show n_smile2 at right
-            n "So you are also seeking it."
-            p "..."
-            hide n_smile2 with dissolve
-            show n2 with dissolve
+            n "Yes. I have been asked this question many times before."
+            hide n_smile2
+            show n_sad at right
+            "The demon shook his head."
+            hide n_sad
+            show n_angry at right
+            n "Most of them are dead..."
+            p "Cut to the chase and tell me!"
+            hide n_angry
+            show n_sad2 with dissolve
+            n "..."
             "The demon whispers to the prince."
+            hide n_sad2
+            show n_surprise
             n"In the middle of a giant river lies the Water Temple which holds the first stone..."
             p"Everyone knows that."
-            hide n2
+            hide n_surprise
             show n_surprise2
-            n"You mean all the human authority?"
-            p ".."
+            n"You mean all the knight? I'm pretty sure they do not know. Are you really a knight?"
+            p "..."
             hide n_surprise2
             show n_smile2
-            n "There is but one big river in this forest. However, you cannot ..."
+            n "There is but one big river in this forest. Is that a new information?"
             p "..."
             "The prince moved past the demon."
             hide n_smile2 with dissolve
@@ -165,17 +186,23 @@ label start:
                     n "What is it?"
                     p "That’s the way out!"
                     hide n2 with dissolve
-                    "The prince made his way further into the forest."
-                    "Two hours later, the prince was still nowhere near to finding the First Stone. All he could see were trees and more trees."
-                    p "Legend said there is a mysterious temple in the middle of a river here. The First Stone was hid in that place. At this rate, sooner or later, that stone is mine."
+                    n "Look for the only river in this forest."
+                    p "!"
+                    hide n with dissolve
+                    "The demon goes away."
                     
                 "Nevermind":
+                    "The prince walks pass the demon."
+                    n "Look for the only river in this forest."
+                    p "!"
                     hide n with dissolve
-                    "The prince made his way further into the forest."
-                    "Two hours later, the prince was still nowhere near to finding the First Stone. All he could see were trees and more trees."
-                    p "Legend said there is a mysterious temple in the middle of a river here. The First Stone was hid in that place. At this rate, sooner or later, that stone is mine."
+                    "The demon goes away."
+
+            "He made his way further into the forest."
+            "Two hours later, the prince was still nowhere near to finding the First Stone. All he could see were trees and more trees."
+                    
             
-    "Suddenly, there is a girl’s scream. \"HELP! SOMEONE! PLEASE HELP ME!!\""
+    "Suddenly, there is a girl’s scream.\n \"HELP! SOMEONE! PLEASE HELP ME!!\""
     menu:
         "Go take a look":
             "The prince follows the scream and sees five monsters fucking a monster girl."
@@ -830,9 +857,7 @@ label start:
     show m_m_sexclench3 at left
     p "...m...Fuck you!"
     d "..."
-    d "(I cannot control his mind. This is rare. If he had a holy soul, it would be easy to understand. But he is completely the opposite...)"
-    d "(I see... This guy has a really strong will. Unless I break him completely, I can never completely dominate his body and mind)"
-    d "Your luck is really bad you know. \nIf only you could escape my magic by having a holy soul, I would have let you go.\nYours is so corrupted. Only dim light remains. No wonder..."
+    d "Your will is strong. It's impressive. But it won't be that way for long."
     hide m_m_sexclench3
     show m_m_sexopen at left
     p "What the fuck you blabbing about?"
@@ -1230,26 +1255,35 @@ label start:
             show m_cockdown at left
             p "Damn you!"
             "[d] toucks [p]'s face"
-            d "But you are indeed a very interesting creature. I have never seen anything that entertaining"
+            d "But you are indeed a very interesting creature. I have never seen anything that entertaining."
             p "SHUT U-mph"
             "[d] covers [p]'s mouth"
-            d "Sht. Consider yourself lucky or unlucky. At least you can have one hell of good life experience here kid."
+            "[d]'s eye become red."
+            p "?"
+            "[d] smirks."
+            d "Still nothing? You are really stubborn."
+            d "Consider yourself lucky or unlucky. At least you can have one hell of good life experience here with me kid."
             "[d] touches [p]'s cock"
-            p "Mn"
+            hide m_cockup
+            show m_blush at left
+            show m_cockdown at left
+            p "Mn..."
             d "Tie him there Pitchy!"
             hide m_m_sexopen
             hide m_surprise 
             hide m_sperm 
             hide m_beaten1 
             hide m_shame 
+            hide m_blush
             hide m_m_sexclench1 
-            hide m_cockdown 
+            hide m_cockup
             show m_tired at left
             show m_sperm at left
             show m_beaten1 at left
             show m_shame at left
             show m_m_sexclench1 at left
-            show m_cockdown at left
+            show m_cockup at left
+            show m_blush at left
             p "F-Fuck!"
             hide m_m_sexclench1
             show m_m_sexclench2 at left
