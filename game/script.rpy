@@ -215,16 +215,18 @@ label start:
             p "What now?"
             p "\(Why are there so many monsters here?\)"
             "The prince turns his head to see a normal sized monster. \nHis aura is even weaker than the small demon he just met. \nSo weak that he cannot even feel his presence."
-            p "Normally, I don’t beat weaklings, but your tone is annoying for a fly."
-            m "Annoying? Me?"
+            p "Your tone is annoying for a fly."
+            m "Why is that?"
             p "Either run or bow down and beg now if you don’t want to be tortured to death."
             m "Wow, sir, I’m so scared. Can you show mercy on me?"
             "Like lighting, the prince slashes the monster. When the monster falls to the ground, he kicks its wound rapidly and steps on its face." with vpunch
-            p "You come at a good time. I'm so irritating right now. Just considered yourself unlucky." with hpunch
+            p "If you dare to use that sacrstic tone one more time, you will wish you were never born."
             m "Why is that?"
             "The prince stabs the monster’s hand, blood spews out. He laughs." with vpunch
-            p "Only a miracle can save you now. But you won't die so soon. Not after I satisfy."
-            d "Ouch!"
+            m "Aaa!"
+            p "It feels so good. All of my troubles and irritaion up until now, I'll use you to relief it." 
+            p "You won't die so soon. Not after I satisfy."
+            d "Ah! M!"
             p "Beg me more!"
             "The monste smirks."
             d "I didn't know a Royal palace hire a thug for general positions. Had human become that rotten?"
@@ -232,8 +234,8 @@ label start:
             p "Ha...Hahaha..."
             "[p] brutally stabs [d]. He would twisted his sword before pulls it out and stabs at other places." with hpunch
             d "M...N..."
-            "The monster doesn't move or say anything."
-            p "Dammit. Why it still haven't die. It is as if it challenge me."
+            "The monster doesn't move or say anything. But [p] knows he is still alive."
+            p "Dammit. Why is this monster so irritating? It is as if he challenge me."
             "The prince furious."
 
         "Ignore":
@@ -269,23 +271,30 @@ label start:
             "The prince beats the monster more brutally!" with vpunch
             
     p "Fuck! You damn monster! YOu think I'm a joke too aren't you?"
+    "He stabs the monster again and again."
     "[p] looks at the monster wounds from head to toe."
     p"Seriously? Do monster always like this? Geting hard while being beaten to death? \nSuch a disgusting race!"       
     m "\$\%"
     p "What?" 
     "The monster talks so small that [p] cannot hear. He looks at [p] as if he want [p] to hear it."
     p "..."
-    "[p] grasps his sword hard, bends over to hear what the monster had to say."
+    "[p] grasps his sword hard, carefully bends over to hear what the monster had to say. He was so close to him that he can hear the monster's break."
     "The monster whispers."
-    d "I'm hard because I want to pin you down and fuck you senselessly until your brain fall out."
+    d "I got hard because I want to pin you down and fuck your slutty holes senselessly until your brain fall out."
     p "!"
-    "[p] was shocked. He stands up and steps backward. The monster stands up. His wounds were healed."
+    "[p] was shocked. Not only because of the monster's weird behavior, but also beacuse it was first time he heard such those vulgar words so close, and it pointed directly at him."
+    "He stands up and steps backward, on his defense stance. The monster stands up. His wounds were healed."
     p "He ... heals himself?"
+    p "(Impossible! I can't even sense any magic. There was something off about him from the start.)"
+    p "Did you absorb other monsters?"
+    "The monster smirks."
+    "Absorbtion and sharing power are two very dangerous processes. Moreover, if a monster involed in it either way, the absorber's appearant will be mutated, become horrible."
+    p "(He seems normal. This is insane. Healing all those fatal wounds that fast and act like it's nothing.)"
     p "!" with hpunch
     "The vines in the forest suddenly start moving. They grab ahold of the prince." with vpunch
     hide m_armor
     show vine at left with dissolve 
-    "The thought of turning you into an obedience whore, make you moan under me like a wild animal really turns me on."
+    d "The image of you act like an obedience whore, willingly sucks my dick and moans under me like a wild animal really turns me on right now."
     p "You sick bastard!"
     hide vine with dissolve
     show vinek at left with flash
@@ -400,8 +409,7 @@ label start:
     show m_break5:
         zoom 0.8
         ypos 600
-        xpos -200
-        
+        xpos -200       
     p "....F-fuc-k..."
     "The prince tries to get up. \nThe monster tramples his face."
     hide m_break5
@@ -430,8 +438,9 @@ label start:
     show m_beaten3 at left
     show m_shame at left
     p "..."
-    "The monster touches his face"
-    m "Not a bad face. Looks like an arrogant brat but not bad at all."
+    "[p]'s armor falls off. The monster squeezes his face."
+    p "N!"
+    m "I like your face. Looks like an arrogant brat but not bad at all. I wonder how this face look like when you tremble in fear and shame."
     hide m_head_close
     hide m_m_clenth
     hide m_beaten3
@@ -440,7 +449,6 @@ label start:
     show m_m_sexclench2 at left
     show m_beaten3 at left
     show m_blush at left
-    
     p "(Fuck this monster!)\n(Just wait till I get my strength back)"
     m"What is your name kid?" 
     hide m_head_surprise
@@ -1267,7 +1275,7 @@ label start:
             hide m_cockup
             show m_blush at left
             show m_cockdown at left
-            p "Mn..."
+            p "Mn...S-shit! Get your out!..N..."
             d "Tie him there Pitchy!"
             hide m_m_sexopen
             hide m_surprise 
