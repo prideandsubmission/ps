@@ -100,8 +100,8 @@ label start:
     "The prince glances at the king and slaps him. \nThe king falls to the floor. Soldiers surround the prince." with vpunch
     "\"Good one! From now on, you are not my son anymore. Don’t ever come back to this palace.\" he king points at him."
     "The prince turns and goes out \"One day you will regret this.\"\n He takes one last look at the throne room and sees a lot of happy smiles. The prince clenches his fist."
-    p "Covered my hands in blood. Used me to clean the nobles and Temple. Turned me into the target of assasinations then chose him to be the crowd prince after everything over. What a cruel joke!"
-    p "You are not my father anymore. So does he."
+    ##p "Covered my hands in blood. Used me to clean the nobles and Temple. Turned me into the target of assasinations then chose him to be the crowd prince after everything over. What a cruel joke!"
+    ##p "You are not my father anymore. So does he."
     "The prince slams the door hard."
     stop music
     play music "Angevin.mp3" fadeout 3.0
