@@ -3,9 +3,10 @@ screen day:
         xpos 5
         ypos 20
         font "Benegraphic.ttf"
-  
     imagebutton idle ("gui/button/donate.png") hover ("gui/button/donate_hov.png") xpos 1700 ypos 1220 action OpenURL("https://sponsus.org/u/vivigames")
     imagebutton idle ("gui/button/home.png") hover ("gui/button/home_hov.png") xpos 1700 ypos 1140 action OpenURL("https://thaovyletruong.wixsite.com/vivi/copy-of-home") 
+    imagebutton idle ("gui/button/donate.png") hover ("gui/button/donate_hov.png") xpos 1700 ypos 1060 action OpenURL("https://subscribestar.adult/pride-and-submission")
+
 screen stat:
     text ("Energy: %d" % ene): 
         xpos 10

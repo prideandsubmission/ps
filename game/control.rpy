@@ -20,9 +20,8 @@ label control3:
     hide screen day
     hide screen stat
     "[d] looks at [p]. [p] scares. He quickly looks away. [d] chuckles"
-    d "So you have know to fear me huh?"
-    p "...N-..."
-    p "......"
+    d "You have start to fear me huh?"
+    p "W-What do you need?"
     "[d] smirks. His eyes turn red."
     d "Look at me!"
     "[p] looks at [d]. He feels dizzy, like someone penetrate his brain"
@@ -49,35 +48,36 @@ label control3:
     "[d] kisses [p]'s forehead."
     p "!"
     p "...."
-    "He pushes [p] to the ground. [p] daze from the heachache and his touch."
-    scene deepimpact_head
+    "He pushes [p] to the ground. Everytime [d] touches him, [p]'s body react in a lwed way."
+    show deepimpact_head
     "[d] grasps [p]'s legs and start to put his dick in." 
     p "Mgh!"
     p "...Agh!"
-    d "What a sweet sound!"
+    d "Is it good?"
     p "Ahhh...Ahhh..."
-    "[p] doesn't react or curse [d]. He lets [d] does whatever he want to his body." 
+    "[p] doesn't react or curse [d]. He lets [d] does whatever he want inside him." 
     "[p] know he had no ability to resist what is being done to him. What remains of his will is just a pliable slave."
     p "..M...ngh..."
-    "[d] enters [p]'s agnus slowly."
+    "[d] slowly enters deeper."
     p "...Ngh..."
     p "...[d]...m..."
-    "Despite [p] prepared for the pain, [d] tenderly press his dick in."
-    "[p] doesn't know what is hapening to him. Each time [d] enters, he feels like he was in heaven." 
-    "The warmth of [d]'s cock, his movement, his touch, his smell, his voice. Everything arouse [p]."
+    "[p] doesn't know what happen to him. Perhaps it was because of the hyposis. The warmth of [d]'s cock, his movement, his touch, his smell, his voice. Everything arouse [p] at this moment."
     p "..M...n..."
     p "...Arghhh..."
-    d "You act rather cute today. And so sensitive."
+    d "You are so cute."
     p "...Ngh....m...aah..."
-    d "Your endorphins keeps on producing. Do you know why?"
     p "Ahhh...haa....ngh..."
-    d "You twitch a lot [p]. You like it don't you?"
+    d "You twitch a lot [p]. You like my cock inside don't you?"
     p "Ahh...ah..."
-    "Ater [p] gets use to it, [d] slams [p] faster and stronger."
-    scene deepimpact_deep
+    d "Me too.."
+    p "N-no I...Ahhh...n...What...did you...ngh...m..."
+    "[p] cannot even finish a full sentence in this condition."
+    "Ater he gets use to it, [d] slams [p] faster and stronger."
+    show deepimpact_deep
     p "...H...Ngh...aaa...ahhh...."
     p "..N...ngh...no..no don't...ahhh.."
     "[p] cries. It's normal for him to burst into tears while having sex with [d] because it hurts a lot. However, right now, it was tears of shame."
+    "They have sex a lot of time already. [d] knows what he likes. [p] feels ahame for enjoying it."
     d "Why are you crying? Is it too good?"
     p "..."
     p "..Ahh...haaa..."
@@ -87,34 +87,40 @@ label control3:
     d "Ngh... [p], can I cum inside you?"
     p "Ngh...Ahhh...aaa...m..."
     d "[p]!"
-    p "Y-yes...Mgh...yes...ahh..."
-    scene deepimpact_deepcum
+    p "N-no...Mgh...no...ahh..."
+    "[d] cums inside [p]."
+    hide deepimpact_deep
+    show deepimpact_deepcum
     p "AGH!..."
+    d "You have to answer faster next time."
     p "Ngh! P-please st-"
-    scene deepimpact_deep
+    show deepimpact_deep
     p "N...mgh!...Take it out...please...I can't-...ahh"
-    d "You must feel really good right now. I keep on hitting your sensitive spot."
-    p "...ngh! Ahh..."
-    d "Only I can make you feel this good."
+    d "Why? Because I keep on hitting your sensitive spot?"
+    p "...ngh! Ahh...I-I've cum...ahh...please stop."
+    d "Liar. Your cock is still really hard here. Does the pleasure too instense for you to handle?"
     p "...[d]...P-please stop..."
     "[d] smirks. He doesn't response nor stop."
     p "N-no, please. Have you had enough entertainment?"
     p "Is that enough? I'm sorry for what I did to you. I'm begging you. Please let me go! I'm going insane!"
+    d "So what? I should stop because of that?"
+    p "[d], [d]. Please stop. Have pity on me. Please. I'm really going insane. My mind is breaking apart."
     d "..."
-    p "[d]. Please stop. Have pity on me. Please. I feel like I'm gonna die. My mind is breaking apart."
     "[p] sobs. He makes it look like the world had come to an end."
     p "Ahh...hm..."
-    p "P-Please stop. Please let me go."
+    p "P-Please stop. Please let me go [d]. I beg you."
     d "..."
+    p "P-please [d]. I'll break. Please...Hmmm...ahhh..."
     scene darkforest
-    "[d] stops"
-    d "You make me goes soft [p], even though I try my best to make you feel good. What a brat!"
+    "[d] stops. He seems angry."
+    d "What a mood breaker."
     p "I-I'm sorry... Please forgive me..."
     d "..."
-    d "Since you have become so pathetic, I'll give you a chance."
+    "[d] facial expression returns to normal."
+    d "Since you begging too hard just now, I'll give you a chance."
     p "!"
-    d "I need to pee right now. And your mouth will be the toilet. If you do this well, I'll not tie you anymore."
-    "[p] looks up at [d]."
+    d "Drink my piss. If you do this well, I'll not tie you anymore."
+    "[p] looks up at [d]. His eyes and cheek look red from all the crying."
     p "W-w- y-...will you really let me go?"
     "[d] smirk."
     p "..."
@@ -133,72 +139,97 @@ label control3:
             scene peep_chew with None
             show peep_cry with None
             "Its hotness and stinkiness makes [p] dizzy. It tastes was horrible. Much worse than when [d] forced him to drink his own piss. Yet, it arouses [p]."
-            "[p] doesn't know when, but clearly, his sexual desire level is abnormal."
+            "It must be because of the hyposis, his sexual desire for [d] is abnormal."
             p "M...h..."
             scene peep_inmouth with vpunch
-            d "Ngh..."
+            p "Ngh..."
             d "Is it hot?"
             p "Mgh...m..."
-            d "I put it in your little mouth because you keep spill my piss out and dirty me."
+            d "Drink carefully this time. Don't spill it."
+            p "Ngh...M..."
+            "[p] was unable to consume that much peep. He dirty himself and [d]."
             d "You are so useless. Cannot even be a proper toilet."
             p "Mnn...ngh...h..."
             p "Ngh...h..."
+            "[d]'s cock head was inside [p]'s mouth till the last drop."
         "Smirks and go away":
             "[d] smirks and pulls his trouser on."
             "[p] nervously looks at [d]."
         
     scene darkforest
-    "[d] kisses [p]."
-    p "Ngh..."    
+    "[d] moves away from [p]. [p] sits up. He avoids looking at [d] while clumsily wipes his lips."
+    p "..."
+    p "!"
+    show darkforest2
+    show kiss_suprised
+    "From out of nowhere, [d] kisses [p]." with hpunch
+    p "Ngh..."  
+    hide kiss_suprised
+    show kiss  
     d "You look so adorable."
     p "N...h..."
     "He kisses [p] more intensively."
+    hide kiss
+    show kiss_fast
     p "Ngh...m..."
+    hide kiss_fast
+    show kiss_fast_short
+    p "..."
+    p "N..."
     "[d] stops."
+    hide kiss_fast_short
     p "..."
     d "I'm keeping my words. Pitchy had more important jobs to do anyway."
     p "..."
-    "[d] looks at [p] who is still in a daze. He seems confused."
-    "[d] slowly moves closer to kiss him again. [p] leans backward. When their eyes met, [p] looks down."
+    "[d] looks at [p] who is still in a daze. He seems lost."
+    "[d] slowly moves closer to kiss him again. [p] leans backward, his back touches a tree. When their eyes met, [p] looks away." with vpunch
     d "..."
     p "C-can I really go now?"
     d "Go away? Do you really think I'll let you go?"
     p "..."
     d "But I'll give you a little more freedom."
-    "[p] smiles. Even if he cannot get out, being able to freely move around is clearly much better. He can even find a way to get out."
+    "[p] reliefs. Even if he cannot get out, being able to freely move around is clearly much better. He can even find a way to get out."
     d "3 feets."
     p "?"
     d "This tree is the pivot point. From here, you can freely move around 3 feet."
     d "If you move more than that without my permission, don't blame me for your punishment."
     d "You know that even without being tied up, you cannot escape. This whole forest is my eyes and ears. I know each inch you move without looking."
-    "[p] shocked. He hugs his knees and tucks his head between them."
-    "It was very stupid of him. There is no way [d] lets him go or moving too freely. He will rotten here till the day he dies as a sex object."
+    p "..."
+    "[p] becomes depress." 
+    "3 feets. What a joke. [d] was just playing around with him." 
+    show sit_alt
+    "[p] hugs his knees and tucks his head between them, making him as small as possible, to keep himself away from getting noticed by [d]."
+    "It was very stupid of him. There is no way [d] lets him go or moving too freely. He will rotten here till the day he dies as [d]'s sex relief toy."
     d "Not being impulsive anymore huh? Your emotion seems to be more stable these days [p]."
     p "..."
-    "[p] trembles. He hugs his knees tighter, which makes him looks even smaller. He hids his head between his arms."
+    show sit_tight
+    "[p] trembles. He hugs his knees tighter, which makes him looks even smaller."
+    d "You sure have great mood swings. You look so affectionate just a few minutes ago."
     p "..."
+    "[d] can hear tiny sobbing sound coming from [p]. The closer he moves, the more [p] shuts himself and trembles."
     d "..."
     d "Suit yourself!"
     "[d] goes away."
     $controlStage = 3
-    jump sim
+    jump sim2
 
 label control4_ques:
     $controlStage = 4
-    scene darkforest
+    scene sit_alt
     "Early morning, when the sun still have yet move above the tree, [d] comes."
     "He touches [p]'s head while he were sleeping"
     p "Uhm..."
     d "Wake up!"
-    p "..."
+    show sit_tight
+    p "Ugh! N!"
+    scene sit_sad
     "[p] slowly opens his eyes. He is not fully awake yet. [d]'s eyes become red."
     p "..."
     p "(This...again...S-Shit. It hurts. I feel like he goes inside my mind...)"
     p "Ngh...m..."
     d "N!"
     d "..."
-    d "How can a human be so stubborn?"
-    "[d]'s eyes turn back to normal. [p] was about to close his eyes."
+    "[d]'s eyes turn back to normal. [p] closes his eyes."
     p "Ngh...[d]...I'm sleepy."
     d "..."
     p "!" with hpunch
@@ -213,13 +244,10 @@ label control4_ques:
     p "!"
     "[d] brutally stomps on [p]'s head again" with vpunch
     p "M...Aa..."
-    scene control4_whisper
-    "[d] whispers."
-    d "Aren't knight suppose to keep one eye open when sleep?"
-    p "I-I-.-"
+    d "You just won't surrender yourself do you?"
     scene control4_lickear
     "[d] licks [p]'s ear hole"
-    d "Have give up becoming a knight and choose to be a bitch instead?"
+    d "You have nothing left but me. Why are you still trying to resist?"
     p "Mgh..."
     "[p] heard some noises. The mosquito monsters appeared from the bush. [d] get away from him."
     scene control4_slap
@@ -536,7 +564,7 @@ label badend:
     d "You don't have to worry about that."
     k "..."
     d "Because he is right here!"
-    show present
+    show present_snake
     k "!"
     ren "!"
     "[d] pull [p] out the cover." with hpunch
@@ -579,19 +607,24 @@ label badend:
     k "..."
     "[d] holds [p]'s chin and hands. He pushes him forward, facing the king."
     show present_king
-    d "Don't you always want to beg him to keep and accept you?"
+    d "Don't you want beg him not chasing you out and accept you?"
     p "..."
     d "Say it, don't be shy."
     p "..."
-    d "Huh?"
-    p "F-father. P-please don't chase me out. I'm sorry for all the fighting and agruments... I never meant it. We had never get along well, but...please accept me..." 
-    p "...All I ever wanted was your love and acceptant...just like [ren]...I have always..."
+    d "Huh? Do it passionately."
+    p "Y-yes...n...yes..."
+    p "...P-please don't chase me out father..."
+    "Thinking this might be the last time they can talk like this. [p] bites his lower lip."
+    p "I'm sorry for all the fighting and agruments...I never meant it. We had never get along well..." 
+    p "...but all I ever wanted was your love and acceptant...just like [ren]...I have always..."
     k "..."
     "[k] looks at [d]."
     k "Please bring him out, together with all your monsters."
-    d "Isn't that too rush? This might be your last conversation together."
+    d "Isn't that too cold? He tries so hard to gather his courage."
     k "It is not necessary. He is not a citizen of this country nor human anymore."
-    "[p] cries. [d] releases him. He falls on his knees with one hand on the ground and another hand covers his tears, tries to not make any sound."
+    k "He just a disgrace. Living on his knees with no pride nor honour."
+    "[p] cries. [d] releases him. [p] falls in sitting position."
+    "He uses one hand covers his tears, tries to not make any sound."
     "[d] bends over, softly pulls his hair back and kisses him."
     p "!"
     p "..."
@@ -600,11 +633,12 @@ label badend:
     "[p] stops crying. [d] lets go of his lips."
     d "Since you are docile right now. I'll give you a gift."
     p  "..."
-    d "Do you want your dad or brother to join you as my toys or do you want me to chase them out?"
+    d "Do you want your dad or brother to join you or do you want me to chase them out?"
     p "!"
     d "Don't you think they will understand you better once they are in your position?"
-    "[p] shocked."
-    p "No!...No...[d]...Please...chase them out..."
+    # shock image, then angry image and
+    p "No...no [d]...Please, chase them out..."
+    # tired img
     p "..."
     "[p] glances at [d], observes his expression."
     p "...I beg you [d]. Please send them out, to another country..."
@@ -693,7 +727,7 @@ label badend:
     p "Ua,...u-..."
     d "Someone put something in his mouth. It hurts my ears."
     scene gore_back_ass_sock
-    p Ggh..N!"
+    p "Ggh..N!"
     p "H! H!"
     "[d] presses a button. The stick generate electric."
     p "NGH! NGH!"

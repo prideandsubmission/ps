@@ -158,10 +158,13 @@ label start:
             hide n_sad2
             show n_surprise
             n"In the middle of a giant river lies the Water Temple which holds the first stone..."
-            p"Everyone knows that."
+            p"I know that."
             hide n_surprise
             show n_surprise2
-            n"You mean all the knight? I'm pretty sure they do not know. Are you really a knight?"
+            n"..."
+            hide n_surprise2
+            show n_smile
+            n "You know a lot."
             p "..."
             hide n_surprise2
             show n_smile2

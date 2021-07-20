@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/control.rpy", line 136: expected statement.
-    peep_inmouth with vpunch
-                 ^
+File "game/sim2.rpy", line 95: expected statement.
+    goodend +=1
+            ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Jun 25 21:10:02 2021
+Tue Jul 20 13:16:29 2021

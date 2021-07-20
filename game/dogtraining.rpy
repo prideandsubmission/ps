@@ -423,9 +423,6 @@ label dogtraining:
             show m_beaten3 at s
             "[d] smirks then goes away"
 
-    $slavemarket +=1
-    if slavemarket > 1:
-        $slavemarket = 2
     "[p]'s pride and psyche decrease badly. His dirtiness increases."
     scene black with dissolve
     "[d] lets [p] rest for 1 day and a half."

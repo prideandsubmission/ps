@@ -3,30 +3,67 @@
 While running game code:
   File "game/sim.rpy", line 12, in script call
     call screen tie
-  File "game/control.rpy", line 129, in script
-    show peep_nocry with none
-  File "game/control.rpy", line 129, in <module>
-    show peep_nocry with none
-NameError: name 'none' is not defined
+  File "game/sim2.rpy", line 37, in script
+    else:
+  File "game/sim2.rpy", line 15, in execute
+    ground "sit_up"
+  File "game/sim2.rpy", line 15, in execute
+    ground "sit_up"
+  File "game/sim2.rpy", line 16, in execute
+    hover "sit_sad"
+  File "game/sim2.rpy", line 19, in execute
+    
+  File "game/sim2.rpy", line 19, in keywords
+    
+NameError: name 'clickRay' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/sim.rpy", line 12, in script call
     call screen tie
-  File "game/control.rpy", line 129, in script
-    show peep_nocry with none
-  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\ast.py", line 1382, in execute
-    trans = renpy.python.py_eval(self.expr)
-  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/control.rpy", line 129, in <module>
-    show peep_nocry with none
-NameError: name 'none' is not defined
+  File "game/sim2.rpy", line 37, in script
+    else:
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\ast.py", line 1628, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\exports.py", line 990, in menu
+    rv = renpy.store.menu(new_items)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\exports.py", line 1226, in display_menu
+    rv = renpy.ui.interact(mouse='menu', type=type, roll_forward=roll_forward)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\core.py", line 3094, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\screen.py", line 430, in visit_all
+    callback(self)
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\core.py", line 3094, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\screen.py", line 440, in per_interact
+    self.update()
+  File "D:\PROGRAM\RENPYY\renpy-7.3.5-sdk\renpy\display\screen.py", line 625, in update
+    self.screen.function(**self.scope)
+  File "game/sim2.rpy", line 15, in execute
+    ground "sit_up"
+  File "game/sim2.rpy", line 15, in execute
+    ground "sit_up"
+  File "game/sim2.rpy", line 16, in execute
+    hover "sit_sad"
+  File "game/sim2.rpy", line 19, in execute
+    
+  File "game/sim2.rpy", line 19, in keywords
+    
+  File "<screen language>", line 19, in <module>
+NameError: name 'clickRay' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 Pride and Submission 1.3.2
-Thu Jul 01 19:23:20 2021
+Tue Jul 20 13:23:55 2021
