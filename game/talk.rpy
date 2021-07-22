@@ -118,8 +118,6 @@ label talk4:
     show m_cockdown
     show m_blush
     show m_shame
-    show m_m
-    hide m_m
     show m_m_open1
     p "Aaa...Ngh...P-please stop."
     d "Not until you answer."
@@ -200,12 +198,36 @@ label talk5:
     "Since when had [d] becomes this gentle and soft-spoken? Is it a trick?"
     jump simbutton2
 label talk6:
+    scene sit_sad
     d "I heard the crown prince is looking for you."
+    show m_suprise
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open1
     p "!"
+    scene sit_sad with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m
     p "..."
     d "Does that not concern you?"
+    scene sit_tired with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open_speak
     p "What is the king doing?"
     d "The king? He just the same. Actually, he's more busy these days preparing for the transition."
+    scene sit_sad with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m
     p "..."
     d "There're many people looking for your head now. You know that the moment the king select your brother right?"
     p "It doesn't matter."

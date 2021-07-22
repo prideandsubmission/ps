@@ -71671,4 +71671,22 @@ Total time until interface ready: 24656.1860001s
 - Frame drawn at 0.042667 seconds.
 - Frame drawn at 0.055667 seconds.
 - Frame drawn at 0.077667 seconds.
-- 0.077667 sec
+- 0.077667 seconds to render 5 frames.
+The window was minimized.
+The window was restored.
+
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1920, 1300) physical=(1217, 824) drawable=(1217, 824)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+The window was minimized.
+The window was restored.
+
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1920, 1300) physical=(1217, 824) drawable=(1217, 824)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
