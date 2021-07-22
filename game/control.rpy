@@ -243,12 +243,16 @@ label control4_ques:
     p "!"
     "[d] brutally stomps on [p]'s head again" with vpunch
     p "M...Aa..."
-    d "You just won't surrender yourself do you?"
+    d "You have a very bad sleeping habit [p]. Shouldn't knight need to pay attention to small noises even in sleep?"
+    p "N-no, I-I used to..."
+    d "So it was because of me huh?"
     scene control4_lickear
-    "[d] licks [p]'s ear hole"
-    d "You have nothing left but me. Why are you still trying to resist?"
+    "[d] licks [p]'s ear hole."
+    d "You have nothing left but me. Why are you still trying to resisting? Give yourself to me."
     p "Mgh..."
-    "[p] heard some noises. The mosquito monsters appeared from the bush. [d] get away from him."
+    p "I didn't resist, [d]..."
+    d "Yes you are, not physically, but it causes me troubles."
+    "[p] heard some noises. The mosquito monsters appeared from the bush. [d] gets away from him."
     scene control4_slap
     p "[d]! [d]!"
     scene darkforest
@@ -263,7 +267,7 @@ label control4_ques:
     p "AGHHH! AAAAGGGGHHH!"
     d "Hahaha, is it that hard to control your own urine? I can see some stool too."
     p "...W-Why..?"
-    "[p] unable to move his mouth and body. He feels so shamed for the little feeling he have for [d]."
+    "[p] unable to move his mouth and body. He feels so ashamed for the little feeling and trust he have for [d]."
     scene darkforest
     "[d] throws a heavy kick on [p]'s head" with vpunch
     p "Mgh!"
@@ -272,7 +276,7 @@ label control4_ques:
     d "I'm your master, not your ally. I can beat you for no reason whenever I want. That's why!"
     p "F-fu..."
     scene control4_stomp_cries
-    "[p] cries"
+    "[p] cries."
     d "Cries again? Had you become meek? Or you cannot take it anymore? What a weakling, trying to play tough."
     scene darkforest
     p "Bastard!"
@@ -375,7 +379,7 @@ label control4_ques:
     "[d] keeps on penetrade deep in his brain. [p] pain was lessen and replace by pleasure."
     p "Gah...ah...a..."
     "[d]'s other hand grasps [p]'s shoulder hard."
-    d "Loosen up! It'll be over soon."
+    d "Loosen up! Sharing power is a mutual agreement. If you resist, we will both in troubles."
     "[p] tries to soften himself. The thurst becomes faster and stronger in disregard of [p]'s pain. His muscle keeps on twitching."
     p "N...ahh...aaa..."
     "All 5 fingers of [d] had penetrate to the deepest part of [p]'s brain. [p] feels a flow of energy comming in. It comes faster and heavier each second."
@@ -392,7 +396,7 @@ label control4_ques:
     d "It wasn't your father, brother, or anyone else that you call out to in your dream but me. Whatever the reason, I'm glad."
     "[d] moves his hand to [p]'s face."
     p "N..."
-    d "You look so sorrowful and confuses when I first meet you. Now, you look even more so. You must have loathe me to your heart content." 
+    d "When I first met you, under that cold mask, you look so sorrowful and confuses. Now, you look even more so. You must have loathe me to your heart content." 
     d "But I ..."
     "[d] shakes his head. He tries to be awake but also fallen asleep."
     "He sleeps while sitting upright with [p] lying on his laps." 
@@ -402,13 +406,14 @@ label control4_ques:
     "He reaches his arms and legs, but they are heavier than usual, like they had some root connected to the Earth. He was unable to move, like a tree."
     p "Shit! What the fuck is going on?"
     "[p] remembered all the things [d] did to him yesterday."
-    p "It was never his plan to kill me. He still wants to use me for entertaining."
-    p "FUck! If I was in my right mind, I wouldn't have believe a thing he said. I give up resistance so easily, he goes into my brain and alter it so it can accept his power."
+    p "It was never his plan to kill me. He forces me to accept his power to becomes a digusting monster like him." 
+    p "Fuck! He still wants to use me for entertaining."
     "[p] heard hand claps."
     d "You guess right [p], most of it. You had become smarter. A five year old kid could have the same conclusion as you, only faster."
     p "[d]! FUCKER! Why are you doing this? Just how long do you want to use me for entertainment?"
     d "You are no longer disrubt The Flow of this Earth. And you have become a part of me. You will never die unless I die. Aren't you happy?"
     p "What the hell are you saying?"
+    d "It was no normal power sharing. Only the strongest of the strongest can do that. This is the luckiest day of your life."
     d "The only drawback is your arms and legs are attached to the Earth. I can fuck you in this position until you are able to control your new power."
     p "[d]! YOU BASTARD!"
     "The ground is moving faster and faster, [p]'s arms and legs cracks. He consumes the Earth. His arms and legs recovered."
@@ -744,7 +749,7 @@ label badend:
     "[p] tries, but he cannot uses the power."
     p "Hmp...ahh...mmm..."
     d "You look like a bitch in heat."
-    "This is the second time [d] comes to [p] at night, beside the first time they met."
+    "[p] heard [d]'s voice."
     p "...m..."
     scene gore_cage_pull with vpunch
     "[d] opens the cage and pull [p]'s hair, drags him out of the cage."
@@ -928,7 +933,7 @@ label badend:
 
     "End"
 
-    
+    return
 
 
 
@@ -1049,7 +1054,7 @@ label goodend:
     p "It's beautiful."
     d "It is."
     "END"
-
+    return
     
 
   

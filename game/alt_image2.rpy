@@ -392,18 +392,17 @@ image kiss_fast_short:
 image kiss_fast_short_open:
     block:
         block:
-            "kiss_deep_open_cry"
+            "kiss_suprise"
+            1.1
+            repeat 1
+        block:
+            "kiss_passionate"
             1.1
             repeat 1
         block:
             "kiss_deep"
             1.1
-            repeat 6
-        block:
-            "kiss_deep_cry"
-            1.1
-            repeat 1
-        repeat
+            repeat
 image kiss_suprised: 
     block:
         "kiss_suprise"

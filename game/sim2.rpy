@@ -28,15 +28,12 @@ label clickRay:
     p"..."
     "[p] feels uncomfortable. Better not touch him more."
     jump simbutton2
-    
+
+
 label simbutton2:
-    show screen sit_up_screen
+    show screen sit_up_screen with dissolve
     show screen day
     show screen stat
-    if talk >= 18:
-        "[p] looks around and saw [d]."
-        "[p] blush"
-        p "..."
     if ene <=0:
         jump endday
     elif water<=0 or food <=0:
@@ -49,6 +46,7 @@ label simbutton2:
                 hide screen sit_up_screen
                 $goodend +=1
                 $talk += 1
+                $ene -=5
                 if talk <= 2:
                     jump talk1
                 elif talk >2 and talk <6:
@@ -93,16 +91,17 @@ label simbutton2:
                             jump endday
                         else:
                             $goodend +=1
-                            #jump cock_obe
+                            #mostly refuse
                             "Working on it"
                     "Anal":
                         if ene <=0:
                             jump endday
                         else:
                             $goodend +=1
-                            #jump ass_obe 
+                            #mostly refuse
                             "Working on it"                          
                     "Group Sex":
+                        # Ray never agrees
                         jump group2
                         
                     "Return":
@@ -112,10 +111,7 @@ label simbutton2:
                     jump control4_ques
                 
             "Let [p] rest":
-                jump endday
-            "Sleep with [p]":
-                $goodend +=1
-                "Working on it"
+                jump endday2
                 
    
                 

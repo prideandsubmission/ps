@@ -39,7 +39,7 @@ label endday:
         jump bath30
     elif clean <=0:
         jump bath
-    elif water >=60:
+    elif water >=100:
         show m_tired at s
         show m_shame at s
         show m_m_open2 at s
@@ -136,7 +136,7 @@ label endday:
                     $pride -=10
                     d "Dogs urine mark when they become highly aroused, overstimulate or having anxiety. I wonder what it is in your case."
                     p "...F-fuck.."
-                    $water -=10
+                    $water =70                    
                     $clean -=5
                     jump controlnote
                     "[p]'s psyche and pride decrease. He becomes dirtier"
@@ -194,7 +194,7 @@ label endday:
                             "[p] exausted physically. His pride and psyche decrease dramatically."
                             "His thirst increases for eating dirt and piss. He becomes dirtier."
                             p "..."
-                            $water -=20
+                            $water =70
                             $pride -=15
                             $mental -=15
                             $clean -=7
@@ -229,7 +229,7 @@ label endday:
                             d "Hahaha! Seem like your master trained you well."
                             "[p] exausted physically. His pride and psyche decrease. He becomes dirtier"
                             p "..."
-                            $water -=10
+                            $water =70
                             $pride -=10
                             $mental -=10
                             $clean -=5
@@ -302,9 +302,36 @@ label jumpsim:
     pause .5
     jump sim
 
-        
-
-
+label endday2:
+    hide screen day
+    hide screen stat
+    $day +=1
+    $water -=7
+    $food -=5
+    $clean -=5
+    if water >=100:
+        "[p] goes behind the tree."
+        d "What are you doing?"
+        p "D-don't come here. I'm peeping."
+        d "Ok."
+        p "..."
+        "[p] returns to his place."
+        d "Relief?"
+        p "Y-yeah."
+        $water = 70
+    if talk >= 18:
+        scene sit_up
+        "Morning."
+        "[p] looks around and sees [d] as soon as he wakes up."
+        p "..."
+        d "Did you sleep well?"
+        p "..."
+        p "Y-yes..."
+        d "Good."
+        p "..."
+    else:
+        "A new day has come."
+    jump simbutton2
 
 
 
