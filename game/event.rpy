@@ -274,17 +274,6 @@ label controlnote:
             jump control3
         else:
             jump newday
-    elif mental<=0 and pride<=0:
-        if control4first:
-            d "..."
-            d "(All his resistance is gone. This time, it had to be a success.)"
-            "[p] looks at [d]"
-            p "..."
-            d "(Or I can play with him a little more before completely control his mind.)"
-            $control4first = False
-            jump newday
-        else:
-            jump newday
     else:
         jump newday
        

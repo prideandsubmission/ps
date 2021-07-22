@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/sim2.rpy", line 95: expected statement.
+File "game/sim2.rpy", line 49: expected statement.
     goodend +=1
             ^
 
+File "game/sim2.rpy", line 50: expected statement.
+    talk += 1
+         ^
+
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Jul 20 13:16:29 2021
+Wed Jul 21 16:24:31 2021

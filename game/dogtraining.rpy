@@ -53,7 +53,7 @@ label dogtraining:
     scene water_kneel
     "[p] kneels in front of [d]"
     scene water_wait_cock
-    d "What a good manner."
+    d "What good manners."
     p "Ngh...n..."
     "[d] smirks."
     d "You have become so docile."
