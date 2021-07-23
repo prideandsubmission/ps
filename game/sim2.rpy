@@ -84,28 +84,28 @@ label simbutton2:
                             "Working on it"
                     "Return":
                         jump simbutton2   
-            "Sex":
-                menu:
-                    "Oral":
-                        if ene <=0:
-                            jump endday
-                        else:
-                            $goodend +=1
-                            #mostly refuse
-                            "Working on it"
-                    "Anal":
-                        if ene <=0:
-                            jump endday
-                        else:
-                            $goodend +=1
-                            #mostly refuse
-                            "Working on it"                          
-                    "Group Sex":
-                        # Ray never agrees
-                        jump group2
+            # "Sex":
+            #     menu:
+            #         "Oral":
+            #             if ene <=0:
+            #                 jump endday
+            #             else:
+            #                 $goodend +=1
+            #                 #mostly refuse
+            #                 "Working on it"
+            #         "Anal":
+            #             if ene <=0:
+            #                 jump endday
+            #             else:
+            #                 $goodend +=1
+            #                 #mostly refuse
+            #                 "Working on it"                          
+            #         "Group Sex":
+            #             # Ray never agrees
+            #             jump group2
                         
-                    "Return":
-                        jump simbutton2
+            #         "Return":
+            #             jump simbutton2
 
             "Brain alteration":
                     jump control4_ques
