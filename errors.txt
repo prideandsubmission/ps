@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/event.rpy", line 307: Line is indented, but the preceding hide screen statement statement does not expect a block. Please check this line's indentation.
-    hide screen stat
-    ^
+File "game/talk.rpy", line 751: expected statement.
+    sho m_m1
+            ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Jul 21 23:02:10 2021
+Fri Jul 23 20:06:18 2021

@@ -77,7 +77,7 @@ label control3:
     p "...H...Ngh...aaa...ahhh...."
     p "..N...ngh...no..no don't...ahhh.."
     "[p] cries. It's normal for him to burst into tears while having sex with [d] because it hurts a lot. However, right now, it was tears of shame."
-    "They have sex a lot of time already. [d] knows what he likes. [p] feels ahame for enjoying it."
+    "They had sex a lot of times already. [d] knows what he likes. [p] feels ahame for enjoying it."
     d "Why are you crying? Is it too good?"
     p "..."
     p "..Ahh...haaa..."

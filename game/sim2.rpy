@@ -25,6 +25,8 @@ screen sit_up_screen:
 label clickRay:
     hide screen sit_up_screen
     scene sit_sad
+    if talk >=18:
+        show sit-sad-blush with dissolve
     p"..."
     "[p] feels uncomfortable. Better not touch him more."
     jump simbutton2
@@ -108,7 +110,7 @@ label simbutton2:
             #             jump simbutton2
 
             "Brain alteration":
-                    jump control4_ques
+                jump control4_ques
                 
             "Let [p] rest":
                 jump endday2

@@ -1,6 +1,6 @@
 label talk1:
     scene sit_up
-    show m_tired 
+    show m 
     show m_m 
     show m_cockdown
     "[p] looks far away with a blank stare on his face. He seems to be in deep thought."
@@ -91,7 +91,7 @@ label talk3:
     show m_blush
     show m_m
     p "..."
-    "[p] stays silent. He looks away. He had used to your accompany."
+    "[p] stays silent. He looks away. He had used to [d]'s company."
     jump simbutton2
 label talk4:
     scene sit_sad
@@ -147,7 +147,7 @@ label talk4:
     show m_blush
     show m_shame
     show m_m_open2
-    p "H...ngh...I...just remember...some people..."
+    p "H...ngh...I just...remember...some people..."
     hide m_m_open2
     show m_m_open1
     p "Ngh...[d]...I said it...ngh..."
@@ -232,7 +232,7 @@ label talk5:
     show m_cockdown
     show m_blush
     show m_shame
-    show m_m_open2
+    show m_m_open_speak
     p "I don't have any courage left to resist you. I will kneel or even eat my waste immediately if you order me so."
     scene sit_sad with None
     show m_close
@@ -240,7 +240,7 @@ label talk5:
     show m_blush
     show m_shame
     show m_m_open_speak
-    p "You can even control my mind...There's nothing you cannot take from me. I am just a wounded lab rat waiting for you to do whatever you want."
+    p "You can even control my mind...There's nothing you cannot take from me. I am just a wounded lab rat waiting for you to do whatever you want..."
     scene sit_sad with None
     show m_surprise
     show m_cockdown
@@ -256,9 +256,6 @@ label talk5:
     show kiss_fast_short with dissolve
     p "Hm..."
     p "Ngh..."
-    hide kiss_fast_short
-    show kiss_fast_short_open
-    p "N..."
     hide kiss_fast_short_open
     show kiss_fast_short
     p "..."
@@ -282,14 +279,14 @@ label talk5:
     show m_blush
     show m_shame
     show m_m
-    "[p] was dazed. He cannot think clearly. Lately, he notice the way [d] looks at him. He doesn't like it."
+    "[p] was dazed. He cannot think clearly. Lately, he notices the way [d] looks at him. He doesn't like it."
     scene sit_sad with None
     show m_close
     show m_cockdown
     show m_blush
     show m_shame
     show m_m_normal
-    "Since when had [d] becomes this gentle and caring? Is it a trick?"
+    "Since when had [d] becomes this genuine? Is it a trick?"
     jump simbutton2
 label talk6:
     scene sit_sad
@@ -324,12 +321,18 @@ label talk6:
     show m_tired
     show m_cockdown
     show m_blush
-    show m_m
+    show m_m_open_speak
     p "It doesn't matter."
-    hide m_m
-    show m_m_normal
+    hide m_m_open_speak
+    show m_m
     "[d] smirks."
-    d "Doesn't matter? All the blood was in your hands, then he gave your brother power and disowned you. Isn't that why you rushed here like a wounded animal in the first place? To get revenge."
+    d "Doesn't matter? You and your men killed the opposition leaders, then he gave your brother the power and discard you, left you in a very vulnerable position." 
+    scene sit_sad with None
+    show m_close
+    show m_cockdown
+    show m_blush
+    show m_m
+    d "Isn't that why you rushed here like a wounded animal in the first place? To get revenge for the betrayal."
     scene sit_sad with None
     show m_tired
     show m_cockdown
@@ -337,19 +340,19 @@ label talk6:
     show m_m
     p "..." 
     scene sit_sad with None
-    show m_surprise
+    show m
     show m_cockdown
     show m_blush
     show m_shame
     show m_m_open_speak
     "[d] pats [p]'s head."
     scene sit_sad with None
-    show m
+    show m_tired
     show m_cockdown
     show m_blush
     show m_shame
     show m_m_normal
-    d "The transition goes smoothy because the opposition's leaders had gone. There's no risk for the crown prince since the leftovers were just looking for your head."
+    d "The transition goes smoothy because there's no strong enermies left. And the leftovers are just aiming for your head for revenge and showing off."
     hide m_m_open_speak
     show m_m_normal
     d "It's a perfect plan that benefit everyone, excluding you."
@@ -360,42 +363,117 @@ label talk6:
     p "...I can take care of myself. Why are you telling me all this?"
     d "It is you who ask. I didn't plan to mention your father."
     scene sit_sad with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_m2
+    p "..."
+    d "If I were him, even if you are able to depend yourself, I will never trade you off for politic like that. You did your jobs well and very faithful. You deserve more."
+    scene sit_sad with None
     show m
     show m_cockdown
     show m_blush
-    show m_m
-    p "..."
-    d "If I were him, even if you are able to depend yourself, I will never trade you off for politic like that. You did your job well and very faithful. You deserve more."
-    hide m_m
-    show m_m_open2
     show m_shame
+    show m_m_open2
     p "..."
     scene sit_sad with None
     show m_tired
     show m_cockdown
     show m_blush
     show m_shame
-    show m_m
-    "[p] stays silent. It was just a stupid conversation between [p] and the monster who trap and use him as a fuck toy. None of it means anything to him or [d]."
+    show m_m2
+    "[p] stays silent. It was just a stupid conversation between [p] and the monster who traps him here and ravishes him almost everyday. None of it means anything to him or [d]."
     "But his words did give [p] a little joy." 
     scene sit_sad with None
     show m_close
     show m_cockdown
     show m_blush
     show m_shame
+    show m_m_normal
+    "Maybe because he always looks tough and ruthless, maybe because everyone despite or scared of him, [p] was never once received supportive words like that..."
+    scene sit_sad with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
     show m_m
-    "Maybe because he always looks tough and ruthless, maybe because everyone despite or scared of him, [p] was never once received supportive words like that."
-    p "(This is not good at all.)"
+    p "(I don't like it. This is not good at all.)" 
     jump simbutton2
 label talk7:
     scene sit_sad
+    if talk >=18:
+        show sit-sad-blush with dissolve
+    show m_tired
+    show m_cockdown
+    show m_shame
+    show m_m_normal
     d "How is your day?"
-    p "I'm good."
+    scene sit_sad with None
+    if talk >=18:
+        show sit-sad-blush
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_m_open2
+    p "...I...I'm good..."
+    scene sit_sad with None
+    if talk >=18:
+        show sit-sad-blush
+    show m
+    show m_cockdown
+    show m_blush
+    show m_m
     "[d] smiles."
+    scene sit_sad with None
+    if talk >=18:
+        show sit-sad-blush
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_normal
     p "..."
-    p "H-how is your day?"
+    scene sit_sad with None
+    if talk >=18:
+        show sit-sad-blush
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open1
+    p "H-how..."
+    hide m_m_open1
+    show m_m_normal
+    p "..."
+    scene sit_sad with None
+    if talk >=18:
+        show sit-sad-blush
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open2
+    p "...How is your day?"
+    hide m_m_open2
+    show m_m
     d "I'm good too."
+    scene sit_sad with None
+    if talk >=18:
+        show sit-sad-blush
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_normal
     p "..."
+    scene sit_sad with None
+    if talk >=18:
+        show sit-sad-blush
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open2
     "[d] kisses [p]."
     scene darkforest2
     show kiss_fast_short_open
@@ -404,82 +482,383 @@ label talk7:
     show kiss_fast_short
     p "..."
     scene sit_sad
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m
     d "Greeting kiss."
+    scene sit_sad with None
+    if talk >=18:
+        show sit-sad-blush
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_normal
     p "..."
-    if talk > 20:
+    if talk >=18:
         "[p] looks really peaceful just now. It was a very quick expression that maybe he himself didn't notice. But [d] saw it."
         d "..."
         "He kisses [p] in the eye."
+        scene sit_sad with None
+        show sit-sad-blush
+        show m_close
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m_normal
         p "N..."
+        scene sit_sad with None
+        show sit-sad-blush
+        show m
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m_normal
         "Recently, whenever [d] was near him, [p] feels lightheaded and dizzy. His body becomes hoter." 
         "[p] doesn't know what it is or why he becomes like that, but he doesn't like it at all."
     else:
+        scene sit_sad with None
+        show m_close
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m_normal
         "[p] stays silent."
     jump simbutton2
 label talk8:
     scene sit_up
+    show m
+    show m_cockdown
+    show m_blush
+    show m_m2
     "[p] looks at [d] who intended to sit near him."
+    hide m_m2
+    show m_m_open1
     p "[d].." 
+    hide m_m_open1
+    show m_m_normal
     d "What's wrong?"
+    scene sit_up with None
+    show m_close
+    show m_cockdown
+    show m_blush
+    show m_m
     p "..."
+    scene sit_up with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_m_open1
     p "When I fight you, what do you think of my skills?"
+    hide m_m_open1
+    show m_m_normal
     d "That's what you have been thinking about lately huh?"
+    scene sit_up with None
+    show m_close
+    show m_cockdown
+    show m_blush
+    show m_m_normal
     p "..."
-    d "I have never fight with my equals. The rest are just like flies to me. Including you. I didn't pay attention."
+    scene sit_up with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_m_normal
+    d "I haven't fight with my equals for a very long time. The rest are just like flies. Including you. I didn't pay attention."
+    hide m_m_normal
+    show m_m
     p "..."
+    scene sit_up with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_m_open2
     p "Is that so..."
-    d "I just remember you have good strength and agility."
+    hide m_m_open2
+    show m_m
+    d "..."
+    d "I remember you have good strength and agility."
+    scene sit_up with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open2
     p "T-that's..."
-    p "...Thanks..."
-    "[d] takes a closer look at [p]. It's not really a compliment from him but [p] seems embrassed about it. It's not that big of a deal."
-    "Think about it, he looks like someone who rarely got praise or attention since childhood. [d] wonder what kind of environment [p] grows up in."
+    scene sit_up with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open_speak
+    p "...T...Thank you..."
+    show m_m1
+    "[d] takes a closer look at [p]. It's not that much of a compliment but [p] seems embrassed about it. It seems like a big deal to him."
+    hide m_m_open_speak
+    hide m_m1
+    show m_m2
+    "[p] does look like someone who lacks attention and guidance since early childhood. [d] wonder what kind of life [p] had lives..."
     d "If you want, I can help you with training."
+    scene sit_up with None
+    show m_surprise
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m
     p "!"
+    scene sit_up with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m2
     p "..."
+    scene sit_up with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open_speak
+    show m_m1
     p "That's...not neccessary."
+    hide m_m_open_speak
     d "Ok."
+    hide m_m1
+    show m_m_normal
     p "..."
+    scene sit_up with None
+    show m_close
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m
     "[p] doesn't like the feeling he experience these days. It was pleasant talking to [d]. He must have gone crazy."
-    "Maybe it was because [d] haven't done anything bad to him like he used to. [p] actually relief whenever he sees [d] when wakes up."
+    scene sit_up with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_normal
+    "Maybe it was because [d] haven't done anything bad to him like he used to. [p] actually feels relief whenever he sees [d] when wakes up."
+    scene sit_up with None
+    show m_close
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m
+    p "(God, please stop this...)"
     jump simbutton2
 label talk9:
+    scene sit_sad
+    show m
+    show m_cockdown
+    show m_m
     d "How are you feeling?"
-    p "I'm good."
-    d "The troops who looking for you had been pull back. It's the king's order."
+    scene sit_sad with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_m1
+    show m_m_open_speak
+    p "I...I'm good."
+    hide m_m_open_speak
+    hide m_m1
+    show m_m_normal
+    d "The troops who looking for you had pulled back. It's the king's order."
+    scene sit_sad with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_m1
+    show m_m
     p "..."
-    p "Is that so..."
+    hide m_m
+    hide m_m1
+    show m_m_open2
+    p "I-is that so..."
+    hide m_m_open2
+    show m_m2
     d "Does your father the only thing you care about? What about your brother? Or your friends?"
+    scene sit_sad with None
+    show m_close
+    show m_cockdown
+    show m_blush
+    show m_m1
     p "..."
+    scene sit_sad with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_m1
+    show m_m_open_speak
     p "Friends..."
+    scene sit_sad with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_m_open_speak
     p "I used to have one...If he is still alive, he must have hated me to the bone."
-    d "Why is that?"
-    p "It was a mistake from the higher up secret order. When he thought I invited him for a small meal, he was really happy. He didn't know what awaits him."
-    p "There was no way I can wash my hands off of innocent blood..."
-    p "...I know my brother loves me, but I always envy him. If I'm a shadow who does dirty works, he is the bright light people love..." 
-    p "!"
-    "[p] was suprised. He doesn't understand why he told [d] about all of it."
-    "Was he still under hypnotize?"
+    hide m_m_open_speak
+    hide m_m1
+    show m_m
+    d "..."
+    scene sit_sad with None
+    show m_close
+    show m_cockdown
+    show m_blush
+    show m_m
     p "..."
+    hide m_m
+    show m_m_open2
+    p "It...was a mistake from the Red List. When he thought I invited him for a small meal, he was really happy. He didn't know what awaits him..."
+    scene sit_sad with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_m_open1
+    p "There was no way I can wash my hands off of innocent blood..."
+    scene sit_sad with None
+    show m_close
+    show m_cockdown
+    show m_blush
+    show m_m
+    p "..."
+    hide m_m
+    show m_m_open_speak
+    p "...I know [ren] cares for me, but I always envy him. If I'm a shadow who rushes to wars and does dirty works, he is the bright light people love..." 
+    scene sit_sad with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_m_open1
+    p "His hands...had never got dirty..."
+    scene sit_sad with None
+    show m_surprise
+    show m_cockdown
+    show m_blush
+    show m_m2
+    p "!"
+    scene sit_sad with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_m
+    "[p] was suprised. He doesn't understand why he told [d] about all of it. Was he still under hypnotize?"
+    scene sit_sad with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_m_normal
+    p "..."
+    hide m_m_normal
+    show m_m1
     d "You seems tired. Have some rest."
+    scene sit_sad with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_m_open2
+    p "..."
+    scene sit_sad with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_m_open1
     p "Am I still under your mind control? Did you make me feel comfortable around you?"
+    hide m_m_open1
+    show m_m_normal
     d "..."
     "[d] smirks."
-    d "You are not."
+    hide m_m_normal
+    show m_m_open_speak
     p "..."
+    d "You are not."
+    scene sit_sad with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m2
+    p "..."
+    scene sit_sad with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m2
     "[p] was so embrassed by what he just said that he turns all red."
     "[d] smiles."
+    scene sit_sad with None
+    show m_close
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m2
     d "I'll give you sometimes alone to rest."
+    scene sit_sad with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open1
     "[p] catches [d]'s hand."
+    hide m_m_open1
+    show m_m1
     d "!"
+    scene sit_sad with None
+    show m_surprise
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open2
     p "!"
+    scene sit_sad with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m2
     "[p] retreats his hand."
+    scene sit_sad with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_normal
     p "..."
-    p "S-sorry."
+    hide m_m_normal
+    show m_m_open1
+    p "S-sorry..."
+    hide m_m_open1
+    show m_m2
+    p "..."
     d "..."
-    d "Can I spend some more time with you?"
-    p "..."
-    p "Y-yes."
-    "It was so akward that [p] and [d] don't talk much after that conversation, but they stay together until [p] falls asleep."
+    d "Can I stay here with you a little longer?"
+    scene sit_sad with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open1
+    p "..."  
+    scene sit_sad with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open2
+    p "...Y-yes."
+    scene sit_sad with None
+    show m_close
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_normal
+    "[d] sits next to [p]. It was so akward that he and [d] don't talk much after that conversation, but they stay together until [p] falls asleep."
+    scene darkforest_night with dissolve
     "In his dream, [d] holds him tight from behind. It was very warm. [p] puts his hand on [d]'s hand and got a kiss on the back of his head."
-    "It was not the first time he had this dream."
-    jump jumpsim2
+    "It was not the first time he had this dream..."
+    
+    jump endday2

@@ -239,11 +239,11 @@ label bath:
         p "...Bastard..."
         hide m_m_open1
         show m_m at s
-        d "If you want to, kneel down and such my cock."
+        d "If you want to, kneel down and suck my cock."
         p "..."
         hide m_m
         show m_m_open1 at s
-        p "Shithole. Why are you always do that? Use survival needs to force me, hummiliate me."
+        p "Shithole. Why are you always doing that? Using survival needs to force and hummiliate me."
         d "It's amusing to see you beg."
         hide m_m_open1
         show m_m at s
@@ -981,7 +981,7 @@ label comfort:
     scene deepimpact_deep with dissolve
     p "Aahhhh...ngh!...Aaaa..."
     d "You are crying again. What a hard to please brat!"
-    d "When I'm brutal with you, you cry. When Ilm gentle with you, your cry too. What do you want prince?"
+    d "When I'm brutal with you, you cry. When I'm gentle with you, your cry too. What do you want prince?"
     p "S-shit! No...Please [d], stop. I'm begging you..."
     d "Do you really want me to stop while your cock this hard?"
     p "N-No! Please let it out. Don't thrust it in anymore."
@@ -2500,7 +2500,7 @@ label extreme:
                     show m_m_sexopen at s
                     p"..."
                     scene fin_mouthb with dissolve
-                    "[p] wraps his tongue around it and such as if he is sucking [d]'s cock."
+                    "[p] wraps his tongue around it and suck as if he is sucking [d]'s cock."
                     p "...m..."
                     p "...ngh..."
                     "[d] smirks. [p] is showing a sign of submission."
@@ -2613,7 +2613,7 @@ label extreme:
             scene fin_mouthb with dissolve
             p "..."
             p "...ngh..."
-            "[p] wraps his tongue around [d]'s thumb and such as if he is sucking [d]'s cock."
+            "[p] wraps his tongue around [d]'s thumb and suck as if he is sucking [d]'s cock."
             d "..."
             d "That's cute of you."
             p "...m..."

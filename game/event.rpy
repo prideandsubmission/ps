@@ -320,6 +320,8 @@ label endday2:
         p "Y-yeah."
         $water = 70
     if talk >= 18:
+        scene black with dissolve
+        pause .5
         scene sit_up
         "Morning."
         "[p] looks around and sees [d] as soon as he wakes up."
@@ -327,10 +329,13 @@ label endday2:
         d "Did you sleep well?"
         p "..."
         p "Y-yes..."
-        d "Good."
+        "[d] smiles."
+        d "That's good."
         p "..."
     else:
+        scene black with dissolve
         "A new day has come."
+        pause .5
     jump simbutton2
 
 
