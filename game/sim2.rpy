@@ -109,7 +109,7 @@ label simbutton2:
             #         "Return":
             #             jump simbutton2
 
-            "Brain alteration":
+            "Alteration":
                 jump control4_ques
                 
             "Let [p] rest":

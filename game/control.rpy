@@ -19,38 +19,133 @@ label control2:
 label control3:
     hide screen day
     hide screen stat
+    scene tie_looka
     "[d] looks at [p]. [p] scares. He quickly looks away. [d] chuckles"
+    scene tie
     d "You have start to fear me huh?"
+    scene tie_looka
     p "W-What do you need?"
     "[d] smirks. His eyes turn red."
+    scene tie
+    show m at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_open1 at s
     d "Look at me!"
+    scene tie_looka
+    show m at s
+    show m_blush at s
+    show m_m_1 at s
+    show m_shame at s
     "[p] looks at [d]. He feels dizzy, like someone penetrate his brain"
+    hide m_m_1
+    show m_m_sexopen at s
     p "Ngh..."
+    scene darkforest
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_normal
     "The vines release [p]"
+    hide m_m_normal
+    show m_m
     p "..."
     d "What are you doing? On your four and crawl here!"
+    scene darkforest
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m2
     "[p] feels like his body moves against his will."
+    hide m_m2
+    show m_m_sexclench1
     p "Mnh..."
+    hide m_m_sexclench1
+    show m_m_sexclench2
     d "(I cannot stop moving...)"
-    "[d] touches his face. [p] feels hot. [d]'s touch somehow become really pleasant."
+    scene darkforest with None
+    show m
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open1
+    "[d] touches his face. [p] feels hot." 
+    scene darkforest with None
+    show m_tired
+    show m_cockdown
+    show m_blush
+    show m_shame
+    show m_m_open_speak
+    "[d]'s touch somehow become really pleasant."
     scene fin_touch
     p "Ngh!"
     d "Good boy. If you were to obedient like that from the start, I would have treat you better."
+    show m_tired at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_open_speak at s
     p "(My head. It hurts!)"
     d "Suck this!"
+    hide m_blush
+    hide m_shame
+    show m_surpise at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sex_open at s
     scene fin_mouthb
     p "MNGH!"
     "[d]'s thumb thrust in [p]'s throat. It's painful, but feel good at the same time."
+    show m_hurt at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sex_open at s
     p "Ngh..."
     scene darkforest
+    show m_close
+    show m_cockdup
+    show m_blush
+    show m_shame
+    show m_m_open2
     "[d] takes his hand out of [p]'s mouth and moves to his chin."
+    scene darkforest with None
+    show m_surpise
+    show m_cockup
+    show m_blush
+    show m_shame
+    show m_m_open2
     p "?"
+    scene darkforest with None
+    show m
+    show m_cockup
+    show m_blush
+    show m_shame
+    show m_m
     "[d] kisses [p]'s forehead."
+    scene darkforest with None
+    show m_surpise
+    show m_cockup
+    show m_blush
+    show m_shame
+    show m_mw
     p "!"
+    scene darkforest with None
+    show m_tired
+    show m_cockup
+    show m_blush
+    show m_shame
+    show m_m
     p "...."
     "He pushes [p] to the ground. Everytime [d] touches him, [p]'s body react in a lwed way."
     show deepimpact_head
     "[d] grasps [p]'s legs and start to put his dick in." 
+    hide m_blush
+    hide m_shame
+    show m_surpise at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sex_open at s
     p "Mgh!"
     p "...Agh!"
     d "Is it good?"
@@ -312,74 +407,83 @@ label control4_ques:
     "[d] catches the punch and breaks his arm" with vpunch
     p "AGGHHHHHHH!"with hpunch
     p "Haa...haa..."
-    d "It breaks just with that strength. Your bones are not good for fighting. Many people and monsters can broke your spine, make you immorbilize forever with just one heavy punch in the back."
+    d "It breaks just with that strength. Your bones are not good for fighting. Many people and monsters can broke your spine, make you immorbilize forever with just one punch in the back."
     d "Yet, you rushes into battles and makes enemies. Like a morph throwing itself to flames. Just for the sake of recognition by your father."
     p "S-STOP!!"
     "[p] escapes [d] and throws him a kick." with hpunch
     "[d] breaks [p]'s leg." with vpunch
     p "AAAAGGGGHHHH!"
     "[d] throws [p] to the ground" with hpunch
-    d "Are you really his son? Why is it so different in the way he treats you and your brother?"
+    d "With that many enermies and this type of body plus your reflection speed, do you really think you can be allive after disowned?"
+    p "!"
+    d "Use your brain [p], if your father had any planned for you, he wouldn't let your reputation ruins so badly. No future king goes around fight wars after wars and directly assasinate enemies himself."
     p "S-STOP! JUST SHUT UP!!! What do you even know?!?"
     "[p] tries to stands up."
     p "Uhm..N!"
-    d "It doesn't matter anyway. You are an abnormal, an error that doesn't follow The Flow. When you were small, that error is just like a rice. But the more you grow up, the more you train, the bigger it is." 
-    d "You have pass too futher away from The Flow's threshold. You don't have a lot of time to live. It is pushing you really hard right now."
-    p "What nonseed is that?"
+    d "You father had planned to use then discard you since the start, as a scapegoat and stepping stone for brother. Deep down inside, you know what I said is true."
+    p "N-no, it's not ...n..."
+    d "You like to call your brother his puppet, because your brother listen to him. But it is actually you who are the puppet. Isn't that sad?"
+    p "Please stop..."
+    d "He might have know it too. You were born as an abnormal. A creature that can go against The Flow and unable to in sync with this world. An ill-fated human."
     "[d] bends down and grasps [p]'s broken arm joint."
     p "Uhm..."
     d "There are some who pass The Flow threshold too, compare to them, you are nothing. They are either too powerful, or prepare too well, that The Flow cannot touch them. And here you are, cluelessly waiting to be killed."
-    "[p] glance at [d]."
+    "[p] glances at [d]."
     p "!"
     "[p] feels cold. His breath become shorter."
-    d "You can feel it right? The death. It's slowly starting."
+    d "You can feel it right? The death. The Flow told me to kill you as soon as you walk into this forrest, I decide to rape you day after day instead."
+    d "Now the time had come. It doesn't need me anymore."
     "[p] sweats and becomes dizzy. Something is squeezing his heart hard."
     p "Ugh...Ahhh..."
     "[p] starting to feel very tired."
     p "Haa...ugh! S-shit! I need The Stone...I will... hmp..."
     "[p]'s glance become softer."
-    p "I beg you [d]. Give me a chance. I don't need anything."
-    p "I lied to myself. I didn't look for it for the throne. All I really want is just to turn back in time, to when nothing had turn out wrong...I screw everything."
+    p "Ghu...a...I beg you [d]. Give me...m...a chance. I don't...n...need anything..."
+    p "I...ngh....lied..h...to myself. I didn't look for it..h...for the throne. A-All I really want...n...is just to turn back in time, to fix...uh..."
     "[p] sobs." 
-    p "...I beg you [d]...I just want to have someone on my side."
+    p "...I beg you [d]...I just want...h...to go back...ah...in time..."
     "[d] touches [p]'s face."
     p "*sob...*sniff..."
     "[p] tries to hold his tears in. The sound stops. But his tears keep falling out."
     d "Too bad your little wish will never be fulfill. Only the creations that's in a perfect harmony of The Flow can use The Stone." 
-    d "The moment you touch The Stone, either it or you will be destroyed. You are clutching at a straw [p]. You can image having a good relationship with them before you die though."
+    d "The moment you touch The Stone, either it or you will be destroyed. You are clutching at a straw [p]. You can image going back in time before you die if you want it so badly."
     p "..."
-    "[p] wants to curse [d] and tells him he was a liar, but he knows the moment he opens his mouth, it will make the crying sound."
-    d "It was a toll for me too. God had given me a sub job to kills creatures who oppose The Flow like you."
-    d "I played around with you too much, it doesn't feel good crushing you or having you hate me like this. If you were less stubborn, it would have been painless."
-    "[p] clenches his teeth and eat his tears inside."
-    p "Fuck you [d]! Why do you need to push me off the cliff to kill me? I am stubborn, you cannot fully control my mind, so what?!? Does that hurt your pride?!? Just kill me!"
+    "[p] cies harder. [d] pats his head."
     d "..."
-    p "Even if this world is pushing me away, am I not a living being? Am I not worthy to be treated like one? My life, it had been nothing but an endless pain..." 
+    d "It was a toll for me too, you know."
+    d "I played around with you too much, it doesn't feel good crushing you or having you hate me like this. If you were less stubborn, it would have been painless."
+    d "I have always tried, but it was no use...And here the dealine comes."
+    "[p] clenches his teeth and eat his tears inside."
+    p "Fuck you [d]! Why do you need to push me off the cliff before killing me? I am stubborn, you cannot fully control my mind, so what?!? Does that concern you?!? Just kill me!"
+    d "..."
+    p "Even if this world is pushing me away, am I not a living being? Am I not worthy to be treated like one? My life, it had been nothing but an endless misery..." 
     p "Why do I have to endure your torture and humiliation before being killed? Who give you the right to hurt me and trample on my sanity like this? Does God not need moral?"
     d "No." 
-    "Cannot hold back anymore. [p] sobs."
+    "[p] clenches his teeth."
     d "But aren't you just doing the same? How many monsters and humans had you torture to death? Aren't they living being too? Aren't they worthy to be treated like one? How many innocent blood you had in your hands?"
-    "[p] was shocked. He stay silent."
-    "[p] clenches his teeth. Trying to breath. There was so much pain in his heart from the squeezing. It become stronger and faster every minutes. He opens his mouth and grasps for more air."
+    "[p] was shocked. He stays silent."
+    "[p] opens his mouth, grasps for air. There was so much pain in his heart from the squeezing. It become stronger and faster every minutes."
     p "Argh...Arghh...Urg..."
+    d "..."
     "[d] softly kisses [p] on his eye."
     p "...Aa...n..."
     "[p] feels better after the kiss. Even though his heart is still being squeeze."
     p "(S-Shit. Is this the last image I will see? The last act of kindness I will get?)"
     "[p] closes his eyes. His tears keep on falling."
-    p "([d]. You turned my life upside down. My pride, my believe, my sanity...they are all crumble. Is it fun to you?)"
+    p "(Is it really that far? My little dream of having good times with father and [ren] like we used to be...My little dream of having someone by my side, love me, and accepting me for who I am...)"
+    p "([d]. You turned my life upside down. My pride, my believe, my feeling, my sanity...they are all crumble. Is it fun to you?)"
     "Right when [p] open his eyes. [d]'s eyes turn red."
-    "Again, [p] feels like his head was penetrated. But at this point, [p] does not care anymore. [d] can does whatever he wants to him." 
-    "[d] pats his head then thrusts his hand into [p]'s brain."
+    "Again, [p] feels like his head was penetrated. [p] doesn't unserstand [d]'s need of fully control his mind before he dies. But at this point, [p] does not care anymore. [d] can does whatever he wants." 
+    "[d] slowly thrusts his hand into [p]'s brain."
     p "Ughh...aaa..."
     "The pain were too much that [p] cannot even scream. [d]'s fingers go on deeper and deeper. With each thrust, [p] feels like thousands of needle attach his brain"
     d "You will enjoy this soon. Your mind will re-arange, and your pain will turns to pleasure." 
     p "Mmm...mngh...m..."
     "[p]'s cock hard on its own and cum. How much [d] want to torture and humiliate him before killing him off?"
-    "[d] keeps on penetrade deep in his brain. [p] pain was lessen and replace by pleasure."
     p "Gah...ah...a..."
     "[d]'s other hand grasps [p]'s shoulder hard."
-    d "Loosen up! Sharing power is a mutual agreement. If you resist, we will both in troubles."
+    d "Loosen up! Sharing power is a mutual agreement. If you resist, we will both in deep troubles."
+    p "(Sharing power?...Whatever...My mind is blurry. I don't care anymore...Please [d], finish it fast...)"
     "[p] tries to soften himself. The thurst becomes faster and stronger in disregard of [p]'s pain. His muscle keeps on twitching."
     p "N...ahh...aaa..."
     "All 5 fingers of [d] had penetrate to the deepest part of [p]'s brain. [p] feels a flow of energy comming in. It comes faster and heavier each second."
@@ -396,7 +500,7 @@ label control4_ques:
     d "It wasn't your father, brother, or anyone else that you call out to in your dream but me. Whatever the reason, I'm glad."
     "[d] moves his hand to [p]'s face."
     p "N..."
-    d "When I first met you, under that cold mask, you look so sorrowful and confuses. Now, you look even more so. You must have loathe me to your heart content." 
+    d "When I first met you, you look so sorrowful and confused. Now, you look even more so. You must have loathe me to your heart content." 
     d "But I ..."
     "[d] shakes his head. He tries to be awake but also fallen asleep."
     "He sleeps while sitting upright with [p] lying on his laps." 
@@ -406,13 +510,11 @@ label control4_ques:
     "He reaches his arms and legs, but they are heavier than usual, like they had some root connected to the Earth. He was unable to move, like a tree."
     p "Shit! What the fuck is going on?"
     "[p] remembered all the things [d] did to him yesterday."
-    p "It was never his plan to kill me. He forces me to accept his power to becomes a digusting monster like him." 
-    p "Fuck! He still wants to use me for entertaining."
-    "[p] heard hand claps."
-    d "You guess right [p], most of it. You had become smarter. A five year old kid could have the same conclusion as you, only faster."
+    p "Fuck!."
+    "[p] sees [d]."
     p "[d]! FUCKER! Why are you doing this? Just how long do you want to use me for entertainment?"
     d "You are no longer disrubt The Flow of this Earth. And you have become a part of me. You will never die unless I die. Aren't you happy?"
-    p "What the hell are you saying?"
+    p "!"
     d "It was no normal power sharing. Only the strongest of the strongest can do that. This is the luckiest day of your life."
     d "The only drawback is your arms and legs are attached to the Earth. I can fuck you in this position until you are able to control your new power."
     p "[d]! YOU BASTARD!"
@@ -961,7 +1063,7 @@ label goodend:
     "[d] hugs him."
     d "I know you will not do it."
     p "What do you know about me?"
-    d "I know since I first saw you. Underneath that cold and ruthless mask lies a very gentle and vulnerable soul..."
+    d "I know since I first saw you. Underneath that prideful and ruthless mask is a very gentle and vulnerable soul..."
     p "!"
     "[p] cries." 
     "No one had ever describes him that way. He doesn't know if it's true or not, but it hurts."
@@ -994,20 +1096,20 @@ label goodend:
     "[d] moves closer and touches [p]'s face."
     d "You feel hot. It's not enough to be a fever but that must be uncomfortable. Have a rest."
     p "..."
-    "[p] looks in pain. He sweats, his muscle becomes tenses and his heart races faster."
+    "[p] looks uncomfortable. He sweats, his muscle becomes tenses and his heart races faster."
     p "I-I'm fine. Please don't touch me. I..."
     p "..."
     d "..."
-    "[d] releases his hand."
-    "After closing his eyes for a moment, [p] looks at [d]."
-    "It's not a normal look but a shy gaze. Like he wants something but embrassing to say it, he doesn't want [d] to know but his eyes got caught." 
+    "[p]'s face becomes all red. [d] releases his hand."
+    "After pausing for a moment, [p] glance at [d]."
+    "It's not a normal one but a shy glance. Like he wants something but embrassing to say it, he doesn't want [d] to know but his eyes got caught." 
     "Suprise, four eyes look at each other for a few second then [p] looks away."
     p "..."
     "[d] pushes him to the ground and kisses him."
-    d "You are hot. It must be hard to endure."
+    d "You are hot, and this place is hard. It must be painful to endure."
     "[d]'s words embrassed [p]."
     p "..."
-    d "Your endorphins levels went high because of our intense fight just now. And it increases your sex drive. Just a human nature."
+    d "Your endorphins levels went high because of our intense fight just now. It increases your sex drive. This is just human's nature. No need to be shy."
     p "..."
     p "!"
     "[d] holds [p] up, in the spoon position."

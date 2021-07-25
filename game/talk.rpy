@@ -3,7 +3,7 @@ label talk1:
     show m 
     show m_m 
     show m_cockdown
-    "[p] looks far away with a blank stare on his face. He seems to be in deep thought."
+    "[p] looks into the distance with a blank stare on his face. He seems to be in deep thought."
     d "How are you feeling?"
     scene sit_sad with None
     show m_surprise
@@ -70,7 +70,7 @@ label talk3:
     show m 
     show m_m1
     show m_cockdown
-    "[p] looks far away with a blank stare on his face."
+    "[p] looks into the distance with a blank stare on his face."
     d "How are you feeling?"
     scene sit_up with None
     show m_tired
@@ -766,7 +766,7 @@ label talk9:
     show m_cockdown
     show m_blush
     show m_m_open1
-    p "Am I still under your mind control? Did you make me feel comfortable around you?"
+    p "Am I still under your mind control? Did you make me let my guard down?"
     hide m_m_open1
     show m_m_normal
     d "..."
@@ -774,7 +774,7 @@ label talk9:
     hide m_m_normal
     show m_m_open_speak
     p "..."
-    d "You are not."
+    d "No."
     scene sit_sad with None
     show m
     show m_cockdown
@@ -860,5 +860,4 @@ label talk9:
     scene darkforest_night with dissolve
     "In his dream, [d] holds him tight from behind. It was very warm. [p] puts his hand on [d]'s hand and got a kiss on the back of his head."
     "It was not the first time he had this dream..."
-    
     jump endday2

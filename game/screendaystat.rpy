@@ -24,7 +24,7 @@ screen stat:
         xpos 10
         ypos 250 
        
-    text ("Psyche: %d" % mental): 
+    text ("Mental: %d" % mental): 
         xpos 10
         ypos 300 
     
