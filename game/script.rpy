@@ -85,28 +85,41 @@ label start:
     
     play music "Thaxted.mp3" fadeout 3.0
     scene cg1
-
-    "Once upon a time, there was a young boy.\nThis youth was far more serious than all the other his age. \nWhatever he does, he always succeeds. \nWhatever he wants, he always gets." 
+    "Once upon a time, there was a young boy. This youth was far more serious than all the other his age."
+    scene cg3
+    "Whatever he does, he always succeeds. Whatever he wants, he always gets." 
+    scene cg4
+    show cg_ray
     "When he enrolled in the army, everyone opposed his decision due to his age, but he was having none of that—he does as he pleases." 
-    "After demonstrated his skill, he immediately silenced his opposition. Years later, at the tender age of twenty, he became a general and was known as one of the strongest men alive in Rivakh."
-    "He and the king rarely talk to each other. And if they do, it usually becomes a big fight, resulting in him being thrown out. \nIt is shocking to see, but not surprising that he is the king’s son, the first heir."
-    "Unlike his younger half-brother, who is always smiling and loved by everyone, this prince is either feared or hated."
-    "Arrogant, stubborn, unpleasant, suspicious, demanding, repulsive, quick-tempered. \nThat’s how everyone describes him..No wonder, despite his capability, the king chose Ren, the younger brother to be the crown prince."
-    
-    scene cg2
-    "\"You want this dumbass to succeed you because you want a puppet!” the rejected prince shouted angrily, his voice echoing in the throne room"
+    "After demonstrated his skill, he immediately silenced his opposition." 
+    "Years later, at the tender age of twenty-two, he became a general and was known as one of the strongest men alive in the country."
+    scene cg4
+    show cg_fight
+    "He and the king rarely talk to each other. And if they do, it usually becomes a big fight, resulting in him being thrown out."
+    "It is shocking to see, but not surprising that he is the king’s son, the first heir."
+    "Unlike his younger half-brother, who is loved by everyone, this prince is either feared or hated."
+    "Arrogant, stubborn, unpleasant, barbarism, ruthless, repulsive, quick-tempered. \nThat’s how everyone describes him."
+    "No wonder, despite his capability, the king chose Ren, the younger brother to be the crown prince."
+    scene cg4
+    show cg_fight
+    "\"You want this dumbass to succeed you because you want a puppet!” the uninvited prince shouted angrily, his voice echoing in the throne room."
     "“Don’t you dare speak like that to your future king! Ren can have you executed should he choose so!” the king retorted" 
-    "\"Dad, brother, please stop it you two.\" Ren jumps in between them."
-    "The room becomes noisy. Some start to laugh.\n\"SILENCE!\" the prince shouts.\nThe king slaps his face. \"Who gave you that authority? Disrespectful brat!\"" with hpunch
+    scene cg4 with vpunch
+    show cg_ren
+    show cg_fight
+    "\"Dad, brother, please stop it you two.\" Ren jumps in between them." with hpunch
+    "The room becomes noisy. Some start to laugh.\n\"SILENCE!\" the prince shouts." with vpunch
+    "The king slaps his face. \"Who gave you that authority? Disrespectful brat!\"" with hpunch
     "The prince glances at the king and slaps him. \nThe king falls to the floor. Soldiers surround the prince." with vpunch
     "\"Good one! From now on, you are not my son anymore. Don’t ever come back to this palace.\" he king points at him."
-    "The prince turns and goes out \"One day you will regret this.\"\n He takes one last look at the throne room and sees a lot of happy smiles. The prince clenches his fist."
-    ##p "Covered my hands in blood. Used me to clean the nobles and Temple. Turned me into the target of assasinations then chose him to be the crowd prince after everything over. What a cruel joke!"
-    ##p "You are not my father anymore. So does he."
-    "The prince slams the door hard."
+    scene cg2
+    "The prince turns and goes out \"Dicarding me now? One day you will regret this.\"\n He takes one last look at the throne room and sees a lot of happy smiles. The prince clenches his fist."
+    scene black with dissolve
+    pause .5
+    "He slams the door as hard as when he came in." with hpunch
     stop music
     play music "Angevin.mp3" fadeout 3.0
-    scene darkforest_night 
+    scene darkforest_night with dissolve
     "A few days later, he arrived at the entrance of the Dark Forest, the most fearsome place known to man."
     "Legend says this is the place God hid the First Stone with the quote \"This stone will give its owner the power to bend The Flow and destroy the laws of current Universe.\""
     "Another way to say it is that stone can grant wishes."
@@ -115,10 +128,10 @@ label start:
     "The prince laughs."
     p "Those useless fools doesn't even know the proper way to go deep inside. They haven't battle with monsters long enough."
     "He entered the forest and immediately encountered many groups of monster, but he slayed them with little difficulty." 
-    "A young monster falls on its own. It tries to standup."
+    "A young monster falls on its own. It tries to stand up."
     p "Running away?"
-    m "P-please spare me. I'm not invol-...AAA!"
-    "He cuts off the monster's head."
+    m "P-please spare me. I'm not invol-..."
+    "He cuts off the monster's head and moving forward."
     "Suddenly, a small demon appeared in front of him."
     show n at right with dissolve
     p "A demon? In the far depths of the Dark Forest? How could a demon as weak as you survive here? Are you by yourself?"
@@ -129,7 +142,7 @@ label start:
     p "..."
     n "Sir Knight, if you go further, there’s no return. The monsters are really strong there."
     p "..."
-    "[p] clenches his sword."
+    "[p] clenches his sword then relax his muscle."
     p "(I don't need to kill him. Even if there's a group of demon here, it's hard enough for them to survive. They cannot cause me troubles.)"
     p "(Moreover, demons are smarter and easier to talk. This one may have information about the First Stone.)"
     hide n_smile
@@ -165,20 +178,20 @@ label start:
             n"..."
             hide n_surprise2
             show n_smile
-            n "You know a lot."
+            n "You know a lot. None of the knights coming here before know that."
             p "..."
             hide n_surprise2
             show n_smile2
             n "There is but one big river in this forest. Is that a new information?"
             p "..."
             "The prince moved past the demon."
-            hide n_smile2 with dissolve
-            p "\(That's good, I just need to find 1 river.\)"
+            scene darkforest_night
+            show m_armor at left
+            p "(That's good, I just need to find 1 river.)"
             "Two hours later, the prince was still nowhere near to finding the First Stone. All he could see were trees and more trees."
             p "I should be getting close to the river."
-        "Ignore him":
-            
-            p "\(I doubt this weak demon knows anything.\)"
+        "Ignore him": 
+            p "(I doubt this weak demon knows anything.)"
             "The prince walks foward."
             p "..."
             menu:
@@ -192,14 +205,16 @@ label start:
                     hide n2 with dissolve
                     n "Look for the only river in this forest."
                     p "!"
-                    hide n with dissolve
+                    scene darkforest_night
+                    show m_armor at left
                     "The demon goes away."
                     
                 "Nevermind":
                     "The prince walks pass the demon."
                     n "Look for the only river in this forest."
                     p "!"
-                    hide n with dissolve
+                    scene darkforest_night
+                    show m_armor at left
                     "The demon goes away."
 
             "He made his way further into the forest."
@@ -211,31 +226,38 @@ label start:
         "Go take a look":
             "The prince follows the scream and sees five monsters fucking a monster girl."
             m "Oh, it’s a human. Human. HUMAN!" with hpunch
-            "The monsters attack him. \nThese monsters are stronger than the monsters he faced before. \nBut he is still stronger than them. " with vpunch
+            "The monsters attack him. \nThese monsters are stronger than the monsters he faced before. But he is still stronger than them. " with vpunch
             "Monster girl \"Thank you very much!\""
             "The girl suddenly attacks him. He evades and slashes her." with hpunch
             p "Like I couldn’t figure out it would turn out like this."
-            m "Retard, you just disrupted my show!"
+            m "She is way weaker than you, human knight, why do you have to kill her?"
             p "What now?"
-            p "\(Why are there so many monsters here?\)"
-            "The prince turns his head to see a normal sized monster. \nHis aura is even weaker than the small demon he just met. \nSo weak that he cannot even feel his presence."
+            "[p] turns around and saw a monster. Its aura was so weak that he didn't sense his presence."
+            p "(Another super weak one? This forest is funny. Is that because the monsters here spare the extra weak?)"
+            p "(What a stupid move. They can still stab you from the back.)"
+            "The prince turns his head to see a normal sized monster."
             p "Your tone is annoying for a fly."
             m "Why is that?"
             p "Either run or bow down and beg now if you don’t want to be tortured to death."
             m "Wow, sir, I’m so scared. Can you show mercy on me?"
-            "Like lighting, the prince slashes the monster. When the monster falls to the ground, he kicks its wound rapidly and steps on its face." with vpunch
+            p "..."
+            "[p] clenches his sword. Like lighting, the prince slashes the monster." with hpunch
+            "When the monster falls to the ground, he kicks its wound rapidly and steps on its face." with vpunch
             p "If you dare to use that sacrstic tone one more time, you will wish you were never born."
-            m "Why is that?"
-            "The prince stabs the monster’s hand, blood spews out. He laughs." with vpunch
-            m "Aaa!"
+            m "Why is that? What are you going to do?"
+            "Angry by the monotone, the prince stabs the monster’s hand, blood spews out. He laughs." with vpunch
+            m "Argh!"
+            "The monster hand twitches from the pain. The prince laughs."
             p "It feels so good. All of my troubles and irritaion up until now, I'll use you to relief it." 
+            m "..."
             p "You won't die so soon. Not after I satisfy."
-            d "Ah! M!"
-            p "Beg me more!"
+            d "Ugh! M!"
+            p "Beg me! BEG!!"
             "The monste smirks."
             d "I didn't know a Royal palace hire a thug for general positions. Had human become that rotten?"
             "[p] was pause for a second, then he laughs."
             p "Ha...Hahaha..."
+            p "I don't know where did you learn to recognize a general from a mere knight, but it doesn't matter. You'll die right now."
             "[p] brutally stabs [d]. He would twisted his sword before pulls it out and stabs at other places." with hpunch
             d "M...N..."
             "The monster doesn't move or say anything. But [p] knows he is still alive."
@@ -252,57 +274,61 @@ label start:
             m "You’re not gonna help her? I thought humans are all about morals." 
             "His voice is full of sarcasm." 
             p "Get out of my sight." 
-            "The monster draws close to him. \nThe prince didn’t move. \nThis monster’s aura is even weaker than the small demon."
+            "The monster draws close to him. The prince didn’t move. \nThis monster’s aura is even weaker than the small demon."
             m "What makes a human come to this place alone?" 
             p "Go away before I kill you."
             "The monster holds and looks at his sword"
             "This is a good one."         
-            p "(since when?)\nThe prince takes his sword back and slashes the monster.\n The monster falls to the ground, covered in blood." with vpunch
+            p "(Since when? This monster...)\nThe prince takes his sword back and slashes the monster. The monster falls to the ground, covered in blood." with vpunch
             p "Normally, I don’t beat weaklings, but you are annoying"
-            m"Me? Annoying?"
+            m "Annoying? Interesting."
             "The monster laughs"
             m"No one’s ever spoken to me like that before."
-            p"Either run or bow down and beg now if you don’t want to be beat to death."
-            m"Sir, I’ve just being slashed. I cant run or bow down now. Can I beg you instead?"
+            p "..."
+            p"Either run or bow down and beg now if you don’t want to be beaten to death."
+            m"Sir, I’m hurt. My blood won't stop spilling. I cant run or bow down now. Can I beg you instead?"
             "The prince kicks the monster’s wound repeatedly and steps on its face." with hpunch
-            p"Even a loser like you making fun of me. Do I look like a joke? Beg me! BEG!" with vpunch
-            m"Please let me go!"
-            "The prince stabs the monster’s hand, blood spews out. He laughs" with vpunch
+            p"Even a loser like you making fun of me. Do I look like a joke? HUH?" 
+            p "Beg me! BEG!" with vpunch
+            m "P-please let me go!"
+            "The prince stabs the monster’s hand, blood spews out. He laughs." with vpunch
             p "More!"
             "He wrenches on the sword." with hpunch
             m "Ouch. Dear human, please let this lowly monster go! It hurts so much!"
-            p "Shut up! Stop that sarcastic tone!"
+            p "Shut The Fuck Up! Stop that sarcastic tone!"
             "The prince beats the monster more brutally!" with vpunch
             
-    p "Fuck! You damn monster! YOu think I'm a joke too aren't you?"
+    p "FUCK! You damn monster! You think I'm a joke too. aren't you? HUH?"
     "He stabs the monster again and again."
     "[p] looks at the monster wounds from head to toe."
     p"Seriously? Do monster always like this? Geting hard while being beaten to death? \nSuch a disgusting race!"       
-    m "\$\%"
+    m "\$.....\%"
     p "What?" 
     "The monster talks so small that [p] cannot hear. He looks at [p] as if he want [p] to hear it."
     p "..."
-    "[p] grasps his sword hard, carefully bends over to hear what the monster had to say. He was so close to him that he can hear the monster's break."
-    "The monster whispers."
-    d "I got hard because I want to pin you down and fuck your slutty holes senselessly until your brain fall out."
-    p "!"
-    "[p] was shocked. Not only because of the monster's weird behavior, but also beacuse it was first time he heard such those vulgar words so close, and it pointed directly at him."
-    "He stands up and steps backward, on his defense stance. The monster stands up. His wounds were healed."
-    p "He ... heals himself?"
+    "Normally, [p] dislike taking risk, but he often listens to his victims' death wish. It was one of the deadliest weakness he is willing to keep for no reason..."
+    "[p] stays alert, clenthes his sword hard, carefully bends over to hear what the monster had to say. He was so close to him that he can hear the monster's breathe."
+    "Suddenly, there was a chill runs down his spine. His breathe become shorter and his heart race faster, as if they are telling him to get out."
+    "The monster's voice becomes deeper as he whispers into his ears."
+    d "I got hard because I want to pin you down and fuck your obscene hole senselessly until your crying and begging me to cum inside."
+    p "!" with hpunch
+    "[p] was shocked. Not only because of the monster's weird behavior, but also because it was the first time he heard such vulgar words, and it pointed directly at him."
+    "He stands up and steps backward, on his defense stance. The monster stands up. His wounds were healed." with vpunch
+    p "You... heal yourelf?"
     p "(Impossible! I can't even sense any magic. There was something off about him from the start.)"
     p "Did you absorb other monsters?"
     "The monster smirks."
-    "Absorbtion and sharing power are two very dangerous processes. Moreover, if a monster involed in it either way, the absorber's appearant will be mutated, become horrible."
-    p "(He seems normal. This is insane. Healing all those fatal wounds that fast and act like it's nothing.)"
+    "Absorbtion and sharing power are two very dangerous processes. Moreover, if a monster involed in it either way, the absorber's appearant will be mutated, makes it easy to know."
+    p "(He seems normal. This is insane. Not only he was able to heal, he heals all those fatal wounds that fast and act like it's nothing.)"
     p "!" with hpunch
     "The vines in the forest suddenly start moving. They grab ahold of the prince." with vpunch
     hide m_armor
     show vine at left with dissolve 
-    d "The image of you act like an obedience whore, willingly sucks my dick and moans under me like a wild animal really turns me on right now."
-    p "You sick bastard!"
+    d "The image of you on the ground, begging, twisting your body like a bitch in heat just by my presence really turns me on."
+    p "You Sick Bastard!" with hpunch
     hide vine with dissolve
     show vinek at left with flash
-    "TThe prince uses his dagger to swiftly cut the vines. He quickly picks up his sword and stabs the monster in a swift motion" with hpunch
+    "The prince uses his dagger to swiftly cut the vines. He quickly picks up his sword and stabs the monster in a swift motion" with hpunch
     p "Ha!" with vpunch
     "The monster disappeared. The very earth itself rises up to form a hand, slamming down his whole body." with hpunch
     hide vinek
@@ -319,7 +345,7 @@ label start:
     hide vinebeat
     show vinebeatfast at left
     "The vines wrap him tighter." with vpunch
-    p "ugh" 
+    p "Ugh" 
     p "I warn you! Let me go!" 
     m "Beg me." 
     hide vinebeatfast with dissolve
@@ -333,8 +359,8 @@ label start:
     hide m_break4
     show m_break5 at left
     p "Arggghhh!...Ahhhh!"
-    p "uhmmm..."
-    "he monster cruelly stomps on it"
+    p "Uhmmm..."
+    "The monster cruelly stomps on it" with vpunch
     p "Urgh!"
     hide m_break5
     hide m_beaten4
@@ -366,25 +392,25 @@ label start:
     "He presses harder." 
     hide trample_a
     show trample_b
-    p "mmhh..haa..haa\n...\nStop..." 
+    p "Mmhh..haa..haa\n...\nStop..." 
     m "Shouldn't you ask more nicely?" 
     hide trample_b
     show trample_c
     "He presses harder." 
     p "P-please stop."
-    m "More" 
+    m "More!" 
     p"H-have some mercy!" 
     m"For who? For this arrogant dumbass?" 
-    p "for th – this… arroga.." 
+    p "F...for th – this… arroga.." 
     "The prince clenches his teeth, swallows the words"
     hide trample_c
     show trample_cum
     "The monster presses even harder" 
-    p "ahaahh"
-    p "urgh...ahhh"
+    p "Ahaahh"
+    p "Urgh...ahhh"
     m "Wow, what youth! Seems like humans can even cum from pain."
     p "..."
-    p "hhh"
+    p "Hhh..."
     m "What's your name brat?"
     p "..."
     hide trample_cum
@@ -392,19 +418,18 @@ label start:
     "The monster moves his foot from the prince's cock to his face."
     hide trample_mouth
     show trample_moutha
-    p "n.."
+    p "N.."
     m "Wanna play the silent game? It won't end pretty for you."
-    
     hide trample_moutha
     show trample_a
-    p "....n....n..ahaaa...haa"
-    p "...m...Try...me!"
+    p "..N..n....n..ahaaa...haa"
+    p ".N..m...Try...me!"
     "The monster laughs."
     hide trample_a
     show trample_cum
-    m "Heh. \nYou even dare to provoke me in this situation? \nI admire your stupidity, sir knight." 
+    m "Heh. You even dare to provoke me in this situation? \nI admire your stupidity, sir knight." 
     "Like an explosion, the monster's foot crashes into his head. \nHis helmet was badly damaged." with hpunch
-    p "urgh....\n....n..."
+    p "Urgh....\n....n..."
     hide trample_cum
     hide m_break1
     hide m_break2
@@ -467,7 +492,7 @@ label start:
     "The prince stays silent."
     "The monster pulls his head"
     show pull_armor
-    p "arghhh!" 
+    p "Arghhh!" 
     m "What is your name?" 
     p"..." 
     hide m_head_close
@@ -547,7 +572,7 @@ label start:
     show m_head_surprise at left
     show m_m_sexclench1 at left
     show m_beaten6 at left
-    p "..m..fuck!!"
+    p "..Mm..fuck!!"
     n "See, I told you." 
     hide m_head_surprise
     hide m_m_sexclench1
@@ -570,7 +595,7 @@ label start:
         hide m_head_close
         show m_head at left
     "[p] looks away"
-    p "You gonna laugh at me now?"
+    p "You are gonna laugh at me now?"
     hide n_smile
     hide m_m_clench
     show n at right
@@ -586,7 +611,7 @@ label start:
     hide m_m_clench 
     show m_m at left
     p "..."
-    n "Sir, please get out of this forest. Don't look for The Stone anymore. It's for your own good"
+    n "Sir Knight, please get out of this forest. Don't look for The Stone anymore. It's for your own good"
     p "..."
     hide n_smile2 with dissolve
     "The demon goes away." 
@@ -602,12 +627,22 @@ label start:
     hide m_m_sexopen
     show m_m_sexopen at left
     show m_beaten5 at left
-    p "(what a waste!)\n... \n... \n(Did that demon just help me?)." 
+    p "(What a waste...)"
+    hide m_m_sex_open
+    show m_m
+    p "..." 
+    p "(...Did that demon just helped me despite of how I treated him?)"
+    hide m_beaten5 
+    hide m_m
+    show m_head_close at left
+    show m_beaten5 at left
+    show m_m at left
+    p "(Gosh! I hate that personality the most...)" 
     "[p] falls asleep before he realizes it." 
     scene black with fade
-    
+    pause .5
     scene darkforest with dissolve
-    "Morning"
+    "Morning."
     show m_head_close at left
     show m_m_clench at left
     p "Ugh!" 
@@ -621,7 +656,7 @@ label start:
     d "You seem well. Better than I thought."
     "[p] glances at him." 
     p "(Why is it still here?)"
-    d " Hahaha! Why look at me with those endearing eyes? In love with me?"
+    d " Hahaha! Why look at me with those endearing eyes? In love with me? Or perhaps you are in lust with me? Last night you was hot."
     hide m_m_sexclench1
     show m_m_sexclench2 at left
     p "Fucking scumbag!"
@@ -629,7 +664,7 @@ label start:
     hide m_m_sexclench2
     show m_head_close at left
     show m_m at left
-    "[p] goes past [d]"
+    "[p] goes past [d]."
     d "I heard you are a prince."
     hide m_head_close
     hide m_m
@@ -664,7 +699,7 @@ label start:
     d "I’m not done talking to you."
     "[p] ignores [d] completely."
     "[d] laughs."
-    d "Seems like your dad’s so busy that he did a poor job raising his child."
+    d "Seems like your dad’s so busy that he did a poor job raising his child. He spoiled you too much."
     hide m_head
     hide m_m
     show m_head_surprise at left
@@ -695,7 +730,7 @@ label start:
     hide m_shame
     show vinehead_blush:
         xpos-50
-    p "You shithole!"
+    p "You Shithole!"
     d "..."
     d "Such a naughty boy, he keeps on interrupting me. Make him unable to talk!"
     "The vines squeeze stronger and tighter."
@@ -708,13 +743,13 @@ label start:
     hide vinehead
     show vinehead_shit:
         xpos-50
-    p "m....h"
+    p "mM...h"
     hide vinehead_shit
     hide m_m_sexclench1
     show vinehead0020:
         xpos-50
     p "(Fuck!)"
-    "[p] tries to release his barrier again and destroys the vines"
+    "[p] tries to release his barrier again and destroys the vines."
     d "Hahaha, idiot never learn! Up Pitchy!" with hpunch
     scene sky with dissolve
     hide vinehead
@@ -742,11 +777,11 @@ label start:
     hide vinehead_breath
     show vinehead_blush:
         xpos-50
-    d "Let's make a deal. \nI'll help you sit on the throne you deserve. \nYou listen to what I say."
+    d "Let's make a deal. \nI'll help you sit on the throne you deserve. And you will become my bitch."
     hide vinehead_blush
     show vinehead_blush2:
         xpos-50
-    p "In your dreams you lowly monster! Don't make me laugh!"
+    p "What the fuck?!? In your dreams you lowly monster! You Are Insane!"
     d "Hahahahahahaha! Hahahaha!"
     d "If I'm a lowly monster, who are you sir prince?"
     "[d] tears [p]'s clothing off."
@@ -758,11 +793,11 @@ label start:
     p "!"
     hide m_m_sexclench1
     show m_m_sexclench2 at left
-    d "Remember last night? All of your body trembled under my feet while your mouth kept begging me like a cute puppy."
+    d "Remember last night? All of your body trembled under my feet while your mouth kept begging me like a cute little pet."
     hide m_m_sexclench2
     show m_m_sexclench1 at left
     show m_blush at left
-    p "I'm not..."
+    p "I-I'm not..."
     hide m_blush
     hide m_m_sexclench1
     show m_m_clench at left
