@@ -382,7 +382,7 @@ label talk6:
     show m_blush
     show m_shame
     show m_m2
-    "[p] stays silent. It was just a stupid conversation between [p] and the monster who traps him here and ravishes him almost everyday. None of it means anything to him or [d]."
+    "[p] stays silent. It was just a stupid conversation between [p] and the monster who traps him here and violates him almost everyday. None of it means anything to him or [d]."
     "But his words did give [p] a little joy." 
     scene sit_sad with None
     show m_close
@@ -397,7 +397,7 @@ label talk6:
     show m_blush
     show m_shame
     show m_m
-    p "(I don't like it. This is not good at all.)" 
+    p "(This is not good. This is not good at all.)" 
     jump simbutton2
 label talk7:
     scene sit_sad
@@ -594,11 +594,9 @@ label talk8:
     show m_shame
     show m_m_open_speak
     p "...T...Thank you..."
-    show m_m1
-    "[d] takes a closer look at [p]. It's not that much of a compliment but [p] seems embrassed about it. It seems like a big deal to him."
     hide m_m_open_speak
-    hide m_m1
     show m_m2
+    "[d] takes a closer look at [p]. It's not that much of a compliment but [p] seems embrassed about it. It seems like a big deal to him."
     "[p] does look like someone who lacks attention and guidance since early childhood. [d] wonder what kind of life [p] had lives..."
     d "If you want, I can help you with training."
     scene sit_up with None
@@ -624,6 +622,7 @@ label talk8:
     show m_m1
     p "That's...not neccessary."
     hide m_m_open_speak
+    p "..."
     d "Ok."
     hide m_m1
     show m_m_normal
@@ -666,7 +665,7 @@ label talk9:
     hide m_m_open_speak
     hide m_m1
     show m_m_normal
-    d "The troops who looking for you had pulled back. It's the king's order."
+    d "The troops who was looking for you had pulled back. It's the king's order."
     scene sit_sad with None
     show m_tired
     show m_cockdown
@@ -712,7 +711,10 @@ label talk9:
     p "..."
     hide m_m
     show m_m_open2
-    p "It...was a mistake from the Red List. When he thought I invited him for a small meal, he was really happy. He didn't know what awaits him..."
+    p "It...was a mistake. His name shouldn't have been there..."
+    hide m_m_open2
+    show m_m_open_speak
+    p "When he thought I invited him for a small meal, he was really happy. He didn't know what awaits him..."
     scene sit_sad with None
     show m_tired
     show m_cockdown
@@ -745,7 +747,7 @@ label talk9:
     show m_cockdown
     show m_blush
     show m_m
-    "[p] was suprised. He doesn't understand why he told [d] about all of it. Was he still under hypnotize?"
+    "[p] was suprised. He doesn't understand why he told [d] about all of it. Was he still under hypnotize? There's no way he would spill that much about himself."
     scene sit_sad with None
     show m_tired
     show m_cockdown
@@ -766,14 +768,14 @@ label talk9:
     show m_cockdown
     show m_blush
     show m_m_open1
-    p "Am I still under your mind control? Did you make me let my guard down?"
+    p "Am I still under your mind control? Did you make me let my guard down and be comfortable around you?"
     hide m_m_open1
     show m_m_normal
     d "..."
     "[d] smirks."
     hide m_m_normal
     show m_m_open_speak
-    p "..."
+    p "...?..."
     d "No."
     scene sit_sad with None
     show m
@@ -788,7 +790,7 @@ label talk9:
     show m_blush
     show m_shame
     show m_m2
-    "[p] was so embrassed by what he just said that he turns all red."
+    "[p] was so embrassed by what he just said to [d] that he turns all red."
     "[d] smiles."
     scene sit_sad with None
     show m_close
@@ -848,6 +850,7 @@ label talk9:
     show m_cockdown
     show m_blush
     show m_shame
+    #show m_m_normal
     show m_m_open2
     p "...Y-yes."
     scene sit_sad with None

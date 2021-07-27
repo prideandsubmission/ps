@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 213: indentation mismatch.
+File "game/talk.rpy", line 597: expected statement.
+    bide m_m_open_speak
+                       ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Jul 25 22:08:56 2021
+Mon Jul 26 13:41:48 2021

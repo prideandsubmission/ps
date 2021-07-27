@@ -1,6 +1,9 @@
 ####################################################################################################################################################################################### Mind control
 
 label control1:
+    hide screen day
+    hide screen stat
+    scene tie_looka
     "[d] looks at [p]. His eye turns red"
     d "..."
     d "(Not working!)"
@@ -8,9 +11,27 @@ label control1:
     jump sim
     
 label control2:
+    hide screen day
+    hide screen stat
+    scene tie_looka
     "[d] looks at [p]. His eye turns red"
-    "[p] touch his chest."
+    scene tie
+    show m_surprise at s
+    show m_blush at s
+    show m_shame at s
+    show m_m at s
+    "[p] feels pain in his head."
+    scene tie
+    show m_hurt at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_open1 at s
     p "..m.."
+    scene tie
+    show m_tired at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_normal at s
     p "(What just happens?)"
     d "(I have reached into his mind but the barrier is too strong. Have to break him more)"
     $controlStage = 2
@@ -20,21 +41,30 @@ label control3:
     hide screen day
     hide screen stat
     scene tie_looka
-    "[d] looks at [p]. [p] scares. He quickly looks away. [d] chuckles"
+    show m at s
+    show m_m at s
+    "[d] looks at [p]."
+    scene tie_looka
+    show m_tired at s
+    show m_m at s
+    "[p] scares. He quickly looks away. [d] chuckles"
     scene tie
+    show m_tired at s
+    show m_m2 at s
     d "You have start to fear me huh?"
     scene tie_looka
+    show m_surprise at s
+    show m_m_open2 at s
     p "W-What do you need?"
+    hide m_m_open2
+    show m_m at s
     "[d] smirks. His eyes turn red."
     scene tie
     show m at s
-    show m_blush at s
-    show m_shame at s
     show m_m_open1 at s
     d "Look at me!"
     scene tie_looka
     show m at s
-    show m_blush at s
     show m_m_1 at s
     show m_shame at s
     "[p] looks at [d]. He feels dizzy, like someone penetrate his brain"
@@ -44,7 +74,6 @@ label control3:
     scene darkforest
     show m
     show m_cockdown
-    show m_blush
     show m_shame
     show m_m_normal
     "The vines release [p]"
@@ -55,7 +84,6 @@ label control3:
     scene darkforest
     show m_tired
     show m_cockdown
-    show m_blush
     show m_shame
     show m_m2
     "[p] feels like his body moves against his will."
@@ -68,7 +96,6 @@ label control3:
     scene darkforest with None
     show m
     show m_cockdown
-    show m_blush
     show m_shame
     show m_m_open1
     "[d] touches his face. [p] feels hot." 
@@ -87,30 +114,36 @@ label control3:
     show m_shame at s
     show m_m_open_speak at s
     p "(My head. It hurts!)"
+    hide m_m_open_speak
+    show m_m_open2 at s
     d "Suck this!"
-    hide m_blush
-    hide m_shame
-    show m_surpise at s
+    scene fin_mouthb
+    show m_surprise at s
     show m_blush at s
     show m_shame at s
-    show m_m_sex_open at s
-    scene fin_mouthb
+    show m_m_open1 at s
     p "MNGH!"
-    "[d]'s thumb thrust in [p]'s throat. It's painful, but feel good at the same time."
+    hide m_surprise
+    hide m_blush 
+    hide m_shame 
+    hide m_m_open1 
     show m_hurt at s
     show m_blush at s
     show m_shame at s
-    show m_m_sex_open at s
+    show m_m_open1 at s
+    "[d]'s thumb thrust in [p]'s throat. It's painful, but feel good at the same time."
+    hide m_m_open1
+    show m_m_sexopen at s
     p "Ngh..."
     scene darkforest
     show m_close
-    show m_cockdup
+    show m_cockup
     show m_blush
     show m_shame
     show m_m_open2
     "[d] takes his hand out of [p]'s mouth and moves to his chin."
     scene darkforest with None
-    show m_surpise
+    show m_surprise
     show m_cockup
     show m_blush
     show m_shame
@@ -124,11 +157,11 @@ label control3:
     show m_m
     "[d] kisses [p]'s forehead."
     scene darkforest with None
-    show m_surpise
+    show m_surprise
     show m_cockup
     show m_blush
     show m_shame
-    show m_mw
+    show m_m2
     p "!"
     scene darkforest with None
     show m_tired
@@ -137,68 +170,216 @@ label control3:
     show m_shame
     show m_m
     p "...."
-    "He pushes [p] to the ground. Everytime [d] touches him, [p]'s body react in a lwed way."
-    show deepimpact_head
+    scene darkforest with None
+    show m_hurt
+    show m_cockup
+    show m_blush
+    show m_shame
+    show m_m2
+    "He pushes [p] to the ground. Everytime [d] touches him, [p]'s body react in a lewd way."
+    scene deepimpact_head
     "[d] grasps [p]'s legs and start to put his dick in." 
     hide m_blush
     hide m_shame
-    show m_surpise at s
+    show m_surprise at s
     show m_blush at s
     show m_shame at s
-    show m_m_sex_open at s
+    show m_m_sexopen at s
     p "Mgh!"
+    hide m_surprise
+    hide m_blush
+    hide m_shame
+    hide m_m_sexopen
+    show m_tired at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sexopen at s
     p "...Agh!"
     d "Is it good?"
+    hide m_tired
+    hide m_blush
+    hide m_shame
+    hide m_m_sexopen
+    show m_hurt at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_open1 at s
     p "Ahhh...Ahhh..."
+    hide m_m_open1
+    show m_m_clench2 at s
+    p "Ngh!"
+    hide m_m_clench2
+    show m_m_sexclench1 at s
     "[p] doesn't react or curse [d]. He lets [d] does whatever he want inside him." 
+    hide m_tired
+    hide m_blush
+    hide m_shame
+    hide m_m_sexclench1
+    show m_hurt at s
+    show m_blush at s
+    show m_shame at s
+    show m_m2 at s
     "[p] know he had no ability to resist what is being done to him. What remains of his will is just a pliable slave."
+    hide m_m2
+    show m_m_sexclench3 at s
     p "..M...ngh..."
+    hide m_hurt
+    hide m_blush
+    hide m_shame
+    hide m_m_sexclench3
+    show m_tired at s
+    show m_blush at s
+    show m_shame at s
+    show m_m2 at s
     "[d] slowly enters deeper."
+    hide m_m2
+    show m_m_sexclench1 at s
     p "...Ngh..."
+    hide m_tired
+    hide m_blush 
+    hide m_shame
+    hide m_m_sexclench1
+    show m_hurt at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sexopen at s
     p "...[d]...m..."
+    hide m_hurt
+    hide m_blush
+    hide m_shame
+    hide m_m_sexopen
+    show m_tired at s
+    show m_blush at s
+    show m_shame at s
+    show m_m2 at s
     "[p] doesn't know what happen to him. Perhaps it was because of the hypnosis. The warmth of [d]'s cock, his movement, his touch, his smell, his voice. Everything arouse [p] at this moment."
+    hide m_m2
+    show m_m_sexopen at s
     p "..M...n..."
+    hide m_m_sexopen 
+    show m_m_scream at s 
     p "...Arghhh..."
+    hide m_m_scream
+    show m_m_open_speak at s
     d "You are so cute."
+    hide m_tired
+    hide m_blush
+    hide m_shame
+    hide m_m_open_speak
+    show m_hurt at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sexopen at s
     p "...Ngh....m...aah..."
+    hide m_m_sexopen
+    show m_m_scream at s
     p "Ahhh...haa....ngh..."
+    show m_m2 at s
     d "You twitch a lot [p]. You like my cock inside don't you?"
+    hide m_hurt
+    hide m_blush
+    hide m_shame
+    hide m_m_2
+    show m_close at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sexopen at s
     p "Ahh...ah..."
+    hide m_m_sexopen
+    hide m_m_clench
+    show m_m_clench at s
     d "Me too.."
+    hide m_close
+    hide m_blush
+    hide m_shame
+    hide m_m_clench2
+    show m_tired at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sexopen at s
     p "N-no I...Ahhh...n...What...did you...ngh...m..."
+    hide m_m_sexopen
+    show m_m_sexclench1 at s
     "[p] cannot even finish a full sentence in this condition."
     "Ater he gets use to it, [d] slams [p] faster and stronger."
-    show deepimpact_deep
+    scene deepimpact_deep
     p "...H...Ngh...aaa...ahhh...."
     p "..N...ngh...no..no don't...ahhh.."
     "[p] cries. It's normal for him to burst into tears while having sex with [d] because it hurts a lot. However, right now, it was tears of shame."
-    "They had sex a lot of times already. [d] knows what he likes. [p] feels ahame for enjoying it."
+    "They had sex a lot of times already. [d] knows what he likes. [p] feels ashame for enjoying it."
     d "Why are you crying? Is it too good?"
     p "..."
     p "..Ahh...haaa..."
     d "Hey, say something!"
+    scene deepimpact_deep
+    show m_close at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_1 at s
     p "...Mgh..."
+    scene deepimpact_deep_fast
+    show m_tired at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sexopen at s
     p "P-please [d]. I cannot take it anymore. St-.. mgh!"
+    hide m_tired
+    hide m_blush 
+    hide m_shame 
+    hide m_m_sexopen
+    show m_close at s
+    show m_blush at s
+    show m_shame at s
+    show m_m2 at s
     d "Ngh... [p], can I cum inside you?"
+    hide m_m2
+    show m_m_sexopen at s
     p "Ngh...Ahhh...aaa...m..."
+    scene deepimpact_deep_fastest
     d "[p]!"
+    show m_surprise at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sexopen at s
     p "N-no...Mgh...no...ahh..."
+    hide m_surprise
+    hide m_blush 
+    hide m_shame 
+    hide m_m_sexopen
+    show m_tired at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sexopen at s
+    p "...Ngh...O-Out...side...[d]..."
+    scene deepimpact_deepcum
     "[d] cums inside [p]."
     hide deepimpact_deep
     show deepimpact_deepcum
-    p "AGH!..."
+    show m_hurt at s
+    show m_blush at s
+    show m_shame at s
+    show m_m_sexclench3 at s
+    p "Ugh!..."
+    hide m_m_sexclench3
+    show m_m2 at s
     d "You have to answer faster next time."
+    hide m_m2 at s
+    show m_m_sexopen at s
     p "Ngh! P-please st-"
     show deepimpact_deep
+    "[d] continue to penetrate [p]."
     p "N...mgh!...Take it out...please...I can't-...ahh"
     d "Why? Because I keep on hitting your sensitive spot?"
-    p "...ngh! Ahh...I-I've cum...ahh...please stop."
+    p "...Ngh! Ahh...I-I've cum...ahh...please stop."
     d "Liar. Your cock is still really hard here. Does the pleasure too instense for you to handle?"
     p "...[d]...P-please stop..."
-    "[d] smirks. He doesn't response nor stop."
+    "[d] smirks."
+    scene deepimpact_deep_fast
     p "N-no, please. Have you had enough entertainment?"
     p "Is that enough? I'm sorry for what I did to you. I'm begging you. Please let me go! I'm going insane!"
     d "So what? I should stop because of that?"
+    scene deepimpact_deep_fastest
+    "[d] moves faster"
     p "[d], [d]. Please stop. Have pity on me. Please. I'm really going insane. My mind is breaking apart."
     d "..."
     "[p] sobs. He makes it look like the world had come to an end."
@@ -206,7 +387,7 @@ label control3:
     p "P-Please stop. Please let me go [d]. I beg you."
     d "..."
     p "P-please [d]. I'll break. Please...Hmmm...ahhh..."
-    scene darkforest
+    scene darkforest #start here
     "[d] stops. He seems angry."
     d "What a mood breaker."
     p "I-I'm sorry... Please forgive me..."
@@ -414,24 +595,32 @@ label control4_ques:
     "[d] breaks [p]'s leg." with vpunch
     p "AAAAGGGGHHHH!"
     "[d] throws [p] to the ground" with hpunch
-    d "With that many enermies and this type of body plus your reflection speed, do you really think you can be allive after disowned?"
-    p "!"
-    d "Use your brain [p], if your father had any planned for you, he wouldn't let your reputation ruins so badly. No future king goes around fight wars after wars and directly assasinate enemies himself."
-    p "S-STOP! JUST SHUT UP!!! What do you even know?!?"
+    d "With that many enermies and this type of body plus your reflection speed, do you really think you can be allive after disowned? It feels like your father send you to your own grave huh?"
+    d "Is that the reason you look so wild when we meet? Like you can go ahead and murder everyone."
+    p "..."
+    d "Too bad it just turn out the opposite, but at least you seems sexually satisfy."
+    "[p] clenches his teeth and fist."
+    d "Use your brain [p], if your father had any planned for you, he wouldn't do nothing and let your reputation ruins so badly." 
+    d "No future king nor crown prince goes around fight wars after wars and directly assasinate the king's enemies himself."
+    p "S-STOP! JUST SHUT UP!!! What do you even know?!? It was the road I chose!! SO SHUT THE FUCK UP!!"
     "[p] tries to stands up."
     p "Uhm..N!"
-    d "You father had planned to use then discard you since the start, as a scapegoat and stepping stone for brother. Deep down inside, you know what I said is true."
-    p "N-no, it's not ...n..."
-    d "You like to call your brother his puppet, because your brother listen to him. But it is actually you who are the puppet. Isn't that sad?"
+    "[d] smirks"
+    d "Your father had planned discard you since the start after you done your jobs, as a scapegoat and stepping stone for your brother." 
+    d "You keep on reasoning but deep down inside, you know what I said is true."
+    p "N-no...no, it's not ...n..."
+    d "You like to call your brother his puppet, because your brother listen to him. But it is actually you who are the puppet. Isn't that ironic?"
     p "Please stop..."
     d "He might have know it too. You were born as an abnormal. A creature that can go against The Flow and unable to in sync with this world. An ill-fated human."
     "[d] bends down and grasps [p]'s broken arm joint."
     p "Uhm..."
+    d "It must be hard, living like that. Have you ever feel like you were extemely unlucky, like the world keep on pushing you out no matter how hard you try?"
+    p "..."
     d "There are some who pass The Flow threshold too, compare to them, you are nothing. They are either too powerful, or prepare too well, that The Flow cannot touch them. And here you are, cluelessly waiting to be killed."
     "[p] glances at [d]."
     p "!"
     "[p] feels cold. His breath become shorter."
-    d "You can feel it right? The death. The Flow told me to kill you as soon as you walk into this forrest, I decide to rape you day after day instead."
+    d "You can feel it right? The death. The Flow told me to kill you as soon as you walk into this forest, but I decide to violate you day after day instead."
     d "Now the time had come. It doesn't need me anymore."
     "[p] sweats and becomes dizzy. Something is squeezing his heart hard."
     p "Ugh...Ahhh..."
@@ -444,17 +633,17 @@ label control4_ques:
     p "...I beg you [d]...I just want...h...to go back...ah...in time..."
     "[d] touches [p]'s face."
     p "*sob...*sniff..."
-    "[p] tries to hold his tears in. The sound stops. But his tears keep falling out."
+    "[p] tries to hold his tears in. The sound stops. But his tears keep falling out. He had been holding it for a long time, he cannot stop it anymore."
     d "Too bad your little wish will never be fulfill. Only the creations that's in a perfect harmony of The Flow can use The Stone." 
     d "The moment you touch The Stone, either it or you will be destroyed. You are clutching at a straw [p]. You can image going back in time before you die if you want it so badly."
     p "..."
-    "[p] cies harder. [d] pats his head."
+    "[p] cries harder. [d] pats his head."
     d "..."
     d "It was a toll for me too, you know."
     d "I played around with you too much, it doesn't feel good crushing you or having you hate me like this. If you were less stubborn, it would have been painless."
     d "I have always tried, but it was no use...And here the dealine comes."
     "[p] clenches his teeth and eat his tears inside."
-    p "Fuck you [d]! Why do you need to push me off the cliff before killing me? I am stubborn, you cannot fully control my mind, so what?!? Does that concern you?!? Just kill me!"
+    p "Fuck you [d]! Why do you need to push me off the cliff before killing me? I am stubborn, you cannot fully control my mind, so what?!? Does that concern you?!? Just kill me! Right now!"
     d "..."
     p "Even if this world is pushing me away, am I not a living being? Am I not worthy to be treated like one? My life, it had been nothing but an endless misery..." 
     p "Why do I have to endure your torture and humiliation before being killed? Who give you the right to hurt me and trample on my sanity like this? Does God not need moral?"
@@ -471,12 +660,12 @@ label control4_ques:
     p "(S-Shit. Is this the last image I will see? The last act of kindness I will get?)"
     "[p] closes his eyes. His tears keep on falling."
     p "(Is it really that far? My little dream of having good times with father and [ren] like we used to be...My little dream of having someone by my side, love me, and accepting me for who I am...)"
-    p "([d]. You turned my life upside down. My pride, my believe, my feeling, my sanity...they are all crumble. Is it fun to you?)"
+    p "([d]. You turned my life upside down. My pride, my identity, my believe, my feeling, my sanity...they are all crumble. Is it fun to you?)"
     "Right when [p] open his eyes. [d]'s eyes turn red."
-    "Again, [p] feels like his head was penetrated. [p] doesn't unserstand [d]'s need of fully control his mind before he dies. But at this point, [p] does not care anymore. [d] can does whatever he wants." 
+    "Again, [p] feels like his head was penetrated. [p] doesn't understand [d]'s need of fully control his mind before he dies. But at this point, [p] does not care anymore. He can does whatever he wants." 
     "[d] slowly thrusts his hand into [p]'s brain."
     p "Ughh...aaa..."
-    "The pain were too much that [p] cannot even scream. [d]'s fingers go on deeper and deeper. With each thrust, [p] feels like thousands of needle attach his brain"
+    "The pain were too much that [p] cannot even scream. [d]'s fingers go on deeper and deeper. With each thrust, [p] feels like thousands of needle attach his brain."
     d "You will enjoy this soon. Your mind will re-arange, and your pain will turns to pleasure." 
     p "Mmm...mngh...m..."
     "[p]'s cock hard on its own and cum. How much [d] want to torture and humiliate him before killing him off?"
@@ -506,7 +695,7 @@ label control4_ques:
     "He sleeps while sitting upright with [p] lying on his laps." 
     
     "The next morning, [p] wakes up."
-    p "(Am I still alive? I can't even feel myself.)"
+    p "(I'm still alive?)"
     "He reaches his arms and legs, but they are heavier than usual, like they had some root connected to the Earth. He was unable to move, like a tree."
     p "Shit! What the fuck is going on?"
     "[p] remembered all the things [d] did to him yesterday."
@@ -654,7 +843,7 @@ label badend:
     d "Now I understand why there are so many people despite you [p]. You are as irritating as hell."
     "[d] brutally tramples [p]'s head." with vpunch
     p "Ugh! N.."
-    d "Don't drive me up to a wall. There's a limit how much I can restrain myself from breaking you completely, brat." 
+    d "Don't drive me up to a wall. There's a limit of how much I can restrain myself from breaking you completely, brat." 
     p "..."
     "[p] clenches his fist."
     d "Don't worry, I'll still keep you as a plaything even if you wreck to the point of no recovery."
@@ -667,11 +856,11 @@ label badend:
     "[d] smirks. He kicks [p] to their way then crush his stomach with his foot."
     p "Kuk!...Ngh..."
     "[d] sqeezes it. [p] was unable to move an inch."
-    p "Ngh...L-Let..Me Go [d]!!"
+    p "Ngh...Kuk...L-Let..Me Go [d]!!"
     p "Ugh! Arg...! S-shit!"
     "[p] tries to get out of [d]'s grips but it was too strong. [p] was so frighten that his face become white."
     p "[d]-[d]! Let's go!"
-    "[d] steps on [p]'s stomach harder, make it more difficult for him to move."
+    "[d] steps on [p]'s stomach harder, makes it more painful and difficult for him to move."
     p "Ugh!"
     p "N-No! Stop!! STOOOOOOOOPPPPPPPPP!!!"
     "Big and devasting screams echo through the temple."
@@ -755,7 +944,7 @@ label badend:
     d "Isn't that too cold? He tries so hard to gather his courage."
     k "It is not necessary. He is not a citizen of this country nor human anymore."
     k "He just a disgrace. Living on his knees with no pride nor honour."
-    "[p] cries. [d] releases him. [p] falls in sitting position."
+    "[p] cries. [d] releases him. [p] falls in a grovel position."
     "He uses one hand covers his tears, tries to not make any sound."
     "[d] bends over, softly pulls his hair back and kisses him."
     p "!"

@@ -2684,6 +2684,32 @@ image deepimpact_head:
     "deepimpact_head0011.jpg"
     0.15
     repeat
+image deepimpact_head_fast:
+    "deepimpact_head0000.jpg"
+    0.1
+    "deepimpact_head0001.jpg"
+    0.1
+    "deepimpact_head0002.jpg"
+    0.1
+    "deepimpact_head0003.jpg"
+    0.1
+    "deepimpact_head0004.jpg"
+    0.1
+    "deepimpact_head0005.jpg"
+    0.1
+    "deepimpact_head0006.jpg"
+    0.1
+    "deepimpact_head0007.jpg"
+    0.1
+    "deepimpact_head0008.jpg"
+    0.1
+    "deepimpact_head0009.jpg"
+    0.1
+    "deepimpact_head0010.jpg"
+    0.1
+    "deepimpact_head0011.jpg"
+    0.1
+    repeat
 image deepimpact_deep:
     "deepimpact_deep0000.jpg"
     0.15
@@ -2703,6 +2729,46 @@ image deepimpact_deep:
     0.15
     "deepimpact_deep0008.jpg"
     0.15
+    repeat
+image deepimpact_deep_fast:
+    "deepimpact_deep0000.jpg"
+    0.1
+    "deepimpact_deep0001.jpg"
+    0.1
+    "deepimpact_deep0002.jpg"
+    0.1
+    "deepimpact_deep0003.jpg"
+    0.1
+    "deepimpact_deep0004.jpg"
+    0.1
+    "deepimpact_deep0005.jpg"
+    0.1
+    "deepimpact_deep0006.jpg"
+    0.1
+    "deepimpact_deep0007.jpg"
+    0.1
+    "deepimpact_deep0008.jpg"
+    0.1
+    repeat
+image deepimpact_deep_fastest:
+    "deepimpact_deep0000.jpg"
+    0.07
+    "deepimpact_deep0001.jpg"
+    0.07
+    "deepimpact_deep0002.jpg"
+    0.07
+    "deepimpact_deep0003.jpg"
+    0.07
+    "deepimpact_deep0004.jpg"
+    0.07
+    "deepimpact_deep0005.jpg"
+    0.07
+    "deepimpact_deep0006.jpg"
+    0.07
+    "deepimpact_deep0007.jpg"
+    0.07
+    "deepimpact_deep0008.jpg"
+    0.07
     repeat
 image deepimpact_deepcum:
     "deepimpact_deepcum0000.jpg"

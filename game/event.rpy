@@ -310,27 +310,114 @@ label endday2:
     $food -=5
     $clean -=5
     if water >=100:
+        scene darkforest2
+        show m_tired
+        show m_cockdown
+        show m_m2
         "[p] goes behind the tree."
+        scene darkforest2
+        show m_surprise
+        show m_cockdown
+        show m_blush
+        show m_m_open_speak
         d "What are you doing?"
-        p "D-don't come here. I'm peeping."
-        d "Ok."
+        scene darkforest2
+        show m_tired
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m_open2
+        p "I-I need to...have some privacy. Please don't follow me."
+        scene darkforest2
+        show m_close
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m_open2
+        "[d] laughs."
+        hide m_m_open2
+        show m_m2
         p "..."
-        "[p] returns to his place."
+        "A few minutes later, [p] returns to his place."
+        scene darkforest2
+        show m
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m2
         d "Relief?"
+        scene darkforest2
+        show m_tired
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m_open2
         p "Y-yeah."
+        scene darkforest2
+        show m_close
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m_normal
+        p "..."
         $water = 70
     if talk >= 18:
         scene black with dissolve
         pause .5
         scene sit_up
         "Morning."
+        show m
+        show m_cockdown
+        show m_m1
         "[p] looks around and sees [d] as soon as he wakes up."
+        scene sit_up
+        show m_tired
+        show m_cockdown
+        show m_blush
+        show m_m2
         p "..."
+        scene sit_up
+        show m_surpise
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m_open2
         d "Did you sleep well?"
+        scene sit_up
+        show m
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m_normal
         p "..."
+        scene sit_up
+        show m_tired
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m_open2
         p "Y-yes..."
+        scene sit_up
+        show m
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m2
         "[d] smiles."
-        d "That's good."
+        scene sit_up
+        show m_tired
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m2
+        p "..."
+        d "Good boy."
+        scene sit_up
+        show m_close
+        show m_cockdown
+        show m_blush
+        show m_shame
+        show m_m_open2
         p "..."
     else:
         scene black with dissolve
