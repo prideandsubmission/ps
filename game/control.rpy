@@ -54,18 +54,23 @@ label control3:
     d "You have start to fear me huh?"
     scene tie_looka
     show m_surprise at s
+    show m_blush at s
     show m_m_open2 at s
     p "W-What do you need?"
+    hide m_blush
     hide m_m_open2
+    show m_blush at s
     show m_m at s
     "[d] smirks. His eyes turn red."
     scene tie
     show m at s
+    show m_blush at s
     show m_m_open1 at s
     d "Look at me!"
     scene tie_looka
     show m at s
     show m_m_1 at s
+    show m_blush at s
     show m_shame at s
     "[p] looks at [d]. He feels dizzy, like someone penetrate his brain"
     hide m_m_1
@@ -387,10 +392,21 @@ label control3:
     p "P-Please stop. Please let me go [d]. I beg you."
     d "..."
     p "P-please [d]. I'll break. Please...Hmmm...ahhh..."
-    scene darkforest #start here
+    scene darkforest
+    show m_close
+    show m_cockup
+    show m_shame
+    show m_m
+    show m_sperm_stomach
     "[d] stops. He seems angry."
     d "What a mood breaker."
-    p "I-I'm sorry... Please forgive me..."
+    scene darkforest
+    show m_tired
+    show m_cockup
+    show m_shame
+    show m_m_open2
+    show m_sperm_stomach
+    p "I-I'm sorry...Please stop..." #start here
     d "..."
     "[d] facial expression returns to normal."
     d "Since you begging too hard just now, I'll give you a chance."
@@ -606,10 +622,9 @@ label control4_ques:
     "[p] tries to stands up."
     p "Uhm..N!"
     "[d] smirks"
-    d "Your father had planned discard you since the start after you done your jobs, as a scapegoat and stepping stone for your brother." 
-    d "You keep on reasoning but deep down inside, you know what I said is true."
-    p "N-no...no, it's not ...n..."
-    d "You like to call your brother his puppet, because your brother listen to him. But it is actually you who are the puppet. Isn't that ironic?"
+    d "Do you know what you look like? A stepping stone for your brother. Maybe your father already plan it from the start. After all, a bird brain like you doesn't deserve that position." 
+    p "N-no...Fuck you [d] ...n..."
+    d "You like to call your brother his puppet, because your brother listen to him. But you look more like his puppet to me."
     p "Please stop..."
     d "He might have know it too. You were born as an abnormal. A creature that can go against The Flow and unable to in sync with this world. An ill-fated human."
     "[d] bends down and grasps [p]'s broken arm joint."
