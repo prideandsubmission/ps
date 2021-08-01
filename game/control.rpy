@@ -431,7 +431,7 @@ label control3:
             scene peep_chew with None
             show peep_cry with None
             "Its hotness and stinkiness makes [p] dizzy. It tastes was horrible. Much worse than when [d] forced him to drink his own piss. Yet, it arouses [p]."
-            "It must be because of the hypnosis, that strong crave for [d] is so abnormal..."
+            "It must be because of the hypnosis, that strong crave and attachment for [d] is so abnormal..."
             p "M...h..."
             scene peep_inmouth with vpunch
             p "Ngh..."
@@ -1128,9 +1128,13 @@ label badend:
     "[p] cums."
     p "Hm..n...ugh..."
     d "You cums just from fingering huh? It likes your sensation was enchance. Is that because you cannot see anymore?"
-    "[p] cries"
-    d "Now now, don't cry." 
-    "[d] wipes [p]'s tears."
+    p "..."
+    "[d] bites Ray’s neck. It’s bleed." 
+    p "n..h" 
+    d "What you said at the temple still printed in my head Ray. My blood boil every times I saw your face."
+    d "How many times had this trouble face make me stop? If you won’t shred even a piece of empathy to me, I’ll do the same."
+    d "I will watch as you turn crazy and my embrace is your only salvation. You will wish everyday for my dick to fill your empty hole."
+    "[p] cries. [d] kisss him."
     d "Are you hungry?"
     "[p] nods."
     d "Thirsty?"
