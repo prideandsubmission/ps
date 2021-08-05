@@ -711,7 +711,7 @@ label talk9:
     p "..."
     hide m_m
     show m_m_open2
-    p "It...was a mistake. His name shouldn't have been there..."
+    p "It...was a mistake. He...is not the spy from Eyon country..."
     hide m_m_open2
     show m_m_open_speak
     p "When he thought I invited him for a small meal, he was really happy. He didn't know what awaits him..."
