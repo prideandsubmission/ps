@@ -711,7 +711,7 @@ label talk9:
     p "..."
     hide m_m
     show m_m_open2
-    p "It...was a mistake. He...is not the spy from Eyon country..."
+    p "It...was a mistake. He is...not the spy..."
     hide m_m_open2
     show m_m_open_speak
     p "When he thought I invited him for a small meal, he was really happy. He didn't know what awaits him..."
@@ -720,7 +720,7 @@ label talk9:
     show m_cockdown
     show m_blush
     show m_m_open1
-    p "There was no way I can wash my hands off of innocent blood..."
+    p "I tried so hard. I throw my emotion, my consiousness, even my life away, for what?...There was no way I can wash my hands off of blood..."
     scene sit_sad with None
     show m_close
     show m_cockdown

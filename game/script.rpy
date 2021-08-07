@@ -130,7 +130,7 @@ label start:
     "He entered the forest and immediately encountered many groups of monster, but he slayed them with little difficulty." 
     "A young monster falls on its own. It tries to stand up."
     p "Running away?"
-    m "P-please spare me. I'm not invol-..."
+    m "P-please spare m-..."
     "He cuts off the monster's head and moving forward."
     "Suddenly, a small demon appeared in front of him."
     show n at right with dissolve
@@ -141,15 +141,13 @@ label start:
     n "Are you a human knight?" 
     p "..."
     n "Sir Knight, if you go further, there’s no return. The monsters are really strong there."
+    "The prince grips his sword hard then relaxes his muscle."
     p "..."
-    "[p] clenches his sword then relax his muscle."
-    p "(I don't need to kill him. Even if there's a group of demon here, it's hard enough for them to survive. They cannot cause me troubles.)"
-    p "(Moreover, demons are smarter and easier to talk. This one may have information about the First Stone.)"
     hide n_smile
     show n at right
     n "?"
     menu:
-        "Ask him":
+        "Ask him about the stone":
             p "Demon."
             hide n
             show n_smile at right
@@ -306,14 +304,12 @@ label start:
     p "What?" 
     "The monster talks so small that [p] cannot hear. He looks at [p] as if he want [p] to hear it."
     p "..."
-    "Normally, Ray is very careful. He hates the thought of himself lying on the ground, becomes stiff and cold because of a stupid mistake. However, listening to death wishes is a risk he willing to take."
-    "Enemies or foes, they are about to leave this world anyway."
-    "[p] stays alert, clenthes his sword hard, carefully bends over to hear what the monster had to say. He was so close to him that he can hear the monster's breathe."
+    "[p] clenthes his sword hard, carefully bends over to hear what the monster had to say. He was so close to him that he can hear the monster's breathe."
     "Suddenly, there was a chill runs down his spine. His breathe become shorter and his heart race faster, as if they are telling him to get out."
     "The monster's voice becomes deeper as he whispers into his ears."
-    d "I got hard because I want to pin you down and fuck your obscene hole senselessly until your crying and begging me to cum inside."
+    d "I got hard because I want to pin you down and fuck your obscene hole senselessly until your brain falls out."
     p "!" with hpunch
-    "[p] was shocked. Not only because of the monster's weird behavior, but also because it was the first time he heard such vulgar words, and it pointed directly at him."
+    "[p] was shocked. Not only because of the monster's weird behavior, but also because it was the first time someone speak to him with such vulgar words."
     "He stands up and steps backward, on his defense stance. The monster stands up. His wounds were healed." with vpunch
     p "You... heal yourelf?"
     p "(Impossible! I can't even sense any magic. There was something off about him from the start.)"
