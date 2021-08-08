@@ -304,13 +304,14 @@ label start:
     p "What?" 
     "The monster talks so small that [p] cannot hear. He looks at [p] as if he want [p] to hear it."
     p "..."
-    "[p] clenthes his sword hard, carefully bends over to hear what the monster had to say. He was so close to him that he can hear the monster's breathe."
-    "Suddenly, there was a chill runs down his spine. His breathe become shorter and his heart race faster, as if they are telling him to get out."
-    "The monster's voice becomes deeper as he whispers into his ears."
+    "[p] clenthes his sword hard and carefully bends over to hear what the monster had to say. He was so close to the monster that he can hear the his breathe."
+    p "Repeat yourself if you have something to say."
+    "Suddenly, there was a chill runs down his spine as if his gut tell him to get out. His heart suddenly beats faster due to an intense aura."
+    "The monster's voice becomes deeper as the prince frozen by the aura. The monster whispers into his ears."
     d "I got hard because I want to pin you down and fuck your obscene hole senselessly until your brain falls out."
     p "!" with hpunch
     "[p] was shocked. Not only because of the monster's weird behavior, but also because it was the first time someone speak to him with such vulgar words."
-    "He stands up and steps backward, on his defense stance. The monster stands up. His wounds were healed." with vpunch
+    "He snap out of his fear and steps backward, on his defense stance. The monster stands up. His wounds were healed." with vpunch
     p "You... heal yourelf?"
     p "(Impossible! I can't even sense any magic. There was something off about him from the start.)"
     p "Did you absorb other monsters?"
