@@ -723,18 +723,19 @@ label control4_ques:
     p "..."
     "[p] shooks his head."
     p "This cannot be. I cannot live like this..."
-    p "...How meek had I become for you to be able to forcefully sharing your power without my acceptant...I rather not being alive to see myself become a monster..."
+    p "...How meek had I become for you to be able to forcefully sharing your power without my acceptant..."
+    p "You took everything away from me...what makes me myself had long gone. And now you didn't even let me stay human but a digusting monster...."
     d "..."
-    "[d] moves closer. When he about to touches [p]'s face, [p] pushes his hand out and pushes him away."
-    p "Don't Touch Me You Crazy Bastard!"
-    "The ground is moving faster and faster. It forms according to [p]'s will."
-    d "..."
+    "[d] moves closer. When he about to touches [p]'s face, [p] shoves his hand and brutally pushes him away."
+    d "..." with hpunch
+    p "Don't Touch Me You Crazy Bastard!" with vpunch
+    "The ground is moving faster and faster. It forms according to [p]'s will." with hpunch
     d "You learn fast."
     p "!"
     p "..."
-    "[p] creates waves with shatter earth and throws it at [d]. [d] negates then make them crumble."
-    "Dust fly everywhere. [p] disspeared."
-    d "Good move."
+    "[p] creates waves with shatter earth and throws it at [d]. [d] negates then make them crumble." with vpunch
+    "Dust fly everywhere. [p] disspeared." with hpunch
+    d "Good moves."
     "[p] runs. He doesn't know where did he runs to. He just run forward."
     p "([d] didn't able to catch me. It seems like he had become weaker. Is it because of the thing he did to me?)"
     p "Water sounds..."
@@ -742,8 +743,8 @@ label control4_ques:
     "[p] doesn't know which word of the monster is true. Should he try to get out of this forest, or to find the stone?"
     p "Even if I can get out, he will still find me. If he captured me again,..."
     "[p] remmembered all the time [d] rapes him, as well as some gentle moments." 
-    p "No! Stop thinking! I have to find The Stone."
-
+    p "(No! Stop thinking! I have to find The Stone.)" 
+    p "(He said I'm not against the flow anymore. I might be able to use it.)"
     "[p] heard a foot step."
     p "Who?"
     n "Sir Knight? What happen to you?"
