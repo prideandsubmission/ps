@@ -12,7 +12,7 @@ screen sit:
     imagemap:
         ground "sit_alt"
         hover "sit_sad"
-        hotspot (0, 100, 600, 1000) action Function(renpy.transition, dissolve), Call ("simbutton2")
+        hotspot (0, 100, 550, 1000) action Function(renpy.transition, dissolve), Call ("simbutton2")
 
 ##default tt= Tooltip("[p] feels uncomfortable. Better not touch him")
 
@@ -37,7 +37,7 @@ label simbutton2:
     show screen day
     show screen stat
     if ene <=0:
-        jump endday
+        jump endday2
     elif water<=0 or food <=0:
         jump faint
     elif clean<=0:
@@ -74,16 +74,18 @@ label simbutton2:
                 menu:
                     "Water":
                         if ene <= 0:
-                            jump endday
+                            jump endday2
                         else:
                             $goodend +=1
                             "Working on it"
+                            jump simbutton2
                     "Feed":
                         if ene <= 0:
-                            jump endday
+                            jump endday2
                         else:
                             $goodend +=1
                             "Working on it"
+                            jump simbutton2
                     "Return":
                         jump simbutton2   
             # "Sex":

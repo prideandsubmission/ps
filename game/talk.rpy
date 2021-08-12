@@ -579,7 +579,7 @@ label talk8:
     hide m_m_open2
     show m_m
     d "..."
-    d "I remember you have good strength and agility."
+    d "I remember you have good strength and agility. Your techniques are not bad either."
     scene sit_up with None
     show m
     show m_cockdown

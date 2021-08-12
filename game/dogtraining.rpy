@@ -4,7 +4,7 @@ label dogtraining:
     show m_tired
     show m_m
     show m_cockdown
-    "[d] touches [p]'s face."
+    "[d] touches [p]'s face as [p] looks away."
     scene darkforest with None
     show m_surprise
     show m_shame
@@ -17,7 +17,7 @@ label dogtraining:
     show m_m
     show m_blush
     show m_cockdown
-    d "Hmph..."
+    "[d] smirks."
     p "..."
     scene darkforest with None
     show m_surprise

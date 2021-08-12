@@ -305,6 +305,8 @@ label jumpsim:
 label endday2:
     hide screen day
     hide screen stat
+    hide screen sit_up_screen
+    scene darkforest2
     $day +=1
     $water -=7
     $food -=5
@@ -362,6 +364,7 @@ label endday2:
         p "..."
         $water = 70
     if talk >= 18:
+        hide screen sit_up_screen
         scene black with dissolve
         pause .5
         scene sit_up
@@ -420,9 +423,10 @@ label endday2:
         show m_m_open2
         p "..."
     else:
+        hide screen sit_up_screen
         scene black with dissolve
-        "A new day has come."
         pause .5
+        "A new day has come."
     jump simbutton2
 
 
