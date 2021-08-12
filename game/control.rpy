@@ -1139,9 +1139,9 @@ label badend:
     scene gore_back_ass_sock
     p "Ggh..N!"
     p "H! H!"
-    "[d] presses a button. The stick generate electric."
+    "[d] rams the scepter harder into [p] private part. It hits his stomach hard."
     p "NGH! NGH!"
-    d "Not as strong as those mosquito. But it's not a bad device."
+    d "You like it don't you, slut. Are you that hungry?"
     p "NGH! N! H!"
     scene gore_back_sock
     p "H...n..."
