@@ -23,7 +23,7 @@ default touchnone = True
 default controlState = 0
 default dogtraining = False
 default goodend = 0
-default talk = 0
+default talk = 20
 
 init python:
     showday= False
@@ -81,6 +81,22 @@ label start:
                     $controlStage = 2
                     play music "Angevin.mp3"
                     jump sim
+                "Ending choices":
+                    $p = renpy.input("Your name is...(press enter to use the default name)", "Ray", length=20)
+                    $d = renpy.input("The monster's name is...(press enter to use the default name)", "Dietrick", length=20)
+                    $water =90
+                    $firstwater = False
+                    $food =90
+                    $ene =100
+                    $nothing =1
+                    $mental = 0
+                    $pride = 0
+                    $day = 50
+                    $clean = 40
+                    $group_baby = True
+                    $controlStage = 3
+                    play music "Angevin.mp3"
+                    jump sim2
                 "No skiping":
                     "Please continue the game."
     

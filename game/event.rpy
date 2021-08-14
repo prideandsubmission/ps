@@ -310,8 +310,8 @@ label endday2:
     $day +=1
     $water -=7
     $food -=5
-    $clean -=5
-    if water >=100:
+    $clean -=2
+    if water >=100 or food >=100:
         scene darkforest2
         show m_tired
         show m_cockdown
@@ -367,67 +367,23 @@ label endday2:
         hide screen sit_up_screen
         scene black with dissolve
         pause .5
-        scene sit_up
-        "Morning."
-        show m
-        show m_cockdown
-        show m_m1
-        "[p] looks around and sees [d] as soon as he wakes up."
-        scene sit_up
-        show m_tired
-        show m_cockdown
-        show m_blush
-        show m_m2
-        p "..."
-        scene sit_up
-        show m_surpise
-        show m_cockdown
-        show m_blush
-        show m_shame
-        show m_m_open2
-        d "Did you sleep well?"
-        scene sit_up
-        show m
-        show m_cockdown
-        show m_blush
-        show m_shame
-        show m_m_normal
-        p "..."
-        scene sit_up
-        show m_tired
-        show m_cockdown
-        show m_blush
-        show m_shame
-        show m_m_open2
-        p "Y-yes..."
-        scene sit_up
-        show m
-        show m_cockdown
-        show m_blush
-        show m_shame
-        show m_m2
-        "[d] smiles."
-        scene sit_up
-        show m_tired
-        show m_cockdown
-        show m_blush
-        show m_shame
-        show m_m2
-        p "..."
-        d "Good boy."
-        scene sit_up
-        show m_close
-        show m_cockdown
-        show m_blush
-        show m_shame
-        show m_m_open2
-        p "..."
+        $ roll = 0
+        $ roll = renpy.random.randint(1, 3)
+        if roll == 1:
+            jump morning_greet1
+        elif roll == 2:
+            jump morning_greet2  
+        elif roll == 3:
+            jump morning_greet3
     else:
         hide screen sit_up_screen
         scene black with dissolve
         pause .5
         "A new day has come."
+    $ene = 100
     jump simbutton2
+
+
 
 
 

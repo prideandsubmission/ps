@@ -882,7 +882,7 @@ label control4_ques:
     p "I lost. What do you want to do with me?"
     d "What do you think?"
     p "Stop that already. Didn't you said I'm a birdbrain? How can I know what a genius like you think?"
-    if talk >= 18:
+    if talk >= 20:
         jump goodend
     else :
         jump badend
@@ -1172,6 +1172,7 @@ label badend:
     p "U-a...n..."
     p "AA...a..."
     d "..."
+    scene gore_pop with hpunch
     "[d] releases his hair and bend down. [p] clenches his teeth. He afraid [d] will hit him."
     "[d] carries him to the pet bath area and put him inside the biggest one."
     p "?"
@@ -1265,7 +1266,7 @@ label badend:
     p "A...h...ngh...aa..."
     "[p] softly nods multiple times while crying and moaning. [d] smirks."
     d "I like to become one with you too."
-    a "U...ngh...n..aa..."
+    p "U...ngh...n..aa..."
     "[p] cum."
     p  "M...n..."
     "[d] touches [p]'s hair."

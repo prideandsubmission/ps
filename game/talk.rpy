@@ -368,7 +368,7 @@ label talk6:
     show m_blush
     show m_m2
     p "..."
-    d "If I were him, even if you are able to depend yourself, I will never trade you off for politic like that. You did your jobs well and very faithful. You deserve more."
+    d "If I were him, even if you are able to defend yourself, I will never trade you off for politic like that. You did your jobs well and very faithful. You deserve more."
     scene sit_sad with None
     show m
     show m_cockdown

@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/talk.rpy", line 597: expected statement.
-    bide m_m_open_speak
-                       ^
+File "game/sim2.rpy", line 70: invalid syntax
+    goodend_announce = !goodend_announce
+                        ^
+    
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Jul 26 13:41:48 2021
+Fri Aug 13 21:14:28 2021

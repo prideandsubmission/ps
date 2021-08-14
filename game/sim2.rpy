@@ -1,7 +1,9 @@
 
 
+
 label sim2:
     $ showday = True
+    $ goodend_announce = False
     show sit_tight with fade
     "[p] had started to have feeling for you. Earn his trust and love to have vanilla good end. There'll be a notification when you get it." 
     "You can click Brain alteration to go to bad end right away. It'll have gore, scat, bestiality"
@@ -13,14 +15,42 @@ screen sit:
         ground "sit_alt"
         hover "sit_sad"
         hotspot (0, 100, 550, 1000) action Function(renpy.transition, dissolve), Call ("simbutton2")
-
 ##default tt= Tooltip("[p] feels uncomfortable. Better not touch him")
 
 screen sit_up_screen:
     imagemap:
         ground "sit_up"
         hover "sit_sad_hover"
-        hotspot (0, 100, 720, 1000) clicked Jump("clickRay")
+        hotspot (30, 100, 720, 1000) clicked Jump("clickRay")
+
+    text ("Day %d" %day): 
+        xpos 5
+        ypos 20
+        font "Benegraphic.ttf"
+
+    text ("Energy: %d" % ene): 
+        xpos 10
+        ypos 100 
+
+    text ("Water: %d" % water): 
+        xpos 10
+        ypos 150
+     
+    text ("Food: %d" % food): 
+        xpos 10
+        ypos 200 
+       
+    text ("Pride: %d" % pride): 
+        xpos 10
+        ypos 250 
+       
+    text ("Mental: %d" % mental): 
+        xpos 10
+        ypos 300 
+    
+    text ("Cleaniness: %d" % clean): 
+        xpos 10
+        ypos 350 
 
 label clickRay:
     hide screen sit_up_screen
@@ -31,17 +61,13 @@ label clickRay:
     "[p] feels uncomfortable. Better not touch him more."
     jump simbutton2
 
-
 label simbutton2:
-    show screen sit_up_screen with dissolve
-    show screen day
-    show screen stat
+    show screen sit_up_screen
     if ene <=0:
         jump endday2
-    elif water<=0 or food <=0:
-        jump faint
-    elif clean<=0:
-        jump bath
+    elif goodend_announce==False and talk >=20:
+        "Good end unlocked."
+        $ goodend_announce = True
     else:
         menu:
             "Talk":
@@ -75,15 +101,41 @@ label simbutton2:
                     "Water":
                         if ene <= 0:
                             jump endday2
+                        elif water >120:
+                            d "Want some water?"
+                            p "I-I'm not thirsty."
+                        elif water <= 50:
+                            p "[d]"
+                            d "What?"
+                            p "..."
+                            p "Can I have some water?"
+                            "[d] gives [p] some."
+                            p "T-thanks"
+                            $water += 50
                         else:
                             $goodend +=1
+                            $ene -= 10
+                            $water += 50
                             "Working on it"
                             jump simbutton2
                     "Feed":
                         if ene <= 0:
-                            jump endday2
+                            jump endday2 
+                        elif food >120:
+                            d "Want some water?"
+                            p "I-I'm not thirsty."
+                        elif food <= 50:
+                            p "[d]"
+                            d "What?"
+                            p "..."
+                            p "Can I have some water?"
+                            "[d] gives [p] some."
+                            p "T-thanks"
+                            $food += 50
                         else:
                             $goodend +=1
+                            $ene -= 10
+                            $food += 50
                             "Working on it"
                             jump simbutton2
                     "Return":
