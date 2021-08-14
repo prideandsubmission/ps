@@ -489,8 +489,7 @@ label talk7:
     show m_m
     d "Greeting kiss."
     scene sit_sad with None
-    if talk >=18:
-        show sit-sad-blush
+    show sit-sad-blush
     show m_tired
     show m_cockdown
     show m_blush
@@ -498,7 +497,7 @@ label talk7:
     show m_m_normal
     p "..."
     if talk >=18:
-        "[p] looks really peaceful just now. It was a very quick expression that maybe he himself didn't notice. But [d] saw it."
+        "[p] looks sad."
         d "..."
         "He kisses [p] in the eye."
         scene sit_sad with None
@@ -516,7 +515,7 @@ label talk7:
         show m_blush
         show m_shame
         show m_m_normal
-        "Recently, whenever [d] was near him, [p] feels lightheaded and dizzy. His body becomes hoter." 
+        "Recently, whenever [d] was near him, [p] feels lightheaded and dizzy. His body burning inside." 
         "[p] doesn't know what it is or why he becomes like that, but he doesn't like it at all."
     else:
         scene sit_sad with None

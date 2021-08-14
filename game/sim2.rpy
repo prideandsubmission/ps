@@ -21,7 +21,7 @@ screen sit_up_screen:
     imagemap:
         ground "sit_up"
         hover "sit_sad_hover"
-        hotspot (30, 100, 720, 1000) clicked Jump("clickRay")
+        hotspot (0, 100, 500, 1000) clicked Jump("clickRay")
 
     text ("Day %d" %day): 
         xpos 5
