@@ -1547,7 +1547,7 @@ label goodend:
     d "I love you [p]."
     p "..."
     p "(It's warm...)"
-    "[p] wonder if this is what being loved feel like. He knows that the next morning, when he fully awake, he may curse himself for this feeling. But it doesn't matter. Now, he cannot even sepate black and white."
+    "[p] wonder if this is what being loved feel like. He knows that the next morning, when he fully awake, he may curse himself for this feeling. But it doesn't matter. Now, he cannot even seperate black and white."
     "Today, [d] had gives him the dream he always had. A tear falls from his eyes for this flickering happiness."
     d "..."
     "It feels like the time had stopped. [d] doesn't know what to say, and [p] doesn't speak." 
@@ -1557,7 +1557,7 @@ label goodend:
     "[p] turns around and looks at the sky of a thousand stars."
     p "..."
     p "It's beautiful..."
-    d "It is."
+    d "Yeah."
     "END"
     return
     
