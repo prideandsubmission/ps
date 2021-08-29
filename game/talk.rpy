@@ -596,7 +596,9 @@ label talk8:
     hide m_m_open_speak
     show m_m2
     "[d] takes a closer look at [p]. It's not that much of a compliment but [p] seems embrassed about it. It seems like a big deal to him."
-    "[p] does look like someone who lacks attention and guidance since early childhood. [d] wonder what kind of life [p] had lives..."
+    "[p] does look like someone who lacks attention and guidance since early childhood. [d] wonder what kind of life [p] had lives."
+    "It must have been hard. Given the state of emotional unstable he is in. Under his cold and ruthless mask, he was easier to get into depression, nervousness, panic, and anger than anyone."
+    "It might be the reason why he rushes into war that others deem uneccesary, it was to destroy what worried him."
     d "If you want, I can help you with training."
     scene sit_up with None
     show m_surprise
@@ -622,7 +624,8 @@ label talk8:
     p "That's...not neccessary."
     hide m_m_open_speak
     p "..."
-    d "Ok."
+    "[d] nods."
+    d "Ask me whenever you need."
     hide m_m1
     show m_m_normal
     p "..."

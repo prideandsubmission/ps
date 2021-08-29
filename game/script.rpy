@@ -24,6 +24,7 @@ default controlState = 0
 default dogtraining = False
 default goodend = 0
 default talk = 0
+define config.window_show_transition = { "screens" : Dissolve(0) }
 
 init python:
     showday= False

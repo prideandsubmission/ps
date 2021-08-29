@@ -526,6 +526,22 @@ image sit_left_sad:
     .1
     "sit-left-sad0010.jpg"
     .1
+image sit_sad_repeat:
+    "sit_left_sad"
+    1.1
+    repeat
+image sit_sob_repeat:
+    "image sit_sob"
+    1.1
+    repeat
+image sit_straight_up_repeat:
+    "sit_straight_up"
+    1.1
+    repeat
+image sit_straight_repeat:
+    "sit_straight"
+    1.1
+    repeat
 image sit_alt:
     block:
         "sit"
@@ -576,3 +592,26 @@ image sit_sad_hover:
         "sit_left_sad"
         1.1
         repeat
+
+image snakeA:
+    "snakeA0000.jpg"
+    .1
+    "snakeA0001.jpg"
+    .1
+    "snakeA0002.jpg" 
+    .1
+    "snakeA0003.jpg"
+    .1
+    "snakeA0004.jpg" 
+    .1
+    "snakeA0005.jpg"
+    .1
+    "snakeA0006.jpg"
+    .1
+    "snakeA0007.jpg" 
+    .1
+    "snakeA0008.jpg"
+    .1
+    "snakeA0009.jpg"
+    .1
+    repeat

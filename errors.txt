@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/sim2.rpy", line 70: invalid syntax
-    goodend_announce = !goodend_announce
-                        ^
-    
+File "game/alt_image2.rpy", line 533: expected 'image_name_component' not found.
+    image image sit_sob_repeat:
+         ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Aug 13 21:14:28 2021
+Sat Aug 28 20:09:43 2021
