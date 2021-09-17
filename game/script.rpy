@@ -45,6 +45,7 @@ label start:
     $d = "Dietrich"
     $p = "Ray"
     ##jump control4_ques
+    jump alteration
     menu:
         "New":
             "Welcome and enjoy the game!"
