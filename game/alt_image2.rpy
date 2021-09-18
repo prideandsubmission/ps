@@ -626,7 +626,7 @@ image alterNoFinHead:
     .15
     "ass-fin-no-fin0003.jpg"
     .15
-    "ass-fin-no-fin0004.jpg" 
+    "ass-fin-no-fin-no-tongue0004.jpg" 
     .2
     "ass-fin-no-fin0003.jpg"
     .15

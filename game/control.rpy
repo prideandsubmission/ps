@@ -641,13 +641,13 @@ label control3:
 
 label alteration:
     scene sit_tight
-    "Early morning, when the sun still have yet move above the tree, [d] comes."
-    "He touches [p]'s head while he were sleeping"
+    "In the morning, [d] comes. He was earlier than usual."
+    "He touches [p]'s head while he were sleeping."
     show m_close
     show m_cockdown
     show m_m_normal
     p "Uhm..."
-    d "Wake up!"
+    d "Wake up [p]!"
     scene sit_tight
     show m_tired
     show m_cockdown
@@ -664,51 +664,123 @@ label alteration:
     show m_shame
     show m_m_normal
     p "(This...again...S-Shit. It hurts. I feel like he goes inside my mind...)"
-    scene sit_sad_repeat
-    show m
-    show m_cockdown
-    show m_shame
+    hide m_m_normal
     show m_m_open_speak
     p "Ngh...m..."
     d "N!"
+    scene sit_sad_repeat
+    show m_close
+    show m_cockdown
+    show m_shame
+    show m_m_open_speak
     p "..."
     hide m_m_open_speak
     show m_m_open1
-    "[d] eyes turn back to normal. [p] closes his eyes."
+    p "Haa...a...."
+    "[d] eyes turn back to normal."
     scene sit_sad_repeat
     show m_close
     show m_cockdown
     show m_shame
     show m_m_normal
     p "Ngh..."
-    hide m_m_sexopen
-    show m_m_open2
+    hide m_m_normal
+    show m_m_open_speak
     "[p] falls aspleep."
+    hide m_m_open_speak
+    show m_m_normal
     d "..."
-    "[d] lightly pulls [p]'s hair."
-    d "Wake up. We have something to do."
-    p "Ngh..."
-    "[d] harden his grip."
-    d "I thought knights sleep with only one eye close. Seems like it was just a myth after all."
-    p "..."
-    "[p] opens his eyes. [d] smirks."
-    scene darkforest
-    show m_surprise
+    scene sit_sad_repeat
+    show m_hurt
     show m_cockdown
     show m_shame
-    show m_m_open2
+    show m_m_sexclench2
+    "[d] lightly pulls [p]'s hair."
+    d "Wake up. We have something to do."
+    hide m_m_sexclench2
+    show m_m_sexopen
+    p "Ngh..."
+    show m_blush
+    p "NGH!!" with hpunch
+    "[d] harden his grip."
+    d "I thought knights sleep with only one eye close. Seems like it was just a myth after all."
+    scene sit_sad_repeat
+    show m
+    show m_cockdown
+    show m_shame
+    show m_m_normal
+    p "..."
+    "Seeing [p] opens his eyes, [d] smirks."
+    d "Predictable."
+    scene sit_sad_repeat
+    show m_tired
+    show m_cockdown
+    show m_shame
+    show m_m
+    p "..."
+    scene darkforest2
+    show m_surprise at s
+    show m_shame at s
+    show m_m_open2 at s
     p "!" with hpunch
-    "[d] pulls [p] to a stone and rotate his hips" with vpunch
+    show m_blush at s
+    hide m_m_open2
+    show m_m_open1 at s
+    "[d] puts [p]'s head on a stone. [p] follows his movements. Suddenly, [d] rotate his hips" with vpunch
+    hide m_m_open1
+    show m_m_scream1 at s
     p "W-Wait!"
+    hide m_m_scream1 
+    show m_m_1 at s
     d "Shut up! Just because I was good with you these days doesn't mean I release the lease. Move your legs up!"
+    scene darkforest2
+    show m at s
+    show m_shame at s
+    show m_m_sexclench1 at s
     "[p] clenches his fists."
+    scene darkforest2
+    show m_tired at s
+    show m_shame at s
+    show m_blush at s
+    show m_m_open_speak at s
     p "Y-yes..."
-    "[p] moves his legs up, prevailing his asshole"
+    scene darkforest2
+    show m_close at s
+    show m_shame at s
+    show m_blush at s
+    show m_m_clench2 at s
+    "[p] moves his legs up, prevailing his asshole."
+    d "Open your eyes and look at me."
+    scene darkforest2
+    show m_tired at s
+    show m_shame at s
+    show m_m_open_speak at s
     p "..."
     scene alterNoFinHead
+    show m_surprise at s
+    show m_shame at s
+    show m_m_scream1 at s
     p "AAAAA....Ahhhh..."
-    "[d] shoves his cock in"
+    hide m_surprise
+    hide m_shame
+    hide m_m_sexopen
+    show m_hurt at s
+    show m_shame at s
+    show m_m_1 at s
+    "[d] shoves his cock in hard."
+    hide m_hurt 
+    hide m_shame 
+    hide m_m_sexopen 
+    show m_tired at s
+    show m_shame at s
+    show m_m_sexclench3 at s
     p "Mngh...Aaaaa..."
+    hide m_close
+    hide m_shame
+    hide m_m_sexclench2
+    show m_hurt at s
+    show m_shame at s
+    show m_m_scream at s
     p "Ahhh....ngh...[d]...I-It won't go in [d]..."
     "[d] smirks."
     scene alterNoFin
@@ -739,7 +811,7 @@ label alteration:
     p "Aaaaa....P-please stop...I beg y-..."
     scene alterFin with vpunch
     p "UMMMM...Mmm..." 
-    d "Shut up! Just because begging work last time, doesnt mean it will happen again. Should I block this mouth forever so my mood wouldn't be ruin?"
+    d "Shut up! Just because begging work last time, doesnt mean it will happen again. Should I lock this mouth forever so my mood wouldn't be ruin?"
     p "Uhm...mgh..."
     "Cannot even scream out for the pain and pleasure, [p] cries. He feels like his body had become an object for [d] to use."
     p "MGHMMM...Mghhh....UGHHH..."
@@ -798,38 +870,203 @@ label alteration:
     d "I live at the depth of this forest. Never went out this much. Do you why I came when you entered here?"
     p "P-please turn me back...It hurts so much [d]..."
     d "You were either born as an error, or someone had violate the rules of this world and resurrected you from the dead. Everything in this Earth follow The Flow God left, you are not."
+    scene alterTwo
     p "Aaaaa...[d]...P-please stop!..It so painful...I cannot..."
     d "As one of the three Demi God who borned to help The Flow and keep the balance to this Earth, I was supposed to kill you...I test to see if I can modify you right away but I cannot."
-    d "Your mind was strong."
+    d "Your will was strong."
     p "P-Please stop...[d]..."
     "[d] stops"
     scene darkforest2
-    d "Even if I don't kill you, other Demi Gods will. If they don't, eventually The Flow will. When it does, it'll be the most painful experience you ever had."
+    show m_hurt
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_m_open_speak 
+    d "Even if I don't kill you, other Demi Gods will. If they don't, eventually The Flow will. It doesn't want to do it but when it does, that'll be the most painful experience you ever had. But you can nullify that by consuming a Demi God's power..."
+    scene darkforest2
+    show m_surprise
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_m_scream1
     p "P-please revert it. I-I would rather die...."
-    d "Rather die than being an immortal that had DemiGod power? Wasn't fame and power what you were looking for in the first place?"
-    d "Isn't that why you rush here like a madman, looking for the stone to get back the throne? Who know? You might even have better chances to escape with that power. I might even let you go after you become boring."
+    hide m_m_scream1
+    show m_m_sexclench1
+    d "Rather die than being an immortal that shared part of a Demi God's power? Wasn't fame and power what you were looking for in the first place?"
+    scene darkforest2
+    show m
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_m2
+    d "Isn't that why you rush here like a mad man, looking for the stone to get back your throne? You might even have better chances to escape with it alive. What is the deal with being a full human?"
+    scene darkforest2
+    show m_tired
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_m_clench
     p "N-no..."
-    "[p] was surprised by [d]'s words. It was like a wall stands behind him and his real self got cracks."
-    "He always thought the throne was what he wants. But why does he hold on to being a human so much, that even death won't change his mind?"
+    scene darkforest2
+    show m_close
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_m2
+    "[p] was surprised by [d]'s words. It was like a wall stands behind him and his mind got cracks."
+    "He always thought being strong and becomes a king were what he needs, and he will achive it whatever it takes. But why does he hold on to being a human so much, that even death won't change his mind?"
+    scene darkforest2
+    show m_tired
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_m
+    "Is it because he hates [d]? Is it because he hates monsters? All of it makes sense, but deep inside, he feels like they are not the real answer. Why being a human meant so much to him?"
+    scene darkforest2
+    show m_close
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_m2
     "[d] looks at [p] confused face."
-    d "You were always like that. It was the same when I first saw you. You wear a mask, act arrogant and ruthless, but you look so lost and confused."
+    scene darkforest2
+    show m_tired
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_m_normal
+    d "You were always like that. It was the same when I first saw you. You wear a thick armor, act arrogant and ruthless, but you look so lost and confused."
+    scene darkforest2
+    show m_surprise
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_m_open1
     "[p] was surprised. Lost and confused. Had he always been like that?"
+    scene darkforest2
+    show m_tired
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_m_normal
     "Images of the past re-appeared one by one before him. He always thought he could do whatever it takes to get throne. But why does he trying so hard for it? What was the very first reason...."
-    "He sees an image of the past where his father, brother, and him practicing sword. His father amazed with his skills and [ren] looked up to him. They all smile so happily..."
+    scene darkforest2
+    show m_close
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_m_open1
+    "Of all the pictures passing by, he looks slowly at an image of his childhood, where his father, brother, and his ten year old self practicing sword. His father amazed with his skills and [ren] looked up to him. They all smile so happily..."
+    scene darkforest2
+    show m_tired
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_tired_cry
+    show m_m
     "[p] cries."
-    p "I-I want to be a human because they were human...I want to had somewhere to belong to..."
+    scene darkforest2
+    show m_close
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_close_cry
+    show m_m_open_speak
+    p "How could I not see it until now?"
+    scene darkforest2
+    show m
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_tired_cry
+    show m_m_open_speak
+    p "It was because they were human...I afraid they won't accept me like this...I want to had somewhere to belong to..."
+    hide m_m_open_speak
+    show m_m2
     d "..."
-    p "I...I was lost my whole life. The thing I want was not power, fame, or the throne. The thing I want was the love and acceptant of those who dear to me..."
-    p "I don't remember when things turn out so wrong, but I want to return to those days...when I had a father who care for me, teach me the way to hold a sword, and a brother who always smile when talking to me."
+    scene darkforest2
+    show m_tired
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_tired_cry
+    show m_m_open_speak
+    p "I tried so hard to train myself...I went to war, aiming to be king, all of it was to protect them, to be loved and accepted by them..."
+    hide m_m_open_speak
+    show m_m_clench
+    p "Yet, I kept on hurting them and making them hate me, scare me along the way."
+    scene darkforest2
+    show m
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_tired_cry
+    show m_m_open_speak
+    p "I don't remember when things turn out so wrong, but I want to return to those days...when I had a father who care for me, teach me the way to hold a sword, and a brother who always smile so naturally when we talk."
+    scene darkforest2
+    show m_tired
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_tired_cry
+    show m_m_open1
     p "...[d]...If you want to help, please give me The Stone."
+    scene darkforest2
+    show m_hurt
+    show m_shame
+    show m_blush
+    show m_cockup 
+    show m_sperm
+    show m_vein
+    show m_tired_cry
+    show m_m_open_speak
     p "I have been running for so long...I don't care if I die, even if it just a moment, I want to return to those times..."
+    hide m_m_open_speak
+    show m_m2
+    d "..."
+    "[d] slowly pushed [p]'s head on the stone. [p] goes along with him."
     scene alterTwoTongue with vpunch
-    p "Mgh...m..."
+    p "Mgh...m...D-don't-..."
     d "You won't die, nor your little dream can come true."
+    p "..."
     "[d] wraps his tongue around [p]'s tongue again."
     "[p] tries to push [d] away but he can't. Before, when they had sex, he mostly just touches [p] where he needs to to fuck. But these days, he holds [p] tight and touches him everywhere."
     "He kisses [p] a lot too...Of all the sexual things [d] did to him, he hates it the most."
-    d "You cannot use The Stone. Only those who are in perfect harmony with The Flow can use it. The things you want, it is impossible."
+    d "You cannot use The Stone. Only those who are in perfect harmony with The Flow can use it. The thing you want, it is impossible."
     p "..."
     p "My life was a failure right? A life full of misery. And caught your eyes was the worst of all..."
     d "Yes.."
@@ -841,23 +1078,58 @@ label alteration:
     "[p] falls asleep."
     scene darkforest2
     "[d] caresses his head and coughs repeatedly. A wind blows his way."
-    d "Shut up! I know what I'm doing. He have my power right now so he's not on your radar anymore. Scram!"
+    d "Shut up! I know what I'm doing. He is not on your radar anymore, so scram!"
     "Everything becomes silent."
+    show m_close at s
+    show m_shame at s
+    show m_blush at s
+    show m_spermface at s
+    show m_vein at s
+    show m_m_sexopen at s
     p "Uhm...[d]..."
+    hide m_m_sexopen
+    show m_m_open_speak at s
     "[d] suprised then smiles."
     d "It wasn't your father, brother, or anyone else that you call out to in your dream but me. Whatever the reason, I'm glad."
+    hide m_m_open_speak
+    show m_m_normal at s
     "[d] moves his hand to [p]'s face."
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
+    hide m_close
+    hide m_shame
+    hide m_blush
+    hide m_spermface
+    hide m_vein
+    hide m_m_open_speak
+    show m_hurt at s
+    show m_shame at s
+    show m_blush at s
+    show m_spermface at s
+    show m_vein at s
+    show m_m_sexopen at s
     p "N..."
+    hide m_m_sexopen
+    show m_m_open_speak at s
     d "When I first met you, you look so sorrowful and confused. Now, you look even more so. You must have loathe me to your heart content." 
     d "But I ..."
+    hide m_hurt 
+    hide m_shame 
+    hide m_blush 
+    hide m_spermface 
+    hide m_vein 
+    hide m_m_sexopen 
+    hide m_m_normal
+    show m_close at s
+    show m_shame at s
+    show m_blush at s
+    show m_spermface at s
+    show m_vein at s
+    show m_m at s
     "[d] shakes his head. He tries to be awake but also fallen asleep."
     "He sleeps while sitting upright with [p] lying on his laps." 
-
+    scene black with dissolve
+    pause 1.0
     "The next morning, [p] wakes up and saw he was spleeping on [d]'s thigh. He shoves [d]'s hand away from his head and standup."
+    scene darkforest2
     p "..."
     "[p] looks at his arms and touches his face. He looks just like usual but he know he is not anymore."
     p "He did it after all. This damn monster."
@@ -2624,12 +2896,15 @@ label badend:
     d "Do you want to beg me not to hurt him? Or do you want him to die?"
     k "Whatever I said doesn't matter anymore."
     "The king walks away. [d] turns him back. He talks in a small voice, enough for [p] not to hear."
-    d "Why did you resurrected him just to ignore him after?"
+    d "Why did you resurrected him just to be cold to him after?"
     k "!"
     k "..."
-    d "Is it guilt? Because you learn how it will end? Or it just simply because yours and his personality does not match?"
-    k "If you look for my answer or expression for entertainment, please look else where. I will give you none."
-    "The king walks away as [d] laughs."
+    d "Is it guilt? Because you learn how it will end? Or is it just simply because yours and his personality does not match?"
+    k "If you look for my answers or expressions for entertainment, please look else where. I will give you none."
+    "The king walks away."
+    d "He won't die. But he is mine forever, father."
+    k "..."
+    "The king pauses for a second then continues to walk away as [d] laughs hard."
     scene throne
     show m
     show m_cockdown
