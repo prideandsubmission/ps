@@ -5,8 +5,9 @@ label sim2:
     $ showday = True
     $ goodend_announce = False
     show sit_tight with fade
-    "[p] had started to have feeling for you. Earn his trust and love to have vanilla good end. There'll be a notification when you get it." 
-    "You can click Brain alteration to go to bad end right away. It'll have gore, scat, bestiality"
+    "[p] had started to have feeling for you. Earn his trust and love by Talking to him to have Good End. There'll be a notification when you get it." 
+    "Bad End unlocked. Please choose Alteration if you wish to move to that route."
+    "Bad End will have gore (more like bondage becasue of bandages), scat, bestiality. There'll be a skip options for scat/bandages but not now."
     "(Touch [p] to continue.)"
     call screen sit
 
@@ -164,7 +165,7 @@ label simbutton2:
             #             jump simbutton2
 
             "Alteration":
-                jump control4_ques
+                jump alteration
                 
             "Let [p] rest":
                 jump endday2

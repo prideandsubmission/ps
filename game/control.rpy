@@ -640,6 +640,9 @@ label control3:
     jump sim2
 
 label alteration:
+    hide screen day
+    hide screen stat
+    hide screen sit_up_screen
     scene sit_tight
     "In the morning, [d] comes. He was earlier than usual."
     "He touches [p]'s head while he were sleeping."
@@ -1066,15 +1069,48 @@ label alteration:
     "[d] wraps his tongue around [p]'s tongue again."
     "[p] tries to push [d] away but he can't. Before, when they had sex, he mostly just touches [p] where he needs to to fuck. But these days, he holds [p] tight and touches him everywhere."
     "He kisses [p] a lot too...Of all the sexual things [d] did to him, he hates it the most."
-    d "You cannot use The Stone. Only those who are in perfect harmony with The Flow can use it. The thing you want, it is impossible."
-    p "..."
-    p "My life was a failure right? A life full of misery. And caught your eyes was the worst of all..."
+    d "You cannot use The Stone. Only those who are in perfect harmony with The Flow can use it. The thing you want, it is impossible. But if love is what you want, I-..."
+    p "My life was a failure right? A life full of pain and misery. And caught your eyes was the worst of all..."
+    d "..."
     d "Yes.."
     p "..."
     scene alterTwoKiss
     "[d] kisses [p]."
+    show m_surprise at s
+    show m_shame at s
+    show m_blush at s
+    show m_sperm at s
+    show m_vein at s
+    show m_m_sexopen at s
     p "M..."
+    hide m_surprise
+    hide m_shame
+    hide m_blush
+    hide m_sperm
+    hide m_vein
+    hide m_m_sexopen
+    show m_tired at s
+    show m_shame at s
+    show m_blush  at s
+    show m_sperm at s
+    show m_vein at s
+    show m_tired_cry at s
+    show m_m_open_speak at s
     p "(Please stop [d]. If you continue to kiss me and look at me like that, I might...)"
+    hide m_tired
+    hide m_shame
+    hide m_blush 
+    hide m_sperm
+    hide m_vein
+    hide m_tired_cry
+    hide m_m_open_speak
+    show m_close at s
+    show m_shame at s
+    show m_blush at s
+    show m_sperm at s
+    show m_vein at s
+    show m_close_cry at s
+    show m_m_open_speak at s
     "[p] falls asleep."
     scene darkforest2
     "[d] caresses his head and coughs repeatedly. A wind blows his way."
@@ -1128,51 +1164,146 @@ label alteration:
     "He sleeps while sitting upright with [p] lying on his laps." 
     scene black with dissolve
     pause 1.0
-    "The next morning, [p] wakes up and saw he was spleeping on [d]'s thigh. He shoves [d]'s hand away from his head and standup."
+    "The next morning, [p] wakes up and saw he was spleeping on [d]'s thigh. He shoves [d]'s hand away from his face and standup."
     scene darkforest2
+    show m
+    show m_cockdown
+    show m_m
     p "..."
+    hide m_m
+    show m_m_open_speak
     "[p] looks at his arms and touches his face. He looks just like usual but he know he is not anymore."
+    scene darkforest2
+    show m_tired
+    show m_cockdown
+    show m_shame
+    show m_m_clench2
     p "He did it after all. This damn monster."
     "[p] clenches his fists. [d] wakes up."
+    scene darkforest2
+    show m_surprise
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m_open2
     d "Why don't you try to kill me in my sleep?"
-    p "I have honor, unlike you monsters."
+    scene darkforest2
+    show m
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m_open1
+    p "I-I have honor, unlike you monsters."
+    scene darkforest2
+    show m_tired
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m
     "[p] said that knowing he is already half monster."
     d "..."
+    scene darkforest2
+    show m
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m_open1
     p "Don't you want to tie me up anymore? Or are you waiting for me to run away then beat me up and dominate me?"
+    hide m_m_open1
+    show m_m
     d "When you become stronger, you sure are return to your arrogrant self. All that submissiveness and docile are just an act to not get beaten up huh? We should redo all the training."
+    scene darkforest2
+    show m
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m
     p "..."
-    p "Do you really think I'll submit to you like I was again? After you took the only thing I have left? There is nowhere for me return to now. I don't care about anything anymore."
+    scene darkforest2
+    show m
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m_open_speak
+    p "Do you really think I'll submit to you like I was again? After you took the only thing I have left?"
+    hide m_m_open_speak
+    show m_m_clench2
+    p "There is nowhere for me return to now. Beat me till I'm dead or all my bones crumble if you want."
     d "..."
+    scene darkforest2
+    show m_close
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m_open_speak
     p "I'll go look for The Stone."
-    d "Don't trust my words huh? Suit yourself. Return here this evening. There are still things we need to sort out."
-    "[p] was about to open his mouth and say something but [d] cuts it."
-    d "Don't forget, I still hold the lease."
+    scene darkforest2
+    show m
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m
+    d "Don't trust my words huh? Suit yourself. Return here this evening. There are still things we need to talk about."
+    hide m_m
+    show m_m_open_speak
+    "[p] was about to open his mouth and humiliate [d] choice of words but got cut."
+    hide m_m_open_speak
+    show m_m
+    d "Don't think you have escape from the lease just because you think you can take the hits."
+    hide m_m
+    show m_m_1
     p "..."
-    "[p] walks away as [d] coughs. It sound painful. [p] wonder how much power [d] had lost. Is there any possibility that he can beat [d]?"
+    scene darkforest2
+    show m_tired
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m
+    "[p] walks away as [d] coughs. It sounds painful. [p] wonder how much power [d] had lost. Is there any possibility that he can beat [d]?"
+    scene darkforest2
+    show m_close
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m
     "Everything that happened was like a bad dream. His mind becomes so cloudy. Will he ever wake up from it if he kill [d]?"
+    scene darkforest with dissolve
+    show m
+    show m_cockdown
+    show m_m
     "After walking for a while, [p] heard a water sounds."
-    "He turns and runs to a waterfalls. The demon said to him there is only one river here. The Stone is either top, or down."
+    scene darkforest
+    show m_close
+    show m_cockdown
+    show m_m
+    "He listens to the sound and follows it to a waterfalls. The demon said to him there is only one river here. The Stone is either top, or down."
+    scene darkforest
+    show m_surprise
+    show m_cockdown
+    show m_m
     "[p] heard a foot step."
+    scene darkforest
+    show m
+    show m_cockdown
+    show m_m_open_speak
+    p "Who?"
+    show n_sad at right
+    n "Sir Knight? What happen to you? You seem...different..."
+    scene darkforest
+    show m_surprise
+    show m_cockdown
+    show m_m_open2
+    show n_sad at right
+    p "You!"
+    show n_surprise2 at right
+    n "?"
+    "(This version ends here. Below might be changed in the next version. The gore (more like bondage because of the bandages), scat will have a skip option in bad end. But I haven't created the skip.)"
     ####
     ##### Temporary ends here
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Who?"
-    n "Sir Knight? What happen to you?"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "You!"
     "[p] grasp [n]'s shoulder. He askes in a hurry tone."
     scene darkforest
     show m
     show m_cockdown
-    show m_shame
     show m_m_normal
     p "Where is the stone? Is it upstream or down stream?"
     n "I-It's downstream."
@@ -1443,1069 +1574,6 @@ label alteration:
         jump goodend
     else :
         jump badend
-
-
-####
-label control4_ques:
-    $controlStage = 4
-    hide screen sit_up_screen
-    hide screen_day
-    hide screen stat
-    scene sit_tight
-    "Early morning, when the sun still have yet move above the tree, [d] comes."
-    "He touches [p]'s head while he were sleeping"
-    show m_close
-    show m_cockdown
-    show m_m_normal
-    p "Uhm..."
-    d "Wake up!"
-    scene sit_tight
-    show m_tired
-    show m_cockdown
-    show m_shame
-    show m_m_open1
-    p "Ugh! N!"
-    hide m_m_open1
-    show m_m_normal
-    "[p] slowly opens his eyes. He is not fully awake yet. [d]'s eyes become red."
-    p "..."
-    scene sit_sad_repeat
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "(This...again...S-Shit. It hurts. I feel like he goes inside my mind...)"
-    scene sit_sad_repeat
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_open_speak
-    p "Ngh...m..."
-    d "N!"
-    d "..."
-    hide m_m_open_speak
-    show m_m_open1
-    "[d] coughs. His eyes turn back to normal. [p] closes his eyes."
-    scene sit_sad_repeat
-    show m_close
-    show m_cockdown
-    show m_shame
-    show m_m_sexopen
-    p "Ngh...[d]...What are you..."
-    hide m_m_sexopen
-    show m_m_open2
-    "[p] falls aspleep."
-    d "..."
-    d "What a lazy kid."
-    scene sit_sad_repeat
-    show m_surprise
-    show m_cockdown
-    show m_shame
-    show m_m_open2
-    p "!" with hpunch
-    scene control4_slap
-    "[d] brutaly slaps [p]. [p] knocked down to the ground" with vpunch
-    "Not understand what's happen, he consfuses and tries to get up. Too into sleep, [p] is in a very weak state."
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Wh-!" 
-    scene control4_stomp with vpunch
-    "[d] stomps on his head" with hpunch
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Hph!"
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "What are y-"
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "!"
-    "[d] brutally stomps on [p]'s head again. His head cover in dirt." with vpunch
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "M...Aa..."
-    d "You have a very bad sleeping habit [p]. Shouldn't knight need to pay attention to small noises even in sleep?"
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "N-no, I-I used to..."
-    d "So it was because of me huh? Or is it because of this?"
-    "[d] grasps [p]'s butt and moves it."
-    scene darkforest
-    show m at s
-    show m_shame at s
-    show m_m_normal at s
-    p "N-no [d]."
-    scene darkforest
-    show m at s
-    show m_shame at s
-    show m_m_normal at s
-    p "!"
-    "[d] puts his finger inside [p]'s mouth and push him down then rams his hot cock inside him." with hpunch
-    scene darkforest
-    show m at s
-    show m_shame at s
-    show m_m_normal at s
-    p "Mgh..."
-    d "You like this don't you? Being violated by me."
-    scene darkforest
-    show m at s
-    show m_shame at s
-    show m_m_normal at s
-    p "Ngh...Aaaa..."
-    "Not having enough sleep, [p] feels drowsy. He doesn't know if this is dream or real, but his body enjoy it."
-    d "Look at how your slutty hole such my dick. You like it that much? To the point you cannot even speak."
-    scene darkforest
-    show m at s
-    show m_shame at s
-    show m_m_normal at s
-    p "Ngh...Aaaa..."
-    "[p] was about to climax"
-    d "If you dare to cum before me, I'll fuck you until your ass rip apart."
-    scene darkforest
-    show m at s
-    show m_cockdown at s
-    show m_shame at s
-    show m_m_normal at s
-    p "Ugh...m...Aaaa..."
-    "[p] squeezes [d] tighter."
-    d "Ugm..."
-    scene darkforest
-    show m at s
-    show m_cockdown at s
-    show m_shame at s
-    show m_m_normal at s
-    p "Aaa..."
-    "[d] cums. [p] cums right after that. He had been holding it too long."
-    scene darkforest
-    show m at s
-    show m_cockdown at s
-    show m_shame at s
-    show m_m_normal at s
-    p "M...[d]..."
-    "[p] holds [d]'s hand which he uses to pin [p]'s head."
-    scene darkforest
-    show m at s
-    show m_cockdown
-    show m_shame at s
-    show m_m_normal at s
-    p "...[d]...n..."
-    d "..."
-    d "Look like you still haven't fully awake."
-    "[p] heard some noises. The mosquito monsters appeared from the bush. [d] slowly moves away from him."
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "[d]! [d]!"
-    scene darkforest
-    show m_surprise
-    show m_beaten7 
-    show m_m_sexclench1 
-    show m_shame
-    show m_blush
-    show m_cockup
-    "The mosquito attach [p]" with hpunch
-    scene mos_elecfast
-    show thunder at infinite_flashfast
-    p "AGHHH! AAAAGGGGHHH!"
-    d "Hahaha, you seems to have waken up."
-    scene mos_elecfaster
-    show thunder at infinite_flashfastest
-    "Seeing [p] still be able to move, the mosquito attack him faster."
-    p "AAAAAAAAAAAAA!!!!"
-    "The mosquitos shock and fucked him much longer and harder than usual. He had now understand that those times, because of [d], they didn't go all the way."
-    "But now, he is like [d]'s abadon toy. [d] doesn't care to pressure them anymore. It had been always like that. One day, out of nowhere, people around [p] just get tired and left him."
-    scene darkforest2
-    show m_hurt
-    show m_beaten7 
-    show m_m_sexclench1 
-    show m_shame
-    show m_blush
-    show m_cockup
-    p "Aaaa...aa..."
-    d "Look at yourself. Is it that hard to control your own urine? I can see some stool too. Have you devolve to become an animal now?"
-    p "...I-if you get tired of me. Please let me go..."
-    "[p] was paralized. He feels so ashamed for the little feeling and trust he have for [d]. To [d], he was nothing."
-    "[d] throws a heavy kick on [p]'s head" with vpunch
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Mgh!"
-    "He stomps on his head again." with hpunch
-    scene control4_stomp
-    d "Do you feel hurt when I'm not care for you or project you anymore? Do you feel alone and scared?"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "F-fu..."
-    scene control4_stomp_cries
-    "[p] cries."
-    d "Cries again? Had you become meek? Or you cannot take it anymore? What a weakling, trying to play tough."
-    scene darkforest
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Bastard!"
-    "Recovered, [p] rushes to [d] but falls. He still paralyzed. [d] laughs." with vpunch
-    d "Finished taking your shit first. Don't attack me while poping"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "I-I'm not!"
-    d "Seems like I treated you too well that you still have enough spirit to fight back. I should have fuck you up more."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    d "That's ok. I just need to cut your connection off of the Light Field. Since there's no God magic flowing inside, you will unable to resit when overpower and become totally submissive."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "SHITHOLE!!" with vpunch
-    "[p] becomes furrious. He rushed to [d], punches him in the face repeatedly. He didn't avoid." with hpunch
-    d "..."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Why Are You Treating Me Like This?!?! BASTARD!! BASTARD!!!"
-    "[d] creates a stone pillar and thrusts them at [p]. Unable to avoid, [p] uses both hands to block it. He was pushed backward." with vpunch
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Aaaargh!" with hpunch
-    "One of his hand was broken from the attack."
-    "[p] rushes to [d] immediately. His punches become stronger and faster. [d] steps backward and avoid the hit as [p] rushes in." with hpunch
-    if talk>16:
-        d "You have asked me what did I think of your skills. Do you still want to know?"
-        scene darkforest
-        show m
-        show m_cockdown
-        show m_shame
-        show m_m_normal
-        p "SHUT UP!!"
-        "[p] throws a heavey punch as [d] grasps it."
-        scene darkforest
-        show m
-        show m_cockdown
-        show m_shame
-        show m_m_normal
-        p "!"
-        "[p] prepares to have his arm broken but [d] just releases his hand."
-        scene darkforest
-        show m
-        show m_cockdown
-        show m_shame
-        show m_m_normal
-        p "..."
-    else:
-        d "When we first met, I didn't pay attention, but is this really how you always fight?" 
-    "[d] grasps [p]'s face loosely." with vpunch
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "!"
-    d "Your reflexness is horrible. If you don't look directly at your oponion, you cannot react quickly enough. Is there any reason why you avert your eyes when fighting?"
-    "[p] steps back then rushes in again and throws heavy punches as [d] avoid them easily" with hpunch
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "FUCK! SHUT UP! SHUT UP!!" with hpunch
-    "He uses more strength and moves faster. Because of that, it also creates a lot of gaps." with vpunch
-    "[d] avoids [p]'s attacks and looks at him re-position to throws another punch."
-    d "Your attacks are too predictable. Is it because I was your opponent or you just that bad?"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "BASTARD!!" with hpunch
-    "[p] grows more furious."
-    "[d] easily avoid [p]'s attack just by a small and swift movement." with vpunch
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "!"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "(Crazy bastard! He's not serious at all.)"
-    d "No wonder people said you are blood-thrist. That fighting style suits your strengths and weaknesses. Just close your eyes and use brute force to slash everyone, easy right?" 
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "SHUT YOUR MOUTH UP!!" with hpunch
-    "[d] catches the punch and breaks his arm." with vpunch
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "AGGHHHHHHH!"with hpunch
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Haa...haa..."
-    d "It breaks just with that strength. Your bones are not good for fighting. Many people and monsters can broke your spine, make you immorbilize forever with just one punch in the back."
-    d "Yet, you rushes into battles and makes enemies. Like a morph throwing itself to flames. Just for the sake of recognition by your father. Do you want his attention that much? He didn't give you enough huh?"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "FUCK YOU!!! SHUT YOUR MOUTH UP!!"
-    "[p] escapes [d] and throws him a kick." with hpunch
-    "[d] breaks [p]'s leg." with vpunch
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "AAAAGGGGHHHH!"
-    "[d] throws [p] to the ground" with hpunch
-    d "With this type of bones, response speed, and that many enemies sneaking around, waiting to strike, do you really think you can be alive after disowned? It feels like your father send you to your own grave huh?"
-    d "Is that the reason you look so wild when we meet? Like you can go ahead and murder everyone."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    d "Too bad it turns out the opposite, but at least you seems sexually satisfy."
-    "[p] clenches his teeth and fist."
-    d "Use your brain [p], if your father had any planned for you, he wouldn't do nothing and let your reputation ruins so badly." 
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "S-STOP! JUST SHUT UP!!! What do you even know?!? SHUT THE FUCK UP!!"
-    "[p] tries to stands up."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Uhm..N!"
-    "[d] smirks"
-    d "Do you know what you look like? A stepping stone for your brother. Maybe your father already plan it from the start. Hmph, that explains why he didn't pay much time for you, he had to guide the future king for his country." 
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "S-stop!...Fuck you [d] ...n..."
-    d "You like to call your brother his puppet, because your brother listen to him. But you look more like his puppet to me."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Please stop..."
-    d "Don't you ever feel tired? Trying to reach a thing that can never be reach?"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "P-please stop [d]. Please stop...Please stop..."
-    "[p] weeps."
-    d "He might have know it too. You were born as an abnormal. A creature that can go against The Flow and unable to in sync with this world. An ill-fated human."
-    "[d] bends down and grasps [p]'s broken arm joint."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ughm..."
-    d "It must be hard, living like that. Have you ever feel like you were extemely unlucky, like the world keep on pushing you out no matter how hard you try?"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    d "There are some who pass The Flow threshold too, compare to them, you are nothing. They are either too powerful, or prepare too well, that The Flow cannot touch them. And here you are, cluelessly waiting to be killed."
-    "[p] glances at [d]."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "!"
-    "[p] feels cold. His breath become shorter."
-    d "You can feel it right? The death. The Flow told me to kill you as soon as you walk into this forest, but I decide to violate you day after day instead."
-    d "Now the time had come. It doesn't need me anymore."
-    "[p] sweats and becomes dizzy. Something is squeezing his heart hard."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ugh...Ahhh..."
-    "[p] starting to feel very tired."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Haa...ugh! S-shit! I need The Stone...I will... hmp..."
-    "[p]'s glance become softer."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ghu...a...I beg you [d]. Give me...m...a chance. I don't...n...need anything..."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "I...ngh....lied..h...to myself. I didn't look for it..h...for the throne. A-All I really want...n...is just to turn back in time, to fix...uh..."
-    "[p] sobs. He grasps [d]'s hand." 
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "...I beg you [d]...I just want...h...to go back...ah...in time...to fix..."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "*sob...*sniff..."
-    "[p] tries to hold his tears in. The sound stops. But his tears keep falling out. He had been holding it for a long time, he cannot stop it anymore."
-    d "Too bad your little wish will never be fulfill. Only the creations that's in a perfect harmony of The Flow can use The Stone." 
-    d "The moment you touch The Stone, either it or you will be destroyed. You are clutching at a straw [p]. You can image going back in time before you die if you want it so badly."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    "[p] release his hand. His tears continue to fall. [d] wipes his tears. [p] feels better. The squeezing started to slow down."
-    d "..."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "D-Don't. Don't touch me bastard."
-    d "I have always tried to help you go through this painlessly, but you didn't let me...And here the dealine comes."
-    "[p] clenches his teeth and eat his tears inside."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Fuck you [d]! Why do you need to push me through all of this? Just kill me! Right now!"
-    d "..."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Even if this world is pushing me away, am I not a living being? Am I not worthy to be treated like one? My life, it had been nothing but an endless misery..." 
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Why do I have to endure your torture and humiliation before being killed? Who give you the right to hurt me and trample on my sanity like this? Does God not need moral?"
-    d "No." 
-    "[p] clenches his teeth."
-    d "But aren't you just doing the same? How many innocent blood is in your hands? How many monsters and humans had you torture to death? Aren't they living being too? Aren't they worthy to be treated like one?"
-    "[p] was shocked. He stays silent."
-    "[p] opens his mouth, grasps for air. The pain re-appears. It hurts so much that [p] wish [d] just kill him right away. It become stronger and faster every minutes."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Argh...Arghh...Urg..."
-    d "..."
-    "[d] quitely kisses [p] on his eye."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "...Aa...n..."
-    "[p] feels better after the kiss. Even though his life is fading away."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "(S-Shit. Will this be the last image I see? The last act of kindness I will get?)"
-    "[p] closes his eyes. His tears keep on falling."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "(Is this the way it ends now? My little dream of the three of us having good times like we used to had...My little dream of having someone by my side, love me, and accept me...)"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "([d]. You turned my life upside down. My pride, my identity, my believe, my feeling, my sanity...they are all crumble. Is it fun to you?)"
-    "Right when [p] open his eyes. [d]'s eyes turn red."
-    "Again, [p] feels like his head was penetrated. [p] doesn't understand [d]'s need of fully control his mind before he dies. But at this point, [p] does not care anymore." 
-    "Resistance is usless. He had already been in the hand of [d] since they met."
-    "[d] slowly thrusts his hand into [p]'s brain."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ughh...aaa..."
-    "The pain were too much that [p] cannot even scream. [d]'s fingers go on deeper and deeper. With each thrust, [p] feels like thousands of needle attach his brain."
-    d "You will enjoy this soon. Your mind will re-arange, and your pain will turns to pleasure." 
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Mmm...mngh...m..."
-    "[p]'s cock hard on its own and cum. How much [d] want to torture and humiliate him before killing him off?"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Gah...ah...a..."
-    "[d]'s other hand grasps [p]'s shoulder hard."
-    d "Loosen up!"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p  "Aaaa..."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "(Shit. My magic, it is fading away. The connection with light field was cut.)"
-    d "You cannot resist me now. Nothing will be in the way."
-    "[p] tries to soften himself. The thurst becomes faster and stronger in disregard of [p]'s pain. His muscle keeps on twitching."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "N...ahh...aaa..."
-    "[d] moves down to the deepest part of [p]'s brain. [p] feels a flow of energy comming in. It comes faster and heavier each second."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ngh...aaa...m..."
-    "It was even more painful than all the tortures [p] had done. [p] feels like his body cannot take it anymore. Maybe it was the death that suits his pathetic self best."
-    d "N!"
-    "[p] becomes unconscious. His face falls on [d]'s lap."
-    d "[p], [p]!"
-    d "(He's fine.)"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ngh!"
-    "[d] caress [p]'s head."
-    d "The thing I just did to you must have been horrible. But I don't want to let you die [p]..."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ngh...[d]..."
-    d "..."
-    "[d] suprised then smiles."
-    d "It wasn't your father, brother, or anyone else that you call out to in your dream but me. Whatever the reason, I'm glad."
-    "[d] moves his hand to [p]'s face."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "N..."
-    d "When I first met you, you look so sorrowful and confused. Now, you look even more so. You must have loathe me to your heart content." 
-    d "But I ..."
-    "[d] shakes his head. He tries to be awake but also fallen asleep."
-    "He sleeps while sitting upright with [p] lying on his laps." 
-    
-    "The next morning, [p] wakes up."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "(I'm still alive?)"
-    "[p] looks at his hands. He seems to have recovered. His connection to the light field has returned."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    d "You have waken up."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "!"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "[d]!"
-    "[d] smiles."
-    d "Don't you feel like this is similar to the day we met, right before I tied you up to teach you obedient and make you satify me?"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "You Fucker!"
-    "[p] rushes to [d] but stops. He feels lighter than usual. He looks at his hands."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "How can this be..."
-    d "You have no longer disrubt the flow of this earth, [p]. You will live forever as I am."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    "[p] shooks his head."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "This cannot be. I cannot live like this..."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "...How meek had I become for you to be able to forcefully sharing your power without my acceptant..."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "You took everything away from me...what makes me myself had long gone. And now you didn't even let me stay human but a digusting monster like you...."
-    d "..."
-    "[d] moves closer. When he about to touches [p]'s face, [p] shoves his hand and brutally pushes him away."
-    d "..." with hpunch
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Don't Touch Me You Crazy Bastard!" with vpunch
-    "The ground is moving faster and faster. It forms according to [p]'s will." with hpunch
-    d "You learn fast."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "!"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    "[p] creates waves with shatter earth and throws it at [d]. [d] negates then make them crumble." with vpunch
-    "Dust fly everywhere. [p] disspeared." with hpunch
-    d "Good moves."
-    "[p] runs. He doesn't know where did he runs to. He just run forward."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "([d] didn't able to catch me. It seems like he had become weaker. Is it because of the thing he did to me?)"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Water sounds..."
-    "He turns and runs to a waterfalls. The demon said to him there is only one river here. The Stone is either top, or down."
-    "[p] doesn't know which word of the monster is true. Should he try to get out of this forest, or to find the stone?"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Even if I can get out, he will still find me. If he captured me again,..."
-    "[p] remmembered all the time [d] rapes him, as well as some gentle moments." 
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "(No! Stop thinking! I have to find The Stone.)" 
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "(He said I'm not against the flow anymore. I might be able to use it.)"
-    "[p] heard a foot step."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Who?"
-    n "Sir Knight? What happen to you?"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "You!"
-    "[p] grasp [n]'s shoulder. He askes in a hurry tone."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Where is the stone? Is it upstream or down stream?"
-    n "I-It's downstream."
-    "[p] looks behind him."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "So it's this way."
-    n "..."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "What if I can't find it?"
-    "[p] grasp [n]'s shoulder hard."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Go with me!"
-    n "No, I -"
-    "[p] carries him and run like flying. [n] points at the middle of the river." with vpunch
-    n "It's there!"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "I didn't see anything."
-    "[p] tries to look, but it just all water."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Guide me, I see nothing."
-    n "Right now! Go to the middle of the river."
-    "[p] form the ground into a bridge."
-    n "That's sir [d]'s power..."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "!"
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "I can see it now. So there was an illusion barrier here. We have to hurry!"
-    scene temple 
-    "[p] can sense that [d] is really close."
-    scene darkforest
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Where Is The Stone?"
-    n "Ah! Up there, on the status hands"
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "!"
-    n "!"
-    d "What do we have here? A half-ass monster and a demon." with hpunch
-    "[d] steps closer to [p] and [n], his footsteps become louder."
-    "[p] jumps to the statue hands."
-    d "Running away?"
-    "A big hand slaps [p] to the ground." with vpunch
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Mgh!"
-    "[p] forms the ground into a giant hand and attacks [d]. [d] negates it. The hand turns into dust."
-    d "!"
-    "[p] jumps to the status' hands. [d] destroys the status, [p] falls to the ground." with hpunch
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ugh!"
-    "The Stone falls to [d]'s place." with vpunch
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    n "Ahh!"
-    "A column falls onto [n]. With a swift moment, [p] pushes him away. Both fall to the ground." with hpunch
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Kuh!"
-    d "I didn't know you were that nice."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    "[p] stands on 1 knee. [d] kicks the stone to [p]."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    d "It just a rock. I put it there 300 years ago, for stupid creatures like you."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    "[p] touches the stone and crush it."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "It holds no power. Is The Stone just a lie?"
-    d "No. You are closer to it than you think."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    d "How about we make a bet?"
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "What is it?"
-    d "I show you where The Stone is. If you can get it or use it, I'll not touch you anymore. If not, you know what comes next."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Where is the stone?"
-    "[d] points toward [n]"
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Impossible. What kind of joke is this?"
-    d "He should have died a long time ago, in a masscar between human and demon that takes place right here, in this temple." 
-    d "The Stone saves him, a newborn child, following his mother wish, and I put it inside his body as its will. Hard to believe huh?"
-    "[d] eyes turn red. [p] can see the stone inside of [n]."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    "[p] penetrates his hand into [n]'s chest."
-    n "Ahhh...no. Sir Knight, p-please..."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ahhh...Arghhh..."
-    d "The energy born from yours and the stone contacting each other will kill [n] first."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ahhhh...Arghh...."
-    n "S-sir Kni- pleas-..."
-    "[p] had pass the outter barrier."
-    n "Ahh...Ughhh...ahhh..."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ahhhh...Arghhh....."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "[n]! If you don't want to die. Use its power. Either kill me, [d], or both of us. This is a fair game. I'm not holding back."
-    n "N-no. Please stop. I won't. I won't .... ahhhhh..."
-    "[p] almost break the inner barrier"
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Arghhh...Arghhh..."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "(It's your false to not participate in this life and death game. Sorry)"
-    "[p] remmembered the time the demon help him to get water, and his worried expression when they met." 
-    "The demon not once was afraid of him. He offers help and got his life taken away by the one he helped in return"
-    "The very first reason [p] wants to become strong was to lesser his father burdern. The second reason was to make his country stronger and everyone lifes better. The third reason was to protect his family and people he cares"
-    "He doesn't know when or why things turn out this way. His country feared him, his father hated him and his brother pity him. Since when did he drop his humility and kill his opponents mercilessly?"
-    n "S-sir Knight! P-please stop! I-I will not...n...harm you..."
-    "He had never like [n] from the start. The way he smiles, how he carries himself and his personality was so similar to [ren]. There was, many times, that he wishes [ren] goes far away from his life..."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Argh!!..."
-    n "P-please...n...have mercy...n...I-I want to live...ngh..."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "If You Want To Live, FIGHT!!! \nYOU MOTHER FUCKER!!" with hpunch
-    "[p] cries. He puts his hand out of Nine's chest"
-    n "Ahhh...haa...ahhh..."
-    n "Ahh..S-sir. Kni-.."
-    "[p] punches [n]" with vpunch
-    n "Mgh!"
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Go away! If I ever see your face again, I'll kill you!!"
-    n "...."
-    "[n] runs away" with hpunch
-    "[d] comes closer as [p] crawing on the ground and clenches his fists."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "..."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "I lost. What do you want to do with me?"
-    d "What do you think?"
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Stop that already. Didn't you said I'm a birdbrain? How can I know what a genius like you think?"
-    if talk >= 20:
-        jump goodend
-    else :
-        jump badend
-
-###
 
 
 label badend:

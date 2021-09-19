@@ -42,10 +42,9 @@ transform s:
 label start:
     scene black
     "Are you a new or old player?"
-    $d = "Dietrich"
-    $p = "Ray"
-    ##jump control4_ques
-    jump alteration
+    #$d = "Dietrich"
+    #$p = "Ray"
+    #jump alteration
     menu:
         "New":
             "Welcome and enjoy the game!"
