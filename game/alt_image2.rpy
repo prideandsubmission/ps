@@ -531,7 +531,7 @@ image sit_sad_repeat:
     1.1
     repeat
 image sit_sob_repeat:
-    "image sit_sob"
+    "sit_sob"
     1.1
     repeat
 image sit_straight_up_repeat:

@@ -267,15 +267,15 @@ label start:
             p "It feels so good. All of my troubles and irritaion up until now, I'll use you to relief it." 
             m "..."
             p "You won't die so soon. Not after I satisfy."
-            d "Ugh! M!"
+            m "Ugh! M!"
             p "Beg me! BEG!!"
             "The monste smirks."
-            d "I didn't know a Royal palace hire a thug for general positions. Had human become that rotten?"
+            m "I didn't know a Royal palace hire a thug for general positions. Had human become that rotten?"
             "[p] was pause for a second, then he laughs."
             p "Ha...Hahaha..."
             p "I don't know where did you learn to recognize a general from a mere knight, but it doesn't matter. You'll die right now."
             "[p] brutally stabs [d]. He would twisted his sword before pulls it out and stabs at other places." with hpunch
-            d "M...N..."
+            m "M...N..."
             "The monster doesn't move or say anything. But [p] knows he is still alive."
             p "Dammit. Why is this monster so irritating? It is as if he challenge me."
             "The prince furious."
@@ -326,7 +326,7 @@ label start:
     p "Repeat yourself if you have something to say."
     "Suddenly, there was a chill runs down his spine as if his gut tell him to get out. His heart suddenly beats faster due to an intense aura."
     "The monster's voice becomes deeper as the prince frozen by the aura. The monster whispers into his ears."
-    d "I got hard because I want to pin you down and fuck your obscene hole senselessly until your brain falls out."
+    m "I got hard because I want to pin you down and fuck your obscene hole senselessly until your brain falls out."
     p "!" with hpunch
     "[p] was shocked. Not only because of the monster's weird behavior, but also because it was the first time someone speak to him with such vulgar words."
     "He snap out of his fear and steps backward, on his defense stance. The monster stands up. His wounds were healed." with vpunch
@@ -340,7 +340,7 @@ label start:
     "The vines in the forest suddenly start moving. They grab ahold of the prince." with vpunch
     hide m_armor
     show vine at left with dissolve 
-    d "The image of you on the ground, begging, twisting your body like a bitch in heat just by my presence really turns me on."
+    m "The image of you on the ground, begging, twisting your body like a bitch in heat just by my presence really turns me on."
     p "You Sick Bastard!" with hpunch
     hide vine with dissolve
     show vinek at left with flash
@@ -575,7 +575,7 @@ label start:
     show m_m_sexclench2 at left
     p "Nice to meet you too."
     "[d] laughs."
-    m "You have good manners, [p]."     
+    d "You have good manners, [p]."     
     "The monster goes away."
     hide m_head_close
     hide m_beaten6
@@ -1363,6 +1363,7 @@ label start:
     $nothing =1
     $clean = 90
     $bath = 0
+    $controlStage = 0
     jump sim
                       
                     
