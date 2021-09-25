@@ -67,7 +67,7 @@ label simbutton2:
     if ene <=0:
         jump endday2
     elif goodend_announce==False and talk >=20:
-        "Good end unlocked."
+        "Good end unlocked. Please choose Alteration to process."
         $ goodend_announce = True
     else:
         menu:

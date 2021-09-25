@@ -63,7 +63,7 @@ label start:
                     $day = 4
                     $fuckoff =0
                     $clean = 90
-                    $controlState = 0
+                    $controlStage = 0
                     play music "Angevin.mp3"
                     jump sim
                 "End of the sim":

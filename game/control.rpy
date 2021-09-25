@@ -735,7 +735,7 @@ label alteration:
     p "W-Wait!"
     hide m_m_scream1 
     show m_m_1 at s
-    d "Shut up! Just because I was good with you these days doesn't mean I release the lease. Move your legs up!"
+    d "Shut up! Just because I was good with you these days doesn't mean I release the leash. Move your legs up!"
     scene darkforest2
     show m at s
     show m_shame at s
@@ -758,7 +758,7 @@ label alteration:
     show m_tired at s
     show m_shame at s
     show m_m_open_speak at s
-    p "..."
+    "[d] shoves his dick in."
     scene alterNoFinHead
     show m_surprise at s
     show m_shame at s
@@ -770,7 +770,7 @@ label alteration:
     show m_hurt at s
     show m_shame at s
     show m_m_1 at s
-    "[d] shoves his cock in hard."
+    p "Mng...m..."
     hide m_hurt 
     hide m_shame 
     hide m_m_sexopen 
@@ -833,7 +833,7 @@ label alteration:
     p "..."
     scene alterKiss
     p "Mgh...N...."
-    "[d] kisses [p] passionately as if he wants to devour [p]."
+    "[d] kisses [p] passionately as if he wants to devour [p]'s tongue."
     "Just like it was intended, [p]'s mouth was full of [d]'s saliva."
     "[p]'s tears keep falling out while consume all of them."
     "He had been put up with [d] and consume many things worse than this."
@@ -1186,7 +1186,7 @@ label alteration:
     show m_shame
     show m_blush
     show m_m_open2
-    d "Why don't you try to kill me in my sleep?"
+    d "Why don't you try to kill me in my sleep? You just waste a good oppotunity."
     scene darkforest2
     show m
     show m_cockdown
@@ -1208,12 +1208,12 @@ label alteration:
     show m_shame
     show m_blush
     show m_m_open1
-    p "Don't you want to tie me up anymore? Or are you waiting for me to run away then beat me up and dominate me?"
+    p "Don't you want to tie me up anymore? Or are you waiting for me to run away then beat me up and dominate me? It's a fun game to you, huh?"
     hide m_m_open1
     show m_m
-    d "When you become stronger, you sure are return to your arrogrant self. All that submissiveness and docile are just an act to not get beaten up huh? We should redo all the training."
+    d "If I was really treat it as a game of domination, you wouldn't be standing here talking back like this. You would be kneeling, crying, begging me to fill up your obscene holes everyday."
     scene darkforest2
-    show m
+    show m_surprise
     show m_cockdown
     show m_shame
     show m_blush
@@ -1225,10 +1225,10 @@ label alteration:
     show m_shame
     show m_blush
     show m_m_open_speak
-    p "Do you really think I'll submit to you like I was again? After you took the only thing I have left?"
+    "[p] clenches his fists."
     hide m_m_open_speak
     show m_m_clench2
-    p "There is nowhere for me return to now. Beat me till I'm dead or all my bones crumble if you want."
+    p "You took the last thing I have left, my final identity. There is nowhere for me return to. Beat me till I'm dead or all my bones crumble if you want. I'll never submit to you again."
     d "..."
     scene darkforest2
     show m_close
@@ -1243,13 +1243,13 @@ label alteration:
     show m_shame
     show m_blush
     show m_m
-    d "Don't trust my words huh? Suit yourself. Return here this evening. There are still things we need to talk about."
+    d "It's useless. But do whatever you want. Return here this evening. There are still things we need to talk about."
     hide m_m
     show m_m_open_speak
-    "[p] was about to open his mouth and humiliate [d] choice of words but got cut."
+    "[p] was about to open his mouth and humiliate [d] but got cut."
     hide m_m_open_speak
     show m_m
-    d "Don't think you have escape from the lease just because you think you can take the hits."
+    d "Don't think you have escape from the leash just because you think you can take hits. There are more than one way I can make you kneel down and beg for mercy."
     hide m_m
     show m_m_1
     p "..."
@@ -1297,279 +1297,525 @@ label alteration:
     p "You!"
     show n_surprise2 at right
     n "?"
-    "(This version ends here. Below might be changed in the next version. The gore (more like bondage because of the bandages), scat will have a skip option in bad end. But I haven't created the skip.)"
-    ####
-    ##### Temporary ends here
     "[p] grasp [n]'s shoulder. He askes in a hurry tone."
     scene darkforest
     show m
     show m_cockdown
-    show m_m_normal
+    show m_m_1
+    show n_sad at right
     p "Where is the stone? Is it upstream or down stream?"
+    show n_surprise at right
     n "I-It's downstream."
+    scene darkforest
+    show m_tired
+    show m_cockdown
+    show m_m_open2
+    show n_sad at right
     "[p] looks behind him."
     scene darkforest
     show m
     show m_cockdown
-    show m_shame
-    show m_m_normal
+    show m_m_open_speak
+    show n_sad at right
     p "So it's this way."
+    show n_sad2 at right
     n "..."
     scene darkforest
-    show m
+    show m_tired
     show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "What if I can't find it?"
+    show m_m
+    show n_sad at right
+    p "(What if I can't find it?)"
+    show n_surprise2 at right
     "[p] grasp [n]'s shoulder hard."
     scene darkforest
     show m
     show m_cockdown
-    show m_shame
-    show m_m_normal
+    show m_m_open_speak
+    show n_surprise at right
     p "Go with me!"
+    show n_sad at right
     n "No, I -"
+    scene black
+    pause .5
+    scene spring
     "[p] holds his hand and runs like flying. [n] points at the middle of the river." with vpunch
+    show m
+    show m_cockdown
+    show m_m1
+    show n_smile at right
     n "It's there!"
-    scene darkforest
-    show m
+    scene spring
+    show m_surprise
     show m_cockdown
-    show m_shame
-    show m_m_normal
+    show m_m_open_speak
+    show n_smile at right
     p "I didn't see anything."
+    scene spring
+    show m
+    show m_cockdown
+    show m_m
+    show n_sad at right
     "[p] tries to look, but it just all water."
-    scene darkforest
-    show m
+    scene spring
+    show m_tired
     show m_cockdown
-    show m_shame
-    show m_m_normal
+    show m_m_open_speak
+    show n_sad3 at right
     p "Guide me, I see nothing."
+    show n_surprise2 at right
     n "Right now! Go to the middle of the river."
+    scene spring
+    show m
+    show m_cockdown
+    show m_m_open_speak
+    show n_surprise2 at right
     "[p] form the ground into a bridge."
+    show n_angry2 at right
     n "That's sir [d]'s power..."
-    scene darkforest
-    show m
+    scene spring
+    show m_surprise
     show m_cockdown
-    show m_shame
     show m_m_normal
+    show n_sad at right
     p "!"
-    scene darkforest
+    scene spring
     show m
     show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "I can see it now. So there was an illusion barrier here. We have to hurry!"
-    scene temple 
-    "[p] can sense that [d] is really close."
-    scene darkforest
-    show m
+    show m_m_open1
+    show n_sad at right
+    p "A! Somehow I can see it now. We have to hurry!"
+    scene spring
+    show m_tired
     show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Where Is The Stone?"
+    show m_m
+    show n_sad at right
+    "[p] becomes nervous. It already evening. [d] will come here and chain him up again anytime soon."
+    scene black
+    pause .5
+    scene temple
+    show m at left
+    show m_cockdown at left
+    show m_m_1 at left
+    p "Where Is The Fricking Stone?"
+    show n_surprise2 at right
     n "Ah! Up there, on the status hands"
     scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "!"
+    show m_surprise at left
+    show m_cockdown at left
+    show m_m at left
+    show n_surprise at right
+    p "!" with vpunch
+    show n_angry at right
     n "!"
-    "[d] appears at the middle of the temple." with hpunch
+    "Feeling something uneasy, [p] turns around and sees [d] right behind. He gulps." with hpunch
+    scene temple 
+    show m_surprise at left
+    show m_cockdown at left
+    show m_shame at left
+    show m_m2 at left
+    show n_surprise at right
     d "So you haven't found the stone huh? That's slow considering you can use my power to sense it."
+    scene temple with dissolve
+    show m_tired
+    show m_shame
+    show m_blush
+    show m_cockdown
+    show m_m
     "[d] steps closer to [p] and [n], his footsteps become louder."
-    "[p] jumps to the statue hands."
+    scene temple
+    show m_surprise
+    show m_shame
+    show m_blush
+    show m_cockdown
+    show m_m_open_speak
+    d "What's with that nevous look? Both of you."
+    scene temple
+    show m
+    show m_shame
+    show m_blush
+    show m_cockdown
+    show m_m
+    "[p] jumps to the statue hands." with vpunch
+    hide m_m
+    show m_m_clench2
     d "You should have returned by now you know. Yet you are here, alone with a demon. So it is just monsters that you hate huh?"
-    "A big hand slaps [p] to the ground." with vpunch
-    scene temple 
-    show m
-    show m_cockdown
+    scene temple with hpunch
+    pause .5
+    scene temple with dissolve
+    show m_surprise
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_cockdown
+    show m_m_sexclench1
+    show m_beaten2
+    "A big hand slaps [p] and the statue's hand to the ground." with vpunch
+    scene temple with hpunch
+    pause .2
+    scene temple with dissolve
+    show m_close
+    show m_shame
+    show m_blush
+    show m_cockdown
+    show m_m2
+    show m_beaten2
     p "Mgh!"
-    "[p] forms the ground into a giant hand and attacks [d]. [d] negates it. The hand turns into dust."
+    scene temple
+    show m
+    show m_shame
+    show m_blush
+    show m_cockdown
+    show m_m_1
+    show m_beaten2
+    "[p] forms the ground into a giant hand and attacks [d]. [d] looks at it. The hand turns into dust."
+    scene temple
+    show m_surprise
+    show m_shame
+    show m_blush
+    show m_cockdown
+    show m_m_sexclench2
+    show m_beaten2
     d "!"
-    "[p] jumps to the status' hands. [d] destroys the status, [p] falls to the ground." with hpunch
+    hide m_m_sexclench2
+    show m_m
+    "[p] nervously hops to the stone that falling on the ground. [d] stomps his hand as soon as he touches the stone." with hpunch
+    scene temple
+    show m_hurt
+    show m_shame
+    show m_blush
+    show m_cockdown
+    show m_m_scream1
+    show m_beaten2
+    p "AAAA..."
     scene temple 
     show m
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_clench
+    show m_beaten2
     p "Ugh!"
-    "The Stone falls to [d]'s place." with vpunch
-    scene temple 
-    show m
-    show m_cockdown
+    scene temple
+    show m_surprise
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_cockdown
+    show m_m_open_speak
+    show m_beaten2
+    "[d] moves forward and picks up the stone." with vpunch
+    scene temple
+    show m_tired
+    show m_shame
+    show m_blush
+    show m_cockdown
+    show m_m
+    show m_beaten2
+    "[p] looks at [d] who is glaring at him."
+    hide m_m
+    show m_m2
     p "..."
-    n "Ahh!"
-    "A column falls onto [n]. With a swift moment, [p] pushes him away. Both fall to the ground." with hpunch
+    show n_surprise2 at right
+    n "Ahh!" with vpunch
+    scene temple
+    show m_surprise
+    show m_shame
+    show m_blush
+    show m_cockdown
+    show m_m
+    show m_beaten2
+    show n_surprise2 at right
+    "A ceiling near the statue falls onto [n]. With a swift moment, [p] pushes him away. Unable to run in time, it fallen on him." with hpunch
     scene temple 
-    show m
+    show m_hurt
     show m_cockdown
     show m_shame
-    show m_m_normal
-    p "Kuh!"
-    d "I didn't know you were that nice. Decide to fuck this demon huh? Or you rather have his cock shoves to your ass?"
+    show m_m_sexclench1
+    show m_beaten7
+    p "Kuh!" with hpunch
+    show n_angry2 at right
+    n "Mr.Knight!"
+    scene temple with dissolve
+    show m_tired at s
+    show m_cockdown at s
+    show m_shame at s
+    show m_blush at s
+    show m_m at s
+    show m_beaten7 at s
+    "[d] steps closer to [p]'s place."
     scene temple 
-    show m
+    show m_close at s
+    show m_cockdown at s
+    show m_shame at s
+    show m_blush at s
+    show m_m at s
+    show m_beaten7 at s
+    d "I didn't know you were that nice. Helping someone while your reflexes speed is this slow."
+    scene temple 
+    show m_tired at s
+    show m_cockdown at s
+    show m_shame at s
+    show m_blush at s
+    show m_m at s
+    show m_beaten7 at s
+    p "..."
+    d "Decide to fuck this demon huh? Or you rather have his cock shoves to your ass?"
+    scene temple 
+    show m_surprise at s
+    show m_cockdown at s
+    show m_shame at s
+    show m_blush at s
+    show m_m_clench2 at s
+    show m_beaten7 at s
+    p "L-Leave him out of it!"
+    d "Look at you, no need to be that tense."
+    scene temple 
+    show m at s
+    show m_cockdown at s
+    show m_shame at s
+    show m_blush at s
+    show m_m2 at s
+    show m_beaten7 at s
+    "[d] moves the ceiling away from [p]." with hpunch
+    p "..."
+    scene temple with dissolve
+    show m_tired
     show m_cockdown
     show m_shame
-    show m_m_normal
-    p "Leave him out of it!"
-    "[p] stands on 1 knee. [d] kicks the stone to [p]."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
+    show m_blush
+    show m_m_open1
+    show m_beaten7
+    "[d] opens [p]'s hand and puts the stone into it, then closes his hand."
+    hide m_m_open1
     show m_m_normal
     p "..."
     d "It just a rock. I put it there 300 years ago, for stupid creatures like you."
     scene temple 
-    show m
+    show m_close
     show m_cockdown
     show m_shame
+    show m_blush
     show m_m_normal
+    show m_beaten7
     p "..."
-    "[p] touches the stone and crush it."
+    scene temple 
+    show m_tired
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m
+    show m_beaten7
+    "[p] clenches his fist and it turns to dust."
+    hide m_m
+    show m_m_open_speak
+    p "Is The Stone just another lie?"
+    d "You don't trust me at all do you? The Stone is real. You are closer to it than you think."
     scene temple 
     show m
     show m_cockdown
     show m_shame
-    show m_m_normal
-    p "It holds no power. Is The Stone just a lie?"
-    d "No. You are closer to it than you think."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m
+    show m_beaten7
     p "..."
     d "How about we make a bet?"
     scene temple 
-    show m
+    show m_close
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_open_speak
+    show m_beaten7
     p "What is it?"
-    d "I show you where The Stone is. If you can get it or use it, I'll not touch you anymore. If not, you know what comes next."
+    d "I show you where The Stone is. If you can get it, I'll let you free. If not, you'll stay with me forever."
     scene temple 
     show m
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_m_open1
+    show m_beaten7
     p "Where is the stone?"
     "[d] points toward [n]"
     scene temple 
+    show m_surprise
+    show m_cockdown
+    show m_shame
+    show m_m_1
+    show m_beaten7
+    p "Impossible. What kind of joke is this?"
+    hide m_m_1
+    show m_m1
+    d "He should have died a long time ago, in a masscar between human and demon that takes place right here, in this temple." 
+    scene temple 
     show m
     show m_cockdown
     show m_shame
-    show m_m_normal
-    p "Impossible. What kind of joke is this?"
-    d "He should have died a long time ago, in a masscar between human and demon that takes place right here, in this temple." 
+    show m_m
+    show m_beaten7
     d "The Stone saves him, a newborn child, following his mother wish, and I put it inside his body as its will. Hard to believe huh?"
+    scene temple 
+    show m_surprise
+    show m_cockdown
+    show m_shame
+    show m_m_open2
+    show m_beaten7
     "[d] eyes turn red. [p] can see the stone inside of [n]."
     scene temple 
     show m
     show m_cockdown
-    show m_shame
     show m_m_normal
+    show m_beaten7
     p "..."
-    "[p] penetrates his hand into [n]'s chest."
+    scene temple 
+    show m_tired
+    show m_cockdown
+    show m_m_open_speak
+    show m_beaten7
+    p "I don't know why you create this bet but I have killed many before, incuding the innocents. You think too highly of me."
+    scene temple 
+    show m
+    show m_cockdown
+    show m_m
+    show m_beaten7
+    show n_surprise2 at right
+    "[p] looks at [n] as he steps back. [n] falls. [p] penetrates his hand into [n]'s chest."
+    scene black 
+    show m at s
+    show m_m_1 at s
+    show m_beaten7 at s
     n "Ahhh...no. Sir Knight, p-please..."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
+    scene black 
+    show m_hurt at s
+    show m_m_1 at s
+    show m_beaten7 at s
     p "Ahhh...Arghhh..."
-    d "The energy born from yours and the stone contacting each other will kill [n] first."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ahhhh...Arghh...."
+    d "..."
+    scene temple
+    show m at s
+    show m_m_clench2 at s
+    show m_beaten7 at s
     n "S-sir Kni- pleas-..."
+    scene temple
+    show m at s
+    show m_m_sexclench1 at s
+    show m_beaten7 at s
     "[p] had pass the outter barrier."
-    n "Ahh...Ughhh...ahhh..."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Ahhhh...Arghhh....."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "[n]! If you don't want to die. Use its power. Either kill me, [d], or both of us. This is a fair game. I'm not holding back."
+    scene temple
+    show m_tired at s
+    show m_m_sexclench2 at s
+    show m_beaten7 at s
+    p "[n]! If you don't want to die. Uses its power. Kill me."
     n "N-no. Please stop. I won't. I won't .... ahhhhh..."
+    scene black
+    show m_hurt at s
+    show m_cockdown at s
+    show m_shame at s
+    show m_m_clench2 at s
+    show m_beaten7 at s
     "[p] almost break the inner barrier"
+    scene black 
+    show m at s
+    show m_m_1 at s
+    show m_beaten7 at s
+    p "It was your false to not try to protect yourself. If there is an after life, don't agree to help any strangers again. Just run away when meet someone like me."
+    n "Ahh...Ughhh...ahhh..."
+    hide m_m_1
+    show m_m_sexclench1 at s
+    "[n] looks straight at [p]'s eyes. His frightening yet gentle look was so similar. For just a moment, it was like he saw his younger brother."
+    scene temple 
+    show m_tired at s
+    show m_m_clench2 at s
+    show m_beaten7 at s
+    n "S-sir Knight! P-please stop! I-I will not...n...harm you...Please...I want to live..."
+    "He had never like [n] from the start. The way he smiles and how he carries himself was so similar to [ren]."
+    scene temple
+    show m_close at s
+    show m_m_clench2 at s
+    show m_beaten7 at s
+    "How could anyone kill someone when they never resent him for whatever bad things he does to them?"
     scene temple 
     show m
     show m_cockdown
-    show m_shame
     show m_m_normal
-    p "Arghhh...Arghhh..."
+    show m_beaten7
+    show n_surprise2 at right
+    show n_beaten1 at right
+    "[p] puts his hand out of Nine's chest"
+    scene temple 
+    show m_tired
+    show m_cockdown
+    show m_m_normal
+    show m_beaten7
+    show n_sad3 at right
+    show n_beaten1 at right
+    n "S-sir Knight!"
     scene temple 
     show m
     show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "(It's your false to not participate in this life and death game. Sorry)"
-    "[p] remmembered the time the demon help him to get water, and his worried expression when they met." 
-    "The demon not once was afraid of him. He offers help and got his life taken away by the one he helped in return"
-    n "S-sir Knight! P-please stop! I-I will not...n...harm you..."
-    "He had never like [n] from the start. The way he smiles and how he carries himself was so similar to [ren]. There was, many times, that he wishes [ren] goes far away from his life..."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Argh!!..."
-    n "P-please...n...have mercy...n...I-I want to live...ngh..."
-    scene temple 
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "If You Want To Live, FIGHTT!!! \nYOU MOTHER FUCKER!!" with hpunch
-    "[p] cries. He puts his hand out of Nine's chest"
-    n "Ahhh...haa...ahhh..."
-    n "Ahh..S-sir. Kni-.."
+    show m_m_sexclench1
+    show m_beaten7
+    show n_surprise at right
+    show n_beaten2 at right
     "[p] punches [n]" with vpunch
-    n "Mgh!"
     scene temple 
     show m
     show m_cockdown
-    show m_shame
-    show m_m_normal
-    p "Go away! If I ever see your face again, I'll kill you!!"
+    show m_m_scream1
+    show m_beaten7
+    show n_surprise2 at right
+    show n_beaten2 at right
+    p "If You Want To Live, FIGHTT!!! \nYOU MOTHER FUCKER!!" with hpunch
+    scene temple 
+    show m
+    show m_cockdown
+    show m_m_sexclench1
+    show m_beaten7
+    show n_surprise at right
+    show n_sad2 at right
+    show n_beaten2 at right
+    n "..."
+    scene temple 
+    show m
+    show m_cockdown
+    show m_m_sexclench1
+    show m_beaten7
+    show n_surprise at right
+    show n_sad2 at right
+    show n_beaten2 at right
+    p "If I ever see your face again, I'll kill you!!"
+    hide n_beaten2
+    show n_sad3 at right
+    show n_beaten2 at right
     n "...."
     "[n] runs away" with hpunch
-    "[d] comes closer as [p] crawing on the ground and clenches his fists."
     scene temple 
-    show m
+    show m_tired
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_m_sexclench1
+    show m_beaten7
     p "..."
     scene temple 
-    show m
+    show m_close
     show m_cockdown
     show m_shame
-    show m_m_normal
-    p "I lost. What do you want to do with me?"
-    d "What do you think?"
+    show m_m_sexclench1
+    show m_beaten7
+    "[p] clenches his fist. He had slipped the last oppotunity. Had [n] fought back, he might be able to take the stone out, or die."
+    "[p] tries to breath after using so much of [d]'s magic."
+    "He knows [d] is walking toward him but he ignores."
     scene temple 
-    show m
+    show m_tired
     show m_cockdown
     show m_shame
     show m_m_normal
-    p "Stop that already. Didn't you said I'm a birdbrain? How can I know what a genius like you think?"
+    show m_beaten7
+    "[d] benches down and touches his face. [p] feels better."
+    hide m_m_normal
+    show m_m_open_speak
+    p "I'll be a sexual object for you to use for the rest of my life, aren't I?"
+    "(This version ends here. Below might be changed in the next version. The gore (more like bondage because of the bandages), scat will have a skip option in bad end. But I haven't created the skip.)"
+    ####
+    ##### Temporary ends here
     if talk >= 20:
         jump goodend
     else :
@@ -1579,7 +1825,11 @@ label alteration:
 label badend:
     hide screen_day
     hide screen stat
-    d "Flatering won't help you [p]. A dog shoud know its position. You just break free from your master and lovely dovely with a demon..."
+    d "..."
+    d "Yes."
+    p "Do whatever you want."
+    d "So you gonna play the no-emotion game? It will disappear the moment I shove my cock in. You will be twitching, moaning like a bitch in heat under me."
+    "[p] clenches his fists and teeth. Will he have to live under this humiliation forever?"
     "[d] cough."
     "[p] laughs."
     scene temple 
@@ -1587,7 +1837,7 @@ label badend:
     show m_cockdown
     show m_shame
     show m_m_normal
-    p "Had your mind become so hazzle that you can't understand sarcasm? You seems weaker despite that strong language."
+    p "Had your mind become so hazzle that you become over-confident? You seems weaker despite that strong language."
     scene temple 
     show m
     show m_cockdown
@@ -1946,14 +2196,29 @@ label badend:
     show m_cockdown
     show m_shame
     show m_m_normal
-    p "..."
-    "[p] glances at [d], observes his expression."
+    "[d] smirks."
+    d "If you want it so badly, shouldn't you ask more sincere?"
+    p "!"
+    "[p] on his knees and bowl to [d]. His head hits the floor."
     scene throne
     show m
     show m_cockdown
     show m_shame
     show m_m_normal
-    p "...I beg you [d]. Please send them out, to another country..."
+    p "...I-I beg you [d]. Please send them out, to another country..."
+    "[d] moves his chin up. [p] follows his lead."
+    p "..."
+    d "Not that."
+    p "W-what do you want me to do?"
+    d "Smile."
+    p "..."
+    d "You look unhappy all the time. Shouldn't you smile nicely to ask someone for help?"
+    "[p] tries to smile. His mouth's muscles twitching from the conflict. He feels pathetic."
+    "Finally, he was able to keep the smile."
+    p "P-please send them out [d]."
+    "[d] licks [p]'s neck and bites it."
+    p "M."
+    d "Good boy."
     k "..."
     d "You heard that [k], gather everyone, told them you were dethrone. Now, this country is mine. If anyone tries to escape, they will face my friends' wrath."
     k "No! please don't. Monsters of the Dark Forest like you never interested in things like this to begin with. Please don't invole the citizens into your play."
@@ -1996,35 +2261,16 @@ label badend:
     show m_m_normal
     p "..."
     scene castle_pet
-    scene throne
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
     p "Will you really keep your words this time [d]? You won't do anything to them right?"
     "[d] touches [p]'s face and kisses his forehead."
     d "I gruarantee their safety. You can forget about them now. Their parts had ended but yours is just the beginning."
     scene throne
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
     p "...T-thank you."
-    "[p] cries."
-    d "..."
+    "[p] cries. [d] touches [p]'s face and move it up."
+    d "You seems tired. \n Hey, bring some food here."
     "The servant gives [d] a bowl of food. [d] puts it on the ground."
-    scene throne
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
     p "..."
     "[p] eats the noodle. It had been long since he ate. His stomach was empty."
-    scene throne
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
     p "Ngh...M...*chep...Mn...*chep..."
     "His stomach and mouth were still hurt because of the snakes. It was hard for him to eat without experience pain."
     "Everyone else in the room looks at him with a mixer of disgust, satisfy, horny and pity."
@@ -2065,7 +2311,7 @@ label badend:
     show m_m_normal
     p "[d]! Please give me mercy. I cannot take it. Please save me [d]. I cannot face them. I destroyed the country. Please don't send me there. I'll do whatever you want."
     d "..."
-    "The servant holds the lease forward."
+    "The servant holds the leash forward."
     h "Move fast!"
     scene throne
     show m
@@ -2097,26 +2343,11 @@ label badend:
     p "N..M..."
     scene castle_whip
     "The servant whips him!" with hpunch
-    scene throne
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
     p "Ugh!...M..."
     h "I said move! Do you still think you are our prince after all this? You are nothing but troubles since the day you were born. Trash! Trash!"
-    scene throne
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
     p "U-uhm...n..."
     scene castle_poop
     "Because of the nerves damage and pain the snakes cause and the emotional damage, anxiety [d] causes, [p] nervous system broke down. He was at his most vulnerable state. Unable to control his body, [p] shits himself."
-    scene throne
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
     p "Ngm...hhh..."
     h "Ewww! Gross! You really are trash."
     "[p] looks at [d] as he turns away."
@@ -2875,7 +3106,8 @@ label goodend:
     show m_shame
     show m_m_normal
     p "You're wrong..."
-    "[p] tucks his head between his knees. [p] used to confident at his fighting skills, but as a person, he had never think highly of himself like that. [d]'s words hurt him to the bones."
+    "[p] tucks his head between his knees. [p] used to confident at his fighting skills, but as a person, he had never think highly of himself like that."
+    "[d]'s words hurt him to the bones."
     d "..."
     "[d] takes a deep breath. He looks tired. He had lost a lot of mana and energy."
     scene temple
@@ -3321,7 +3553,8 @@ label goodend:
     show m_shame
     show m_m_normal
     p "(It's warm...)"
-    "[p] wonder if this is what being loved feel like. He knows that the next morning, when he fully awake, he may curse himself for this feeling. But it doesn't matter. Now, he cannot even seperate black and white."
+    "[p] wonder if this is what being loved feel like. He knows that the next morning, when he fully awake, he may curse himself for this feeling. But it doesn't matter."
+    "Now, his reasoning had disappeared. He cannot even seperate black and white."
     "Today, [d] had given him the dream he always wish for. A tear falls from his eyes for this flickering happiness..."
     "Little does [p] know, that tear slightly touches [d]'s chest before falls to the ground."
     d "..."
