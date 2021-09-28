@@ -58,6 +58,7 @@ label morning_greet1:
     jump simbutton2
 label morning_greet2:
     scene sit_sad
+    "Morning"
     show m
     show m_cockdown
     show m_m1
@@ -115,6 +116,7 @@ label morning_greet2:
     jump simbutton2
 label morning_greet3:
     scene sit_sad
+    "Morning"
     show m
     show m_cockdown
     show m_m1
@@ -124,7 +126,7 @@ label morning_greet3:
     show m_cockdown
     show m_blush
     show m_m2
-    d "What's wrong?"
+    d "What's wrong? Why did you look around like that?"
     scene sit_up
     show m_surprise
     show m_cockdown

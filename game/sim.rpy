@@ -171,7 +171,7 @@ label simbutton:
 
             "Test mind control":
                 if mental <=0 and pride <=0 and controlStage == 3:
-                    jump control4_ques
+                    jump alteration
                 else:
                     if mental >=70:
                         jump control1

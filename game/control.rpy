@@ -878,7 +878,7 @@ label alteration:
     d "As one of the three Demi God who borned to help The Flow and keep the balance to this Earth, I was supposed to kill you...I test to see if I can modify you right away but I cannot."
     d "Your will was strong."
     p "P-Please stop...[d]..."
-    "[d] stops"
+    "[d] stops."
     scene darkforest2
     show m_hurt
     show m_shame
@@ -1533,7 +1533,7 @@ label alteration:
     show m_beaten7
     p "Kuh!" with hpunch
     show n_angry2 at right
-    n "Mr.Knight!"
+    n "Sir Knight!"
     scene temple with dissolve
     show m_tired at s
     show m_cockdown at s
@@ -1811,7 +1811,9 @@ label alteration:
     show m_beaten7
     "[d] benches down and touches his face. [p] feels better."
     hide m_m_normal
+    hide m_beaten7
     show m_m_open_speak
+    show m_beaten1
     p "I'll be a sexual object for you to use for the rest of my life, aren't I?"
     "(This version ends here. Below might be changed in the next version. The gore (more like bondage because of the bandages), scat will have a skip option in bad end. But I haven't created the skip.)"
     ####
@@ -1991,7 +1993,7 @@ label badend:
     ren "Brother!"
     h "Prince [p]!"
     "[p] reacts. The snakes bite shock."
-    scene snakeA_elec
+    scene snakeA-elec
     p "UUHHMMMM...UHMMMM..."
     scene darkforest
     show m
@@ -2229,14 +2231,13 @@ label badend:
     d "Do you want to beg me not to hurt him? Or do you want him to die?"
     k "Whatever I said doesn't matter anymore."
     "The king walks away. [d] turns him back. He talks in a small voice, enough for [p] not to hear."
-    d "Why did you resurrected him just to be cold to him after?"
+    d "Why did you resurrected him from the death just to be cold to him after?"
     k "!"
     k "..."
     d "Is it guilt? Because you learn how it will end? Or is it just simply because yours and his personality does not match?"
     k "If you look for my answers or expressions for entertainment, please look else where. I will give you none."
     "The king walks away."
     d "He won't die. But he is mine forever, father."
-    k "..."
     "The king pauses for a second then continues to walk away as [d] laughs hard."
     scene throne
     show m
@@ -2244,7 +2245,7 @@ label badend:
     show m_shame
     show m_m_normal
     p "..."
-    "The king told the mages to prepare the magical sky screen for the announcement. He has a conversation with [ren]. This is the first time [p] saw [ren] and the king in a heated argument."
+    "The king told the mages to prepare the magical sky screen for the announcement. He has a conversation with [ren]. This is the first time [p] sees [ren] and the king in a heated argument."
     "[ren] looks back at [p] and follows [k]. [p] looks at their blurry figures as they move futher and futher away."
     scene throne
     show m
@@ -3006,7 +3007,7 @@ label badend:
     ## At this point Ray doesn’t know what hate and like are anymore
 
     "End"
-
+    $ MainMenu(confirm=False)()
     return
 
 
@@ -3018,95 +3019,139 @@ label badend:
 label goodend:
     hide screen_day
     hide screen stat
-    "[d] touches [p]'s chin and moves it up."
     scene temple
-    show m
+    show m_close
     show m_cockdown
     show m_shame
+    show m_blush
     show m_m_normal
+    show m_beaten1
+    "[d] touches [p]'s chin and moves it up."
+    scene temple
+    show m_tired
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m2
+    show m_beaten1
     p "..."
     scene temple 
     show kiss_suprised
     "[d] kisses [p]"
-    scene temple
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
     p "n!"
-    show kiss
     scene temple
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
+    show kiss
     p "..."
     "[d] stops."
     hide kiss
     scene temple
-    show m
+    show m_close
     show m_cockdown
     show m_shame
+    show m_blush
     show m_m_normal
+    show m_beaten1
     p "..."
     scene temple
-    show m
+    show m_tired
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_open_speak
+    show m_beaten1
     p "Can you please stop doing that?"
+    hide m_m_open_speak
+    show m_m2
     d "Stop doing what?"
-    "[p] looks away."
+    scene temple
+    show m_close
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m_open_speak
+    show m_beaten1
+    "[p] stays silent."
     scene temple
     show m
     show m_cockdown
     show m_shame
     show m_m_normal
+    show m_beaten1
     p "..."
+    scene temple
+    show m
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m
+    show m_beaten1
     "[d] releases [p]. [p] sits on the ground, looks at his hand."
     scene temple
-    show m
+    show m_tired
     show m_cockdown
     show m_shame
-    show m_m_normal
-    p "Just a little more and I had got it...What an idiot."
+    show m_blush
+    show m_m_open_speak
+    show m_beaten1
+    p "Just a little more and I had got it...Why am I so useless?"
+    hide m_m_open_speak
+    show m_m2
     "He clenches his hand then glances at [d]."
     scene temple
     show m
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_open_speak
+    show m_beaten1
     p "Did you really think I will not kill him for the stone?"
+    hide m_m_open_speak
+    show m_m
     d "..."
     "[d] nodes."
     d "I did."
     scene temple
-    show m
+    show m_tired
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_open_speak
+    show m_beaten1
     p "Why?" 
     d "You are not that type of person."
     scene temple
-    show m
+    show m_surprise
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m
+    show m_beaten1
     p "!"
     scene temple
     show m
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m
+    show m_beaten1
     p "..."
     "[p] numbles in a small voice."
     scene temple
-    show m
+    show m_tired
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_open_speak
+    show m_beaten1
     p "You're wrong..."
     "[p] tucks his head between his knees. [p] used to confident at his fighting skills, but as a person, he had never think highly of himself like that."
+    scene temple
+    show m_close
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m2
+    show m_beaten1
     "[d]'s words hurt him to the bones."
     d "..."
     "[d] takes a deep breath. He looks tired. He had lost a lot of mana and energy."
@@ -3114,107 +3159,274 @@ label goodend:
     show m
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_open_speak
+    show m_beaten1
     p "Why? Why did you do all of this?" 
     scene temple
-    show m
+    show m_tired
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_open1
+    show m_beaten1
     p "I hate you. I hate being alive. Whatever you do, I will not appreciate."
     "[d] smiles."
+    scene temple
+    show m_surprise
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m_open2
+    show m_beaten1
     d "It doen't matter."
     scene temple
-    show m
+    show m_tired
     show m_cockdown
     show m_shame
+    show m_blush
     show m_m_normal
+    show m_beaten1
     p "..."
     scene temple
     show m
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_open_speak
+    show m_beaten1
     p "One day I'll kill you and all of the things related to you, including this God you keep talking about."
+    scene temple
+    show m_tired
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m
+    show m_beaten1
     "[d] touches [p]'s face and looks straight at him. [p] averts his eyes."
+    scene temple
+    show m_close
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m_normal
+    show m_beaten1
     d "I'll be waiting."
     scene temple
-    show m
+    show m_tired
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m
+    show m_beaten1
     p "..."
     scene temple
-    show m
+    show m_tired
     show m_cockdown
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_open1
+    show m_beaten1
     p "D-don't touch me."
+    scene temple
+    show m_close
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m_normal
+    show m_beaten1
     "That's unpleasant feeling re-appear again. [p] feels like his body is burning. It makes [p] feels unwell."
-    "He shoves [d]. [d] releases his grip. The two of them become motionless."
     scene temple
     show m
     show m_cockdown
     show m_shame
+    show m_blush
+    show m_m
+    show m_beaten1
+    "He shoves [d]. [d] releases his grip."
+    hide m_m
     show m_m_normal
     p "..." 
+    scene temple
+    show m_tired
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m_open_speak
+    show m_beaten1
     "Unconsiously, [p] looks up at [d]'s face. He is looking at the thing he had always avoid remembering."
+    scene temple
+    show m at s
+    show m_shame at s
+    show m_blush at s
+    show m_m_open_speak at s
+    show m_beaten1 at s
     "Now, the blury figure of an unknow man constantly fucking, degrading him, and caring him had become so clear and real."
+    scene temple
+    show m_tired at s
+    show m_shame at s
+    show m_blush at s
+    show m_m2 at s
+    show m_beaten1 at s
     "In disregard to [p]'s thought, [d] doesn't have that mean look on him. On the contracy, [p] sees a compassionate and humanely face."
+    scene temple
+    show m_close at s
+    show m_shame at s
+    show m_blush at s
+    show m_m2 at s
+    show m_beaten1 at s
     "[p] wonders if he is in his right mind."
+    scene temple
+    show m_tired at s
+    show m_shame at s
+    show m_blush at s
+    show m_m_normal at s
+    show m_beaten1 at s
     d "..."
     d "Is there something on my face?"
+    scene temple
+    show m_surprise
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m2
+    show m_beaten1
+    p "!"
+    scene temple
+    show m
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m_normal
+    show m_beaten1
     "[p] looks away."
+    scene temple
+    show m_surprise
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m_open_speak
+    show m_beaten1
     "Notice the shortness of [p]'s breath, [d] moves closer and touches [p]'s face again."
+    scene temple
+    show m
+    show m_cockdown
+    show m_shame
+    show m_blush
+    show m_m2
+    show m_beaten1
     d "You feel hot. It's not enough to be a fever but that must be uncomfortable. You need a rest."
     scene temple
-    show m
+    show m_tired
     show m_cockdown
     show m_shame
+    show m_blush
     show m_m_normal
+    show m_beaten1
     p "..."
+    scene temple
+    show m_close
+    show m_cockup
+    show m_shame
+    show m_blush
+    show m_m_normal
+    show m_beaten1
     "[p] looks exhausted. He sweats, his muscle becomes tenses and his heart races faster, his cock becomes stiff."
     scene temple
-    show m
-    show m_cockdown
+    show m_tired
+    show m_cockup
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_open1
+    show m_beaten1
     p "I-I'm fine. Please don't touch me. I..."
+    hide m_m_open1
+    show m_m_normal
     d "..."
+    scene temple
+    show m_close
+    show m_cockup
+    show m_shame
+    show m_blush
+    show m_m_normal
+    show m_beaten1
     "[p]'s face becomes all red. [d] releases his hand."
+    scene temple
+    show m_tired
+    show m_cockup
+    show m_shame
+    show m_blush
+    show m_m2
+    show m_beaten1
     "After pausing for a moment, [p] gazes at [d] intensively. His body is burning and his endurance is at its limit."
+    scene temple
+    show m
+    show m_cockup
+    show m_shame
+    show m_blush
+    show m_m_open2
+    show m_beaten1
     "He thought [d] wouldn't know, but [d] caught his gaze. Suprised, [p] looks at his eyes for a brief moment then looks away." 
+    scene temple
+    show m_close
+    show m_cockup
+    show m_shame
+    show m_blush
+    show m_m_clench
+    show m_beaten1
     d "..."
     scene temple
-    show m
-    show m_cockdown
+    show m_tired
+    show m_cockup
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_clench
+    show m_beaten1
     p "..."
-    "[d] pushes him to the ground and kisses him while stroking his hard cock."
-    d "You are hot, and this place is hard. It must be painful to endure."
-    "[d]'s words embarrassed [p]. He looks away."
     scene temple
-    show m
-    show m_cockdown
+    show m_surprise
+    show m_cockup
     show m_shame
-    show m_m_normal
+    show m_blush
+    show m_m_open1
+    show m_beaten1
+    "[d] pushes him to the ground and kisses him while stroking his hard cock."
+    scene temple
+    show m_hurt at s
+    show m_cockup at s
+    show m_shame at s
+    show m_blush at s
+    show m_m_sexclench1 at s
+    show m_beaten1 at s
+    p "Mgh."
+    d "You are hot, and this place is hard. It must be painful to endure."
+    scene temple
+    show m_tired at s
+    show m_cockup at s
+    show m_shame at s
+    show m_blush at s
+    show m_m_normal at s
+    show m_beaten1 at s
+    "[d]'s words embarrassed [p]. He looks away."
+    hide m_m_normal
+    show m_m2 at s
     p "..."
     d "Your endorphins levels went high because you used too much strength and energy. It increases your sex drive. This is just human's nature. Not like it was because of you. Don't need to be ashamed."
     scene temple
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
+    show m at s
+    show m_cockdown at s
+    show m_shame at s
+    show m_m_normal at s
     p "..."
     scene temple
-    show m
-    show m_cockdown
-    show m_shame
-    show m_m_normal
+    show m at s
+    show m_cockdown at s
+    show m_shame at s
+    show m_m_normal at s
     p "!"
+    ## Stop here
     "[d] jerks [p]'s cock."
-    d "If you don't want to have sex with me, I can help you release."
+    d "Lemme help you release."
     scene temple
     show m
     show m_cockdown
@@ -3582,6 +3794,7 @@ label goodend:
     p "It's beautiful..."
     d "Yeah. It is."
     "END"
+    $ MainMenu(confirm=False)()
     return
     
 

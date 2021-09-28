@@ -615,6 +615,28 @@ image snakeA:
     "snakeA0009.jpg"
     .1
     repeat
+image snakeA-elec:
+    "snakeA-elec0000.jpg"
+    .1
+    "snakeA-elec0001.jpg"
+    .1
+    "snakeA-elec0002.jpg" 
+    .1
+    "snakeA-elec0003.jpg"
+    .1
+    "snakeA-elec0004.jpg" 
+    .1
+    "snakeA-elec0005.jpg"
+    .1
+    "snakeA-elec0006.jpg"
+    .1
+    "snakeA-elec0007.jpg" 
+    .1
+    "snakeA-elec0008.jpg"
+    .1
+    "snakeA-elec0009.jpg"
+    .1
+    repeat
 ########################################################################################################################################################
 ##########--------------------------------------------------- Ateration animation Ass-finger
 image alterNoFinHead:
