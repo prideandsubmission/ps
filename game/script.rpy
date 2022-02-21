@@ -45,7 +45,7 @@ label start:
     $d = "Dietrich"
     $p = "Ray"
     #jump alteration
-    jump goodend
+    #jump goodend
     menu:
         "New":
             "Welcome and enjoy the game!"
@@ -70,9 +70,9 @@ label start:
                 "End of the sim":
                     $p = renpy.input("Your name is...(press enter to use the default name)", "Ray", length=20)
                     $d = renpy.input("The monster's name is...(press enter to use the default name)", "Dietrick", length=20)
-                    $water =90
+                    $water =50
                     $firstwater = False
-                    $food =90
+                    $food =50
                     $ene =100
                     $nothing =1
                     $mental = 0
